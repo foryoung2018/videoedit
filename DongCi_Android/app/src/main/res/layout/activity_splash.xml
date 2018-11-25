@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_above="@+id/ivLogo"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/ivSlogan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_splash" />
+
+    </RelativeLayout>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/svAdvert"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/t120dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/t44dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bg_default_logo"
+        tools:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/tvCopyright"
+        style="@style/tv_b_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/t15dp"
+        android:gravity="center"
+        tools:text="@string/stringSplashCopyright" />
+
+    <RelativeLayout
+        android:id="@+id/guide_rl"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.wmlive.hhvideo.heihei.splash.view.ExtendedViewPager
+            android:id="@+id/vp_guide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:overScrollMode="ifContentScrolls" />
+        <LinearLayout
+            android:id="@+id/ll_dot"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/t44dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/tv_enter"
+            android:layout_above="@+id/ll_dot"
+            android:background="@drawable/shoot_video_shape"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:layout_marginBottom="@dimen/t44dp"
+            android:text="@string/guide_pager_enter_tips" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/t15dp"
+        android:layout_marginTop="@dimen/t30dp"
+        android:gravity="center"
+        android:paddingBottom="@dimen/t5dp"
+        android:paddingLeft="@dimen/t19dp"
+        android:paddingRight="@dimen/t19dp"
+        android:paddingTop="@dimen/t5dp"
+        android:text="跳过"
+        android:textColor="@color/white"
+        android:textSize="@dimen/t17sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rlGuide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageGuide"
+            android:background="@drawable/guide_bg"
+            />
+
+        <Button
+            android:id="@+id/btStart"
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/t180dp"
+            android:text="立即开启"
+            style="@style/tv_a_33"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="38dp"
+            android:background="@drawable/shape_button_corner"
+            android:layout_height="@dimen/t44dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

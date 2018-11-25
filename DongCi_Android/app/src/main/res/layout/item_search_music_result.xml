@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/t90dp"
+                android:background="?attr/selectableItemBackground"
+
+    >
+
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="@dimen/t60dp"
+        android:layout_height="@dimen/t60dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/t10dp"
+        />
+
+    <ImageView
+        android:id="@+id/ivAvatarCover"
+        android:layout_width="@dimen/t15dp"
+        android:layout_height="@dimen/t15dp"
+        android:layout_alignEnd="@+id/ivAvatar"
+        android:layout_alignStart="@+id/ivAvatar"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_search_music_cd"
+        android:visibility="gone"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/ivAvatar"
+        android:layout_toStartOf="@+id/tvCount"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/tv_d_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:padding="@dimen/t2dp"
+            tools:text="垃圾"
+            />
+
+        <TextView
+            android:id="@+id/tvDesc"
+            style="@style/tv_b_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:padding="@dimen/t2dp"
+            tools:text="垃圾"
+            />
+
+        <TextView
+            android:id="@+id/tvDuring"
+            style="@style/tv_b_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:padding="@dimen/t2dp"
+            tools:text="垃圾"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvCount"
+        style="@style/tv_b_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/t10dp"
+        android:padding="@dimen/t2dp"
+        tools:text="0人使用"
+        />
+
+    <View
+        style="@style/publicHorizontalDivideLine"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

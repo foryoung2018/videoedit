@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wmlive.hhvideo.widget.RatioLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:id="@+id/rl_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:ratio="0.75">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        fresco:placeholderImage="@drawable/bg_video_default_16_9"
+        fresco:placeholderImageScaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_explosion_cover"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/t4dp">
+
+        <ImageView
+            android:id="@+id/iv_heart"
+            android:layout_width="@dimen/t15dp"
+            android:layout_height="@dimen/t15dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_home_like"/>
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="0"
+            android:textColor="@color/hh_color_a"
+            android:textSize="@dimen/t12sp"/>
+    </LinearLayout>
+</com.wmlive.hhvideo.widget.RatioLayout>

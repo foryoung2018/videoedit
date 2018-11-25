@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    style="@style/style_im_detail_left"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_im_other_sysnotify_layout"
+        style="@style/style_im_detail_other_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hh_chat_sound_other"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/tv_im_detail_other_sysnotify_img"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginRight="10dip"
+            fresco:roundBottomLeft="true"
+            fresco:roundBottomRight="true"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="true"
+            fresco:roundedCornerRadius="6dp" />
+
+        <TextView
+            android:id="@+id/tv_im_detail_other_sysnotify_content"
+            style="@style/style_im_detail_item_other_sysnotify_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

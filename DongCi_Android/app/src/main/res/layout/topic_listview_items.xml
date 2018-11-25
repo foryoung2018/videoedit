@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_centerVertical="true"
+    android:orientation="horizontal" >
+
+    <!--<ImageView-->
+        <!--android:id="@+id/image"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:maxHeight="72px"-->
+        <!--android:maxWidth="72px"-->
+        <!--android:paddingBottom="20px"-->
+        <!--android:paddingRight="10px"-->
+        <!--android:paddingTop="20px" />-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="1"
+            android:padding="0px" />
+
+        <TextView
+            android:id="@+id/topic_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="1"
+            android:padding="0px" />
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="0"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="right"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/forceDelete"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="删除"-->
+            <!--android:padding="0px" />-->
+
+    <!--</LinearLayout>-->
+</LinearLayout>

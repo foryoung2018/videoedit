@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_im_detail_no_holder"
+        style="@style/tv_c_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_im_details_syt_conten_time_shape"
+        android:gravity="center"
+        android:paddingBottom="@dimen/t5dp"
+        android:paddingLeft="@dimen/t10dp"
+        android:paddingRight="@dimen/t10dp"
+        android:paddingTop="@dimen/t5dp" />
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/t70dp"
+    android:background="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:id="@+id/rlAvatar"
+        android:layout_width="@dimen/t40dp"
+        android:layout_height="@dimen/t40dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/t10dp">
+
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="@dimen/t40dp"
+            android:layout_height="@dimen/t40dp"
+            android:src="@drawable/ic_default_male" />
+
+        <ImageView
+            android:id="@+id/ivVerifyIcon"
+            android:layout_width="@dimen/t16dp"
+            android:layout_height="@dimen/t16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            tools:src="@color/hh_color_i"
+            tools:visibility="visible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/rlAvatar"
+        android:layout_toStartOf="@+id/tvCount"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/tv_dd_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/t4dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textStyle="bold"
+            tools:text="垃圾" />
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/pop_text_gray"
+            android:textSize="@dimen/t12sp"
+            android:textStyle="bold"
+            tools:text="动次I:0 粉丝:0" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/t10dp"
+        android:textColor="@color/pop_text_gray"
+        android:textSize="@dimen/t12sp"
+        android:textStyle="bold"
+        tools:text="0作品" />
+
+    <View
+        style="@style/publicHorizontalDivideLine"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/diving_line_height"-->
+    <!--android:background="@color/bg_diving_line" />-->
+
+    <RelativeLayout
+        android:id="@+id/btn_add_qq"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t60dp"
+        android:paddingLeft="@dimen/t15dp">
+
+        <ImageView
+            android:id="@+id/iv_qq"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_share_qq_nor" />
+
+        <TextView
+            style="@style/tv_d_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/t10dp"
+            android:layout_toRightOf="@+id/iv_qq"
+            android:text="@string/user_add_friend_qq"
+            android:textSize="@dimen/t15sp" />
+
+        <ImageView
+            android:layout_width="@dimen/t12dp"
+            android:layout_height="@dimen/t12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/t15dp"
+            android:src="@drawable/icon_back_small" />
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/diving_line_height"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/bg_diving_line" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_add_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t60dp"
+        android:paddingLeft="@dimen/t15dp">
+
+        <ImageView
+            android:id="@+id/iv_wechat"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_share_weixin_nor" />
+
+        <TextView
+            style="@style/tv_d_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/t10dp"
+            android:layout_toRightOf="@+id/iv_wechat"
+            android:text="@string/user_add_friend_wechat"
+            android:textSize="@dimen/t15sp" />
+
+        <ImageView
+            android:layout_width="@dimen/t12dp"
+            android:layout_height="@dimen/t12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/t15dp"
+            android:src="@drawable/icon_back_small" />
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/diving_line_height"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/bg_diving_line" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_add_sina"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t60dp"
+        android:paddingLeft="@dimen/t15dp">
+
+        <ImageView
+            android:id="@+id/iv_sina"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_share_weibo_nor" />
+
+        <TextView
+            style="@style/tv_d_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/t10dp"
+            android:layout_toRightOf="@+id/iv_sina"
+            android:text="@string/user_add_friend_sina"
+            android:textSize="@dimen/t15sp" />
+
+        <ImageView
+            android:layout_width="@dimen/t12dp"
+            android:layout_height="@dimen/t12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/t15dp"
+            android:src="@drawable/icon_back_small" />
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/diving_line_height"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/bg_diving_line" />-->
+    </RelativeLayout>
+</LinearLayout>

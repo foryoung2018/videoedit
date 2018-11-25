@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_black">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llBlankPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivBlank"
+            android:layout_width="@dimen/t68dp"
+            android:layout_height="@dimen/t68dp"
+            android:layout_marginBottom="@dimen/t12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_empty"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvBlank"
+            style="@style/tv_b_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stringScanningVideo"/>
+    </LinearLayout>
+</FrameLayout>
+
+

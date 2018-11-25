@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/user_info_top_ll"
+        android:layout_marginTop="@dimen/t56dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/t15dp"
+        android:layout_marginRight="@dimen/t15dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="@dimen/t90dp"
+            android:layout_height="@dimen/t90dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/t10dp"
+            android:layout_marginEnd="@dimen/t20dp"
+            android:layout_marginStart="@dimen/t20dp"
+
+            android:scaleType="centerCrop"
+            tools:src="@drawable/ic_default_male" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/t6dp">
+
+            <com.wmlive.hhvideo.widget.CustomFontTextView
+                android:id="@+id/tvName"
+                style="@style/tv_d_48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:maxLength="8"
+                app:cftv_fontFamily="font/notosans_bold.ttf"
+                tools:text="我的名字叫红领巾" />
+
+            <TextView
+                android:id="@+id/tvFollow"
+                style="@style/tv_cc_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/t10dp"
+                android:layout_marginTop="@dimen/t4dp"
+                android:layout_toEndOf="@+id/tvName"
+                android:background="@drawable/bg_btn_c_follow_shape"
+                android:paddingBottom="@dimen/t3dp"
+                android:paddingEnd="@dimen/t10dp"
+                android:paddingStart="@dimen/t10dp"
+                android:paddingTop="@dimen/t3dp"
+                android:text="关注"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/t8dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.wmlive.hhvideo.widget.CustomFontTextView
+                android:id="@+id/tvLevel"
+                style="@style/tv_dd_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                tools:text="LV8" />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                style="@style/tv_dd_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textStyle="bold"
+                tools:text="   ·   北京   ·   天秤座" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llVerify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/t10dp"
+            android:layout_marginEnd="@dimen/t20dp"
+            android:layout_marginStart="@dimen/t20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/ivVerifyIcon"
+                android:layout_width="@dimen/t15dp"
+                android:layout_height="@dimen/t15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/t3dp"
+                android:src="@drawable/icon_account_check_sel" />
+
+            <com.wmlive.hhvideo.widget.CustomFontTextView
+                android:id="@+id/tvVerifyType"
+                style="@style/tv_dd_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="微博认证"
+                app:cftv_fontFamily="font/notosans_bold.ttf" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSign"
+            style="@style/tv_cc_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/t18dp"
+            android:layout_marginEnd="@dimen/t10dp"
+            android:layout_marginStart="@dimen/t10dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textStyle="bold"
+            tools:text="纯粹的是啊比" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/t22dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/t14dp"
+            android:background="@drawable/bg_btn_dd_shape"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/t6dp"
+            android:paddingEnd="@dimen/t12dp"
+            android:paddingStart="@dimen/t12dp"
+            android:paddingTop="@dimen/t6dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/ivEdit"
+                android:layout_width="@dimen/t20dp"
+                android:layout_height="@dimen/t20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_profile_data" />
+
+            <TextView
+                android:id="@+id/tvEdit"
+                style="@style/tv_d_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/t4dp"
+                android:gravity="center_vertical"
+                android:text="个人资料"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/t14dp"
+            android:background="@drawable/bg_btn_dd_shape"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/t6dp"
+            android:paddingEnd="@dimen/t12dp"
+            android:paddingStart="@dimen/t12dp"
+            android:paddingTop="@dimen/t6dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/ivAccount"
+                android:layout_width="@dimen/t20dp"
+                android:layout_height="@dimen/t20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_profile_account" />
+
+            <TextView
+                android:id="@+id/tvAccount"
+                style="@style/tv_d_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/t4dp"
+                android:gravity="center"
+                android:text="我的账户"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCountPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/t22dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llFollowPanel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.wmlive.hhvideo.widget.CustomFontTextView
+                android:id="@+id/tvFollowCount"
+                style="@style/tv_d_36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/t4dp"
+                android:includeFontPadding="false"
+                app:cftv_fontFamily="font/dincond_bold.otf"
+                tools:text="0" />
+
+            <TextView
+                style="@style/tv_cc_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关注"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llFansPanel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.wmlive.hhvideo.widget.CustomFontTextView
+                android:id="@+id/tvFansCount"
+                style="@style/tv_d_36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/t4dp"
+                android:includeFontPadding="false"
+                app:cftv_fontFamily="font/dincond_bold.otf"
+                tools:text="0" />
+
+            <TextView
+                style="@style/tv_cc_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="粉丝"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLikePanel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.wmlive.hhvideo.widget.CustomFontTextView
+                android:id="@+id/tvLikeCount"
+                style="@style/tv_d_36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/t4dp"
+                android:includeFontPadding="false"
+                app:cftv_fontFamily="font/dincond_bold.otf"
+                tools:text="0" />
+
+            <TextView
+                style="@style/tv_cc_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获赞"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llDecibelCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.wmlive.hhvideo.widget.CustomFontTextView
+                android:id="@+id/tvDecibelCount"
+                style="@style/tv_d_36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/t4dp"
+                android:includeFontPadding="false"
+                app:cftv_fontFamily="font/dincond_bold.otf"
+                tools:text="0" />
+
+            <TextView
+                style="@style/tv_cc_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分贝"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/t10dp">
+
+        <TextView
+            android:id="@+id/tvId"
+            style="@style/tv_cc_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/t20dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textStyle="bold"
+            tools:text="动次ID2656332" />
+
+        <LinearLayout
+            android:id="@+id/llWeiboHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/t10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/ivWeiboIcon"
+                android:layout_width="@dimen/t18dp"
+                android:layout_height="@dimen/t18dp"
+                android:src="@drawable/icon_profile_sina" />
+
+            <TextView
+                android:id="@+id/tvWeiboHome"
+                style="@style/tv_d_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/t4dp"
+                android:layout_marginStart="@dimen/t4dp"
+                android:drawablePadding="@dimen/t6dp"
+                android:gravity="center"
+                android:padding="@dimen/t2dp"
+                android:text="微博主页"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/t10dp"
+                android:layout_height="@dimen/t10dp"
+                android:src="@drawable/icon_back_small_white"
+                android:tint="@color/hh_color_d" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewTopLine"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="@dimen/t2dp"
+        android:background="@color/bg_diving_line" />
+
+    <com.wmlive.hhvideo.heihei.personal.widget.ProductTypePanel
+        android:id="@+id/llProductType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+</LinearLayout>

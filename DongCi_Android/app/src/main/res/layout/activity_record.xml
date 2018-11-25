@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_black">
+
+    <FrameLayout
+        android:id="@+id/fr_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rlPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <com.rd.vecore.VirtualVideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+            <com.wmlive.hhvideo.heihei.record.widget.CustomFrameView
+                android:id="@+id/customFrameView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+            <com.wmlive.hhvideo.heihei.record.widget.FullRecordView
+                android:id="@+id/flFullRecord"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <com.wmlive.hhvideo.heihei.record.widget.RecordOptionPanel
+        android:id="@+id/recordOptionPanel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_black" />
+
+    <com.wmlive.hhvideo.heihei.record.widget.ExtBtnRecord
+        android:id="@+id/btRecorder"
+        android:layout_width="@dimen/t78dp"
+        android:layout_height="@dimen/t78dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+        android:padding="@dimen/t6dp"
+        android:src="@drawable/btn_recorder_start" />
+
+    <com.wmlive.hhvideo.heihei.record.widget.CountdownView
+        android:id="@+id/countdownView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/recordOptionPanel"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/llSpeedPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recordOptionPanel"
+        android:layout_marginBottom="@dimen/t10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <com.wmlive.hhvideo.heihei.record.widget.ExtRadioGroup
+            android:id="@+id/extSpeedPanel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t30dp" />
+
+    </LinearLayout>
+
+    <com.wmlive.hhvideo.heihei.record.widget.RecordFilterPanel
+        android:id="@+id/recordFilterPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recordOptionPanel"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/llMusicLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom_menu_bg"
+        android:paddingBottom="24dp"
+        android:paddingTop="18dp"
+        android:visibility="gone">
+
+        <com.wmlive.hhvideo.heihei.record.widget.CustomTrimMusicView
+            android:id="@+id/customTrimMusicView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_black" />
+    </LinearLayout>
+
+</RelativeLayout>

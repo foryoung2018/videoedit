@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/hh_color_a"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/flHome"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivHome"
+            android:layout_width="@dimen/t22dp"
+            android:layout_height="@dimen/t22dp"
+            android:layout_gravity="center"
+            tools:src="@drawable/tab_home_selector" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlDiscover"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/rlDiscover2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/t10dp">
+
+            <ImageView
+                android:id="@+id/ivDiscovery"
+                android:layout_width="@dimen/t22dp"
+                android:layout_height="@dimen/t22dp"
+
+                android:src="@drawable/icon_home_dynamic" />
+
+            <View
+                android:id="@+id/viewDiscoveryDot"
+                android:layout_width="@dimen/t4dp"
+                android:layout_height="@dimen/t4dp"
+                android:layout_alignTop="@+id/ivDiscovery"
+                android:layout_toEndOf="@+id/ivDiscovery"
+                android:background="@drawable/bg_btn_f_first_type_shape"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/ivPublish"
+            android:layout_width="@dimen/t48dp"
+            android:layout_height="@dimen/t48dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/t6dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_home_publish" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBell"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivBell"
+            android:layout_width="@dimen/t22dp"
+            android:layout_height="@dimen/t22dp"
+            android:layout_centerInParent="true"
+            tools:src="@drawable/tab_bell_selector" />
+
+        <TextView
+            android:id="@+id/tvMessageCount"
+            style="@style/tv_a_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/ivBell"
+            android:layout_alignTop="@+id/ivBell"
+            android:background="@drawable/shape_unread_red"
+            android:padding="@dimen/t2dp"
+            android:visibility="gone"
+            tools:text="30" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/flMe"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/ivMe"
+            android:layout_width="@dimen/t22dp"
+            android:layout_height="@dimen/t22dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_home_user" />
+    </FrameLayout>
+</LinearLayout>

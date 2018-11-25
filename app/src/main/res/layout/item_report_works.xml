@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvType"
+    style="@style/tv_a_30"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/t44dp"
+    android:background="@color/hh_color_d"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:lines="1"
+    tools:text="傻逼" />
+
+

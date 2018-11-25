@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/t300dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/t10dp"
+    android:layout_marginTop="@dimen/t10dp"
+    app:cardCornerRadius="@dimen/t6dp"
+    app:cardElevation="@dimen/t5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.wmlive.hhvideo.widget.RatioLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ratio="1.81">
+
+
+            <ImageView
+                android:id="@+id/ivPic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+
+            <ImageView
+                android:layout_width="@dimen/t27dp"
+                android:layout_height="@dimen/t27dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_home_video_pause" />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/t45dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_home_shade" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlAvatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="@dimen/t10dp"
+                android:layout_marginStart="@dimen/t10dp"
+                android:background="@drawable/bg_a_shape">
+
+                <ImageView
+                    android:id="@+id/ivAvatar"
+                    android:layout_width="@dimen/t21dp"
+                    android:layout_height="@dimen/t21dp"
+                    android:layout_margin="3px"
+                    android:src="@drawable/ic_default_male" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/tv_a_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/rlAvatar"
+                android:layout_alignTop="@+id/rlAvatar"
+                android:layout_marginStart="@dimen/t4dp"
+                android:layout_toEndOf="@+id/rlAvatar"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLength="8"
+                tools:text="张三" />
+
+        </com.wmlive.hhvideo.widget.RatioLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t54dp"
+            android:orientation="horizontal"
+            tools:background="@color/hh_color_c">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTopic"
+                    style="@style/tv_dd_32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/t10dp"
+                    android:singleLine="true"
+                    android:visibility="gone"
+                    tools:text="一个人的乐队 个人的乐队个"
+                    tools:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/t10dp"
+                    android:layout_marginStart="@dimen/t10dp"
+                    android:layout_marginTop="@dimen/t10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/t12dp"
+                        android:layout_height="@dimen/t12dp"
+                        android:src="@drawable/icon_home_like_white"
+                        android:tint="@color/hh_color_ccc" />
+
+                    <TextView
+                        android:id="@+id/tvLikeCount"
+                        style="@style/tv_cc_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/t4dp"
+                        tools:text="2313" />
+
+                    <ImageView
+                        android:layout_width="@dimen/t12dp"
+                        android:layout_height="@dimen/t12dp"
+                        android:layout_marginStart="@dimen/t10dp"
+                        android:src="@drawable/icon_home_comment_white"
+                        android:tint="@color/hh_color_ccc" />
+
+                    <TextView
+                        android:id="@+id/tvCommentCount"
+                        style="@style/tv_cc_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/t4dp"
+                        tools:text="2313" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivJoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/t5dp"
+                android:layout_marginRight="@dimen/t10dp"
+                android:src="@drawable/icon_discover_create_red" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivShadow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_shadow3"
+            android:visibility="gone" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

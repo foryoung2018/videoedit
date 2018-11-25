@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ZTabLayout">
+        <attr name="tab_normal_textSize" format="dimension" />
+        <attr name="tab_select_textSize" format="dimension" />
+        <attr name="tab_textColor" format="reference" />
+        <attr name="tab_bg_resource_id" format="reference" />
+        <attr name="tab_indicatorColor" format="color" />
+        <attr name="tab_indicatorHeight" format="dimension" />
+        <attr name="tab_min_width" format="dimension" />
+        <attr name="tab_dividerWidth" format="dimension" />
+        <attr name="tab_dividerColor" format="color" />
+        <attr name="tab_height" format="dimension" />
+        <attr name="tab_width" format="dimension" />
+        <attr name="tab_dividerPadding" format="dimension" />
+        <attr name="tab_PaddingLeft" format="dimension" />
+        <attr name="tab_PaddingTop" format="dimension" />
+        <attr name="tab_PaddingRight" format="dimension" />
+        <attr name="tab_PaddingBottom" format="dimension" />
+        <attr name="tab_dividerShow" format="boolean" />
+        <attr name="tab_is_bisect_no_viewpager" format="boolean" />
+    </declare-styleable>
+
+</resources>

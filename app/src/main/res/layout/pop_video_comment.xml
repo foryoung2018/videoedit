@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_half_color_value">
+
+    <RelativeLayout
+        android:id="@+id/rl_comment_body"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t300dp"
+        android:background="@color/app_background_80_back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_comment"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@color/hh_color_d"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/tv_send"
+                android:layout_width="42dp"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_btn_comment_selector"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:enabled="false"
+                android:textColor="@color/comment_send_color_selector"
+                android:text="@string/send_comment"
+                style="@style/tv_b_24" />
+
+            <EditText
+                android:id="@+id/et_comment"
+                style="@style/tv_a_24"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/t8dp"
+                android:hint="@string/comment_hint"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:textColorHint="@color/hh_color_c"
+                android:textCursorDrawable="@drawable/edit_cursor_color"
+                android:layout_toLeftOf="@+id/tv_send"
+                android:background="@drawable/bg_btn_c_first_type_shape_transparent" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_comment_top"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/tv_comment_count"
+                style="@style/tv_a_28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:text="@string/send_comment_count" />
+
+
+            <ImageView
+                android:id="@+id/iv_pop_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/t10dp"
+                android:padding="@dimen/t10dp"
+                android:src="@drawable/icon_loginpopup_close" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_diving"
+            android:layout_below="@+id/rl_comment_top"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/hh_color_c" />
+
+        <com.wmlive.hhvideo.widget.refreshrecycler.RefreshRecyclerView
+            android:id="@+id/recycle_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rl_comment"
+            android:layout_below="@+id/view_diving">
+
+        </com.wmlive.hhvideo.widget.refreshrecycler.RefreshRecyclerView>
+
+
+        <TextView
+            android:id="@+id/tv_empty_content"
+            android:layout_width="match_parent"
+            android:text="@string/comment_null"
+            style="@style/tv_c_24"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rl_comment"
+            android:layout_below="@+id/view_diving"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_empty"
+        android:layout_above="@+id/rl_comment_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.wmlive.hhvideo.widget.CustomFontTextView
+        android:id="@+id/tvLevel"
+        android:layout_width="@dimen/t50dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/t30sp"
+        app:cftv_fontFamily="font/dincond_bold.otf"
+        tools:text="1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/t6dp"
+        android:layout_marginTop="@dimen/t15dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/t15dp">
+
+            <ImageView
+                android:id="@+id/ivPic"
+                android:layout_width="@dimen/t85dp"
+                android:layout_height="@dimen/t110dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_home_video_default" />
+
+            <ImageView
+                android:layout_width="@dimen/t27dp"
+                android:layout_height="@dimen/t27dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_home_video_pause" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/t25dp"
+                android:layout_alignBottom="@+id/ivPic"
+                android:layout_alignEnd="@+id/ivPic"
+                android:layout_alignStart="@+id/ivPic"
+                android:background="@drawable/bg_home_shade"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/cornerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/ivPic"
+                android:layout_alignEnd="@+id/ivPic"
+                android:layout_alignStart="@+id/ivPic"
+                android:layout_alignTop="@+id/ivPic"
+                android:background="@drawable/icon_home_corner" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivShadow"
+            android:layout_width="@dimen/t85dp"
+            android:layout_height="@dimen/t15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_shadow3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.wmlive.hhvideo.widget.CustomFontTextView
+            android:id="@+id/tvName"
+            style="@style/tv_dd_32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/t4dp"
+            android:layout_marginEnd="@dimen/t15dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:cftv_fontFamily="font/notosans_bold.ttf"
+            tools:text="标题"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvTopic"
+            style="@style/tv_ccc_22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/t10dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:visibility="gone"
+            tools:text="话题"
+            tools:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/t10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/t12dp"
+                android:layout_height="@dimen/t12dp"
+                android:src="@drawable/icon_home_like_white"
+                android:tint="@color/hh_color_ccc" />
+
+            <TextView
+                android:id="@+id/tvLikeCount"
+                style="@style/tv_cc_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/t4dp"
+                tools:text="2313" />
+
+            <ImageView
+                android:layout_width="@dimen/t12dp"
+                android:layout_height="@dimen/t12dp"
+                android:layout_marginStart="@dimen/t10dp"
+                android:src="@drawable/icon_home_comment_white"
+                android:tint="@color/hh_color_ccc" />
+
+            <TextView
+                android:id="@+id/tvCommentCount"
+                style="@style/tv_cc_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/t4dp"
+                tools:text="2313" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/t15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPeoples"
+                style="@style/tv_cc_22"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lines="1"
+                tools:text="输死" />
+
+            <ImageView
+                android:id="@+id/ivJoin"
+                android:layout_width="@dimen/t90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/t10dp"
+                android:src="@drawable/icon_discover_create" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

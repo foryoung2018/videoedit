@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background_seven_back"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/share_action_sheet_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_background_80_back"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lvReportList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/bg_diving_line"
+            android:dividerHeight="1px"/>
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t44dp"
+            android:layout_marginTop="@dimen/t5dp"
+            android:background="@color/hh_color_d"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/hh_color_a"
+            android:textSize="@dimen/t14sp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="@dimen/t40dp"
+        android:layout_height="@dimen/t40dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/t14dp"
+        android:layout_marginEnd="@dimen/t10dp"
+        android:layout_marginStart="@dimen/t10dp"
+        android:layout_marginTop="@dimen/t14dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_default_male" />
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/tv_d_28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/ivAvatar"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLength="10"
+        tools:text="玩火自焚" />
+
+    <TextView
+        android:id="@+id/tvUnlock"
+        style="@style/tv_e_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/t10dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLength="10"
+        android:text="解除拉黑" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/ivAvatar"
+        android:background="@color/bg_diving_line" />
+</RelativeLayout>

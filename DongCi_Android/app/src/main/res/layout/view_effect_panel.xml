@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:clipChildren="false"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llEffect"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:background="@color/bottom_menu_bg"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <HorizontalScrollView
+            android:layout_width="0dp"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/llEffectPanel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"/>
+
+        </HorizontalScrollView>
+
+        <com.wmlive.hhvideo.heihei.record.widget.EffectItemButton
+            android:id="@+id/btEffectLib"
+            style="@style/effectButtonStyle"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingBottom="4dp"
+            android:paddingTop="9dp"
+            android:drawableTop="@drawable/btn_effect_lib"
+            android:layout_marginRight="2dp"
+            android:text="@string/effect_library"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llEffect"
+        android:background="@color/bottom_menu_bg"
+        android:clipChildren="false"
+        android:orientation="horizontal">
+
+        <com.wmlive.hhvideo.heihei.record.widget.VideoThumbNailView
+            android:id="@+id/viewThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llEffect"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-4dp"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <com.wmlive.hhvideo.heihei.record.widget.EffectRadioButton
+            android:id="@+id/btEffectTime"
+            style="@style/effectButtonStyle"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:drawableTop="@drawable/btn_effect_time"
+            android:shadowColor="@color/transparent_black"
+            android:shadowRadius="5"
+            android:text="@string/effect_time"
+            app:rbUncheckedAlpha="1"/>
+
+        <com.wmlive.hhvideo.heihei.record.widget.EffectRadioButton
+            android:id="@+id/btEffectFilter"
+            style="@style/effectButtonStyle"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:drawableTop="@drawable/btn_effect_filter"
+            android:shadowColor="@color/transparent_black"
+            android:shadowRadius="5"
+            android:text="@string/effect_filter"
+            app:rbUncheckedAlpha="1"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivEffectRevoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_thumbnail"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/t10dp"
+        android:layout_marginEnd="@dimen/t10dp"
+        android:background="@drawable/btn_effect_revoke"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

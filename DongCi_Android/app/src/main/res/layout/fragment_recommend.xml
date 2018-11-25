@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.wmlive.hhvideo.widget.refreshrecycler.RefreshRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="@dimen/t15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants" />
+
+    <LinearLayout
+        android:id="@+id/viewHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <com.wmlive.hhvideo.heihei.personal.widget.ProductTypePanel
+            android:id="@+id/llExtraProductType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            tools:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/llDraftInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/t40dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/t6dp"
+            android:background="@drawable/bg_btn_draft_box"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            tools:visibility="visible">
+
+            <ImageView
+                android:layout_width="@dimen/t30dp"
+                android:layout_height="@dimen/t30dp"
+                android:layout_marginStart="@dimen/t10dp"
+                android:padding="@dimen/t6dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_publish_drafts" />
+
+            <TextView
+                android:id="@+id/tvDraftCount"
+                style="@style/tv_a_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stringDraftCount" />
+
+            <ImageView
+                android:layout_width="@dimen/t24dp"
+                android:layout_height="@dimen/t40dp"
+                android:paddingBottom="@dimen/t14dp"
+                android:paddingLeft="@dimen/t4dp"
+                android:paddingRight="@dimen/t10dp"
+                android:paddingTop="@dimen/t14dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_back_small_white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlUserHomeInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/ivEmptyHint"
+            android:layout_width="@dimen/t120dp"
+            android:layout_height="@dimen/t125dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_profile_deauflt"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/ivBigAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/t44dp"
+            android:background="@color/app_background_80_black"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_default_male"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rlToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t44dp"
+            android:background="#00000000"
+            tools:background="#FFFFFF">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:paddingBottom="@dimen/t14dp"
+                android:paddingEnd="@dimen/t15dp"
+                android:paddingStart="@dimen/t15dp"
+                android:paddingTop="@dimen/t14dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_back"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tvNickname"
+                style="@style/tv_d_34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:alpha="0"
+                android:maxLength="10"
+                tools:alpha="1"
+                tools:text="张大粪"
+                tools:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/llMenus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivMessage"
+                    android:layout_width="@dimen/t40dp"
+                    android:layout_height="@dimen/t40dp"
+                    android:padding="@dimen/t10dp"
+                    android:src="@drawable/icon_home_message"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/ivShare"
+                    android:layout_width="@dimen/t40dp"
+                    android:layout_height="@dimen/t40dp"
+                    android:padding="@dimen/t10dp"
+                    android:src="@drawable/icon_home_share"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/ivAdd"
+                    android:layout_width="@dimen/t40dp"
+                    android:layout_height="@dimen/t40dp"
+                    android:padding="@dimen/t10dp"
+                    android:src="@drawable/icon_profile_add"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/ivSetting"
+                    android:layout_width="@dimen/t40dp"
+                    android:layout_height="@dimen/t40dp"
+                    android:padding="@dimen/t10dp"
+                    android:src="@drawable/icon_profile_setting"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/ivMore"
+                    android:layout_width="@dimen/t40dp"
+                    android:layout_height="@dimen/t40dp"
+                    android:padding="@dimen/t10dp"
+                    android:src="@drawable/ic_report_more"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlFlyHeart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/blockLayerMask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/block_mask_bg"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivBlockBack"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/t44dp"
+            android:paddingBottom="@dimen/t14dp"
+            android:paddingEnd="@dimen/t15dp"
+            android:paddingStart="@dimen/t15dp"
+            android:paddingTop="@dimen/t14dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent"
+            android:text="@string/user_already_block"
+            android:textColor="@color/white"
+            android:textSize="@dimen/t15sp" />
+
+        <TextView
+            android:id="@+id/unblockUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/t20dp"
+            android:background="@color/transparent"
+            android:padding="@dimen/t8dp"
+            android:text="@string/user_unblock"
+            android:textColor="@color/text_color_light_gray"
+            android:textSize="@dimen/t15sp" />
+    </RelativeLayout>
+
+
+    <com.wmlive.hhvideo.heihei.mainhome.widget.RecommendUserPanel
+        android:id="@+id/viewRecommendUsers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/flJoin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_background_color"
+        android:paddingBottom="@dimen/t20dp"
+        android:paddingTop="@dimen/t20dp"
+        android:visibility="invisible"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvJoin"
+            style="@style/tv_a_24"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/t40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_btn_f_first_type_shape"
+            android:drawablePadding="@dimen/t4dp"
+            android:drawableStart="@drawable/icon_music_record"
+            android:gravity="center"
+            android:paddingEnd="@dimen/t20dp"
+            android:paddingStart="@dimen/t20dp"
+            android:text="@string/stringJoinTopic"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+</FrameLayout>
+

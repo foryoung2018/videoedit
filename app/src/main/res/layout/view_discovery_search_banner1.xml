@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlRoot"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/t30dp"
+    android:background="@drawable/bg_btn_b_first20_type_shape">
+
+    <ImageView
+        android:id="@+id/ivTextIcon"
+        android:layout_width="@dimen/t12dp"
+        android:layout_height="@dimen/t12dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/t4dp"
+        android:layout_toLeftOf="@+id/tvHint"
+        android:layout_toStartOf="@+id/tvHint"
+        android:src="@drawable/icon_search"
+        android:tint="@color/hh_color_ccc"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvHint"
+        style="@style/tv_ccc_24"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:text="搜索用户、话题"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivEditIcon"
+        android:layout_width="@dimen/t12dp"
+        android:layout_height="@dimen/t12dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/t14dp"
+        android:layout_marginStart="@dimen/t14dp"
+        android:src="@drawable/icon_search"
+        android:tint="@color/hh_color_b" />
+
+    <EditText
+        android:id="@+id/etInput"
+        style="@style/tv_d_24"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/ivEditIcon"
+        android:layout_toLeftOf="@+id/ivDelete"
+        android:layout_toRightOf="@+id/ivEditIcon"
+        android:layout_toStartOf="@+id/ivDelete"
+        android:background="@null"
+        android:drawablePadding="@dimen/t2sp"
+        android:gravity="left|center_vertical"
+        android:hint="搜索用户、话题"
+        android:imeOptions="actionSearch"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:paddingEnd="@dimen/t10dp"
+        android:paddingLeft="@dimen/t5dp"
+        android:paddingRight="@dimen/t10dp"
+        android:paddingStart="@dimen/t5dp"
+        android:singleLine="true"
+        android:textColorHint="@color/pop_text_gray"
+        android:textCursorDrawable="@drawable/edit_cursor_color" />
+
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="@dimen/t30dp"
+        android:layout_height="@dimen/t30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:padding="@dimen/t7dp"
+        android:src="@drawable/icon_search_delete"
+        android:tint="@color/hh_color_c"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/viewBottomLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t1dp"
+        android:layout_alignEnd="@+id/ivDelete"
+        android:layout_alignStart="@+id/ivEditIcon"
+        android:layout_below="@+id/etInput"
+        android:layout_marginEnd="@dimen/t7dp"
+        android:background="@color/bg_diving_line"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.wmlive.hhvideo.widget.RatioLayout
+        android:id="@+id/rlCover"
+        android:layout_width="@dimen/t135dp"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/t6dp"
+        android:paddingStart="@dimen/t6dp"
+        fresco:ratio="0.75">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/ivCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImage="@drawable/bg_video_default_4_3"
+            fresco:placeholderImageScaleType="centerCrop"
+            fresco:roundWithOverlayColor="@color/hh_color_a"
+            fresco:roundedCornerRadius="@dimen/t5dp" />
+
+        <include layout="@layout/view_discovery_more" />
+    </com.wmlive.hhvideo.widget.RatioLayout>
+
+</FrameLayout>
+

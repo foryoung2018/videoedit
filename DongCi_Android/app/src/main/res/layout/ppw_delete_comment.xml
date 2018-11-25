@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/hh_color_bb"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvDelete"
+        style="@style/tv_d_30"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t44dp"
+        android:layout_marginBottom="@dimen/t8dp"
+        android:background="@color/hh_color_a"
+        android:gravity="center"
+        android:text="@string/comment_delete" />
+
+    <TextView
+        android:id="@+id/tvCancel"
+        style="@style/tv_d_30"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t44dp"
+        android:background="@color/hh_color_a"
+        android:gravity="center"
+        android:text="@string/comment_delete_cancel" />
+
+</LinearLayout>

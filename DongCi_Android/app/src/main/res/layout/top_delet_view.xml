@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fr_delete"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/t60dp"
+    android:background="@color/bg_black"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/icon_video_delete_background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/icon_video_delete_nor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t3dp"
+            android:gravity="center"
+            android:text="@string/comment_delete"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+</RelativeLayout>

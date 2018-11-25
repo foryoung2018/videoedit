@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!--圆角-->
+    <corners android:radius="@dimen/radius_btn_first_type" />
+    <!--填充-->
+    <stroke
+        android:width="@dimen/t1dp"
+        android:color="@color/hh_color_cc" />
+
+</shape>

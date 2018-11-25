@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:maxHeight="400dp"
+    android:maxWidth="400dp"
+    android:background="@drawable/bg_toast_shape"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_toast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/t40dp"
+            android:layout_height="@dimen/t40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_toast"
+        style="@style/tv_a_28"
+        android:layout_width="@dimen/t120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/t14dp"
+        android:gravity="center"
+        tools:text="消息标题"/>
+
+    <TextView
+        android:id="@+id/tv_toast_second"
+        style="@style/tv_a_28"
+        android:layout_width="@dimen/t120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/t14dp"
+        android:gravity="center"
+        tools:text="消息内容"/>
+
+</LinearLayout>
+

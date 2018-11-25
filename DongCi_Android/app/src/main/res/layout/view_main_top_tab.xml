@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/rlBell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/llTitleTab"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/llTitleTab"
+        android:layout_gravity="end"
+        android:background="@color/hh_color_a">
+
+        <ImageView
+            android:id="@+id/ivBell"
+            android:layout_width="@dimen/t36dp"
+            android:layout_height="@dimen/t36dp"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/t10dp"
+            android:padding="@dimen/t8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_home_discover" />
+
+        <TextView
+            android:id="@+id/tvMessageCount"
+            android:layout_width="@dimen/t6dp"
+            android:layout_height="@dimen/t6dp"
+            android:layout_alignEnd="@+id/ivBell"
+            android:layout_alignTop="@+id/ivBell"
+            android:layout_marginEnd="@dimen/t2dp"
+            android:layout_marginTop="@dimen/t9dp"
+            android:background="@drawable/shape_unread_red"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llTitleTab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/t20dp"
+        android:layout_toStartOf="@+id/rlBell"
+        android:background="@color/hh_color_a"
+        android:gravity="center_vertical|start"
+        android:orientation="horizontal">
+
+        <com.wmlive.hhvideo.widget.CustomFontTextView
+            android:id="@+id/tvRecommend"
+            style="@style/tv_b_72"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/t4dp"
+            android:layout_marginEnd="@dimen/t10dp"
+            android:layout_marginStart="@dimen/t15dp"
+            android:layout_marginTop="@dimen/t4dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/recommend_video"
+            app:autoSizeTextType="uniform"
+            app:cftv_fontFamily="font/notosans_bold.ttf" />
+
+        <View
+            android:id="@+id/viewLeftDot"
+            android:layout_width="@dimen/t3dp"
+            android:layout_height="@dimen/t3dp"
+            android:layout_marginEnd="@dimen/t4dp"
+            android:layout_marginStart="@dimen/t4dp"
+            android:background="@drawable/bg_black_circle_dot" />
+
+        <com.wmlive.hhvideo.widget.CustomFontTextView
+            android:id="@+id/tv_discory"
+            style="@style/tv_b_72"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/t4dp"
+            android:layout_marginEnd="@dimen/t10dp"
+            android:layout_marginStart="@dimen/t10dp"
+            android:layout_marginTop="@dimen/t4dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/discover"
+            app:autoSizeTextType="uniform"
+            app:cftv_fontFamily="font/notosans_bold.ttf" />
+
+        <View
+            android:id="@+id/viewRightDot"
+            android:layout_width="@dimen/t3dp"
+            android:layout_height="@dimen/t3dp"
+            android:layout_marginEnd="@dimen/t4dp"
+            android:layout_marginStart="@dimen/t4dp"
+            android:background="@drawable/bg_black_circle_dot"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <com.wmlive.hhvideo.widget.CustomFontTextView
+            android:id="@+id/tvLatest"
+            style="@style/tv_b_72"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/t4dp"
+            android:layout_marginEnd="@dimen/t10dp"
+            android:layout_marginStart="@dimen/t10dp"
+            android:layout_marginTop="@dimen/t4dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/new_video"
+            android:visibility="gone"
+            app:cftv_fontFamily="font/notosans_bold.ttf"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>

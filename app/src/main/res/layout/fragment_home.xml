@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.wmlive.hhvideo.widget.MainTopTabView
+                android:id="@+id/mbTopTabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.wmlive.hhvideo.widget.UnScrollViewPager
+                android:id="@+id/vpViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.wmlive.hhvideo.widget.MainBottomTabView
+                android:id="@+id/mbBottomTabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/new_function_guide_rl"
+            android:layout_width="170dp"
+            android:layout_height="84dp"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/t60dp"
+            android:background="@drawable/bg_home_guide">
+
+            <RelativeLayout
+                android:id="@+id/add_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/t5dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/top_tip_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/t5dp"
+                    android:text="点击「+」开拍"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/t14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bottom_tip_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_tip_tv"
+                    android:textColor="@color/black"
+                    android:text="你的第一个创意MV"
+                    android:textSize="@dimen/t12sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/colse_iv"
+                android:padding="@dimen/t10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon_home_tips_close" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ViewStub
+        android:id="@+id/vs_main_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/activity_main_guide" />
+
+    <com.wmlive.hhvideo.widget.FloatTextView
+        android:id="@+id/tvSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/t200dp"
+        android:background="@color/app_background_seven_back"
+        android:gravity="center"
+        android:padding="@dimen/t8dp"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        tools:text="切换开关"
+        tools:visibility="visible" />
+
+    <com.wmlive.hhvideo.widget.SelectStepPanel
+        android:id="@+id/viewSelectStep"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.wmlive.hhvideo.heihei.mainhome.widget.CommentPanel
+        android:id="@+id/viewCommentPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</RelativeLayout>

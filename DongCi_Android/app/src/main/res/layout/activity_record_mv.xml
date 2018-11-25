@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_black">
+
+    <RelativeLayout
+        android:id="@+id/rlPreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/act_record_mv_mvlist"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/t10dp"
+        android:layout_marginRight="@dimen/t10dp"
+        android:layout_marginBottom="@dimen/t10dp"
+        >
+
+        <FrameLayout
+            android:id="@+id/sdkview_framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"></FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/act_record_mv_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <com.wmlive.hhvideo.heihei.record.widget.RecordOptionPanelMV
+        android:id="@+id/recordOptionPanelMv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_black" />
+
+    <com.wmlive.hhvideo.heihei.record.widget.ExtBtnRecord
+        android:id="@+id/btRecorderMv"
+        android:layout_width="@dimen/t76dp"
+        android:layout_height="@dimen/t76dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+        android:padding="@dimen/t6dp"
+        android:src="@drawable/btn_recorder_start" />
+
+    <com.wmlive.hhvideo.heihei.record.widget.CountdownView
+        android:id="@+id/countdownViewMv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/act_record_mv_mvlist"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/llSpeedPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recordOptionPanelMv"
+        android:layout_marginBottom="@dimen/t10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.wmlive.hhvideo.heihei.record.widget.ExtRadioGroup
+            android:id="@+id/extSpeedPanel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t30dp"
+            android:layout_above="@+id/recordOptionPanel" />
+
+    </LinearLayout>
+
+    <com.wmlive.hhvideo.widget.CustomFontTextView
+        android:id="@+id/record_action_tips_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/t40dp"
+        android:layout_above="@+id/act_record_mv_mvlist"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/t20dp"
+        android:background="@drawable/bg_record_mv_tips_shape"
+        android:gravity="center"
+        android:paddingLeft="@dimen/t20dp"
+        android:paddingRight="@dimen/t20dp"
+        android:singleLine="true"
+        android:text=""
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:cftv_fontFamily="font/dincond_bold.otf" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/act_record_mv_mvlist"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t71dp"
+        android:layout_marginLeft="@dimen/t10dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="@dimen/t6dp"
+        android:layout_above="@+id/recordOptionPanelMv" />
+
+    <RelativeLayout
+        android:id="@+id/can_not_click_mvlist_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t71dp"
+        android:layout_above="@+id/recordOptionPanelMv"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/count_down_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/act_record_mv_mvlist"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/t22dp"
+        android:background="@drawable/bg_record_mv_tips_shape"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/filter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/act_record_mv_mvlist"
+        android:background="@color/bg_mv_filter_color"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <com.wmlive.hhvideo.heihei.record.widget.LocateCenterHorizontalView
+            android:id="@+id/recordFilterSelector"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t40dp"
+            android:overScrollMode="never" />
+
+        <TextView
+            android:id="@+id/filterIndicator"
+            android:layout_width="3dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="-8dp"
+            android:layout_below="@+id/recordFilterSelector"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/t15dp"
+            android:background="@drawable/filter_selector_indicator" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/act_record_mv_anmi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/t50dp"
+        android:layout_marginBottom="@dimen/t76dp"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
+
+

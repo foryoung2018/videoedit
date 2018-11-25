@@ -1,0 +1,3 @@
+# 此文件为应用渠道配置文件, 单独打包其他渠道时使用, 每行一个渠道号，修改后重构工程
+# 渠道如下 (develop, _360, baidu, chuizi, flyme, guanwang, huawei, lenovo, leshi, ppzs, qita, vivo, wandoujia, xiaomi, yyb), 使用如下
+# guanwang

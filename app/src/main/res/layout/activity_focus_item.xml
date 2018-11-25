@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/t40dp"
+            android:layout_height="@dimen/t40dp"
+            android:layout_marginStart="@dimen/t10dp">
+
+            <ImageView
+                android:id="@+id/iv_focus_item_head"
+                android:layout_width="@dimen/t40dp"
+                android:layout_height="@dimen/t40dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_default_male" />
+
+            <ImageView
+                android:id="@+id/ivVerifyIcon"
+                android:layout_width="@dimen/t16dp"
+                android:layout_height="@dimen/t16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                tools:src="@color/hh_color_i"
+                tools:visibility="visible" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_focus_item_name"
+            style="@style/tv_d_28"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/t10dp"
+            android:layout_marginStart="@dimen/t10dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/t14sp"
+            tools:text="光小明" />
+
+        <TextView
+            android:id="@+id/tvFollow"
+            style="@style/tv_cc_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/t12dp"
+            android:layout_marginStart="@dimen/t5dp"
+            android:background="@drawable/bg_btn_c_follow_shape"
+            android:gravity="center"
+            android:paddingBottom="@dimen/t3dp"
+            android:paddingEnd="@dimen/t12dp"
+            android:paddingStart="@dimen/t12dp"
+            android:paddingTop="@dimen/t3dp"
+            android:text="@string/stringFollow"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_focus_item_state"
+            android:layout_width="@dimen/t28dp"
+            android:layout_height="@dimen/t28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/t12dp"
+            android:padding="@dimen/t5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_profile_other_add"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/diving_line_height"
+        android:background="@color/bg_diving_line" />
+</LinearLayout>

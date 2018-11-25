@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cn.wmlive.hhvideo"
+    android:installLocation="internalOnly">
+
+    <permission
+        android:name="cn.wmlive.hhvideo.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- 小米通道相关权限 -->
+    <permission
+        android:name="cn.wmlive.hhvideo.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signatureOrSystem" />
+    <permission
+        android:name="cn.wmlive.hhvideo.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Danger Permission  start -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <!-- end -->
+
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.CHANGE_CONFIGURATION"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 录制必要权限开始 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- 需要支持后台或休眠后保存输出时，需添加的权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="cn.wmlive.hhvideo.permission.MIPUSH_RECEIVE" />
+    <uses-permission android:name="cn.wmlive.hhvideo.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.wmlive.hhvideo.DCApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:persistent="true"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+
+        <!-- ==========================以下是动次的Activity========================== -->
+
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.splash.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <data android:scheme="hhvideo" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 主页面 -->
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.mainhome.activity.MainActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|screenSize|locale|navigation|keyboard"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.discovery.activity.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.subject.SubjectSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.subject.SubjectAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.personal.activity.PersonalInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.personal.activity.FocusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.personal.activity.FansActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.personal.activity.LocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.personal.activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.personal.activity.DraftBoxActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.personal.activity.PhotoPicketActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.personal.activity.PhotoCutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.personal.activity.AddFriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.login.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.record.activity.RecordActivitySdk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.record.activity.PublishActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.record.activity.PublishMvActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.record.activity.EditVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.record.activity.EditProductionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.record.activity.SelectFrameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.loopback.LoopbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.loopback.LoopBackTestAct"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.example.loopback.AudioTestService" />
+
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.discovery.activity.SearchVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.record.activity.TrimVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.discovery.activity.RecommendUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.personal.activity.UserHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.mainhome.activity.VideoListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.personal.activity.UserAccountEarningsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.discovery.activity.SearchMusicVideoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.personal.activity.BlankListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.personal.activity.WebViewActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="cn.wmlive.hhvideo.webpage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="hhvideo" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.personal.activity.DecibelListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.message.activity.IMMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.mainhome.activity.ContactActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.mainhome.activity.MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.mainhome.activity.DiscoveryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.record.activity.LocalPublishActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.mainhome.activity.LatestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.mainhome.activity.VideoDetailListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTrans"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.mainhome.activity.TopListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.mainhome.activity.DiscoverMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.record.activity.EditVideoGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.wmlive.hhvideo.heihei.record.activity.LocalVideoTrimActivity" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.personal.activity.CheckNetWorkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.personal.activity.CheckNetDetailsActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- ==========================以上是动次的Activity========================== -->
+        <!-- ==========================以上是动次的Activity========================== -->
+
+
+        <!-- start weixin -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/DCAppTheme.WXTheme" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/DCAppTheme.WXTheme" />
+        <!-- end weixin -->
+
+
+        <!-- V3.0.9及以上版本需配置 -->
+        <activity
+            android:name="com.alibaba.sdk.android.push.keeplive.PushExtActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|navigation|keyboard"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:finishOnTaskLaunch="false"
+            android:launchMode="singleInstance"
+            android:process=":channel"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.wmlive.hhvideo.push.PopupPushActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <!-- end aliYun push -->
+
+
+        <!-- start alipay -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- end alipay -->
+
+
+        <!-- QQ分享和登录的配置 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1106135591" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- QQ分享和登录的配置 -->
+
+
+        <!-- 魔窗AppId -->
+        <meta-data
+            android:name="MW_APPID"
+            android:value="LZMXW2SAVVMIJMOS1YBQBZ6RAJYN14QN" />
+
+        <!-- 高德地图 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="6d454c4f4525e8b10a4fa5f15d5ad87d" />
+
+        <!-- ShareSDK -->
+        <meta-data
+            android:name="Mob-AppKey"
+            android:value="1e84f04dbba86" />
+        <meta-data
+            android:name="Mob-AppSecret"
+            android:value="83ecf572dd416aa73eed7e2a34f71d44" />
+        <!-- end ShareSDK -->
+
+
+        <!-- 百度升级 -->
+        <meta-data
+            android:name="BDAPPID"
+            android:value="9797088" />
+        <meta-data
+            android:name="BDAPPKEY"
+            android:value="H1QtXAgAkBYTOZ7iV76AvHstXQHeuC6F" />
+
+        <!-- start aliYun push -->
+        <meta-data
+            android:name="com.alibaba.app.appkey"
+            android:value="24524464" /> <!-- 请填写你自己的- appKey -->
+        <meta-data
+            android:name="com.alibaba.app.appsecret"
+            android:value="e824bf69626a886c9c9aa640c50db5c4" /> <!-- 请填写你自己的appSecret -->
+
+        <receiver
+            android:name="com.wmlive.hhvideo.common.receiver.NetWorkStatusReceiver"
+            android:enabled="false"
+            android:exported="false" />
+
+        <!-- 消息接收监听器 （用户可自主扩展） -->
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.taobao.taobao" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
+            android:exported="false" />
+
+        <service
+            android:name="com.alibaba.sdk.android.push.AgooFirebaseInstanceIDService"
+            android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.alibaba.sdk.android.push.AgooFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.wmlive.hhvideo.service.GiftService"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.wmlive.hhvideo.push.AliYunPushReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_OPENED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_REMOVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.taobao.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.sdk.android.push.RECEIVE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.taobao.accs.EventReceiver"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.taobao.accs.ServiceReceiver"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.START_FROM_AGOO" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.alibaba.sdk.android.push.SystemEventReceiver"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.taobao.agoo.AgooCommondReceiver"
+            android:exported="true"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="cn.wmlive.hhvideo.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- service -->
+        <service android:name="com.wmlive.hhvideo.service.DCService" />
+        <!-- job service -->
+        <service
+            android:name="com.wmlive.hhvideo.service.DcJobService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <!-- 下载文件的IntentService -->
+        <service android:name="com.wmlive.hhvideo.utils.download.Download" />
+        <service
+            android:name="com.wmlive.hhvideo.utils.download.FileDownload"
+            android:enabled="true"
+            android:exported="true" />
+
+        <!-- 高德地图服务 -->
+        <service android:name="com.amap.api.location.APSService" />
+        <service android:name="com.wmlive.hhvideo.service.DcWebSocketService" />
+
+        <!-- Push SDK 相关组件，required -->
+        <!-- 消息接收服务 -->
+        <service
+            android:name="com.alibaba.sdk.android.push.MsgService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.alibaba.sdk.android.push.NOTIFY_ACTION" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.alibaba.sdk.android.push.channel.CheckService"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="com.alibaba.sdk.android.push.CHECK_SERVICE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.taobao.accs.ChannelService"
+            android:exported="true"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.SERVICE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.taobao.accs.ChannelService$KernelService"
+            android:exported="false"
+            android:process=":channel" />
+        <service
+            android:name="com.taobao.accs.data.MsgDistributeService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="org.android.agoo.accs.AgooService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.alibaba.sdk.android.push.AliyunPushIntentService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.alibaba.sdk.android.push.channel.TaobaoRecvService"
+            android:exported="true"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="org.android.agoo.client.MessageReceiverService" />
+            </intent-filter>
+        </service>
+        <!-- V3.0.7及以上版本需配置 -->
+        <service
+            android:name="com.alibaba.sdk.android.push.channel.KeepChannelService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":channel" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="cn.wmlive.hhvideo.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/bdp_update_filepaths" />
+        </provider>
+
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.record.activity.SelectFrameActivity2"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_select_frame2"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name="com.wmlive.hhvideo.heihei.record.activity.TestAct" />
+
+        <service
+            android:name="com.wmlive.hhvideo.heihei.record.service.PublishBGService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name="com.wmlive.hhvideo.heihei.record.service.PublishMvBGService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.quickcreative.ChooseStyle4QuickActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wmlive.hhvideo.heihei.record.activity.RecordMvActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

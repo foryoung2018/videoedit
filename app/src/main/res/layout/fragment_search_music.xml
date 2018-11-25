@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabMusic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t46dp"
+        android:fillViewport="false"
+        android:visibility="gone"
+        app:tabIndicatorColor="@color/hh_color_f"
+        app:tabIndicatorHeight="@dimen/t2dp"
+        app:tabMaxWidth="@dimen/t120dp"
+        app:tabMinWidth="@dimen/t40dp"
+        app:tabMode="scrollable"
+        app:tabPadding="@dimen/t9dp"
+        app:tabPaddingEnd="@dimen/t9dp"
+        app:tabPaddingStart="@dimen/t9dp"
+        app:tabSelectedTextColor="@color/hh_color_a"
+        app:tabTextAppearance="@style/tabLayoutTextStyle"
+        app:tabTextColor="@color/hh_color_b" />
+
+    <include layout="@layout/include_diving_line" />
+
+    <com.wmlive.hhvideo.widget.refreshrecycler.RefreshRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/t4dp"
+        android:layout_weight="1" />
+
+    <View
+        android:id="@+id/viewBlank"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+</LinearLayout>

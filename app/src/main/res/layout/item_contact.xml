@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvFocusLabel"
+        style="@style/tv_b_24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/t10dp"
+        android:layout_marginTop="@dimen/t8dp"
+        android:text="我关注的人"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/t10dp"
+        android:layout_marginTop="@dimen/t10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/t40dp"
+            android:layout_height="@dimen/t40dp"
+            android:layout_marginEnd="@dimen/t10dp"
+            android:layout_marginStart="@dimen/t10dp">
+
+            <ImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="@dimen/t40dp"
+                android:layout_height="@dimen/t40dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_default_male" />
+
+            <ImageView
+                android:id="@+id/ivVerifyIcon"
+                android:layout_width="@dimen/t16dp"
+                android:layout_height="@dimen/t16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                tools:src="@color/hh_color_i"
+                tools:visibility="visible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/tv_d_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLength="10"
+            tools:text="玩火自焚" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/bg_diving_line" />
+</LinearLayout>

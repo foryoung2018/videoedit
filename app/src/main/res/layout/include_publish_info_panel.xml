@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llInfoPanel"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"
+        tools:background="@color/bg_black">
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/t15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/t15dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingTop="1dp">
+
+            <EditText
+                android:id="@+id/etDesc"
+                style="@style/tv_a_28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/t4dp"
+                android:layout_toStartOf="@+id/llAddTopic"
+                android:background="@null"
+                android:hint="@string/stringAddDesc"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColorHint="@color/pop_text_gray" />
+
+            <LinearLayout
+                android:id="@+id/llAddTopic"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/t15dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/t4dp"
+                android:paddingRight="@dimen/t2dp"
+                android:paddingTop="@dimen/t4dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/t6dp"
+                    android:src="@drawable/icon_video_publish_topic" />
+
+                <TextView
+                    android:id="@+id/tvTopicLabel"
+                    style="@style/tv_a_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="14"
+                    android:paddingEnd="@dimen/t3dp"
+                    android:paddingStart="@dimen/t3dp"
+                    android:text="@string/stringAddTopic" />
+
+                <ImageView
+                    android:id="@+id/ivDeleteTopic"
+                    android:layout_width="@dimen/t12dp"
+                    android:layout_height="@dimen/t12dp"
+                    android:layout_marginEnd="@dimen/t6dp"
+                    android:src="@drawable/icon_video_release_close_1"
+                    android:background="@drawable/bg_add_topic"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/t15dp">
+
+            <CheckBox
+                android:id="@+id/cbSaveLocal"
+                style="@style/tv_a_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:button="@drawable/bg_save_local_selector"
+                android:padding="@dimen/t6dp"
+                android:text="@string/stringSaveLocal"
+                android:visibility="invisible"
+                tools:visibility="visible" />
+
+            <CheckBox
+                android:id="@+id/cbAllow"
+                style="@style/tv_a_24"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:button="@drawable/bg_save_local_selector"
+                android:checked="true"
+                android:padding="@dimen/t6dp"
+                android:text="@string/stringAllowJoinCreation"
+                android:visibility="invisible"
+                tools:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/llSaveDraft"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/t8dp"
+                android:layout_marginStart="@dimen/t20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_save_to_draft"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/t10dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/t20dp"
+                    android:layout_height="@dimen/t20dp"
+                    android:layout_marginEnd="@dimen/t3dp"
+                    android:src="@drawable/icon_publish_drafts" />
+
+                <TextView
+                    style="@style/tv_a_28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stringSaveToDraft" />
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/llPublish"-->
+            <!--android:layout_width="120dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="@dimen/t10dp"-->
+            <!--android:layout_marginStart="@dimen/t50dp"-->
+            <!--android:background="@drawable/bg_publish_product"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="@dimen/t10dp">-->
+
+            <!--&lt;!&ndash; <ImageView-->
+
+            <!--android:layout_width="@dimen/t20dp"-->
+            <!--android:layout_height="@dimen/t20dp"-->
+            <!--android:layout_marginEnd="@dimen/t3dp"-->
+            <!--android:src="@drawable/icon_publish_check" />&ndash;&gt;-->
+
+            <TextView
+                android:id="@+id/tv_publish"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bg_publish_product"
+                android:gravity="center"
+                android:text="@string/stringPublishProduct"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            <!--</LinearLayout>-->
+        </LinearLayout>
+    </LinearLayout>
+</merge>

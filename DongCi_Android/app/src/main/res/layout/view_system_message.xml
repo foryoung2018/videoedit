@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:background="@color/app_background_seven_back">
+
+
+    <LinearLayout
+        android:id="@+id/llToastView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/t30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/clImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:minHeight="@dimen/t200dp"
+                android:minWidth="@dimen/t200dp"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="@dimen/t40dp"
+                android:layout_height="@dimen/t40dp"
+                app:layout_constraintRight_toRightOf="@+id/ivImage"
+                app:layout_constraintTop_toTopOf="@+id/ivImage" />
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tvToastTitle"
+            style="@style/tv_d_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t8dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="@dimen/t8dp"
+            android:visibility="gone"
+            tools:text="消息标题"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvToastDesc"
+            style="@style/tv_d_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/t8dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:padding="@dimen/t8dp"
+            android:visibility="gone"
+            tools:text="消息内容"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llDialogView"
+        android:layout_width="@dimen/t270dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_dialog"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvDialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t22dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/hh_color_d"
+            android:textSize="@dimen/t15sp"
+            tools:text="title"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvDialogDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/t22dp"
+            android:layout_marginLeft="@dimen/t24dp"
+            android:layout_marginRight="@dimen/t24dp"
+            android:layout_marginTop="@dimen/t5dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="3"
+            android:textColor="@color/hh_color_d"
+            android:textSize="@dimen/t15sp"
+            tools:text="茶农sdfs" />
+
+        <View
+            android:id="@+id/topLine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/diving_line_height"
+            android:background="@color/bg_diving_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvLeft"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/t44dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/hh_color_g"
+                android:textSize="@dimen/t14sp"
+                tools:text="取消" />
+
+            <View
+                android:id="@+id/leftLine"
+                android:layout_width="@dimen/diving_line_height"
+                android:layout_height="@dimen/t44dp"
+                android:background="@color/bg_diving_line"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tvCenter"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/t44dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/hh_color_g"
+                android:textSize="@dimen/t14sp"
+                tools:text="起飞" />
+
+            <View
+                android:id="@+id/rightLine"
+                android:layout_width="@dimen/diving_line_height"
+                android:layout_height="@dimen/t44dp"
+                android:background="@color/bg_diving_line" />
+
+            <TextView
+                android:id="@+id/tvRight"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/t44dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/hh_color_g"
+                android:textSize="@dimen/t14sp"
+                tools:text="确定" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

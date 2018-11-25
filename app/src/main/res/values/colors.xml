@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffffff</color>
+    <color name="colorPrimaryDark">#ff212427</color>
+    <color name="black_bar">#ff000000</color>
+    <color name="colorAccent">@color/hh_color_e</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_55">#55000000</color>
+    <color name="loacal_upload">#1A1D1F</color>
+    <color name="colorToolbarTitleBackground">@color/colorPrimary</color>
+    <color name="colorToolbarTitleText">@color/hh_color_d</color>
+
+    <!-- 白色 -->
+
+    <color name="hh_color_aa">#FFAAAAAA</color>
+    <color name="hh_color_a">#ffffffff</color>
+    <color name="hh_color_a_50">#7fffffff</color>
+
+
+    <color name="hh_color_a_five">#B3ffffff</color>
+
+
+    <!-- 浅灰色 -->
+    <color name="hh_color_b">#ff949ea8</color>
+    <!-- 深灰色 -->
+    <color name="hh_color_c">#FF494D55</color>
+    <color name="hh_color_ccc">#ff777777</color>
+    <color name="hh_color_777">#777777</color>
+    <color name="hh_color_ccc10">#16777777</color>
+
+    <color name="hh_color_ccc60">#88777777</color>
+
+    <color name="hh_color_ccc16">#16777777</color>
+    <color name="hh_color_cc">#ff888888</color>
+    <color name="hh_color_kk">#ff999999</color>
+    <color name="hh_color_cc1">#FFCCCCCC</color>
+    <!-- 弱提示 -->
+    <color name="hh_color_d">#ff212427</color>
+
+    <color name="hh_color_dd">#ff000000</color>
+    <!-- 蓝色 -->
+    <color name="hh_color_e">#ff2ab4fb</color>
+    <!-- 粉红色 -->
+    <color name="hh_color_f">#FFFF2120</color>
+    <color name="hh_color_ff">#FFF96666</color>
+    <!-- 浅绿色 -->
+    <color name="hh_color_g">#ff17ee8b</color>
+    <!-- 橘黄色 -->
+    <color name="hh_color_h">#ffff8828</color>
+    <color name="hh_color_h1">#F8F8F8</color>
+    <!--黄色-->
+    <color name="hh_color_i">#fffaeb82</color>
+    <color name="hh_color_i1">#FFFFDF30</color>
+
+    <color name="hh_color_k">#FF0090FF</color>
+    <color name="hh_color_k_80">#DD0090FF</color>
+    <color name="hh_color_k_90">#EE0090FF</color>
+
+    <color name="hh_color_b_20">#33949ea8</color>
+    <color name="hh_color_b_50">#80949ea8</color>
+    <color name="hh_color_b_80">#cc949ea8</color>
+    <color name="hh_color_bb">#FFEAEBED</color>
+
+    <color name="hh_color_level2">#B5CBD9</color>
+    <color name="hh_color_level3">#E5AB7F</color>
+    <color name="hh_color_level">#C7C7C7</color>
+
+    <!-- 特殊背景色 20%透明-->
+    <color name="hh_color_sec_bg">#33000000</color>
+
+    <!--分割线-->
+    <color name="bg_diving_line">#ffEBEBEB</color>
+
+    <color name="bg_diving_line2">#ff313539</color>
+
+    <!--大背景-->
+    <color name="app_background_color">@color/colorPrimary</color>
+
+    <!--特殊背景20%不透明-->
+    <color name="app_background_other_back">#33000000</color>
+
+    <!--特殊背景20%不透明-->
+
+    <color name="app_background_other_white">#33ffffff</color>
+    <color name="app_background_20_white">#33000000</color>
+
+    <!--黑色40%不透明-->
+    <color name="app_40_black">#64000000</color>
+    <!--黑色50%不透明-->
+    <color name="app_background_80_black">#88000000</color>
+
+    <!--白的70%透明-->
+    <color name="hh_color_a70">#BBffffff</color>
+    <color name="hh_color_c70">#BB494d55</color>
+
+    <!--特殊背景10%不透明-->
+    <color name="app_background_10_white">#1affffff</color>
+
+    <!--特殊背景20%不透明-->
+    <color name="app_background_50_white">#88ffffff</color>
+
+    <!--特殊背景95%不透明-->
+    <color name="app_background_95_white">#EE212427</color>
+
+    <!--特殊文字60%不透明-->
+    <color name="app_font_transparent_white">#99ffffff</color>
+    <color name="app_blank_60">#99000000</color>
+
+    <!--特殊背景80%不透明 黑色-->
+    <color name="app_background_80_back">#CC000000</color>
+
+
+    <!--特殊背景80%不透明 黑色-->
+    <color name="app_background_eight_white">#CCFFFFFF</color>
+
+    <!--特殊背景85%不透明 黑色-->
+    <color name="app_background_transparent85">#DD000000</color>
+
+    <!--特殊背景85%不透明 黑色-->
+    <color name="app_background_transparent90">#DF000000</color>
+
+    <!--特殊背景70%不透明 黑色-->
+    <color name="app_background_seven_back">#BB000000</color>
+
+    <!--特殊背景20%不透明 黑色-->
+    <color name="app_background_two_back">#33000000</color>
+
+    <!--透明度50-->
+    <color name="app_half_color_value">#80949ea8</color>
+
+    <!--接通等-->
+    <color name="app_connect_color">#ff4dce62</color>
+
+    <!--Dialog 底部蒙版 70 不透明-->
+    <color name="app_dialog_mengban_color">#B3000000</color>
+
+    <!--首页蒙板颜色-->
+    <color name="main_cover_bottom">#33000000</color>
+    <color name="main_cover_top">#44000000</color>
+
+    <!--background-->
+    <color name="bg_white">#ffffff</color>
+    <color name="bg_light_gray">#949ea8</color>
+    <color name="bg_dark_gray">#494d55</color>
+    <color name="bg_blue">#2ab4fb</color>
+    <color name="bg_magenta">#fc1c8f</color>
+    <color name="bg_light_green">#12ea72</color>
+    <color name="bg_orange">#ff8828</color>
+    <color name="bg_light_yellow">#faeb82</color>
+    <color name="bg_rose">#f65177</color>
+    <color name="bg_black">#000000</color>
+    <color name="bg_hang_up">#f96666</color>
+    <color name="bg_unread">#ff3f3e</color>
+    <color name="bg_frame_view_bg">#242320</color>
+
+    <color name="input_index">#2ab4fb</color>
+    <color name="bg_cover_light_gray">#11949ea8</color>
+    <color name="bg_container_color">#ff1a1d1f</color>
+
+    <!--text color-->
+    <color name="text_color_white">#ffffff</color>
+    <color name="text_color_light_gray">#949ea8</color>
+    <color name="text_color_dark_gray">#494d55</color>
+
+    <!-- 男性 -->
+    <color name="hh_color_male">#ff85ced5</color>
+    <!-- 女性 -->
+    <color name="hh_color_female">#fff99b9b</color>
+
+    <!--上传视频-->
+    <color name="bg_upload_mask_color">#66ffffff</color>
+
+
+    <!--首页顶部蒙版-->
+    <color name="title_bg_start">#4D000000</color>
+    <color name="title_bg_end">#00000000</color>
+
+
+    <!--视频页底部蒙版-->
+    <color name="video_cover_bg_start">#00000000</color>
+    <color name="video_cover_bg_end">#66000000</color>
+
+    <!--发现蒙版-->
+    <color name="video_explosion_bg_start">#00000000</color>
+    <color name="video_explosion_bg_end">#88000000</color>
+
+
+    <color name="recorder_scale">#FF2120</color>
+    <color name="delete_mark">#FF2120</color>
+    <color name="green">#17ee8b</color>
+    <color name="transparent_green">#5017EE8B</color>
+    <color name="bg_crop_music">#0C6641</color>
+    <color name="bg_crop_music_shadow">#500C6641</color>
+    <color name="red">#E5004F</color>
+    <color name="mainbg">#2A2E31</color>
+    <color name="white">#FFFFFF</color>
+    <color name="border_no_checked">#888888</color>
+
+    <color name="black">#ff000000</color>
+    <color name="block_mask_bg">#FF000000</color>
+
+
+    <color name="white_divider">#33ffffff</color>
+    <color name="main_orange_old">#f87a00</color>
+    <color name="main_orange">#ffd500</color>
+    <color name="main_orange_transparent_66">#b2ffd500</color>
+    <color name="main_orange_transparent_50">#b2ffd500</color>
+    <color name="edit_text_gray">#545454</color>
+
+    <!-- <color name="apk_download_progressbar_color">#11a9e8</color> -->
+    <color name="maincolor">#ffff0000</color>
+    <color name="mainmaincolor">#b60000</color>
+    <color name="tab_item_checked_text_color">#FFFFFF</color>
+
+    <!-- 半透明黑色  50透明度 0000000 黑色码 -->
+    <color name="transparent_black">#80000000</color>
+    <color name="transparent_black20">#33000000</color>
+    <color name="transparent_black50">#88000000</color>
+    <color name="transparent_black60">#99000000</color>
+    <color name="transparent_black70">#B3000000</color>
+    <color name="transparent_black80">#CC000000</color>
+    <color name="transparent_black90">#E6000000</color>
+    <color name="transparent_black95">#F2000000</color>
+    <color name="transparent_white30">#4DFFFFFF</color>
+    <color name="thumb_checked">#B213cadb</color>
+    <!-- 半透明 50 白色 -->
+    <color name="transparent_white">#88FFFFFF</color>
+    <color name="transparent_white20">#33FFFFFF</color>
+    <color name="transparent80_white">#CCFFFFFF</color>
+    <!-- 半透明  橙色 -->
+    <color name="transparent_orange">#a9e38a43</color>
+
+
+    <!-- 保存分享 -->
+    <color name="video_share_remove_text_color">#424242</color>
+    <color name="video_share_enable_location_text_color">#545454</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_black">#000000</color>
+    <color name="darkgray">#AAAAAA</color>
+
+    <!-- 15/06/23 标题栏全部白色背景 -->
+
+    <color name="message_item_line_color">#b0b0b0</color>
+    <color name="baseline_color">#ebeef3</color>
+
+
+    <color name="main_color">#13cadb</color>
+
+    <color name="color1">#cccccc</color>
+    <color name="borderline_color">#888888</color>
+    <color name="grid_listview_item_backgroup">#E8E9ED</color>
+    <color name="kxred">#13cadb</color>
+    <color name="auto_tx_color">#13cadb</color>
+    <color name="sub_menu_bgcolor_transparent">#8027262C</color>
+
+    <color name="bottom_menu_bg">#212527</color>
+
+    <!-- 发布界面 -->
+    <color name="release_full_screen_cover">#4D000000</color>
+
+    <!-- 音量 -->
+    <color name="voice_progress_secondary">#817775</color>
+    <color name="voice_progress_p">#2CB2F5</color>
+
+    <!-- 视频 -->
+    <color name="video_progress_background">#33B2B2B2</color>
+
+    <!-- 特效 -->
+    <color name="color_effect_item_text">#FFFFFF</color>
+    <color name="color_thumbnail_position_rect">#FC1C8F</color>
+
+    <color name="color_effect_tremble_bg">#99ffc107</color>
+    <color name="color_effect_awakened_bg">#9917ee8b</color>
+    <color name="color_effect_heartbeat_bg">#99fc1c8f</color>
+    <color name="color_effect_spotlight_bg">#997c4dff</color>
+    <color name="color_time_effect_bg">#991fb6ff</color>
+    <color name="color_effect_rg_bg">#80000000</color>
+
+    <!-- 对话框颜色 -->
+    <color name="dialog_background">#212528</color>
+    <color name="dialog_translucent">#80212528</color>
+    <color name="dialog_divide_line">#31363a</color>
+    <color name="dialog_alert_text_color">#FFFFFF</color>
+    <color name="dialog_button_text_color_n">#13ef8b</color>
+    <color name="dialog_button_text_color_p">#8013ef8b</color>
+    <color name="extspeed_ed">#212427</color>
+    <color name="filter_ed">#1fb6ff</color>
+    <color name="ext_progressbar">#FF2120</color>
+    <color name="alert_bg">#212427</color>
+    <color name="alert_bg_77">#77000000</color>
+
+    <!--im 默认背景yanse-->
+    <color name="bg_im_normal">#2e3033</color>
+    <!--im 输入框的背景颜色-->
+    <color name="bg_im_input_color">#2e3033</color>
+    <!--im 输入框的背景颜色-->
+    <color name="bg_im_input_text_color">#33949ea8</color>
+    <!--im 文本的发送-->
+    <color name="tv_im_send_text_color">#ffffff</color>
+    <!--im 录音取消发送-->
+    <color name="tv_im_recod_send_cancle_color">#2f3042</color>
+
+    <color name="hhvideo_color_g">#ff3dabff</color>
+
+    <color name="pop_sheet_text_color">#ff323332</color>
+    <color name="tv_im_recod_notice">#ffFDFEFF</color>
+    <color name="tv_im_recod_btn_press">#4D4E5357</color>
+    <color name="tv_im_recod_notice_cancel">#F84C4C</color>
+
+    <color name="video_text_color">#353535</color>
+    <color name="video_like_btn_bg">#FF2120</color>
+    <color name="pop_text_gray">#777777</color>
+    <color name="pop_text_gray_10">#1A777777</color>
+    <color name="pop_text_gray_70">#B3777777</color>
+    <color name="pop_text_gray_30">#4D777777</color>
+    <color name="pop_text_gray_20">#33777777</color>
+
+
+    <color name="frame_select_back_color">#1C1C1C</color>
+
+    <color name="red_ring">#FF0000</color>
+    <color name="grey_ring">#F1F1F1</color>
+
+    <color name="black_overlay">#66000000</color>
+
+
+    <!--录制、上传选择页面三个按钮颜色-->
+    <color name="quick_shoot_color">#f7b531</color>
+    <color name="upload_video_color">#2daef3</color>
+    <color name="shoot_video_color">#fa6466</color>
+    <color name="shoot_button_color">#FF2120</color>
+
+    <color name="bg_new_function_guide_color">#64717171</color>
+    <color name="bg_mv_filter_color">#4D070404</color>
+</resources>

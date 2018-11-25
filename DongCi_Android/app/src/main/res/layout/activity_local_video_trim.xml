@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <!--<com.rd.vecore.VirtualVideoView-->
+        <!--android:id="@+id/epv_player"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginBottom="114dp" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="114dp">
+
+        <ImageView
+            android:id="@+id/iv_play_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_player_play"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <com.wmlive.hhvideo.heihei.record.widget.CustomTrimVideoView
+        android:id="@+id/customTrimVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_20" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fl_thumbnail"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="125dp"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:orientation="vertical">
+
+        <com.wmlive.hhvideo.heihei.record.widget.ExtRadioGroup
+            android:id="@+id/extSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

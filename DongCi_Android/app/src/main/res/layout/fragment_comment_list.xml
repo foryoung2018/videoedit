@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.wmlive.hhvideo.widget.refreshrecycler.RefreshRecyclerView
+        android:id="@+id/rvComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/t54dp" />
+
+    <TextView
+        android:id="@+id/tvCommentLabel"
+        style="@style/tv_c_28"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/t7dp"
+        android:layout_marginEnd="@dimen/t10dp"
+        android:layout_marginStart="@dimen/t10dp"
+        android:layout_marginTop="@dimen/t7dp"
+        android:background="@drawable/bg_btn_a_first_comment"
+        android:gravity="center_vertical"
+        android:hint="@string/stringLikeJustSay"
+        android:paddingEnd="@dimen/t10dp"
+        android:paddingStart="@dimen/t10dp"
+        android:textColorHint="@color/hh_color_b"
+        android:textCursorDrawable="@drawable/edit_cursor_color" />
+
+</RelativeLayout>
+

@@ -1,0 +1,588 @@
+<resources>
+    <string name="app_name_debug">动次_Debug</string>
+
+    <!--common-->
+    <string name="net_error">服务器忙，请稍后再试</string>
+    <string name="hintErrorDataDelayTry">数据错误，请稍后重试</string>
+    <string name="hintVideoNotExist">视频不存在</string>
+    <string name="stringLoadingData">正在加载数据，请稍候…</string>
+    <string name="stringReload">点击重新加载</string>
+    <string name="stringNetworkError">网络错误</string>
+    <string name="stringSplashCopyright">Copyright © %s Welines.cn All Rights Reserved</string>
+
+
+    <!--RecyclerView-->
+    <string name="string_recycler_loading">正在加载…</string>
+    <string name="string_recycler_pull_to_load">上拉加载更多</string>
+    <string name="string_recycler_no_more">没有更多啦~</string>
+    <string name="string_recycler_load_failed">加载失败，点击重新加载</string>
+
+
+    <string name="socialWechatNotInstall">微信未安装</string>
+    <string name="socialWechatRegisterFail">微信注册失败</string>
+    <string name="socialWechatLoginFail">微信登录失败</string>
+    <string name="socialWechatAuthCancel">微信登录取消</string>
+    <string name="socialWechatAuthDenied">微信登录授权被拒绝</string>
+
+    <string name="socialWechatShareOk">微信分享成功</string>
+    <string name="socialWechatShareDenied">微信分享被拒绝</string>
+    <string name="socialWechatShareCancel">微信分享取消</string>
+
+    <!--首页-->
+
+    <string name="tabChat">聊天</string>
+    <string name="tabProduct">作品</string>
+    <string name="tabFans">粉丝</string>
+    <string name="tabLike">赞</string>
+    <string name="conform">确认</string>
+
+    <string name="attention">关注</string>
+    <string name="chat">私信</string>
+    <string name="comment">评论</string>
+    <string name="likeandfans">粉丝和赞</string>
+
+    <string name="stringSwitchEnvironment">当前是%1$s环境\n点击切换到%2$s环境</string>
+
+    <string name="main">首页</string>
+    <string name="shoot">拍摄</string>
+    <string name="mine">我的</string>
+
+    <string name="recommend_video">推荐</string>
+    <string name="attention_video">关注</string>
+    <string name="new_video">最新</string>
+    <string name="discover">发现</string>
+
+    <string name="send_comment">发送</string>
+    <string name="send_comment_count">评论（256）</string>
+    <string name="comment_delete">删除</string>
+    <string name="comment_delete_succeed">删除成功</string>
+    <string name="comment_delete_cancel">取消</string>
+    <string name="comment_null">暂无评论，快来抢沙发</string>
+
+    <string name="copy_succeed">复制成功</string>
+    <string name="comment_hint">喜欢就要说出来..</string>
+    <string name="stringWorkDeleted">作品已删除</string>
+    <!--<string name="comment_hint">表达一下我的态度..</string>-->
+    <string name="comment_content_length_limit">已超过文字上限</string>
+
+    <string name="publish_succeed">发布成功</string>
+
+    <!--登录-->
+    <string name="send_sms_code">验证码</string>
+    <string name="sms_code_send_succeed">验证码发送成功</string>
+    <string name="mobile_input_hint">请输入手机号</string>
+    <string name="send_sms_code_input_hint">请输入验证码</string>
+    <string name="login_introduction">使用验证码可直接登录</string>
+    <string name="login">登录</string>
+    <string name="login_dialog_title">登录才能操作哦～</string>
+    <string name="login_rule_hint">登录/注册默认同意 《动次用户使用条款》</string>
+
+    <!--<string name="login_rule">《动次用户使用条款》</string>-->
+
+    <string name="dialog_loading">加载中...</string>
+    <string name="login_suc">登录成功</string>
+    <string name="login_failure">登录失败</string>
+    <string name="login_lost">登录已失效，请重新登录</string>
+    <string name="verify_dialog_title">请输入邀请码</string>
+    <string name="verify_dialog_activate">激活</string>
+
+    <!-- 用户资料 -->
+    <string name="user_nick_name">昵称</string>
+    <string name="user_input_nick_name">请输入昵称</string>
+    <string name="user_sex_information">* 性别选择后不可更改！</string>
+    <string name="user_sex_information_edit">* 性别更改请联系客服！</string>
+    <string name="user_sex">性别</string>
+    <string name="user_sex_boy">男</string>
+    <string name="user_sex_girl">女</string>
+    <string name="user_brithday">生日</string>
+    <string name="user_choice_brithday">点击选择生日</string>
+    <string name="user_city">城市</string>
+    <string name="user_auth">认证</string>
+    <string name="userWeiboHome">微博主页</string>
+    <string name="user_city_location">动次星球</string>
+    <string name="user_autograph">个性签名</string>
+    <string name="user_input_autograph">请输入个性签名</string>
+    <string name="user_input_nick_name_null">昵称不能为空哦~</string>
+    <string name="user_get_into">进入</string>
+    <string name="user_constellation">摩羯水瓶双鱼白羊金牛双子巨蟹狮子处女天秤天蝎射手魔羯</string>
+    <string name="user_year">年</string>
+    <string name="user_month">月</string>
+    <string name="user_day">日</string>
+    <string name="user_edit_tip">编辑资料</string>
+    <string name="user_edit_save">保存</string>
+    <string name="user_edit_header">头像</string>
+    <string name="user_signature">我还没有写签名(0^0)...</string>
+    <string name="account_nickname_too_long">您输入的昵称过长哦</string>
+    <string name="account_sign_too_long">个性签名不能超过24个字</string>
+    <string name="user_focus_normal">关注</string>
+    <string name="user_follower">已关注</string>
+    <string name="user_unfollower">取消关注</string>
+    <string name="user_exit_login">退出登录</string>
+    <string name="dialog_focus_tip">确定不再关注此人?</string>
+    <string name="dialog_draftbox_tip">是否删除草稿?</string>
+    <string name="user_block">拉黑</string>
+    <string name="user_unblock">解除拉黑</string>
+    <string name="user_already_block">你已将此用户拉黑</string>
+    <string name="user_block_confirm">确定将此用户拉黑？</string>
+    <string name="user_unblock_confirm">确定将此用户解除拉黑？</string>
+    <string name="user_report">举报</string>
+    <string name="user_report_1">低俗内容</string>
+    <string name="user_report_2">违法行为</string>
+    <string name="user_report_3">垃圾广告</string>
+    <string name="user_report_4">其他原因</string>
+    <string name="user_report_suc">已举报成功</string>
+    <string name="user_logout">确定退出吗?</string>
+    <string name="user_add_friend_title">添加好友</string>
+    <string name="user_add_friend_qq">添加QQ好友</string>
+    <string name="user_add_friend_wechat">添加微信好友</string>
+    <string name="user_add_friend_sina">添加微博好友</string>
+    <string name="setting_cleared_memory">缓存已清除</string>
+    <string name="user_location_ttitle">所在城市</string>
+    <string name="user_draftbox_title">草稿箱</string>
+    <string name="user_default_constellation">无名星</string>
+    <string name="user_id">动次ID:%1$s</string>
+    <string name="dialog_personal_save_title">是否保存修改?</string>
+    <string name="dialog_personal_save_positive">保存</string>
+    <string name="dialog_personal_save_negative">放弃</string>
+    <string name="save_suc">保存成功</string>
+    <string name="save_failure">保存失败</string>
+    <string name="user_no_opus">[点+开拍] 开始拍摄你的第一个动次短视频</string>
+    <string name="user_no_opus_other">你还没发布任何作品哦~</string>
+    <string name="user_no_like_opus">你赞过的作品都会放到这里</string>
+    <string name="user_other_no_opus">TA还没发布任何作品哦~</string>
+    <string name="user_other_no_like_opus">TA还没喜欢任何作品哦~</string>
+    <string name="user_other_together_opus">TA还没有踹轨的作品哦~</string>
+    <string name="user_together_opus">你还没有踹轨的作品哦~</string>
+    <string name="user_home_focus">你还没关注任何人...</string>
+    <string name="user_home_fans">帅气的你既然没有粉丝？</string>
+    <string name="user_other_home_focus">TA还没关注任何人...</string>
+    <string name="user_other_home_fans">TA还没有粉丝...</string>
+    <!--账户-->
+    <string name="user_account_tips">账户</string>
+    <string name="user_zuanshi_tips">钻石</string>
+    <string name="user_zuanshi_tt_tips">余额(钻石)</string>
+    <string name="user_hongbao_tips">可领红包(元)</string>
+    <string name="user_jinbi_tips">分贝</string>
+    <string name="user_charge_tips">充值</string>
+    <string name="user_duihuan_tips">兑换</string>
+    <string name="user_earnings_tips">收益</string>
+    <string name="user_choose_tips">请选择充值金额</string>
+    <string name="user_choose_pay_tips">请选择支付方式</string>
+    <string name="user_ali_pay_tips">请选择支付方式</string>
+    <string name="user_ali_pay">支付宝支付</string>
+    <string name="user_wechat_pay">微信支付</string>
+    <string name="user_wechat_num_tips_1">领取红包或优惠充值请关注官方微信公众号：</string>
+    <string name="user_wechat_num_tips_2">dongci-app</string>
+    <string name="user_wechat_num_tips_3">(点击复制)</string>
+    <string name="user_charge_list_null">充值列表为空</string>
+    <string name="user_duihuan_list_null">兑换列表为空</string>
+    <string name="user_duihuan_succeed">兑换成功</string>
+    <string name="stringDraftCount">草稿箱(%1$d)</string>
+    <!--设置 -->
+    <string name="setting_title">设置</string>
+    <string name="setting_clear_memory">清理缓存</string>
+    <string name="setting_clear_memory_dialog">确定清理缓存?</string>
+    <string name="setting_common">给动词好评</string>
+    <string name="setting_about">关于我们</string>
+    <string name="use_help">使用帮助</string>
+    <string name="stringBlankList">黑名单</string>
+    <string name="setting_protocol">用户协议</string>
+    <string name="setting_network_check">网络诊断</string>
+    <string name="setting_network_check_default_tips">当视频/内容无法成功加载时,可以使用网络诊断功能,并上传诊断结果,帮助我们提升服务质量~</string>
+    <!--图片选择器-->
+    <string name="msg_maxi_capacity">已达到照片选择上限</string>
+    <string name="commit">确定</string>
+    <string name="commit_num">确定(%1$d/%2$d)</string>
+    <string name="photos_num">%1$d张</string>
+    <string name="msg_no_camera">没找到摄像头</string>
+    <string name="save_flag">保存</string>
+    <string name="photo_title">选择图片</string>
+    <string name="cut_title">裁剪图片</string>
+    <!--分享 -->
+    <string name="share_suc">分享成功</string>
+    <string name="share_faid">分享失败</string>
+    <string name="share_cancel">取消分享</string>
+    <string name="share_wechat_no_installed">请先安装微信客户端</string>
+    <string name="share_sina_no_installed">请先安装微博客户端</string>
+
+    <string name="share_title">%1s给你发了一段视频，快点开看看，嘴上说不要，手却很诚实~</string>
+    <string name="share_text">动次——原创音乐短视频社区!</string>
+    <string name="share_weibo_text">动次——原创音乐短视频社区!</string>
+    <string name="share_url">http://www.wmlives.com/icpwww/dongci.html</string>
+
+    <!--话题-->
+    <string name="subject_description_hit_content">简单描述一下话题</string>
+    <string name="subject_limit_count_content">限制60字</string>
+    <string name="subject_surplus_count_content" formatted="true">还可以输入%1s字</string>
+
+    <!--发现-->
+    <string name="stringTabUser">用户</string>
+    <string name="stringTabTopic">话题</string>
+    <string name="stringTabMusic">音乐</string>
+    <string name="stringQQ">QQ</string>
+    <string name="stringCopyUrl">复制链接</string>
+    <string name="stringSaveToGallery">保存本地</string>
+    <string name="stringReport">举报</string>
+    <string name="stringDelete">删除</string>
+    <string name="stringManager">管理</string>
+    <string name="stringWeibo">微博</string>
+    <string name="stringCircle">朋友圈</string>
+    <string name="stringWeChat">微信</string>
+    <string name="stringMyCollect">我的收藏</string>
+    <string name="stringHotSong">热门</string>
+    <string name="stringPopSong">流行</string>
+    <string name="stringElectronicSong">电音</string>
+    <string name="stringEuropeSong">欧美</string>
+    <string name="stringJapanSong">日韩</string>
+    <string name="stringAmazingSong">洗脑神曲</string>
+    <string name="stringKawaii">萌萌</string>
+    <string name="stringUploadVideo">上传视频</string>
+    <string name="stringSelectMusic">选择音乐</string>
+    <string name="stringCapture">直接开拍</string>
+    <string name="stringHeiheiId">动次ID:%1$s  粉丝:%2$d</string>
+    <string name="stringWorkCount">%d作品</string>
+    <string name="stringJoinCount">%d人参与</string>
+    <string name="stringUseCount">%d人使用</string>
+    <string name="stringInitiator">发起人:%s</string>
+    <string name="stringJoinTopic">参与话题</string>
+    <string name="stringUseMusic">使用该音乐录制</string>
+    <string name="stringClickForDetail">更多</string>
+    <string name="stringTopic">话题</string>
+    <string name="stringMusic">音乐</string>
+    <string name="stringScanningVideo">正在扫描手机视频...</string>
+    <string name="stringMobileNetworkHint">当前使用的是移动网络，是否继续播放视频？</string>
+    <string name="stringEdit">编辑</string>
+    <string name="stringChangeTitle">更改标题</string>
+    <string name="stringChangePermission">更改权限</string>
+
+    <string name="user_sign_born">选择出生日期，系统将会自动转换成星座</string>
+    <string name="confirm">确定</string>
+    <string name="user_location_fail">动次星球</string>
+    <string name="user_location_permission_suc">定位已开启</string>
+    <string name="user_location_permission_faid">定位未开启</string>
+    <string name="user_location_permission_tip">请在手机"设置" - "权限管理"中进行修改</string>
+
+    <string name="subject_add_content_empty">标题不能为空!</string>
+    <string name="subject_add_des_empty">描述不能为空!</string>
+    <string name="subject_add_error">字数已达上限</string>
+    <string name="subject_add">点击发起</string>
+
+    <string name="pop_manager_title">管理作品</string>
+
+    <!--录制-->
+    <string name="upload_video">上传视频</string>
+    <string name="record_by_music">使用音乐录制</string>
+    <string name="record_only">直接开拍</string>
+    <string name="music_list">歌曲列表</string>
+    <string name="draftbox_list">草稿箱demo</string>
+    <string name="topic_list">话题demo</string>
+    <string name="exists_editing_video">你有未编辑完成的视频，是否继续</string>
+    <string name="request_some_permissions">动次 需要请求必要的权限...</string>
+    <string name="permission_error_msg">无法开始录制功能,请授权相应权限</string>
+    <string name="stringUploadVideoMaxDuring">上传视频不可超过%1$d分钟</string>
+
+
+    <!--空数据页面-->
+    <string name="empty_data_msg">暂无数据</string>
+    <string name="stringCommentCount">评论（%d）</string>
+    <string name="stringLikeJustSay">喜欢就要说出来...</string>
+    <string name="main_follow_null">你关注的人没有发布作品</string>
+    <string name="noBlockList">木有讨厌的人耶~</string>
+    <string name="discovery_null">哎呀，没有搜到你想要的东西</string>
+    <string name="search_null_result">哎呀，没有搜到你想要的人</string>
+    <string name="search_local_video_null">呃，还没有视频呢~</string>
+    <string name="search_collection_null">你还没有收藏任何音乐哦...</string>
+    <string name="search_content_null">哎呀，没有搜到你想要的东西</string>
+    <string name="ranklist_gift_null">还没有人给你送礼物哦~</string>
+    <string name="ranklist_gift_other_null">还没有人给TA送礼物哦~</string>
+
+
+    <!--关注页面-->
+    <string name="attention_empty_data_msg_one">没有关注的人，请立即关注他人</string>
+    <string name="attention_empty_data_msg_two">关注的人目前没有发布任何信息</string>
+
+
+    <!--升级-->
+    <string name="update_information_ok">立即更新</string>
+    <string name="update_information_install">立即安装</string>
+    <string name="update_loading">更新中...</string>
+    <string name="update_connecting">继续</string>
+    <string name="update_information_satrt">更新中，请在通知栏中查看</string>
+    <string name="update_information_waiting">等待中...</string>
+    <string name="update_information_running">下载中...</string>
+
+    <!--铃铛-->
+    <string name="get_bell_message_info">查看</string>
+    <string name="bell_message_follow">关注了你</string>
+    <string name="bell_message_like">赞了你的作品</string>
+    <string name="bell_message_comment">评论了你的作品</string>
+    <string name="bell_message_comment_suc">回复成功</string>
+    <string name="bell_message_comment_reply">回复你</string>
+    <string name="bell_message_null">额哦，还没有消息哦~</string>
+    <string name="stringDownloading">正在下载</string>
+    <string name="stringDiamondCount">%d充值</string>
+
+    <!--network-->
+    <string name="network_null">网络不给力～</string>
+    <string name="stringGoldNotEnough">账户余额不足，是否需要充值</string>
+
+
+    <!--2.0录制-->
+    <string name="stringCountDown">倒计时</string>
+    <string name="stringSpeed">速度</string>
+    <string name="stringRollback">撤销</string>
+    <string name="stringFilter">滤镜</string>
+    <string name="stringFrame">画框</string>
+
+    <string name="select_frame">选择画框</string>
+    <string name="change_frame">更换画框</string>
+    <string name="next_step">下一步</string>
+    <string name="save_draftbox">存为草稿</string>
+    <string name="publish">发布</string>
+    <string name="publish_volume">音量</string>
+    <string name="publish_adjust_volume">调节音量</string>
+    <string name="publish_editing">剪辑</string>
+    <string name="publish_sort">排序</string>
+    <string name="publish_drag_sort">拖动视频交换位置</string>
+    <string name="prepare">准备中</string>
+    <string name="delete_notyfy">拖动视频至此区域删除</string>
+    <string name="publishing">正在上传中，请不要关闭软件</string>
+    <string name="publishing_retry">正在上传中，请不要关闭软件</string>
+    <string name="publishingnotice">当前网络不可用\n作品已保存到草稿箱</string>
+
+    <!-- 截取界面 -->
+    <string name="edit_trim_duration">已选取%s秒</string>
+    <string name="edit_trim_start_time">从%s秒开始</string>
+    <string name="edit_trim_music_start_time">剪辑音乐：从%s秒开始</string>
+    <string name="generate_video_fail">无法使用该视频</string>
+    <string name="loading">加载中...</string>
+    <string name="cutting">视频裁剪中...</string>
+    <string name="join_media_prepare">正在准备合成</string>
+    <string name="join_media">正在合成中...</string>
+    <string name="join_preview">正在生成预览</string>
+    <string name="stringTransferVideo">正在转换视频</string>
+    <string name="stringStartPublish">正在准备发布</string>
+    <string name="stringStartSave">正在保存</string>
+    <string name="video_load_failed">无法播放该视频</string>
+    <string name="recorder_touch_short">按住开始拍摄，松开暂停</string>
+    <string name="change_speed_error_6s">视频必须大于%1$d秒哟</string>
+    <string name="select_vidoe_error_6s">选取影片不低于6秒</string>
+    <string name="selectVideoTypeError">该视频的格式暂不支持</string>
+    <string name="stringSaveLocal">保存本地</string>
+    <string name="stringSaveToDraft">存为草稿</string>
+    <string name="stringPublishProduct">发布作品</string>
+    <string name="stringAddDesc">添加作品标题</string>
+    <string name="stringAddTopic">添加话题</string>
+    <string name="stringUploadingVideo">努力上传中，请不要退出程序</string>
+    <string name="stringJoinCreation">踹轨</string>
+    <string name="stringAllowJoinCreation">允许踹轨</string>
+    <string name="stringNotAllowJoinCreation">不允许踹轨</string>
+    <string name="stringOpusNotAllowJoinCreation">该作品不允许踹轨</string>
+    <string name="stringFollow">关注</string>
+    <string name="stringFollowed">已关注</string>
+    <string name="stringFollowedBoth">互相关注</string>
+    <string name="load_failure">加载失败，请重试</string>
+    <string name="load_progress">%d%%</string>
+    <string name="stringRecommendUsers">推荐用户</string>
+    <string name="stringSeeMore">查看更多</string>
+    <string name="stringMoreUserTitle">推荐用户</string>
+    <string name="stringDeleteOrReplace">请删除需替换的视频，或新增视频的空位</string>
+    <string name="stringISee">我知道了</string>
+    <string name="stringReplace">踹轨</string>
+
+
+    <string name="crop_music_text">从%s开始</string>
+    <string name="crop_music_bar_text">左右拖动选取</string>
+
+    <string name="dialog_tips">温馨提示</string>
+    <string name="exit">退出</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="permission_camera_error">未允许使用摄像头！</string>
+    <string name="permission_ablum_error">未允许读取相册！</string>
+    <string name="permission_camera_error_p_allow">相机无法打开,请打开相机权限!</string>
+    <string name="permission_audio_error">未允许录制音频！</string>
+    <string name="permission_audio_error_p_allow">无法录音,请打开录音权限!</string>
+    <string name="permission_oncamera">未获得相机权限，前往系统设置打开权限</string>
+    <string name="permission_onaudio">未获得录音权限，前往系统设置打开权限</string>
+    <string name="stringPleaseGrantAppWritePermission">请在系统设置中授予应用的读写权限</string>
+    <string name="canceling">取消中...</string>
+    <string name="preview_error">预览失败</string>
+    <string name="setting">设置</string>
+    <string name="beautifyEnabled">美颜开启</string>
+    <string name="beautifyDisabled">美颜关闭</string>
+    <string name="delete_recorder_item_alert">确定删除上一段视频?</string>
+    <string name="delete_all_recorder_item_alert">确定删除当前视频?</string>
+    <string name="cancel">取消</string>
+    <string name="sure">确定</string>
+    <string name="still_back">仍然返回</string>
+    <string name="download_cancel">取消</string>
+    <string name="i_know">知道了</string>
+    <string name="still_recording">继续录制</string>
+    <string name="re_downloading">重试</string>
+    <string name="giveup_recording">是否放弃当前录制?</string>
+    <string name="giveup_draft">是否保存到草稿?</string>
+    <string name="giveup_mv_recording">返回会删除已录制内容,\n确认返回?</string>
+    <string name="current_template_download_fail">当前模板下载失败</string>
+    <string name="record_mv_review_tips">至少录制1个素材才能预览哦~</string>
+    <string name="over_max_record_time">已经录制%.0f秒,请删除一段再录制!</string>
+    <string name="local_file_upload">本地上传</string>
+    <string name="back_draft_box">是否返回到草稿箱?</string>
+
+
+    <string name="crop_music">剪音乐</string>
+    <string name="beauty_Disabled">美颜关</string>
+    <string name="beauty_Enabled">美颜开</string>
+    <string name="filter">滤镜</string>
+    <string name="faceu">面具</string>
+
+    <string name="delay_record">倒计时</string>
+    <!-- 发布界面 -->
+    <string name="release_trim_music">剪音乐</string>
+    <string name="release_voice">音量</string>
+    <string name="release_effect">特效</string>
+    <string name="release_save_draft">存为草稿</string>
+    <string name="release_release">发布</string>
+    <string name="release_video_original_voice">视频原声</string>
+    <string name="release_save_to_album">同时保存到相册</string>
+    <string name="release_clear_effect_alert">继续编辑之前的特效会被清空，是否继续?</string>
+    <string name="release_back_press_alert">继续拍摄之前的特效会被清空，是否继续?</string>
+    <string name="release_exit_press_alert">本地上传的视频不支持继续拍摄，是否放弃编辑?</string>
+    <string name="release_cancel_edit_alert">是否放弃编辑?</string>
+    <string name="release_delete_music_alert">是否删除此音乐?</string>
+    <string name="release_publish_press_alert">选择一个合适的音乐可以让视频更精彩!</string>
+    <string name="release_back_press_cancel">取消</string>
+    <string name="release_back_press_confirm">确定</string>
+    <string name="release_back_press_giveup">放弃</string>
+    <string name="release_publish_select_music">去选音乐</string>
+    <string name="release_publish_continue">不选音乐</string>
+    <string name="release_save_draft_toast">已保存到主页草稿箱</string>
+    <string name="release_topic_complete">完成</string>
+    <string name="stringUploadingDoNotExit">正在上传，请不要退出当前页面</string>
+
+
+    <!--字体-->
+    <string name="font_family_light">sans-serif-light</string>
+    <string name="font_family_medium">sans-serif-medium</string>
+    <string name="font_family_regular">sans-serif</string>
+    <string name="font_family_condensed">sans-serif-condensed</string>
+    <string name="font_family_black">sans-serif-black</string>
+    <string name="font_family_thin">sans-serif-thin</string>
+    <!--字体-->
+    <string name="font_sans_family">@string/font_family_medium</string>
+
+    <!-- 音量 -->
+    <string name="voice_title">音量调节</string>
+    <string name="voice_original">原声</string>
+    <string name="voice_music">配乐</string>
+
+    <!-- 特效 -->
+    <string name="effect_title">添加特效</string>
+    <string name="effect_filter_tremble">颤抖</string>
+    <string name="effect_filter_awakened">出窍</string>
+    <string name="effect_filter_heartbeat">心动</string>
+    <string name="effect_filter_spotlight">聚光灯</string>
+    <string name="effect_time_null">无</string>
+    <string name="effect_time_slow">慢动作</string>
+    <string name="effect_time_repeat">反复</string>
+    <string name="effect_time_reverse">倒序</string>
+    <string name="effect_library">特效库</string>
+    <string name="effect_filter">滤镜特效</string>
+    <string name="effect_time">时间特效</string>
+
+    <!-- 截取界面 -->
+    <string name="change_speed_error_9s">视频必须大于9秒哟</string>
+
+    <!--<string name="filter_1">正常</string>-->
+
+
+    <!--<string name="filter_2">奶茶</string>-->
+    <!--<string name="filter_3">可爱</string>-->
+    <!--<string name="filter_4">片场</string>-->
+    <!--<string name="filter_5">天真</string>-->
+    <!--<string name="filter_6">暖阳</string>-->
+    <!--<string name="filter_7">黑白</string>-->
+    <!--<string name="filter_8">柏林</string>-->
+    <!--<string name="filter_9">曲奇</string>-->
+    <!--<string name="filter_10">棉花糖</string>-->
+
+    <!--<string name="filter_11">薄荷</string>-->
+    <!--<string name="filter_12">碧海</string>-->
+    <!--<string name="filter_13">冬青</string>-->
+    <!--<string name="filter_14">草木绿</string>-->
+    <!--<string name="filter_15">印象</string>-->
+    <!--<string name="filter_16">暖暖</string>-->
+    <!--<string name="filter_17">加州</string>-->
+    <!--<string name="filter_18">初夏</string>-->
+    <!--<string name="filter_19">午后</string>-->
+    <!--<string name="filter_20">童话</string>-->
+
+
+    <!--<string name="filter_21">周末</string>-->
+    <!--<string name="filter_22">纯净</string>-->
+    <!--<string name="filter_23">森林</string>-->
+    <!--<string name="filter_24">清新</string>-->
+    <!--<string name="filter_25">回忆</string>-->
+    <!--<string name="filter_26">布丁</string>-->
+    <!--<string name="filter_27">夜店</string>-->
+    <!--<string name="filter_28">冰凉</string>-->
+    <!--<string name="filter_29">黄昏</string>-->
+    <!--<string name="filter_30">晚秋</string>-->
+
+    <string name="stringSuggestUseHeadset">建议使用耳机</string>
+    <string name="stringSuggestUseHeadsetHint">可免除录制时周遭的杂音</string>
+    <string name="stringContinueRecord">继续录制</string>
+    <string name="hintAuth">独有标识，彰显不同身份</string>
+    <string name="hintBindWeibo">绑定后将在个人主页显示</string>
+
+    <!--im 信息-->
+    <string name="im_details_record_down_speek">按住说话</string>
+    <string name="im_details_record_up_finish">松开结束</string>
+    <string name="im_details_record_up_cancle">松开手指，取消发送</string>
+    <string name="im_details_record_scroll_up_cancle">手指上滑，取消发送</string>
+    <string name="im_details_record_cancle_msg">录音时间太短</string><!--麦克风权限提示-->
+    <string name="record_permission_notices_message_off">请开启麦克风权限</string>
+    <string name="received_message">你收到了一条动次消息</string>
+
+
+    <string name="transNameVideoPlayer" translatable="false">transVideoPlayer</string>
+    <string name="transNameVideoCover" translatable="false">transVideoCover</string>
+    <string name="stringCommentReplyOk">回复成功</string>
+    <string name="stringDefaultSign">本宝宝暂时还没想到签名写啥...</string>
+    <string name="stringGiftDataError">礼物数据错误</string>
+    <string name="dongtai">动态</string>
+
+    <string name="video_cliping">视频裁剪中</string>
+    <string name="video_doing">视频处理中</string>
+
+
+    <array name="speedType">
+        <item>极慢</item>
+        <item>慢</item>
+        <item>标准</item>
+        <item>快</item>
+        <item>极快</item>
+    </array>
+
+    <string name="title_activity_select_frame2">SelectFrameActivity2</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+
+    <!--创意视频-->
+    <string name="back2recorder">继续拍摄</string>
+    <string name="next">下一步</string>
+    <string name="music">音乐</string>
+    <string name="tvbg">背景</string>
+    <string name="temp_no_can_use">该模板暂不可使用</string>
+    <string name="guide_pager_enter_tips">开启动次4.0</string>
+    <string name="use_current_template_make_tips">使用该模板创作</string>
+    <string name="quick_shot_tips">速拍</string>
+    <string name="create_shot_tips">创意合成</string>
+    <string name="upload_tips">上传</string>
+    <string name="local_album_tips">本地相册</string>
+    <string name="shot_video_tips">拍摄</string>
+    <string name="multi_squared_tips">多格视频</string>
+    <string name="hecheng">合成中...</string>
+
+</resources>

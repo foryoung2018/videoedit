@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/horiProgressDialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dyuiapi_dialog_bg"
+    android:minWidth="@dimen/t110dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:ignore="UseCompoundDrawables">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/progress_circle"
+            android:layout_width="@dimen/t24dp"
+            android:layout_height="@dimen/t24dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:indeterminateDrawable="@anim/rotate_cicle" />
+
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progress_circle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/t10dp"
+            android:textColor="@color/hh_color_a"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_export_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/hh_color_a"
+        android:textSize="@dimen/text_size_14"
+        tools:ignore="SelectableText" />
+
+</LinearLayout>

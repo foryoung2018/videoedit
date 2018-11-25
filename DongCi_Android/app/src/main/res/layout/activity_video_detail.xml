@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wmlive.hhvideo.heihei.mainhome.activity.VideoDetailActivity">
+
+    <com.wmlive.hhvideo.heihei.mainhome.widget.VideoDetailItemView
+        android:id="@+id/videoDetailItemView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t60dp">
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/t32dp"
+            android:layout_height="@dimen/t32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/t8dp"
+            android:clickable="true"
+            android:paddingBottom="@dimen/t4dp"
+            android:paddingEnd="@dimen/t4dp"
+            android:paddingStart="@dimen/t4dp"
+            android:paddingTop="@dimen/t4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_close" />
+
+        <TextView
+            android:id="@+id/tvJoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/t15dp"
+            android:background="@drawable/icon_video_create_white"
+            android:clickable="true" />
+    </RelativeLayout>
+
+    <com.wmlive.hhvideo.heihei.mainhome.widget.VideoControlBar
+        android:id="@+id/videoControlBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        tools:layout_height="50dp" />
+
+    <com.wmlive.hhvideo.heihei.mainhome.widget.CommentPanel
+        android:id="@+id/viewCommentPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="gone" />
+</RelativeLayout>

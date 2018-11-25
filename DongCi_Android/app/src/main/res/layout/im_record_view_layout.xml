@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:background="@drawable/bg_im_record_view"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/t15dp"
+    android:paddingTop="@dimen/t15dp">
+
+    <TextView
+        android:id="@+id/tv_im_detail_record_time"
+        style="@style/tv_a_28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="00:00" />
+
+    <!--录音按钮-->
+    <RelativeLayout
+        android:id="@+id/rl_im_detail_record_icon"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/t15dp"
+        android:layout_marginTop="@dimen/t15dp">
+
+        <ImageView
+            android:id="@+id/iv_im_detail_record_icon"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_microphone_value" />
+
+        <ImageView
+            android:id="@+id/iv_im_chat_record_icon"
+            android:layout_width="@dimen/t38dp"
+            android:layout_height="@dimen/t40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/t1dp"
+            android:background="@drawable/hh_charge_motion"
+            android:visibility="invisible" />
+    </RelativeLayout>
+    <!--录音取消-->
+    <ImageView
+        android:id="@+id/iv_im_detail_record_cancle_icon"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/t15dp"
+        android:layout_marginTop="@dimen/t15dp"
+        android:background="@drawable/hh_charge_back"
+        android:visibility="gone" />
+
+    <!--文字说明-->
+    <TextView
+        android:id="@+id/tv_im_detail_record_text"
+        android:textSize="@dimen/t10dp"
+        android:textColor="@color/tv_im_recod_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/im_details_record_scroll_up_cancle" />
+</LinearLayout>

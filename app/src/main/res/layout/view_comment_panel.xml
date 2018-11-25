@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/t55dp"
+    android:background="@color/hh_color_d"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/etComment"
+        style="@style/tv_a_28"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/t7dp"
+        android:layout_marginEnd="@dimen/t10dp"
+        android:layout_marginStart="@dimen/t10dp"
+        android:layout_marginTop="@dimen/t7dp"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:background="@drawable/bg_btn_c_first_type_shape20"
+        android:gravity="center_vertical"
+        android:hint="@string/stringLikeJustSay"
+        android:paddingEnd="@dimen/t15dp"
+        android:paddingStart="@dimen/t15dp"
+        android:textColorHint="@color/hh_color_b"
+        android:textCursorDrawable="@drawable/edit_cursor_color"/>
+
+    <TextView
+        android:id="@+id/tvSend"
+        style="@style/tv_b_24"
+        android:layout_width="42dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="@dimen/t10dp"
+        android:layout_marginEnd="@dimen/t10dp"
+        android:layout_marginTop="@dimen/t10dp"
+        android:background="@drawable/bg_btn_comment_selector"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/send_comment"
+        android:textColor="@color/comment_send_color_selector"/>
+</LinearLayout>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/t15dp"
+        android:layout_marginRight="@dimen/t15dp"
+        android:layout_marginTop="@dimen/t15dp"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_normal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_personal_edit_headr_tip"
+                style="@style/tv_b_28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_edit_header" />
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="@dimen/t90dp"
+                android:layout_height="@dimen/t90dp"
+                android:layout_below="@+id/tv_personal_edit_headr_tip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/t10dp"
+                android:src="@drawable/ic_default_male" />
+
+            <ImageView
+                android:layout_width="@dimen/t18dp"
+                android:layout_height="@dimen/t18dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_me_enter" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/tv_b_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t15dp"
+            android:text="@string/user_nick_name" />
+
+        <EditText
+            android:id="@+id/et_nickname"
+            style="@style/EditText_a"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t40dp"
+            android:layout_marginTop="@dimen/t12dp"
+            android:background="@drawable/shape_solid_1b1e20_corner_4"
+            android:hint="@string/user_input_nick_name"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/t15dp"
+            android:textSize="@dimen/t15sp" />
+
+
+        <TextView
+            style="@style/tv_b_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t15dp"
+            android:text="@string/user_sex" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t44dp"
+            android:layout_marginTop="@dimen/t12dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_male"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/t7dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_sex_male_selector"
+                android:text="@string/user_sex_boy"
+                android:textSize="@dimen/t15sp" />
+
+            <Button
+                android:id="@+id/btn_female"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/t7dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_sex_female_selector"
+                android:text="@string/user_sex_girl"
+                android:textSize="@dimen/t15sp" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/tv_b_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t15dp"
+            android:text="@string/user_brithday" />
+
+        <!-- 生日 -->
+        <RelativeLayout
+            android:id="@+id/btn_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t52dp"
+            android:layout_marginTop="@dimen/t12dp"
+            android:background="@drawable/shape_solid_1b1e20_corner_4">
+
+            <TextView
+                android:id="@+id/tv_birthday_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/t15dp"
+                android:text="@string/user_choice_brithday"
+                android:textColor="@color/hh_color_b"
+                android:textSize="@dimen/t16sp" />
+
+            <TextView
+                android:id="@+id/tv_collensation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/t15dp"
+                android:layout_toRightOf="@+id/tv_birthday_tip"
+                android:textColor="@color/hh_color_c"
+                android:textSize="@dimen/t16sp" />
+
+            <ImageView
+                android:id="@+id/iv_birthday_right_arrow"
+                android:layout_width="@dimen/t18dp"
+                android:layout_height="@dimen/t18dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/t15dp"
+                android:src="@drawable/icon_me_enter" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/tv_b_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t15dp"
+            android:text="@string/user_city" />
+
+        <!-- 定位城市 -->
+        <RelativeLayout
+            android:id="@+id/btn_city"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t52dp"
+            android:layout_marginTop="@dimen/t12dp"
+            android:background="@drawable/shape_solid_1b1e20_corner_4">
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/t15dp"
+                android:text="@string/user_city_location"
+                android:textColor="@color/hh_color_c"
+                android:textSize="@dimen/t15sp" />
+
+            <ImageView
+                android:id="@+id/iv_city"
+                android:layout_width="@dimen/t24dp"
+                android:layout_height="@dimen/t24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/t15dp"
+                android:layout_marginRight="@dimen/t3dp"
+                android:layout_toLeftOf="@+id/iv_city_right_arrow"
+                android:src="@drawable/icon_profile_place_nor"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_city_right_arrow"
+                android:layout_width="@dimen/t18dp"
+                android:layout_height="@dimen/t18dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/t15dp"
+                android:src="@drawable/icon_me_enter" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/tv_b_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t15dp"
+            android:text="@string/user_auth" />
+
+        <LinearLayout
+            android:id="@+id/llAuth"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t52dp"
+            android:layout_marginTop="@dimen/t12dp"
+            android:background="@drawable/shape_solid_1b1e20_corner_4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/t15dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/ivVerifyIcon"
+                android:layout_width="@dimen/t15dp"
+                android:layout_height="@dimen/t15dp"
+                android:visibility="gone"
+                tools:background="@color/hh_color_i"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tvAuth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/hintAuth"
+                android:textColor="@color/hh_color_b"
+                android:textSize="@dimen/t15sp" />
+
+            <ImageView
+                android:layout_width="@dimen/t18dp"
+                android:layout_height="@dimen/t18dp"
+                android:layout_marginRight="@dimen/t15dp"
+                android:src="@drawable/icon_me_enter" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/tv_b_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t15dp"
+            android:text="@string/userWeiboHome" />
+
+        <RelativeLayout
+            android:id="@+id/rlWeiboHome"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t52dp"
+            android:layout_marginTop="@dimen/t12dp"
+            android:background="@drawable/shape_solid_1b1e20_corner_4"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvWeiboHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/t15dp"
+                android:text="@string/hintBindWeibo"
+                android:textColor="@color/hh_color_b"
+                android:textSize="@dimen/t15sp" />
+
+            <ImageView
+                android:layout_width="@dimen/t18dp"
+                android:layout_height="@dimen/t18dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/t15dp"
+                android:src="@drawable/icon_me_enter" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/tv_b_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t15dp"
+            android:text="@string/user_autograph" />
+
+        <EditText
+            android:id="@+id/et_sign"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t75dp"
+            android:layout_marginBottom="@dimen/t15dp"
+            android:layout_marginTop="@dimen/t12dp"
+            android:background="@drawable/shape_solid_1b1e20_corner_4"
+            android:gravity="left|top"
+            android:hint="@string/user_input_autograph"
+            android:paddingBottom="@dimen/t20dp"
+            android:paddingLeft="@dimen/t15dp"
+            android:paddingRight="@dimen/t15dp"
+            android:paddingTop="@dimen/t20dp"
+            android:textColor="@color/hh_color_c"
+            android:textColorHint="@color/hh_color_b"
+            android:textCursorDrawable="@drawable/text_cursor_drawable"
+            android:textSize="@dimen/t15sp" />
+    </LinearLayout>
+</ScrollView>

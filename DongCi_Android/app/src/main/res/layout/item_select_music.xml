@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="?attr/selectableItemBackground"
+              android:minHeight="@dimen/t90dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/t60dp"
+            android:layout_height="@dimen/t60dp"
+            android:layout_margin="@dimen/t10dp">
+
+            <ImageView
+                android:id="@+id/ivCover"
+                android:layout_width="@dimen/t60dp"
+                android:layout_height="@dimen/t60dp"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:id="@+id/ivPlay"
+                android:layout_width="@dimen/t24dp"
+                android:layout_height="@dimen/t24dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_profile_play"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/tv_a_28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/t4dp"
+                android:ellipsize="end"
+                android:lines="1"
+                tools:text="加州招待所"/>
+
+            <TextView
+                android:id="@+id/tvArtist"
+                style="@style/tv_b_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/t8dp"
+                android:ellipsize="end"
+                android:lines="1"
+                tools:text="eagles"/>
+
+            <TextView
+                android:id="@+id/tvDuring"
+                style="@style/tv_b_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                tools:text="00:45"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivCollect"
+            android:layout_width="@dimen/t44dp"
+            android:layout_height="@dimen/t44dp"
+            android:layout_marginRight="@dimen/t2dp"
+            android:padding="@dimen/t13dp"
+            android:src="@drawable/icon_collect"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlUseMusic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t36dp"
+        android:layout_marginBottom="@dimen/t10dp"
+        android:layout_marginLeft="@dimen/t10dp"
+        android:layout_marginRight="@dimen/t10dp"
+        android:layout_marginTop="@dimen/t6dp"
+        android:visibility="gone"
+        android:background="@drawable/bg_btn_f_first_type_shape">
+
+        <TextView
+            style="@style/tv_a_24"
+            android:id="@+id/tvUseMusic"
+            android:layout_width="wrap_content"
+            android:textSize="14sp"
+            android:layout_height="@dimen/t36dp"
+            android:layout_centerInParent="true"
+            android:drawablePadding="@dimen/t4dp"
+            android:gravity="center"
+            android:text="@string/stringUseMusic"
+            />
+    </RelativeLayout>
+
+
+    <include layout="@layout/include_diving_line"/>
+</LinearLayout>

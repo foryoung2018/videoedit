@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdvCover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivDrag"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icon_video_move"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="@dimen/t32dp"
+        android:layout_height="@dimen/t32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/t8dp"
+        android:src="@drawable/icon_video_trash"
+        android:visibility="gone" />
+
+    <com.wmlive.hhvideo.widget.CustomFontTextView
+        android:id="@+id/tvDuring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="@dimen/t8dp"
+        android:shadowColor="@color/app_background_other_back"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:cftv_fontFamily="font/dincond_bold.otf"
+        tools:text="" />
+
+    <LinearLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivRefresh"
+            android:layout_width="@dimen/t24dp"
+            android:layout_height="@dimen/t24dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/t20dp"
+            android:src="@drawable/icon_video_refresh" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/t10dp"
+            android:text="@string/load_failure"
+            android:textColor="@color/hh_color_a"
+            android:textSize="@dimen/t12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/dialog_loading_anim_progress" />
+
+        <TextView
+            android:id="@+id/tvProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/t10dp"
+            android:text="0%"
+            android:textColor="@color/white"
+            android:textSize="@dimen/t12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

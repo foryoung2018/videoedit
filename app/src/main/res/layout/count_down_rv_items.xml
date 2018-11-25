@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/t10dp"
+    android:paddingRight="@dimen/t10dp"
+    android:gravity="center">
+    <RelativeLayout
+        android:id="@+id/count_layout"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.wmlive.hhvideo.widget.CustomFontTextView
+            android:id="@+id/count_tv"
+            android:text="0"
+            android:textSize="16sp"
+            android:textColor="@color/hh_color_kk"
+            android:paddingBottom="@dimen/t3dp"
+            android:paddingTop="@dimen/t5dp"
+            android:paddingLeft="@dimen/t10dp"
+            app:cftv_fontFamily="font/dincond_bold.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.wmlive.hhvideo.widget.CustomFontTextView
+            android:id="@+id/seconds_tv"
+            android:text="s"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/count_tv"
+            android:textColor="@color/hh_color_kk"
+            android:paddingBottom="@dimen/t3dp"
+            android:paddingTop="@dimen/t5dp"
+            android:paddingRight="@dimen/t10dp"
+            app:cftv_fontFamily="font/dincond_bold.otf"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/indicator"
+        android:layout_width="3dp"
+        android:layout_height="3dp"
+        android:layout_marginBottom="@dimen/t5dp"
+        android:layout_below="@+id/count_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/filter_selector_indicator" />
+
+</RelativeLayout>

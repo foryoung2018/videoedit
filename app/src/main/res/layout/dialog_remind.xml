@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/t270dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/t110dp"
+        android:layout_height="@dimen/t110dp"
+        android:layout_marginTop="@dimen/t12dp"
+        android:src="@drawable/icon_popup_wifi" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/t5dp"
+        android:text="当前为非WiFi环境"
+        android:textColor="@color/hh_color_kk"
+        android:textSize="@dimen/t16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/t30dp"
+        android:layout_marginTop="@dimen/t6dp"
+        android:text="请注意流量消耗"
+        android:textColor="@color/hh_color_kk"
+        android:textSize="@dimen/t16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t1dp"
+        android:background="@color/bg_diving_line" />
+
+    <TextView
+        android:id="@+id/tvOk"
+        style="@style/tv_dd_28"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t44dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="我知道了" />
+</LinearLayout>

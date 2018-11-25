@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/frame_select_back_color">
+
+    <RadioGroup
+        android:id="@+id/rg_btns"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t44dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbn_01"
+            style="@style/fram_select_btns"
+            android:checked="true"
+            android:text="推荐" />
+
+        <RadioButton
+            android:id="@+id/rbn_02"
+            style="@style/fram_select_btns"
+            android:text="1:1" />
+
+        <RadioButton
+            android:id="@+id/rbn_03"
+            style="@style/fram_select_btns"
+            android:text="3:4" />
+
+        <RadioButton
+            android:id="@+id/rbn_04"
+            style="@style/fram_select_btns"
+            android:text="16:9" />
+
+        <RadioButton
+            android:id="@+id/rbn_05"
+            style="@style/fram_select_btns"
+            android:text="9:16" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t1dp"
+        android:layout_below="@id/rg_btns"
+        android:background="@color/pop_text_gray" />
+
+</RelativeLayout>

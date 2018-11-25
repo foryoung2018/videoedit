@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mLinearCrop"
+    android:layout_width="match_parent"
+    android:layout_height="86dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/bottom_menu_bg"
+    android:layout_gravity="center_vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_trim_duration"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <TextView
+            android:id="@+id/tv_trim_start"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="剪辑音乐：从0.0s秒开始"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_10" />
+
+        <TextView
+            android:id="@+id/tv_trim_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="60秒"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_10" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/rl_trim_duration"
+        android:layout_marginBottom="@dimen/dimen_10">
+
+        <com.wmlive.hhvideo.heihei.record.widget.CropViewBg
+            android:id="@+id/mCropMusicBg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:splitMotionEvents="false" />
+
+        <com.wmlive.hhvideo.heihei.record.widget.ExtHorizontalScrollView
+            android:id="@+id/mHorScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true"
+            android:scrollbarStyle="@null"
+            android:scrollbarThumbHorizontal="@color/transparent"
+            android:scrollbars="none"
+            android:splitMotionEvents="false">
+
+            <LinearLayout
+                android:id="@+id/musicContentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.wmlive.hhvideo.heihei.record.widget.CropView
+                    android:id="@+id/mCropMusic"
+                    android:layout_width="1000dp"
+                    android:layout_height="match_parent"
+                    android:splitMotionEvents="false" />
+
+            </LinearLayout>
+
+        </com.wmlive.hhvideo.heihei.record.widget.ExtHorizontalScrollView>
+
+        <com.wmlive.hhvideo.heihei.record.widget.ExtRangeSeekbarPlus
+            android:id="@+id/esb_trim_music"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</RelativeLayout>

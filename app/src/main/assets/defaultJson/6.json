@@ -1,0 +1,370 @@
+{
+  "version": "1.0",
+  "timeRange": {
+    "beginTime": 0,
+    "duration": 4.0
+  },
+  "actors": [
+    {
+      "id": "0",
+      "type": "video",
+      "assetId": "0",
+      "renderIndex": 0,
+      "cropRect": {
+        "left": 0.0,
+        "top": 0.0,
+        "right": 1.0,
+        "bottom": 1.0
+      }
+    },
+    {
+      "id": "1",
+      "type": "video",
+      "assetId": "3",
+      "renderIndex": 1,
+      "cropRect": {
+        "left": 0.0,
+        "top": 0.125,
+        "right": 1.0,
+        "bottom": 0.875
+      },
+      "decoration": "dd2"
+    },
+    {
+      "id": "2",
+      "type": "video",
+      "assetId": "3",
+      "renderIndex": 1,
+      "cropRect": {
+        "left": 0.0,
+        "top": 0.125,
+        "right": 1.0,
+        "bottom": 0.875
+      },
+      "decoration": "dd2"
+    },
+    {
+      "id": "3",
+      "type": "video",
+      "assetId": "3",
+      "renderIndex": 1,
+      "cropRect": {
+        "left": 0.0,
+        "top": 0.125,
+        "right": 1.0,
+        "bottom": 0.875
+      },
+      "decoration": "dd2"
+    },
+    {
+      "id": "4",
+      "type": "video",
+      "assetId": "3",
+      "renderIndex": 1,
+      "cropRect": {
+        "left": 0.0,
+        "top": 0.125,
+        "right": 1.0,
+        "bottom": 0.875
+      },
+      "decoration": "dd2"
+    },
+    {
+      "id": "5",
+      "type": "video",
+      "assetId": "3",
+      "renderIndex": 1,
+      "cropRect": {
+        "left": 0.0,
+        "top": 0.125,
+        "right": 1.0,
+        "bottom": 0.875
+      },
+      "decoration": "dd2"
+    },
+    {
+      "id": "6",
+      "type": "video",
+      "assetId": "3",
+      "renderIndex": 1,
+      "cropRect": {
+        "left": 0.0,
+        "top": 0.125,
+        "right": 1.0,
+        "bottom": 0.875
+      },
+      "decoration": "dd2"
+    }
+  ],
+  "actions": [
+    {
+      "actionType": "translate",
+      "actorId": "1",
+      "timeRange": {
+        "beginTime": 0.0,
+        "duration": 0.0
+      },
+      "interpolator": {
+        "interpolatorType": "decelerate",
+        "factor": 2.0
+      },
+      "valueFrom": {
+        "x": -156.5,
+        "y": -312.5,
+        "z": 0.0
+      },
+      "valueTo": {
+        "x": -156.5,
+        "y": -312.5,
+        "z": 0.0
+      }
+    },
+    {
+      "actionType": "scale",
+      "actorId": "1",
+      "timeRange": {
+        "beginTime": 0.0,
+        "duration": 0.0
+      },
+      "interpolator": {
+        "interpolatorType": "decelerate",
+        "factor": 2.0
+      },
+      "valueFrom": {
+        "x": 0.39305556,
+        "y": 0.39305556,
+        "z": 0.39305556
+      },
+      "valueTo": {
+        "x": 0.39305556,
+        "y": 0.39305556,
+        "z": 0.39305556
+      }
+    },
+
+    {
+      "actionType": "translate",
+      "actorId": "2",
+      "timeRange": {
+        "beginTime": 0.0,
+        "duration": 0.0
+      },
+      "interpolator": {
+        "interpolatorType": "decelerate",
+        "factor": 2.0
+      },
+      "valueFrom": {
+        "x": 156.5,
+        "y": -312.5,
+        "z": 0.0
+      },
+      "valueTo": {
+        "x": 156.5,
+        "y": -312.5,
+        "z": 0.0
+      }
+    },
+    {
+      "actionType": "scale",
+      "actorId": "2",
+      "timeRange": {
+        "beginTime": 0.0,
+        "duration": 0.0
+      },
+      "interpolator": {
+        "interpolatorType": "decelerate",
+        "factor": 2.0
+      },
+      "valueFrom": {
+        "x": 0.39305556,
+        "y": 0.39305556,
+        "z": 0.39305556
+      },
+      "valueTo": {
+        "x": 0.39305556,
+        "y": 0.39305556,
+        "z": 0.39305556
+      }
+    },
+
+    {
+      "actionType": "translate",
+      "actorId": "3",
+      "timeRange": {
+        "beginTime": 0.0,
+        "duration": 0.0
+      },
+      "interpolator": {
+        "interpolatorType": "decelerate",
+        "factor": 2.0
+      },
+      "valueFrom": {
+        "x": -156.5,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "valueTo": {
+        "x": -156.5,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "actionType": "scale",
+      "actorId": "3",
+      "timeRange": {
+        "beginTime": 0.0,
+        "duration": 0.0
+      },
+      "interpolator": {
+        "interpolatorType": "decelerate",
+        "factor": 2.0
+      },
+      "valueFrom": {
+        "x": 0.39305556,
+        "y": 0.39305556,
+        "z": 0.39305556
+      },
+      "valueTo": {
+        "x": 0.39305556,
+        "y": 0.39305556,
+        "z": 0.39305556
+      }
+    },
+
+    {
+      "actionType": "translate",
+      "actorId": "4",
+      "timeRange": {
+        "beginTime": 0.0,
+        "duration": 0.0
+      },
+      "interpolator": {
+        "interpolatorType": "decelerate",
+        "factor": 2.0
+      },
+      "valueFrom": {
+        "x": 156.5,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "valueTo": {
+        "x": 156.5,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "actionType": "scale",
+      "actorId": "4",
+      "timeRange": {
+        "beginTime": 0.0,
+        "duration": 0.0
+      },
+      "interpolator": {
+        "interpolatorType": "decelerate",
+        "factor": 2.0
+      },
+      "valueFrom": {
+        "x": 0.39305556,
+        "y": 0.39305556,
+        "z": 0.39305556
+      },
+      "valueTo": {
+        "x": 0.39305556,
+        "y": 0.39305556,
+        "z": 0.39305556
+      }
+    },
+
+    {
+      "actionType": "translate",
+      "actorId": "5",
+      "timeRange": {
+        "beginTime": 0.0,
+        "duration": 0.0
+      },
+      "interpolator": {
+        "interpolatorType": "decelerate",
+        "factor": 2.0
+      },
+      "valueFrom": {
+        "x": -156.5,
+        "y": 312.5,
+        "z": 0.0
+      },
+      "valueTo": {
+        "x": -156.5,
+        "y": 312.5,
+        "z": 0.0
+      }
+    },
+    {
+      "actionType": "scale",
+      "actorId": "5",
+      "timeRange": {
+        "beginTime": 0.0,
+        "duration": 0.0
+      },
+      "interpolator": {
+        "interpolatorType": "decelerate",
+        "factor": 2.0
+      },
+      "valueFrom": {
+        "x": 0.39305556,
+        "y": 0.39305556,
+        "z": 0.39305556
+      },
+      "valueTo": {
+        "x": 0.39305556,
+        "y": 0.39305556,
+        "z": 0.39305556
+      }
+    },
+
+    {
+      "actionType": "translate",
+      "actorId": "6",
+      "timeRange": {
+        "beginTime": 0.0,
+        "duration": 0.0
+      },
+      "interpolator": {
+        "interpolatorType": "decelerate",
+        "factor": 2.0
+      },
+      "valueFrom": {
+        "x": 156.5,
+        "y": 312.5,
+        "z": 0.0
+      },
+      "valueTo": {
+        "x": 156.5,
+        "y": 312.5,
+        "z": 0.0
+      }
+    },
+    {
+      "actionType": "scale",
+      "actorId": "6",
+      "timeRange": {
+        "beginTime": 0.0,
+        "duration": 0.0
+      },
+      "interpolator": {
+        "interpolatorType": "decelerate",
+        "factor": 2.0
+      },
+      "valueFrom": {
+        "x": 0.39305556,
+        "y": 0.39305556,
+        "z": 0.39305556
+      },
+      "valueTo": {
+        "x": 0.39305556,
+        "y": 0.39305556,
+        "z": 0.39305556
+      }
+    }
+  ]
+}

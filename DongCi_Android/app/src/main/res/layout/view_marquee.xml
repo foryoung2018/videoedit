@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_s1"
+        style="@style/tv_a_28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:paddingEnd="25dp"
+        android:scrollHorizontally="true"
+        android:shadowColor="@color/app_background_other_back"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        tools:text="傻逼跑马灯"
+        />
+
+    <TextView
+        android:id="@+id/tv_s2"
+        style="@style/tv_a_28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tv_s1"
+        android:maxLines="1"
+        android:paddingEnd="25dp"
+        android:shadowColor="@color/app_background_other_back"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        tools:text="傻逼跑马灯"
+        />
+
+    <TextView
+        android:id="@+id/tv_s3"
+        style="@style/tv_a_28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tv_s2"
+        android:maxLines="1"
+        android:paddingEnd="25dp"
+        android:shadowColor="@color/app_background_other_back"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        tools:text="傻逼跑马灯"
+        />
+
+</LinearLayout>

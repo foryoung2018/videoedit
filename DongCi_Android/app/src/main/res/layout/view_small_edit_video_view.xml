@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvAddEffect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_label_transparent_shape"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/effect_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/t14sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_label_transparent_shape"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/t10sp"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/llVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/t12dp"
+        android:visibility="invisible">
+
+        <com.wmlive.hhvideo.heihei.record.widget.VerticalSeekBar
+            android:id="@+id/volumeSeekBar"
+            style="@style/voiceFactorVerticalSeekbarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/t24dp"
+            android:layout_marginTop="@dimen/t24dp"
+            android:paddingLeft="@dimen/t12dp"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="@dimen/t12dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent" />
+    </LinearLayout>
+
+</RelativeLayout>

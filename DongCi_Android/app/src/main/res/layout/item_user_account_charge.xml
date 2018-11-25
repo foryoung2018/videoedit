@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/t65dp">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/t15dp"
+        android:src="@drawable/icon_acc_diamond" />
+
+    <TextView
+        android:id="@+id/tv_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/t10dp"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:text=""
+        android:textColor="@color/hh_color_d"
+        android:textSize="@dimen/t15sp" />
+
+    <TextView
+        android:id="@+id/tv_value_giving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/t15dp"
+        android:layout_toRightOf="@+id/tv_value"
+        android:text=""
+        android:textColor="@color/hh_color_b"
+        android:textSize="@dimen/t12sp" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="@dimen/t65dp"
+        android:layout_height="@dimen/t30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/t15dp"
+        android:background="@drawable/shape_left_radius15_color_d"
+        android:gravity="center"
+        android:textColor="@color/hh_color_a"
+        android:textSize="@dimen/t14sp"
+        tools:text="100" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/diving_line_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/t15dp"
+        android:background="@color/bg_diving_line" />
+
+</RelativeLayout>

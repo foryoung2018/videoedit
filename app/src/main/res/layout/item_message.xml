@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlMessageRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlAvatar"
+        android:layout_width="@dimen/t42dp"
+        android:layout_height="@dimen/t42dp"
+        android:layout_marginBottom="@dimen/t10dp"
+        android:layout_marginEnd="@dimen/t10dp"
+        android:layout_marginStart="@dimen/t10dp"
+        android:layout_marginTop="@dimen/t16dp">
+
+        <RelativeLayout
+            android:layout_width="@dimen/t40dp"
+            android:layout_height="@dimen/t40dp">
+
+            <ImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="@dimen/t40dp"
+                android:layout_height="@dimen/t40dp"
+                android:src="@drawable/ic_default_male" />
+
+            <ImageView
+                android:id="@+id/ivVerifyIcon"
+                android:layout_width="@dimen/t16dp"
+                android:layout_height="@dimen/t16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                tools:src="@color/hh_color_i"
+                tools:visibility="visible" />
+
+        </RelativeLayout>
+
+
+        <com.wmlive.hhvideo.widget.BadgeView
+            android:id="@+id/badgeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="#FF0000"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="508dp"
+            android:background="@color/bg_diving_line" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llMessageContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rlAvatar"
+        android:layout_marginBottom="@dimen/t4dp"
+        android:layout_marginEnd="@dimen/t10dp"
+        android:layout_toEndOf="@+id/rlAvatar"
+        android:layout_toStartOf="@+id/ivVideoThumb"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivTypeIcon"
+                android:layout_width="@dimen/t14dp"
+                android:layout_height="@dimen/t14dp"
+                android:layout_marginEnd="@dimen/t4dp"
+                android:src="@drawable/icon_discover_topic"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/tv_d_28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/t4dp"
+                android:ellipsize="end"
+                android:maxLength="10"
+                tools:text="动次昵称动次昵" />
+
+            <TextView
+                android:id="@+id/tvAction"
+                style="@style/tv_b_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                tools:text="关注了你"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivStatus"
+                android:layout_width="@dimen/t14dp"
+                android:layout_height="@dimen/t14dp"
+                android:layout_marginEnd="@dimen/t4dp"
+                android:src="@drawable/hh_chat_icon_error"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tvDesc"
+                style="@style/tv_d_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                tools:text="消息描述消息描述消息描述消息描述消述消息描述消息描述消息描述" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/ivVideoThumb"
+        android:layout_width="@dimen/t54dp"
+        android:layout_height="@dimen/t54dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/t10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_message_video_default"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivFollow"
+        android:layout_width="@dimen/t40dp"
+        android:layout_height="@dimen/t40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/t12dp"
+        android:src="@drawable/icon_profile_other_add"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvFollow"
+        style="@style/tv_cc_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/t12dp"
+        android:layout_marginStart="@dimen/t5dp"
+        android:background="@drawable/bg_btn_c_follow_shape"
+        android:gravity="center"
+        android:paddingBottom="@dimen/t3dp"
+        android:paddingEnd="@dimen/t12dp"
+        android:paddingStart="@dimen/t12dp"
+        android:paddingTop="@dimen/t3dp"
+        android:text="@string/stringFollow"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvRightTime"
+        style="@style/tv_b_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/llMessageContent"
+        android:layout_marginEnd="@dimen/t10dp"
+        android:layout_marginTop="@dimen/t2dp"
+        android:visibility="gone"
+        tools:text="12:12"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvBottomTime"
+        style="@style/tv_b_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/llMessageContent"
+        android:layout_below="@+id/llMessageContent"
+        android:layout_marginBottom="@dimen/t11dp"
+        android:visibility="gone"
+        tools:text="12:12"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivImGift"
+        android:layout_width="@dimen/t14dp"
+        android:layout_height="@dimen/t14dp"
+        android:layout_alignBottom="@+id/llMessageContent"
+        android:layout_alignEnd="@+id/tvRightTime"
+        android:layout_margin="@dimen/t2dp"
+        android:src="@drawable/icon_profile_gift_48_48"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_diving_line" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">NetworkLib</string>
+
+    <string name="err404">无法找到指定位置的资源</string>
+    <string name="err500">内部服务器错误</string>
+    <string name="err502">网关错误</string>
+    <string name="errDefault">网络错误</string>
+    <string name="errorNoConnection">网络未连接，请检查网络</string>
+    <string name="errorInvalidToken">token失效，请重新登录</string>
+    <string name="errIllegalArgumentException">请求参数错误</string>
+    <string name="errSystemTimeIncorrect">手机系统时间错误，请校准手机系统时间</string>
+    <string name="hintServerTimeout">服务器超时</string>
+    <string name="hintVerifyFailed">验证不成功</string>
+    <string name="hintRequestOkWithoutContent">请求成功，但是没有返回内容</string>
+    <string name="hintRequestParmasNull">请求的参数为空</string>
+    <string name="hintRequestLoading">正在请求数据...</string>
+</resources>

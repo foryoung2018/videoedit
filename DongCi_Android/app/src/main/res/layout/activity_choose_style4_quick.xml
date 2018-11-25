@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_black"
+    tools:context="com.wmlive.hhvideo.heihei.quickcreative.ChooseStyle4QuickActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_bar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_black"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/back2recorder"
+            android:textColor="@color/green"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_video_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="133dp"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="133dp">
+
+        <ImageView
+            android:id="@+id/iv_play_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_preview_pause"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_musicname"
+        android:layout_width="@dimen/t175dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="153dp"
+        android:background="@drawable/shape_btn_conor_grey"
+        android:gravity="center"
+        android:text="音乐提示"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <com.wmlive.hhvideo.heihei.mainhome.widget.VideoControlBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="132dp"
+        android:visibility="visible"></com.wmlive.hhvideo.heihei.mainhome.widget.VideoControlBar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:text="@string/music"
+                android:textColor="@color/pop_text_gray"
+                android:textSize="12sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_music"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:text="@string/tvbg"
+                android:textColor="@color/pop_text_gray"
+                android:textSize="12sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

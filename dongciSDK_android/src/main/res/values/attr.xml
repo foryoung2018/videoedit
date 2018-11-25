@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--轮播图-->
+    <declare-styleable name="BannerView">
+        <!-- 是否支持循环, 默认 true -->
+        <attr name="bvIsLoop" format="boolean" />
+        <!-- 是否支持自动滚动, 默认 true -->
+        <attr name="bvIsAuto" format="boolean" />
+        <!-- 滚动延时, 默认5000ms -->
+        <attr name="bvDelay" format="integer" />
+        <!-- 滚动间隔, 默认5000ms -->
+        <attr name="bvInterval" format="integer" />
+        <!-- 高宽比(height/width)-->
+        <attr name="bvAspectRatio" format="float" />
+
+        <!-- 底部背景条颜色, 默认透明 -->
+        <attr name="bvBarColor" format="color" />
+        <!-- 底部背景条在滚动到最后一个item时是否可见, 默认 true -->
+        <attr name="bvBarVisibleWhenLast" format="boolean" />
+
+        <!-- 底部背景条padding, 默认10dp -->
+        <attr name="bvBarPaddingLeft" format="dimension" />
+        <attr name="bvBarPaddingTop" format="dimension" />
+        <attr name="bvBarPaddingRight" format="dimension" />
+        <attr name="bvBarPaddingBottom" format="dimension" />
+
+        <!-- 标题文字颜色, 默认 #ffffff -->
+        <attr name="bvTitleColor" format="color" />
+        <!-- 标题文字大小, 默认 14sp -->
+        <attr name="bvTitleSize" format="dimension" />
+        <!-- 标题是否可见, 默认 false  -->
+        <attr name="bvTitleVisible" format="boolean" />
+
+
+        <!-- 指示器是否可见, 默认 auto  -->
+        <attr name="bvIndicatorVisible" format="integer">
+            <enum name="auto" value="0" />
+            <enum name="always" value="1" />
+            <enum name="never" value="2" />
+        </attr>
+
+        <!-- 指示器位置, 默认 center-->
+        <attr name="bvIndicatorGravity">
+            <enum name="center" value="17" />
+            <enum name="left" value="3" />
+            <enum name="right" value="5" />
+        </attr>
+
+        <!-- 指示器项的 宽度/高度/间距, 默认 6dp -->
+        <attr name="bvIndicatorWidth" format="dimension" />
+        <attr name="bvIndicatorHeight" format="dimension" />
+        <attr name="bvIndicatorGap" format="dimension" />
+
+        <!-- 指示器未选中颜色, 默认 #88ffffff  -->
+        <attr name="bvIndicatorColor" format="color" />
+        <!-- 指示器选中颜色, 默认 #ffffff -->
+        <attr name="bvIndicatorColorSelected" format="color" />
+
+        <!-- 指示器未选中drawable资源 -->
+        <attr name="bvIndicatorDrawable" format="reference" />
+        <!-- 指示器选中drawable资源 -->
+        <attr name="bvIndicatorDrawableSelected" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ForegroundImageView">
+        <attr name="android:foreground" />
+    </declare-styleable>
+
+
+    <declare-styleable name="RatioLayout">
+        <attr name="ratio" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="MaskView">
+        <attr name="showAnim" format="boolean" />
+        <attr name="maskColor" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ExtImage">
+        <attr name="extSrc" format="reference"></attr>
+        <attr name="extBorderLineWidth" format="dimension"></attr>
+    </declare-styleable>
+    <declare-styleable name="VerSeekbar">
+        <attr name="thumb" format="reference"></attr>
+        <attr name="VerProgressDrawable" format="reference"></attr>
+    </declare-styleable>
+    <declare-styleable name="extAutoTitle">
+        <attr name="sText" format="string"></attr>
+    </declare-styleable>
+    <declare-styleable name="extdragarray">
+        <attr name="sArrays" format="reference"></attr>
+    </declare-styleable>
+    <declare-styleable name="extColorPicker">
+        <attr name="isdrawcircle" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="ExtCircleProgressBar">
+        <attr name="extprogressDrawable" format="reference" />
+        <attr name="extindetermiateDrawable" format="reference" />
+        <attr name="extindetermiate" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="RangeSeekBarBaidu">
+        <attr name="isSide" format="boolean"></attr>
+    </declare-styleable>
+
+    <!-- 字幕颜色显示是否描边 -->
+    <declare-styleable name="squareview">
+        <attr name="square_text" format="string"></attr>
+        <attr name="square_bg" format="color"></attr>
+    </declare-styleable>
+    <declare-styleable name="SwitchButton">
+        <attr name="swThumbDrawable" format="reference" />
+        <attr name="swThumbColor" format="color|reference" />
+        <attr name="swThumbMargin" format="dimension|reference" />
+        <attr name="swThumbMarginTop" format="dimension|reference" />
+        <attr name="swThumbMarginBottom" format="dimension|reference" />
+        <attr name="swThumbMarginLeft" format="dimension|reference" />
+        <attr name="swThumbMarginRight" format="dimension|reference" />
+        <attr name="swThumbWidth" format="dimension|reference" />
+        <attr name="swThumbHeight" format="dimension|reference" />
+        <attr name="swThumbRadius" format="dimension|reference" />
+        <attr name="swBackRadius" format="dimension|reference" />
+        <attr name="swBackDrawable" format="reference" />
+        <attr name="swBackColor" format="color|reference" />
+        <attr name="swFadeBack" format="boolean" />
+        <attr name="swBackMeasureRatio" format="float" />
+        <attr name="swAnimationDuration" format="integer" />
+        <attr name="swTintColor" format="color|reference" />
+        <attr name="swTextOn" format="string" />
+        <attr name="swTextOff" format="string" />
+        <attr name="swTextMarginH" format="dimension" />
+        <attr name="swAutoAdjustTextPosition" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ExtCircle">
+        <attr name="circleChecked" format="boolean" />
+        <attr name="circleBgColor" format="color|reference" />
+        <attr name="circleBorderColor" format="color|reference" />
+    </declare-styleable>
+    <!--<declare-styleable name="CircleImageView">-->
+    <!--<attr name="border_width" format="dimension" />-->
+    <!--<attr name="border_color" format="color" />-->
+    <!--</declare-styleable>-->
+    <declare-styleable name="EffectRadioButton">
+        <attr name="rbUncheckedAlpha" format="float" />
+    </declare-styleable>
+    <declare-styleable name="CircleAnimationView">
+        <attr name="loadingSrc" format="reference" />
+        <attr name="uncheckedAlpha" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="MaterialMenuGroup">
+        <attr name="android:menuCategory" />
+        <attr name="android:orderInCategory" />
+    </declare-styleable>
+    <declare-styleable name="MaterialMenuItem">
+        <attr name="android:menuCategory" />
+        <attr name="android:orderInCategory" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="WiperSwitchButton">
+        <attr name="kswThumbDrawable" format="reference" />
+        <attr name="kswThumbColor" format="color|reference" />
+        <attr name="kswThumbMargin" format="dimension|reference" />
+        <attr name="kswThumbMarginTop" format="dimension|reference" />
+        <attr name="kswThumbMarginBottom" format="dimension|reference" />
+        <attr name="kswThumbMarginLeft" format="dimension|reference" />
+        <attr name="kswThumbMarginRight" format="dimension|reference" />
+        <attr name="kswThumbWidth" format="dimension|reference" />
+        <attr name="kswThumbHeight" format="dimension|reference" />
+        <attr name="kswThumbRadius" format="dimension|reference" />
+        <attr name="kswBackRadius" format="dimension|reference" />
+        <attr name="kswBackDrawable" format="reference" />
+        <attr name="kswBackColor" format="color|reference" />
+        <attr name="kswFadeBack" format="boolean" />
+        <attr name="kswBackMeasureRatio" format="float" />
+        <attr name="kswAnimationDuration" format="integer" />
+        <attr name="kswTintColor" format="color|reference" />
+        <attr name="kswTextOn" format="string" />
+        <attr name="kswTextOff" format="string" />
+        <attr name="kswTextMarginH" format="dimension" />
+        <attr name="kswAutoAdjustTextPosition" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomFrameView">
+        <attr name="cfv_show_border" format="boolean" />
+        <attr name="cfv_border_color" format="color" />
+        <attr name="cfv_border_width" format="float" />
+        <attr name="cfv_auto_size" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomInputText">
+        <attr name="cit_maxCount" format="integer" />
+        <attr name="cit_circleColor" format="color" />
+        <attr name="cit_underlineColor" format="color" />
+        <attr name="cit_radius" format="dimension" />
+        <attr name="cit_divideLineWidth" format="dimension" />
+        <attr name="cit_divideLineColor" format="color" />
+        <attr name="cit_rectAngle" format="dimension" />
+        <attr name="cit_focusedColor" format="color" />
+        <attr name="cit_showPassword" format="boolean" />
+        <attr name="cit_cursorFlashTime" format="integer" />
+        <attr name="cit_isCursorEnable" format="boolean" />
+        <attr name="cit_cursorColor" format="color" />
+        <attr name="cit_mode" format="enum">
+            <enum name="underline" value="0" />
+            <enum name="rect" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomFontTextView">
+        <attr name="cftv_fontFamily" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="VideoDetailOptionView">
+        <attr name="vdov_theme" format="enum">
+            <enum name="black" value="0" />
+            <enum name="white" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RealtimeBlurView">
+        <attr name="realtimeBlurRadius" format="dimension" />
+        <attr name="realtimeDownsampleFactor" format="float" />
+        <attr name="realtimeOverlayColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="MaterialHeader">
+        <attr name="mhPrimaryColor" format="color" />
+        <attr name="mhShadowColor" format="color" />
+        <attr name="mhShadowRadius" format="dimension" />
+        <attr name="mhShowBezierWave" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="IjkListPreference">
+        <attr name="entrySummaries" />
+    </declare-styleable>
+
+</resources>

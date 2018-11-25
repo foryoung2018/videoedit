@@ -1,0 +1,21 @@
+apply plugin: 'com.android.library'
+
+android {
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileOptions.encoding = "UTF-8"
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+    }
+
+    resourcePrefix 'recycler_swipe_'
+}
+
+dependencies {
+    api deps.recyclerviewV7
+//    compile rootProject.ext.dependencies.loading
+}
+

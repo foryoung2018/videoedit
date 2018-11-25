@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/viewBlankHolder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t120dp" />
+
+    <LinearLayout
+        android:id="@+id/llRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/t110dp"
+        android:background="@drawable/bg_comment"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/t20dp">
+
+        <LinearLayout
+            android:id="@+id/llCountPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/t10dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/t7dp"
+                    android:orientation="horizontal">
+
+                    <com.wmlive.hhvideo.widget.CustomFontTextView
+                        android:id="@+id/tvCommentTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="评论"
+                        android:textColor="@color/hh_color_aa"
+                        android:textSize="@dimen/t24sp"
+                        app:cftv_fontFamily="font/notosans_bold.ttf" />
+
+                    <com.wmlive.hhvideo.widget.CustomFontTextView
+                        android:id="@+id/tvComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/t6dp"
+                        android:textColor="@color/hh_color_aa"
+                        android:textSize="@dimen/t24sp"
+                        app:cftv_fontFamily="font/dincond_bold.otf"
+                        tools:text="1" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/viewCommentLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/t2dp"
+                    android:layout_marginBottom="@dimen/t2dp"
+                    android:background="@color/hh_color_f"
+                    android:visibility="visible"
+                    tools:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDecibel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/t20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/t7dp"
+                    android:orientation="horizontal">
+
+                    <com.wmlive.hhvideo.widget.CustomFontTextView
+                        android:id="@+id/tvDecibelTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="分贝"
+                        android:textColor="@color/hh_color_aa"
+                        android:textSize="@dimen/t24sp"
+                        app:cftv_fontFamily="font/notosans_bold.ttf" />
+
+                    <com.wmlive.hhvideo.widget.CustomFontTextView
+                        android:id="@+id/tvDecibel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/t6dp"
+                        android:textColor="@color/hh_color_aa"
+                        android:textSize="@dimen/t24sp"
+                        app:cftv_fontFamily="font/dincond_bold.otf"
+                        tools:text="0" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/viewDecibelLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/t2dp"
+                    android:layout_marginBottom="@dimen/t2dp"
+                    android:background="@color/hh_color_f"
+                    android:visibility="invisible"
+                    tools:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <LinearLayout
+            android:id="@+id/llBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="@dimen/t40dp"
+                android:layout_height="@dimen/t40dp"
+                android:layout_margin="@dimen/t8dp"
+                android:padding="@dimen/t9dp"
+                android:src="@drawable/icon_close" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

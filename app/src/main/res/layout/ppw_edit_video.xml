@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_btn_pop_edit_view_shape"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/t10dp"
+        android:layout_marginTop="@dimen/t14dp">
+
+        <com.wmlive.hhvideo.widget.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/t16dp"
+            android:layout_marginTop="@dimen/t8dp"
+            android:text="@string/stringChangeTitle"
+            android:textColor="@color/black"
+            android:textSize="@dimen/t14sp"
+            app:cftv_fontFamily="font/notosans_bold.ttf" />
+
+        <ImageView
+            android:id="@+id/tvCancel"
+            android:layout_width="@dimen/t20dp"
+            android:layout_height="@dimen/t20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/t7dp"
+            android:src="@drawable/icon_close" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/etOpusDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/t10dp"
+        android:layout_marginRight="@dimen/t10dp"
+        android:background="@drawable/bg_btn_title_view_shape"
+        android:hint="@string/stringAddDesc"
+        android:paddingBottom="@dimen/t19dp"
+        android:paddingLeft="@dimen/t11dp"
+        android:paddingRight="@dimen/t11dp"
+        android:paddingTop="@dimen/t19dp"
+        android:singleLine="true"
+        android:textColorHint="@color/pop_text_gray"
+        android:textSize="@dimen/t16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDescCount"
+        style="@style/tv_aa_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/t10dp"
+        android:layout_marginTop="@dimen/t10dp"
+        tools:text="10/20" />
+
+    <com.wmlive.hhvideo.widget.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/t10dp"
+        android:layout_marginRight="@dimen/t10dp"
+        android:layout_marginTop="@dimen/t4dp"
+        android:text="@string/stringChangePermission"
+        android:textColor="@color/black"
+        android:textSize="@dimen/t14sp"
+        app:cftv_fontFamily="font/notosans_bold.ttf" />
+
+    <CheckBox
+        android:id="@+id/cbAllow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/t14dp"
+        android:layout_marginLeft="@dimen/t10dp"
+        android:layout_marginTop="@dimen/t6dp"
+        android:button="@drawable/bg_edit_premission_selector"
+        android:checked="true"
+        android:padding="@dimen/t6dp"
+        android:text="@string/stringAllowJoinCreation"
+        android:textColor="@color/pop_text_gray"
+        android:textSize="@dimen/t12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t1dp"
+        android:background="@color/hh_color_b_20" />
+
+    <TextView
+        android:id="@+id/btnSave"
+        android:layout_width="@dimen/t120dp"
+        android:layout_height="@dimen/t40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/t20dp"
+        android:layout_marginTop="@dimen/t20dp"
+        android:background="@drawable/bg_btn_like_shape"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/save_flag"
+        android:textColor="@color/white"
+        android:textSize="@dimen/t14sp" />
+
+</LinearLayout>

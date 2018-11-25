@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/t60dp"
+        android:layout_height="@dimen/t60dp"
+        android:layout_marginEnd="@dimen/t26dp"
+        android:layout_marginStart="@dimen/t26dp"
+        android:layout_marginTop="@dimen/t20dp"
+        tools:background="@color/hh_color_e">
+
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="@dimen/t60dp"
+            android:layout_height="@dimen/t60dp"
+            android:src="@drawable/ic_default_male" />
+
+        <ImageView
+            android:id="@+id/ivVerifyIcon"
+            android:layout_width="@dimen/t16dp"
+            android:layout_height="@dimen/t16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            tools:src="@color/hh_color_i"
+            tools:visibility="visible" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvNickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/t8dp"
+        android:layout_marginTop="@dimen/t4dp"
+        android:ellipsize="end"
+        android:fontFamily="@string/font_sans_family"
+        android:includeFontPadding="false"
+        android:maxLength="8"
+        android:maxLines="1"
+        android:textColor="@color/hh_color_d"
+        android:textSize="@dimen/t12sp"
+        tools:text="草莓味草莓草莓味草莓味草味味草味" />
+
+    <com.wmlive.hhvideo.widget.CustomFontTextView
+        android:id="@+id/tvFollow"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/t24dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_btn_c_follow_shape"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/t15dp"
+        android:paddingStart="@dimen/t15dp"
+        android:text="@string/user_focus_normal"
+        android:textColor="@color/border_no_checked"
+        android:textSize="@dimen/t12sp"
+        app:cftv_fontFamily="font/notosans_bold.ttf" />
+</LinearLayout>

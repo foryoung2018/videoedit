@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llRecommendPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/app_background_color"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <com.wmlive.hhvideo.widget.CustomFontTextView
+            style="@style/tv_dd_34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/t6dp"
+            android:text="还没有关注任何人"
+            android:textStyle="bold"
+            app:cftv_fontFamily="font/notosans_bold.ttf" />
+
+        <TextView
+            style="@style/tv_ccc_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/t10dp"
+            android:text="为你推荐小伙伴" />
+
+        <LinearLayout
+            android:id="@+id/llLine1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/t10dp"
+            android:gravity="center_horizontal"
+            android:minHeight="@dimen/t100dp"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/llLine2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:minHeight="@dimen/t100dp"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/tvFollowAll"
+            style="@style/tv_f_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t30dp"
+            android:background="@drawable/bg_btn_f_shape"
+            android:paddingBottom="@dimen/t8dp"
+            android:paddingEnd="@dimen/t30dp"
+            android:paddingStart="@dimen/t30dp"
+            android:paddingTop="@dimen/t8dp"
+            android:text="一键关注" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llLoginPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/app_background_color"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/t110dp"
+            android:layout_height="@dimen/t110dp"
+            android:src="@drawable/icon_home_follow_empty" />
+
+        <TextView
+            style="@style/tv_cc_34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t18dp"
+            android:text="你还没有登录" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            style="@style/tv_f_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t26dp"
+            android:background="@drawable/bg_btn_f_shape"
+            android:paddingBottom="@dimen/t8dp"
+            android:paddingEnd="@dimen/t30dp"
+            android:paddingStart="@dimen/t30dp"
+            android:paddingTop="@dimen/t8dp"
+            android:text="登录" />
+    </LinearLayout>
+
+</RelativeLayout>

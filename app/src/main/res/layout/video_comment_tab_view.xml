@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llCommentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/t10dp"
+            android:paddingRight="@dimen/t10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCommentCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/t10dp"
+                android:layout_marginBottom="@dimen/t10dp"
+                android:text="评论"
+                android:textSize="@dimen/t12sp" />
+
+            <View
+                android:id="@+id/viewCommentCountLine"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/hh_color_f"
+                android:textSize="@dimen/t12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llDecibelCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/t10dp"
+            android:paddingRight="@dimen/t10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDecibelCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/t10dp"
+                android:layout_marginBottom="@dimen/t10dp"
+                android:text="分贝"
+                android:textSize="@dimen/t12sp" />
+
+            <View
+                android:id="@+id/viewDecibelCountLine"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/hh_color_f"
+                android:textSize="@dimen/t12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/bg_diving_line" />
+</LinearLayout>

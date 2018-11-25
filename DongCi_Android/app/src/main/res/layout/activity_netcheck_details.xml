@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="@dimen/t20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/check_details_tv"
+            android:layout_margin="@dimen/t5dp"
+            android:textSize="@dimen/t14dp"
+            android:paddingRight="@dimen/t30dp"
+            android:paddingLeft="@dimen/t30dp"
+            android:textColor="@color/video_text_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

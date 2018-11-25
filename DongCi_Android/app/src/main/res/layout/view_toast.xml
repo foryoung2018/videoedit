@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          style="@style/tv_a_28"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/bg_toast_shape"
+          android:gravity="center"
+          android:paddingBottom="@dimen/t14dp"
+          android:paddingEnd="@dimen/t24dp"
+          android:paddingStart="@dimen/t24dp"
+          android:paddingTop="@dimen/t14dp"
+          tools:text="这是文字"/>

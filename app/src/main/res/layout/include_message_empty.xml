@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/llEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t400dp"
+        android:background="@color/hh_color_a"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="@dimen/t68dp"
+            android:layout_height="@dimen/t68dp"
+            android:layout_marginBottom="@dimen/t12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_empty" />
+
+        <TextView
+            style="@style/tv_b_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bell_message_null" />
+    </LinearLayout>
+</merge>

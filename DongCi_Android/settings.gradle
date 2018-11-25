@@ -1,0 +1,9 @@
+include ':app', ':crclibrary', ':loopback',':curllibrary'
+include ':networklib'
+include ':DanmakuFlameMaster'
+include ':recyclerview-swipe'
+include ':dongciSDK_android'
+include ':videocachelibrary'
+
+
+include ':lDNetDiagnoService_Android'

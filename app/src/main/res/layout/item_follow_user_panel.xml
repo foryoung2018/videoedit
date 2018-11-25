@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/tv_dd_28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/t3dp"
+        android:drawablePadding="@dimen/t2dp"
+        android:drawableStart="@drawable/icon_find_user"
+        android:fontFamily="@string/font_sans_family"
+        android:padding="@dimen/t6dp"
+        android:text="@string/stringRecommendUsers"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/tvMore"
+        style="@style/tv_b_24"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/t30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/t10dp"
+        android:gravity="center"
+        android:paddingStart="@dimen/t10dp"
+        android:src="@drawable/icon_back_small_white"
+        android:tint="@color/hh_color_dd" />
+
+    <View
+        android:id="@+id/line"
+        style="@style/publicHorizontalDivideLine"
+        android:layout_below="@+id/tvMore"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvFollows"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        tools:listitem="@layout/item_follow_user" />
+</RelativeLayout>

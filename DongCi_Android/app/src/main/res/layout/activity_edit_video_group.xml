@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_black"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/top_bar_change" />
+
+    <FrameLayout
+        android:id="@+id/rl_coutainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_bar"
+        android:background="@color/bg_black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <com.wmlive.hhvideo.heihei.record.widget.CustomFrameView
+                android:id="@+id/customFrameView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_move_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/rl_coutainer"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<include-->
+    <!--android:id="@+id/ll_buton_frame"-->
+    <!--layout="@layout/select_proporty_tabs"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="45dp" />-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/rvframes"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="30dp"></android.support.v7.widget.RecyclerView>-->
+    <!--</LinearLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_coutainer"
+        android:layout_marginTop="15dp"
+        android:background="@color/frame_select_back_color"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/ll_buton_frame"
+            layout="@layout/select_proporty_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvframes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <include layout="@layout/top_delet_view" />
+</RelativeLayout>

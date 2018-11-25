@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlFullSize"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.wmlive.hhvideo.widget.RatioLayout
+        android:id="@+id/ratioLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        tools:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:transitionName="@string/transNameVideoCover" />
+
+        <FrameLayout
+            android:id="@+id/flPlayerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:transitionName="@string/transNameVideoPlayer" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/home_video_bg_bottom" />
+
+        <ImageView
+            android:id="@+id/ivLoading"
+            android:layout_width="@dimen/t32dp"
+            android:layout_height="@dimen/t32dp"
+            android:layout_centerInParent="true"
+            android:alpha="0.4"
+            android:src="@drawable/icon_video_loading"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <com.wmlive.hhvideo.widget.GestureView
+            android:id="@+id/viewBlankHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/llDescBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/t10dp"
+            android:paddingLeft="@dimen/t6dp"
+            android:paddingRight="@dimen/t6dp"
+            android:paddingTop="@dimen/t10dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <com.wmlive.hhvideo.widget.CustomFontTextView
+                android:id="@+id/tvTitleB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/t7dp"
+                android:layout_marginRight="@dimen/t7dp"
+                android:shadowColor="@color/app_background_other_back"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/t32sp"
+                app:cftv_fontFamily="font/notosans_bold.ttf"
+                tools:text="视频标题" />
+
+            <com.wmlive.hhvideo.widget.AutoLineFeedView
+                android:id="@+id/autoLineFeedViewB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/playLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/pause_shadow_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/app_40_black"
+                android:visibility="gone" />
+
+            <com.wmlive.hhvideo.heihei.record.widget.CustomFrameView
+                android:id="@+id/customFrameView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                app:cfv_auto_size="false" />
+            <RelativeLayout
+                android:id="@+id/use_current_template_rl"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.wmlive.hhvideo.widget.CustomFontTextView
+                    android:id="@+id/use_current_template_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_use_current_template_shape"
+                    android:shadowColor="@color/app_background_other_back"
+                    android:layout_gravity="center_horizontal"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="1"
+                    android:paddingTop="@dimen/t11dp"
+                    android:paddingBottom="@dimen/t11dp"
+                    android:paddingLeft="@dimen/t15dp"
+                    android:paddingRight="@dimen/t15dp"
+                    android:textColor="@color/white"
+                    android:text="@string/use_current_template_make_tips"
+                    android:textSize="@dimen/t14sp"
+                    app:cftv_fontFamily="font/notosans_bold.ttf" />
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_below="@+id/use_current_template_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/t15dp"
+                    android:ellipsize="end"
+                    android:shadowColor="@color/app_background_other_back"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="1"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/t12sp" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <View
+            android:id="@+id/cornerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/icon_home_corner"
+            android:visibility="gone" />
+
+    </com.wmlive.hhvideo.widget.RatioLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llDescTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/t58dp"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/t10dp"
+        android:paddingLeft="@dimen/t7dp"
+        android:paddingRight="@dimen/t7dp"
+        android:paddingTop="@dimen/t10dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <com.wmlive.hhvideo.widget.CustomFontTextView
+            android:id="@+id/tvTitleT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/t7dp"
+            android:layout_marginRight="@dimen/t7dp"
+            android:shadowColor="@color/app_background_other_back"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/t32sp"
+            app:cftv_fontFamily="font/notosans_bold.ttf"
+            tools:text="视频标题" />
+
+        <com.wmlive.hhvideo.widget.AutoLineFeedView
+            android:id="@+id/autoLineFeedViewT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <com.wmlive.hhvideo.widget.RollRecyclerView
+        android:id="@+id/rvComment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t100dp"
+        android:layout_below="@+id/ratioLayout"
+        android:background="@color/transparent"
+        android:maxHeight="@dimen/t120dp"
+        tools:layout_above="@+id/detailOptionView" />
+
+    <View
+        android:id="@+id/viewMask"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t6dp"
+        android:layout_below="@+id/ratioLayout"
+        android:background="#FAFAFA"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <com.wmlive.hhvideo.heihei.mainhome.widget.VideoDetailOptionView
+        android:id="@+id/detailOptionView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:vdov_theme="white" />
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="@dimen/t32dp"
+        android:layout_height="@dimen/t32dp"
+        android:layout_marginLeft="@dimen/t8dp"
+        android:layout_marginTop="@dimen/t14dp"
+        android:clickable="true"
+        android:paddingBottom="@dimen/t4dp"
+        android:paddingEnd="@dimen/t4dp"
+        android:paddingStart="@dimen/t4dp"
+        android:paddingTop="@dimen/t4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_close" />
+
+    <TextView
+        android:id="@+id/tvJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/t15dp"
+        android:layout_marginTop="@dimen/t14dp"
+        android:background="@drawable/icon_video_create_white"
+        android:clickable="true" />
+
+    <com.wmlive.hhvideo.heihei.mainhome.widget.VideoControlBar
+        android:id="@+id/videoControlBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        tools:layout_height="50dp" />
+</RelativeLayout>

@@ -1,0 +1,74 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            abiFilters 'armeabi-v7a'
+            abiFilters "x86"
+            //abiFilters "armeabi"
+            abiFilters "arm64-v8a"
+            abiFilters "x86_64"
+        }
+
+        externalNativeBuild {
+            cmake {
+                cppFlags '-std=c++11', '-frtti', '-fexceptions', '-fpermissive','-mfloat-abi=softfp', '-mfpu=neon','-D_GLIBCXX_HAS_GTHREADS'
+                cFlags "-D__STDC_CONSTANT_MACROS","-std=c11"
+            }
+        }
+
+    }
+
+    packagingOptions {
+        exclude 'builddef.lst'
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java', 'src/main/java/com/dongci/sun/gpuimglibrary/encoder']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+
+}
+
+repositories {
+    flatDir {
+        dirs 'libs' //this way we can find the .aar file in libs folder
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support:recyclerview-v7:27.0.0'
+    implementation 'com.jakewharton:butterknife:8.5.1'
+    implementation files('libs/isoparser-1.0.4.2.jar')
+}

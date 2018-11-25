@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/t44dp"
+    android:gravity="bottom"
+    android:orientation="horizontal">
+
+    <com.wmlive.hhvideo.heihei.mainhome.widget.MessageTabView
+        android:id="@+id/tabChat"
+        android:layout_width="@dimen/t68dp"
+        android:layout_height="wrap_content" />
+
+
+    <com.wmlive.hhvideo.heihei.mainhome.widget.MessageTabView
+        android:id="@+id/tabProduct"
+        android:layout_width="@dimen/t68dp"
+        android:layout_height="wrap_content" />
+
+
+    <com.wmlive.hhvideo.heihei.mainhome.widget.MessageTabView
+        android:id="@+id/tabFans"
+        android:layout_width="@dimen/t68dp"
+        android:layout_height="wrap_content" />
+
+    <!--<View-->
+    <!--android:layout_width="@dimen/t3dp"-->
+    <!--android:layout_height="@dimen/t3dp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:background="@drawable/bg_b_shape" />-->
+
+    <com.wmlive.hhvideo.heihei.mainhome.widget.MessageTabView
+        android:id="@+id/tabLike"
+        android:layout_width="@dimen/t116dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

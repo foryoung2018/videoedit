@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="@dimen/t270dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_dialog">
+
+        <ImageView
+            android:id="@+id/iv_dismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="7dp"
+            android:padding="@dimen/t5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_loginpopup_close" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/tv_d_32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/t25dp"
+            android:text="@string/login_dialog_title" />
+
+        <ImageView
+            android:id="@+id/iv_mobile_login"
+            android:layout_width="@dimen/t50dp"
+            android:layout_height="@dimen/t50dp"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="@dimen/t25dp"
+            android:layout_toLeftOf="@+id/iv_wechat_login"
+            android:src="@drawable/icon_loginpopup_mobile" />
+
+        <ImageView
+            android:id="@+id/iv_wechat_login"
+            android:layout_width="@dimen/t50dp"
+            android:layout_height="@dimen/t50dp"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/t30dp"
+            android:layout_marginRight="@dimen/t30dp"
+            android:layout_marginTop="@dimen/t25dp"
+            android:src="@drawable/icon_loginpopup_wechat" />
+
+        <ImageView
+            android:id="@+id/iv_sina_login"
+            android:layout_width="@dimen/t50dp"
+            android:layout_height="@dimen/t50dp"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="@dimen/t25dp"
+            android:layout_toRightOf="@+id/iv_wechat_login"
+            android:src="@drawable/icon_loginpopup_weibo" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/tv_c_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_wechat_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/t20dp"
+            android:layout_marginTop="@dimen/t30dp"
+            android:background="@color/transparent"
+            android:text="@string/login_rule_hint" />
+    </RelativeLayout>
+
+</FrameLayout>

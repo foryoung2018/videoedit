@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/t270dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    style="@style/styleDialog"
+    >
+            <!--title-->
+            <TextView
+                android:id="@+id/tv_warn_title"
+                style="@style/tv_a_32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/t24dp"
+                android:paddingRight="@dimen/t24dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:text="title"
+                android:layout_marginTop="@dimen/t22dp"
+                android:layout_marginBottom="@dimen/t10dp"
+                android:visibility="gone"
+                />
+
+            <!--content-->
+            <TextView
+                android:id="@+id/tv_warn_message"
+                style="@style/tv_a_30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/t24dp"
+                android:paddingRight="@dimen/t24dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/t22dp"
+                android:visibility="gone"
+                android:text="content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/diving_line_height"
+            android:background="@color/bg_diving_line" />
+
+        <!--两个按钮（确定+）-->
+        <LinearLayout
+            android:id="@+id/ll_dialog_warn_ok_cancle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t42dp"
+            android:background="@color/hh_color_d"
+            android:divider="@drawable/shape_default_divider"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <LinearLayout
+                android:id="@+id/ll_dialog_warn_cancle"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/cancel_text"
+                    style="@style/tv_g_28"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:duplicateParentState="true"
+                    android:background="@drawable/dialog_btn_selector"
+                    android:text="取消" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_dialog_warn_ok"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/ok_text"
+                    style="@style/tv_g_28"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:duplicateParentState="true"
+                    android:background="@drawable/dialog_btn_selector"
+                    android:text="确定" />
+            </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/viewBlankHolder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/app_background_80_black" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!--输入框-->
+        <LinearLayout
+            android:id="@+id/ll_inputbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t55dp"
+            android:background="@color/hh_color_cc1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/t36dp"
+                android:layout_marginBottom="@dimen/t7dp"
+                android:layout_marginEnd="@dimen/t10dp"
+                android:layout_marginStart="@dimen/t10dp"
+                android:layout_marginTop="@dimen/t7dp"
+                android:layout_weight="1">
+
+                <com.wmlive.hhvideo.widget.CommentEditTextView
+                    android:id="@+id/etComment"
+                    style="@style/tv_c_28"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_btn_a_first_comment"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/stringLikeJustSay"
+                    android:paddingEnd="@dimen/t40dp"
+                    android:paddingStart="@dimen/t10dp"
+                    android:textColorHint="@color/hh_color_b"
+                    android:textCursorDrawable="@drawable/edit_cursor_color" />
+
+                <ImageView
+                    android:id="@+id/iv_emoji"
+                    android:layout_width="@dimen/t20dp"
+                    android:layout_height="@dimen/t20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/t15dp"
+                    android:background="@drawable/emoji_choose_selector" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvSend"
+                android:layout_width="@dimen/t55dp"
+                android:layout_height="@dimen/t36dp"
+                android:layout_marginBottom="@dimen/t10dp"
+                android:layout_marginEnd="@dimen/t10dp"
+                android:layout_marginTop="@dimen/t10dp"
+                android:background="@drawable/bg_btn_send_comment_selector"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="@string/send_comment"
+                android:textColor="@color/comment_send_color_selector"
+                android:textSize="@dimen/t14sp" />
+        </LinearLayout>
+
+        <include layout="@layout/emoji_input_layout" />
+    </LinearLayout>
+</LinearLayout>

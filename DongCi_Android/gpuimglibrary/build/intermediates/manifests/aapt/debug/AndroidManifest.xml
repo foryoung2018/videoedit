@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dongci.sun.gpuimglibrary"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="27" />
+
+    <application>
+        <activity android:name="com.dongci.sun.gpuimglibrary.test.DcTestActivity" />
+        <activity android:name="com.dongci.sun.gpuimglibrary.test.VideoPlayAcctivity" />
+        <activity android:name="com.dongci.sun.gpuimglibrary.test.VideoComposeAct" />
+        <activity android:name="com.dongci.sun.gpuimglibrary.test.ClickVideoAct" />
+        <activity android:name="com.dongci.sun.gpuimglibrary.test.VideoExportAct" />
+    </application>
+
+</manifest>

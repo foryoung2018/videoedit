@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dongci.sun.gpuimglibrary">
+
+    <application>
+        <activity android:name=".api.apiTest.DcTestActivity" />
+        <activity android:name=".api.apiTest.VideoPlayAcctivity" />
+        <activity android:name=".api.apiTest.VideoComposeAct" />
+        <activity android:name=".api.apiTest.ClickVideoAct" />
+        <activity android:name=".api.apiTest.VideoExportAct"></activity>
+    </application>
+
+</manifest>

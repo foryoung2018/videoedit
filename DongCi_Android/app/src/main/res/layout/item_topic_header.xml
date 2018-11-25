@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivBackCover"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t144dp"
+        android:alpha="0.05"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/t10dp"
+            android:paddingTop="@dimen/t10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="@dimen/t50dp"
+                android:layout_height="@dimen/t50dp"
+                android:layout_marginLeft="@dimen/t10dp"
+                android:layout_marginRight="@dimen/t10dp"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvInitiator"
+                    style="@style/tv_b_28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/t5dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    tools:text="发起人" />
+
+                <TextView
+                    android:id="@+id/tvType"
+                    style="@style/tv_d_28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/t5dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    tools:text="发起人" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivTopicPic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t150dp"
+            android:layout_marginEnd="@dimen/t15dp"
+            android:layout_marginStart="@dimen/t15dp"
+            android:layout_marginTop="@dimen/t5dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            tools:background="@color/hh_color_f"
+            tools:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvDesc"
+                style="@style/tv_ccc_28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/t20dp"
+                android:layout_marginEnd="@dimen/t24dp"
+                android:layout_marginStart="@dimen/t24dp"
+                android:layout_marginTop="@dimen/t20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                tools:text="这是一些描述信息这是一些描述信息这是一些描述信息这是一些描述信息这是一些描述信息这是一些描述信息" />
+
+            <FrameLayout
+                android:id="@+id/flJoin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/t80dp"
+                android:layout_below="@id/tvDesc"
+                android:background="@color/app_background_color">
+
+                <TextView
+                    android:id="@+id/tvJoin"
+                    style="@style/tv_a_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/t40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_btn_f_first_type_shape"
+                    android:drawablePadding="@dimen/t4dp"
+                    android:drawableStart="@drawable/icon_music_record"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/t20dp"
+                    android:paddingStart="@dimen/t20dp"
+                    android:text="@string/stringJoinTopic"
+                    android:textStyle="bold"
+                    android:visibility="invisible"
+                    tools:visibility="visible" />
+
+            </FrameLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t10dp"
+            android:background="#F2F2F2" />
+    </LinearLayout>
+</FrameLayout>

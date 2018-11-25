@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/hh_color_a"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/t10dp"
+    android:paddingTop="@dimen/t10dp">
+
+    <LinearLayout
+        android:id="@+id/llLike"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivLike"
+            android:layout_width="@dimen/t28dp"
+            android:layout_height="@dimen/t28dp"
+            android:paddingBottom="@dimen/t3dp"
+            android:paddingEnd="@dimen/t3dp"
+            android:paddingStart="@dimen/t3dp"
+            android:paddingTop="@dimen/t3dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_home_like_nor" />
+
+        <TextView
+            android:id="@+id/tvLikeCount"
+            style="@style/tv_b_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/t2dp"
+            tools:text="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llComment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivComment"
+            android:layout_width="@dimen/t28dp"
+            android:layout_height="@dimen/t28dp"
+            android:paddingBottom="@dimen/t3dp"
+            android:paddingEnd="@dimen/t3dp"
+            android:paddingStart="@dimen/t3dp"
+            android:paddingTop="@dimen/t3dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_home_comment_nor" />
+
+        <TextView
+            android:id="@+id/tvCommentCount"
+            style="@style/tv_b_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/t2dp"
+            tools:text="30" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llShare"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/ivShare"
+            android:layout_width="@dimen/t28dp"
+            android:layout_height="@dimen/t28dp"
+            android:paddingEnd="@dimen/t3dp"
+            android:paddingStart="@dimen/t3dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_home_share_nor" />
+
+        <TextView
+            android:id="@+id/tvShare"
+            style="@style/tv_b_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/t2dp"
+            android:visibility="visible"
+            tools:text="30" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llGift"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/ivGift"
+            android:layout_width="@dimen/t28dp"
+            android:layout_height="@dimen/t28dp"
+            android:padding="@dimen/t3dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_person_gift"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvGiftCount"
+            style="@style/tv_b_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/t2dp"
+            android:visibility="visible"
+            tools:text="30" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wmlive.hhvideo.heihei.mainhome.widget.VideoDetailHeader xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.wmlive.hhvideo.widget.VideoPlayItemView
+        android:id="@+id/videoPlayItemView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.wmlive.hhvideo.widget.VideoCommentTabView
+        android:id="@+id/llHeaderTabView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible" />
+</com.wmlive.hhvideo.heihei.mainhome.widget.VideoDetailHeader>

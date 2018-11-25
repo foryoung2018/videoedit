@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/t270dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_black"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/t120dp"
+        android:layout_height="@dimen/t120dp"
+        android:layout_marginTop="@dimen/t12dp"
+        android:src="@drawable/img_earphone" />
+
+    <TextView
+        style="@style/tv_a_32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/t5dp"
+        android:text="@string/stringSuggestUseHeadset" />
+
+    <TextView
+        style="@style/tv_b_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/t20dp"
+        android:layout_marginTop="@dimen/t8dp"
+        android:text="@string/stringSuggestUseHeadsetHint" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t1dp"
+        android:background="@color/bg_diving_line2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvCancel"
+            style="@style/tv_g_32"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/t13dp"
+            android:paddingTop="@dimen/t13dp"
+            android:text="@string/cancel" />
+
+        <View
+            android:layout_width="@dimen/t1dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_diving_line2" />
+
+        <TextView
+            android:id="@+id/tvContinue"
+            style="@style/tv_a_32"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/t13dp"
+            android:paddingTop="@dimen/t13dp"
+            android:text="@string/stringContinueRecord" />
+
+    </LinearLayout>
+</LinearLayout>

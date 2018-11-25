@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wmlive.hhvideo.widget.CustomFontTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ivCountdown"
+    app:cftv_fontFamily="font/dincond_bold.otf"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="130sp"
+    android:textColor="@color/white"
+    android:text="0" />

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FF111111"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_trim_duration"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_marginLeft="@dimen/t14dp"
+        android:layout_marginRight="@dimen/t14dp">
+
+        <TextView
+            android:id="@+id/tv_trim_start"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            style="@style/tv_a_29"
+            android:textSize="@dimen/text_size_10" />
+
+    </RelativeLayout>
+
+    <com.wmlive.hhvideo.heihei.record.widget.CustomClipViewNew
+        android:id="@+id/customClipView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trim_thumbnail_height"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/rl_trim_duration"
+        android:layout_marginBottom="@dimen/t5dp">
+    </com.wmlive.hhvideo.heihei.record.widget.CustomClipViewNew>
+
+    <RelativeLayout
+        android:id="@+id/rl_step_duration"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t60dp"
+        android:layout_below="@+id/customClipView"
+        android:layout_marginLeft="@dimen/t14dp"
+        android:layout_marginRight="@dimen/t14dp">
+
+        <LinearLayout
+            android:id="@+id/left_layout"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/tv_a_29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/presecond" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/t8dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_video_upload_button_left"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="@dimen/t85dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/left_layout"
+            android:layout_toLeftOf="@+id/filter_layout"
+            >
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                style="@style/tv_a_29"
+                android:text="@string/release_voice"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/tvVolume"
+                android:layout_width="50dp"
+                android:layout_marginRight="@dimen/t55dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                style="@style/tv_a_29"
+                android:text="100%"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/volume_layout"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/left_layout"
+            android:layout_toLeftOf="@+id/filter_layout"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.wmlive.hhvideo.heihei.record.widget.IncreaseDecreaseView
+                android:id="@+id/volumeUP"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginRight="5dp"
+                app:isplus="false" />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="match_parent" />
+
+            <com.wmlive.hhvideo.heihei.record.widget.VolumeWheelView
+                android:id="@+id/volumeWheel"
+                android:layout_width="@dimen/t70dp"
+                android:layout_height="@dimen/t35dp" />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="match_parent" />
+
+            <com.wmlive.hhvideo.heihei.record.widget.IncreaseDecreaseView
+                android:id="@+id/volumeDown"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_margin="2dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginLeft="5dp"
+                app:isplus="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/endlayout"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nextsecond"
+                style="@style/tv_a_29"
+                android:layout_gravity="center_horizontal"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/t8dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_video_upload_button_right"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/filter_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/endlayout"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentTop="true"
+
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                style="@style/tv_a_29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:text="滤镜" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/imageFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/icon_video_topbar_filter_dis" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

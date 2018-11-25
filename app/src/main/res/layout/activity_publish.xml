@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_black"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:id="@+id/player_content"
+            android:layout_width="1dp"
+            android:layout_height="1dp"></FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlPreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_video_default">
+
+            <RelativeLayout
+                android:id="@+id/framevideo"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextureView
+                    android:id="@+id/videoViewsdk"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/ivPlayerStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_preview_pause"
+                android:visibility="gone" />
+
+            <com.wmlive.hhvideo.heihei.record.widget.CustomFrameView
+                android:id="@+id/customFrameView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <include layout="@layout/include_publish_info_panel" />
+
+</LinearLayout>

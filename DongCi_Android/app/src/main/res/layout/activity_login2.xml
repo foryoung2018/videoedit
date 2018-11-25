@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_diving_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etPhone"
+            style="@style/tv_d_28"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/mobile_input_hint"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingBottom="@dimen/t20dp"
+            android:paddingEnd="@dimen/t16dp"
+            android:paddingStart="@dimen/t16dp"
+            android:paddingTop="@dimen/t20dp"
+            android:textColorHint="@color/hh_color_b"
+            android:textColorLink="@color/input_index"
+            android:textCursorDrawable="@drawable/edit_cursor_color" />
+
+        <TextView
+            android:id="@+id/tvSendCode"
+            style="@style/tv_a_24"
+            android:layout_width="@dimen/t85dp"
+            android:layout_height="@dimen/t30dp"
+            android:layout_marginEnd="@dimen/t15dp"
+            android:background="@drawable/sms_code_selector"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/send_sms_code" />
+    </LinearLayout>
+
+    <include layout="@layout/include_diving_line" />
+
+    <EditText
+        android:id="@+id/etCode"
+        style="@style/tv_d_28"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="@string/send_sms_code_input_hint"
+        android:inputType="number"
+        android:maxLength="6"
+        android:paddingBottom="@dimen/t20dp"
+        android:paddingEnd="@dimen/t16dp"
+        android:paddingStart="@dimen/t16dp"
+        android:paddingTop="@dimen/t20dp"
+        android:textColorHint="@color/hh_color_b"
+        android:textColorLink="@color/input_index"
+        android:textCursorDrawable="@drawable/edit_cursor_color" />
+
+    <include layout="@layout/include_diving_line" />
+
+    <TextView
+        style="@style/tv_b_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/t15dp"
+        android:gravity="center"
+        android:text="@string/login_introduction" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        style="@style/tv_a_32"
+        android:layout_width="@dimen/t200dp"
+        android:layout_height="@dimen/t44dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/t43dp"
+        android:background="@drawable/login_bt_selector"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/login" />
+
+    <LinearLayout
+        android:id="@+id/llTestUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvUse1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/t6dp"
+            android:text="13300000005" />
+
+        <TextView
+            android:id="@+id/tvUse2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/t6dp"
+            android:text="13300000006" />
+
+        <TextView
+            android:id="@+id/tvUse3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/t6dp"
+            android:text="13300000007" />
+    </LinearLayout>
+
+
+</LinearLayout>

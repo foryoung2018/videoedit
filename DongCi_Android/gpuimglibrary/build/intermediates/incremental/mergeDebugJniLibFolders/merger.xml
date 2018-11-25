@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\dd\dongci_android\DongCi_Android\gpuimglibrary\libs"><file name="aspectjrt.jar" path="D:\dd\dongci_android\DongCi_Android\gpuimglibrary\libs\aspectjrt.jar"/><file name="isoparser-1.0.4.2.jar" path="D:\dd\dongci_android\DongCi_Android\gpuimglibrary\libs\isoparser-1.0.4.2.jar"/></source></dataSet><dataSet config="debug"><source path="D:\dd\dongci_android\DongCi_Android\gpuimglibrary\src\debug\jniLibs"/></dataSet></merger>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvJoin"
+    style="@style/tv_a_24"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/t40dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/bg_btn_f_first_type_shape"
+    android:drawablePadding="@dimen/t4dp"
+    android:drawableStart="@drawable/icon_music_record"
+    android:gravity="center"
+    android:paddingEnd="@dimen/t20dp"
+    android:paddingStart="@dimen/t20dp"
+    android:text="@string/stringJoinTopic"
+    android:textStyle="bold"
+    android:visibility="invisible"
+    tools:visibility="visible" />

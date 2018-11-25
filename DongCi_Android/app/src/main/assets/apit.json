@@ -1,0 +1,180 @@
+{
+  "comment": "初始化接口",
+  "conf_data": {
+    "report_type": [
+      {
+        "desc": "违法行为",
+        "id": 1,
+        "resource": 0
+      },
+      {
+        "desc": "低俗内容",
+        "id": 2,
+        "resource": 0
+      },
+      {
+        "desc": "垃圾广告",
+        "id": 3,
+        "resource": 0
+      },
+      {
+        "desc": "有吸烟行为",
+        "id": 4,
+        "resource": 0
+      },
+      {
+        "desc": "有玩刀/枪行为",
+        "id": 5,
+        "resource": 0
+      },
+      {
+        "desc": "盗用他人视频",
+        "id": 6,
+        "resource": 0
+      },
+      {
+        "desc": "低俗内容",
+        "id": 7,
+        "resource": 1
+      },
+      {
+        "desc": "违法行为",
+        "id": 8,
+        "resource": 1
+      },
+      {
+        "desc": "垃圾广告",
+        "id": 9,
+        "resource": 1
+      },
+      {
+        "desc": "其他原因",
+        "id": 10,
+        "resource": 1
+      }
+    ]
+  },
+  "error_code": 0,
+  "error_msg": "success",
+  "message": {
+    "ImBanner": "http://api.dongci-test.wmlives.com/api/message/banner",
+    "ImBuyGiftBatch": "http://api.dongci-test.wmlives.com/api/message/buy-gift-batch",
+    "ImFollowerSearch": "http://api.dongci-test.wmlives.com/api/message/follower_search",
+    "sendImMessage": "http://api.dongci-test.wmlives.com/api/message/send",
+    "webSocketServer": "ws://socket.dongci-test.wmlives.com/ws/channel"
+  },
+  "music": {
+    "favMusic": "http://api.dongci-test.wmlives.com/api/music/fav-music",
+    "getCategory": "http://api.dongci-test.wmlives.com/api/music/get-category",
+    "getMusicByCat": "http://api.dongci-test.wmlives.com/api/music/get-cat-music",
+    "listOpusByMusic": "http://api.dongci-test.wmlives.com/api/music/list-music-opus",
+    "myFavMusic": "http://api.dongci-test.wmlives.com/api/music/my-fav-music"
+  },
+  "opus": {
+    "OpusLogs": "http://api.dongci-test.wmlives.com/api/opus/logs",
+    "buyGift": "http://api.dongci-test.wmlives.com/api/opus/buy-gift",
+    "buyGiftBatch": "http://api.dongci-test.wmlives.com/api/opus/buy-gift-batch",
+    "commendOpus": "http://api.dongci-test.wmlives.com/api/opus/commend-opus",
+    "deleteComment": "http://api.dongci-test.wmlives.com/api/opus/delete-comment",
+    "deleteOpus": "http://api.dongci-test.wmlives.com/api/opus/delete-opus",
+    "getOpus": "http://api.dongci-test.wmlives.com/api/opus/get-opus",
+    "getOpusMaterial": "http://api.dongci-test.wmlives.com/api/opus/get-material",
+    "giftNotify": "http://api.dongci-test.wmlives.com/api/opus/gift-notify",
+    "hateOpus": "http://api.dongci-test.wmlives.com/api/opus/hate-opus",
+    "likeComment": "http://api.dongci-test.wmlives.com/api/opus/like-comment",
+    "likeOpus": "http://api.dongci-test.wmlives.com/api/opus/like-opus",
+    "listOpusByFollow": "http://api.dongci-test.wmlives.com/api/opus/list-opus-follow",
+    "listOpusByRecommend": "http://api.dongci-test.wmlives.com/api/opus/list-opus-recommend",
+    "listOpusByRecommendV2": "http://api.dongci-test.wmlives.com/api/opus/list-opus-recommend-v2",
+    "listOpusByTime": "http://api.dongci-test.wmlives.com/api/opus/list-opus-latest",
+    "listOpusComment": "http://api.dongci-test.wmlives.com/api/opus/list-opus-comment",
+    "listReportType": "http://api.dongci-test.wmlives.com/api/opus/list-report-type",
+    "manageOpus": "http://api.dongci-test.wmlives.com/api/opus/manage",
+    "modifyOpus": "http://api.dongci-test.wmlives.com/api/opus/modify-opus",
+    "opusFrameLayout": "http://api.dongci-test.wmlives.com/api/opus/frame-layout",
+    "opusPointList": "http://api.dongci-test.wmlives.com/api/opus/point-list",
+    "opusTopList": "http://api.dongci-test.wmlives.com/api/opus/top-list",
+    "opusUploadMaterial": "http://api.dongci-test.wmlives.com/api/opus/upload-material",
+    "report": "http://api.dongci-test.wmlives.com/api/opus/report",
+    "saveOpus": "http://api.dongci-test.wmlives.com/api/opus/save-opus",
+    "uploadLocalOpus": "http://api.dongci-test.wmlives.com/api/opus/upload-local-opus",
+    "viewOpus": "http://api.dongci-test.wmlives.com/api/opus/view-opus"
+  },
+  "pay": {
+    "createOrder": "http://api.dongci-test.wmlives.com/api/pay/create-order",
+    "iapOrderVerify": "http://api.dongci-test.wmlives.com/api/pay/iap-order-verify",
+    "p2g": "http://api.dongci-test.wmlives.com/api/pay/p2g",
+    "p2gpackageList": "http://api.dongci-test.wmlives.com/api/pay/p2gpackage-list",
+    "paypackageList": "http://api.dongci-test.wmlives.com/api/pay/paypackage-list"
+  },
+  "search": {
+    "search": "http://api.dongci-test.wmlives.com/api/search"
+  },
+  "social": {
+    "getBanner": "http://api.dongci-test.wmlives.com/api/social/get-banner",
+    "giftInfo": "http://api.dongci-test.wmlives.com/api/social/gift-list",
+    "giftInfoForIm": "http://api.dongci-test.wmlives.com/api/social/gift-list-for-im",
+    "giftInfoV2": "http://api.dongci-test.wmlives.com/api/social/gift-list-v2",
+    "giftResources": "http://api.dongci-test.wmlives.com/api/social/gift-resources",
+    "loadSplash": "http://api.dongci-test.wmlives.com/api/social/load-splash"
+  },
+  "switch": {
+    "review": false,
+    "uploadLog": true
+  },
+  "sys": {
+    "aboutUs": "http://web.dongci-test.wmlives.com/#/about",
+    "devicePushInfo": "http://api.dongci-test.wmlives.com/api/sys/push-device",
+    "ossToken": "http://api.dongci-test.wmlives.com/api/sys/oss-token",
+    "reCheckDeviceInfo": "http://api.dongci-test.wmlives.com/api/sys/re-check-device",
+    "serviceTerms": "http://web.dongci-test.wmlives.com/#/about/service_term",
+    "shareLog": "http://api.dongci-test.wmlives.com/api/sys/share-log",
+    "updateCheck": "http://api.dongci-test.wmlives.com/api/sys/update",
+    "uploadLog": "http://api.dongci-test.wmlives.com/api/sys/upload-log",
+    "usinghelp": "http://web.dongci-test.wmlives.com/#/about/usinghelp"
+  },
+  "tips": {
+    "pay": {
+      "payTips": "领取红包或优惠充值请关注官方微信公众号：",
+      "wechat": "dongci-app"
+    },
+    "searchTips": "搜索用户、话题"
+  },
+  "topic": {
+    "create": "http://api.dongci-test.wmlives.com/api/topic/create",
+    "listOpusByTopic": "http://api.dongci-test.wmlives.com/api/topic/list-topic-opus",
+    "listSystemNews": "http://api.dongci-test.wmlives.com/api/topic/system-news",
+    "listTopic": "http://api.dongci-test.wmlives.com/api/topic/list-topic",
+    "newTopicCheck": "http://api.dongci-test.wmlives.com/api/topic/notify"
+  },
+  "user": {
+    "applyOfficialVerify": "http://api.dongci-test.wmlives.com/api/user/apply-official-verify",
+    "batchFollowUser": "http://api.dongci-test.wmlives.com/api/user/batch-follow",
+    "bingWweibo": "http://api.dongci-test.wmlives.com/api/user/bing-weibo",
+    "blockUser": "http://api.dongci-test.wmlives.com/api/user/block",
+    "coCreateOpus": "http://api.dongci-test.wmlives.com/api/user/list-co-create",
+    "followUser": "http://api.dongci-test.wmlives.com/api/user/follow",
+    "getSMSVerificationCode": "http://api.dongci-test.wmlives.com/api/user/get-sms-verification-code",
+    "getUserInfo": "http://api.dongci-test.wmlives.com/api/user/user-info",
+    "goldAccount": "http://api.dongci-test.wmlives.com/api/user/gold-account",
+    "listFans": "http://api.dongci-test.wmlives.com/api/user/list-fans",
+    "listFollower": "http://api.dongci-test.wmlives.com/api/user/list-follower",
+    "listReportType": "http://api.dongci-test.wmlives.com/api/user/list-report-type",
+    "listUserLike": "http://api.dongci-test.wmlives.com/api/user/list-like",
+    "listUserOpus": "http://api.dongci-test.wmlives.com/api/user/list-opus",
+    "recommendUsers": "http://api.dongci-test.wmlives.com/api/user/recommend-users",
+    "removeBindWeibo": "http://api.dongci-test.wmlives.com/api/user/remove-bing-weibo",
+    "report": "http://api.dongci-test.wmlives.com/api/user/report",
+    "signIn": "http://api.dongci-test.wmlives.com/api/user/sign-in",
+    "signInCLByPhone": "http://api.dongci-test.wmlives.com/api/user/sign-in-cl-by-phone",
+    "signOut": "http://api.dongci-test.wmlives.com/api/user/sign-out",
+    "unFollowUsr": "http://api.dongci-test.wmlives.com/api/user/unfollow",
+    "updateUser": "http://api.dongci-test.wmlives.com/api/user/update-user",
+    "userBlacklist": "http://api.dongci-test.wmlives.com/api/user/blacklist",
+    "userHome": "http://api.dongci-test.wmlives.com/api/user/home",
+    "userPointList": "http://api.dongci-test.wmlives.com/api/user/point-list",
+    "verifyInvitationCode": "http://api.dongci-test.wmlives.com/api/user/verify-invitation-code",
+    "weiboVerified": "http://web.dongci-test.wmlives.com/app/auth/weibo"
+  },
+  "version": "1.0"
+}

@@ -1,0 +1,59 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml:2:1-13:12
+INJECTED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml:2:1-13:12
+INJECTED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml:2:1-13:12
+INJECTED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml:2:1-13:12
+INJECTED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml:2:1-13:12
+INJECTED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml:2:1-13:12
+INJECTED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml:2:1-13:12
+	package
+		ADDED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml:3:5-43
+		INJECTED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml
+		INJECTED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml
+		ADDED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml:2:1-13:12
+		INJECTED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml
+		ADDED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml:2:1-13:12
+		INJECTED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml:5:5-11:19
+activity#com.dongci.sun.gpuimglibrary.test.DcTestActivity
+ADDED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml:6:9-57
+	android:name
+		ADDED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml:6:19-54
+activity#com.dongci.sun.gpuimglibrary.test.VideoPlayAcctivity
+ADDED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml:7:9-61
+	android:name
+		ADDED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml:7:19-58
+activity#com.dongci.sun.gpuimglibrary.test.VideoComposeAct
+ADDED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml:8:9-58
+	android:name
+		ADDED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml:8:19-55
+activity#com.dongci.sun.gpuimglibrary.test.ClickVideoAct
+ADDED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml:9:9-56
+	android:name
+		ADDED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml:9:19-53
+activity#com.dongci.sun.gpuimglibrary.test.VideoExportAct
+ADDED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml:10:9-66
+	android:name
+		ADDED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml:10:19-54
+uses-sdk
+INJECTED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml
+INJECTED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml
+INJECTED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml
+INJECTED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml
+		ADDED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml
+		INJECTED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml
+		ADDED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml
+		INJECTED from D:\dd\DongCi_Android\gpuimglibrary\src\main\AndroidManifest.xml

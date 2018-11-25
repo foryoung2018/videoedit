@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/bottom_menu_bg"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_trim_duration"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <TextView
+            android:id="@+id/tv_trim_start"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="从0秒开始"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_10" />
+
+        <TextView
+            android:id="@+id/tv_trim_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="60秒"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_10" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trim_thumbnail_height"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/rl_trim_duration"
+        android:layout_marginLeft="@dimen/t10dp"
+        android:layout_marginRight="@dimen/t10dp"
+        android:layout_marginBottom="@dimen/dimen_10">
+
+        <com.wmlive.hhvideo.heihei.record.widget.ThumbnailScrollView
+            android:id="@+id/hsv_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:fadingEdge="none"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/mVideoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.wmlive.hhvideo.heihei.record.widget.ThumbNailLine
+                    android:id="@+id/view_trim_thumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp" />
+            </LinearLayout>
+        </com.wmlive.hhvideo.heihei.record.widget.ThumbnailScrollView>
+
+        <com.wmlive.hhvideo.heihei.record.widget.ExtRangeSeekbarPlus
+            android:id="@+id/esb_trim_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="24dip"
+    android:layout_height="24dip"
+    android:orientation="horizontal">
+    <!-- 加载动画-->
+    <ImageView
+        android:id="@+id/iv_im_detail_me_loading"
+        android:layout_width="12dip"
+        android:layout_height="12dip"
+        android:layout_marginTop="@dimen/t6dp"
+        android:layout_marginBottom="@dimen/t6dp"
+        android:layout_gravity="left|center_vertical"
+        android:background="@drawable/hh_chat_icon_loading_600ms"
+        android:padding="@dimen/t5dp"
+        android:visibility="gone" />
+    <!-- 重新发送-->
+    <ImageView
+        android:id="@+id/iv_im_detail_me_retry"
+        android:layout_width="24dip"
+        android:layout_height="24dip"
+        android:layout_gravity="left|center_vertical"
+        android:background="@drawable/hh_chat_icon_return"
+        android:padding="@dimen/t5dp"
+        android:visibility="gone" />
+    <!-- 发送异常-->
+    <ImageView
+        android:id="@+id/iv_im_detail_me_error"
+        android:layout_width="24dip"
+        android:layout_height="24dip"
+        android:layout_gravity="left|center_vertical"
+        android:background="@drawable/hh_chat_icon_error"
+        android:padding="@dimen/t5dp" />
+</LinearLayout>

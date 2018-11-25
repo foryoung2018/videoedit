@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:drawableLeft="@drawable/bg_tab_upload_video_selector"
+          android:drawablePadding="@dimen/t5dp"
+          android:drawableStart="@drawable/bg_tab_upload_video_selector"
+          android:gravity="center"
+          android:padding="@dimen/t4dp"
+          android:text="@string/stringUploadVideo"
+          android:textColor="@drawable/bg_search_tab_text_selector"
+    />

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/ivCut"
+        android:layout_width="@dimen/t42dp"
+        android:layout_height="@dimen/t42dp"
+        android:src="@drawable/icon_video_topbar_music_nor"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivSort"
+        android:layout_width="@dimen/t42dp"
+        android:layout_height="@dimen/t42dp"
+        android:padding="@dimen/t10dp"
+        android:src="@drawable/icon_film_move"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivBeauty"
+        android:layout_width="@dimen/t42dp"
+        android:layout_height="@dimen/t42dp"
+        android:layout_marginRight="@dimen/t15dp"
+        android:padding="@dimen/t10dp"
+        android:src="@drawable/icon_video_topbar_unbeauty" />
+
+    <ImageView
+        android:id="@+id/ivFlash"
+        android:layout_width="@dimen/t42dp"
+        android:layout_height="@dimen/t42dp"
+        android:padding="@dimen/t10dp"
+        android:src="@drawable/icon_video_topbar_flash_on" />
+
+    <ImageView
+        android:id="@+id/ivToggle"
+        android:layout_width="@dimen/t42dp"
+        android:layout_height="@dimen/t42dp"
+        android:padding="@dimen/t10dp"
+        android:layout_marginLeft="@dimen/t15dp"
+        android:src="@drawable/icon_video_topbar_turn" />
+</LinearLayout>

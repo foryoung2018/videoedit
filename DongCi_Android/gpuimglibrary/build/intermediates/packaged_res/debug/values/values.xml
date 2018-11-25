@@ -1,0 +1,1615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <string-array name="pref_entries_pixel_format">
+        <item>Auto Select</item>
+        <item>RGB 565</item>
+        <item>RGB 888</item>
+        <item>RGBX 8888</item>
+        <item>YV12</item>
+        <item>OpenGL ES2</item>
+    </string-array>
+    <string-array name="pref_entries_player">
+        <item>Auto Select</item>
+        <item>AndroidMediaPlayer</item>
+        <item>IjkMediaPlayer</item>
+        <item>IjkExoMediaPlayer</item>
+    </string-array>
+    <string-array name="pref_entry_summaries_pixel_format">
+        <item>Auto Select</item>
+        <item>RGB 565</item>
+        <item>RGB 888</item>
+        <item>RGBX 8888</item>
+        <item>YV12</item>
+        <item>OpenGL ES2</item>
+    </string-array>
+    <string-array name="pref_entry_summaries_player">
+        <item>Auto Select</item>
+        <item>AndroidMediaPlayer</item>
+        <item>IjkMediaPlayer</item>
+        <item>IjkExoMediaPlayer</item>
+    </string-array>
+    <string-array name="pref_entry_values_pixel_format">
+        <item/>
+        <item>fcc-rv16</item>
+        <item>fcc-rv24</item>
+        <item>fcc-rv32</item>
+        <item>fcc-yv12</item>
+        <item>fcc-_es2</item>
+    </string-array>
+    <string-array name="pref_entry_values_player">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <color name="alert_bg">#212427</color>
+    <color name="app_40_black">#64000000</color>
+    <color name="app_background_10_white">#1affffff</color>
+    <color name="app_background_20_white">#33000000</color>
+    <color name="app_background_50_white">#88ffffff</color>
+    <color name="app_background_80_back">#CC000000</color>
+    <color name="app_background_80_black">#88000000</color>
+    <color name="app_background_95_white">#EE212427</color>
+    <color name="app_background_color">@color/colorPrimary</color>
+    <color name="app_background_eight_white">#CCFFFFFF</color>
+    <color name="app_background_other_back">#33000000</color>
+    <color name="app_background_other_white">#33ffffff</color>
+    <color name="app_background_seven_back">#BB000000</color>
+    <color name="app_background_transparent85">#DD000000</color>
+    <color name="app_background_transparent90">#DF000000</color>
+    <color name="app_background_two_back">#33000000</color>
+    <color name="app_blank_60">#99000000</color>
+    <color name="app_connect_color">#ff4dce62</color>
+    <color name="app_dialog_mengban_color">#B3000000</color>
+    <color name="app_font_transparent_white">#99ffffff</color>
+    <color name="app_half_color_value">#80949ea8</color>
+    <color name="auto_tx_color">#13cadb</color>
+    <color name="baseline_color">#ebeef3</color>
+    <color name="bg_black">#000000</color>
+    <color name="bg_blue">#2ab4fb</color>
+    <color name="bg_container_color">#ff1a1d1f</color>
+    <color name="bg_cover_light_gray">#11949ea8</color>
+    <color name="bg_crop_music">#0C6641</color>
+    <color name="bg_crop_music_shadow">#500C6641</color>
+    <color name="bg_dark_gray">#494d55</color>
+    <color name="bg_diving_line">#ffEBEBEB</color>
+    <color name="bg_diving_line2">#ff313539</color>
+    <color name="bg_frame_view_bg">#242320</color>
+    <color name="bg_hang_up">#f96666</color>
+    <color name="bg_im_input_color">#2e3033</color>
+    <color name="bg_im_input_text_color">#33949ea8</color>
+    <color name="bg_im_normal">#2e3033</color>
+    <color name="bg_light_gray">#949ea8</color>
+    <color name="bg_light_green">#12ea72</color>
+    <color name="bg_light_yellow">#faeb82</color>
+    <color name="bg_magenta">#fc1c8f</color>
+    <color name="bg_orange">#ff8828</color>
+    <color name="bg_rose">#f65177</color>
+    <color name="bg_unread">#ff3f3e</color>
+    <color name="bg_upload_mask_color">#66ffffff</color>
+    <color name="bg_white">#ffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="block_mask_bg">#FF000000</color>
+    <color name="border_no_checked">#888888</color>
+    <color name="borderline_color">#888888</color>
+    <color name="bottom_menu_bg">#212527</color>
+    <color name="color1">#cccccc</color>
+    <color name="colorAccent">@color/hh_color_e</color>
+    <color name="colorPrimary">#ffffffff</color>
+    <color name="colorPrimaryDark">#ff212427</color>
+    <color name="colorToolbarTitleBackground">@color/colorPrimary</color>
+    <color name="colorToolbarTitleText">@color/hh_color_d</color>
+    <color name="color_effect_awakened_bg">#9917ee8b</color>
+    <color name="color_effect_heartbeat_bg">#99fc1c8f</color>
+    <color name="color_effect_item_text">#FFFFFF</color>
+    <color name="color_effect_rg_bg">#80000000</color>
+    <color name="color_effect_spotlight_bg">#997c4dff</color>
+    <color name="color_effect_tremble_bg">#99ffc107</color>
+    <color name="color_thumbnail_position_rect">#FC1C8F</color>
+    <color name="color_time_effect_bg">#991fb6ff</color>
+    <color name="darkgray">#AAAAAA</color>
+    <color name="dialog_alert_text_color">#FFFFFF</color>
+    <color name="dialog_background">#212528</color>
+    <color name="dialog_button_text_color_n">#13ef8b</color>
+    <color name="dialog_button_text_color_p">#8013ef8b</color>
+    <color name="dialog_divide_line">#31363a</color>
+    <color name="dialog_translucent">#80212528</color>
+    <color name="edit_text_gray">#545454</color>
+    <color name="ext_progressbar">#17ee8b</color>
+    <color name="extspeed_ed">#212427</color>
+    <color name="filter_ed">#1fb6ff</color>
+    <color name="green">#17ee8b</color>
+    <color name="grid_listview_item_backgroup">#E8E9ED</color>
+    <color name="hh_color_a">#ffffffff</color>
+    <color name="hh_color_a70">#BBffffff</color>
+    <color name="hh_color_a_50">#7fffffff</color>
+    <color name="hh_color_a_five">#B3ffffff</color>
+    <color name="hh_color_aa">#FFAAAAAA</color>
+    <color name="hh_color_b">#ff949ea8</color>
+    <color name="hh_color_b_20">#33949ea8</color>
+    <color name="hh_color_b_50">#80949ea8</color>
+    <color name="hh_color_b_80">#cc949ea8</color>
+    <color name="hh_color_bb">#FFEAEBED</color>
+    <color name="hh_color_c">#FF494D55</color>
+    <color name="hh_color_c70">#BB494d55</color>
+    <color name="hh_color_cc">#ff888888</color>
+    <color name="hh_color_cc1">#FFCCCCCC</color>
+    <color name="hh_color_ccc">#ff777777</color>
+    <color name="hh_color_ccc10">#16777777</color>
+    <color name="hh_color_ccc16">#16777777</color>
+    <color name="hh_color_d">#ff212427</color>
+    <color name="hh_color_dd">#ff000000</color>
+    <color name="hh_color_e">#ff2ab4fb</color>
+    <color name="hh_color_f">#FFFF2120</color>
+    <color name="hh_color_female">#fff99b9b</color>
+    <color name="hh_color_ff">#FFF96666</color>
+    <color name="hh_color_g">#ff17ee8b</color>
+    <color name="hh_color_h">#ffff8828</color>
+    <color name="hh_color_i">#fffaeb82</color>
+    <color name="hh_color_i1">#FFFFDF30</color>
+    <color name="hh_color_k">#FF0090FF</color>
+    <color name="hh_color_k_80">#DD0090FF</color>
+    <color name="hh_color_k_90">#EE0090FF</color>
+    <color name="hh_color_male">#ff85ced5</color>
+    <color name="hh_color_sec_bg">#33000000</color>
+    <color name="hhvideo_color_g">#ff3dabff</color>
+    <color name="ijk_transparent_dark">#77000000</color>
+    <color name="input_index">#2ab4fb</color>
+    <color name="kxred">#13cadb</color>
+    <color name="main_color">#13cadb</color>
+    <color name="main_cover_bottom">#33000000</color>
+    <color name="main_cover_top">#44000000</color>
+    <color name="main_orange">#ffd500</color>
+    <color name="main_orange_old">#f87a00</color>
+    <color name="main_orange_transparent_50">#b2ffd500</color>
+    <color name="main_orange_transparent_66">#b2ffd500</color>
+    <color name="mainbg">#2A2E31</color>
+    <color name="maincolor">#ffff0000</color>
+    <color name="mainmaincolor">#b60000</color>
+    <color name="message_item_line_color">#b0b0b0</color>
+    <color name="pop_sheet_text_color">#ff323332</color>
+    <color name="pop_text_gray">#777777</color>
+    <color name="pop_text_gray_10">#1A777777</color>
+    <color name="recorder_scale">#FF2120</color>
+    <color name="red">#E5004F</color>
+    <color name="release_full_screen_cover">#4D000000</color>
+    <color name="sub_menu_bgcolor_transparent">#8027262C</color>
+    <color name="tab_item_checked_text_color">#FFFFFF</color>
+    <color name="text_black">#000000</color>
+    <color name="text_color_dark_gray">#494d55</color>
+    <color name="text_color_light_gray">#949ea8</color>
+    <color name="text_color_white">#ffffff</color>
+    <color name="text_white">#ffffff</color>
+    <color name="thumb_checked">#B213cadb</color>
+    <color name="title_bg_end">#00000000</color>
+    <color name="title_bg_start">#4D000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent80_white">#CCFFFFFF</color>
+    <color name="transparent_black">#80000000</color>
+    <color name="transparent_black20">#33000000</color>
+    <color name="transparent_black50">#88000000</color>
+    <color name="transparent_black60">#99000000</color>
+    <color name="transparent_black70">#B3000000</color>
+    <color name="transparent_black80">#CC000000</color>
+    <color name="transparent_black90">#E6000000</color>
+    <color name="transparent_black95">#F2000000</color>
+    <color name="transparent_green">#5017EE8B</color>
+    <color name="transparent_orange">#a9e38a43</color>
+    <color name="transparent_white">#88FFFFFF</color>
+    <color name="transparent_white20">#33FFFFFF</color>
+    <color name="transparent_white30">#4DFFFFFF</color>
+    <color name="tv_im_recod_btn_press">#4D4E5357</color>
+    <color name="tv_im_recod_notice">#ffFDFEFF</color>
+    <color name="tv_im_recod_notice_cancel">#F84C4C</color>
+    <color name="tv_im_recod_send_cancle_color">#2f3042</color>
+    <color name="tv_im_send_text_color">#ffffff</color>
+    <color name="video_cover_bg_end">#66000000</color>
+    <color name="video_cover_bg_start">#00000000</color>
+    <color name="video_explosion_bg_end">#88000000</color>
+    <color name="video_explosion_bg_start">#00000000</color>
+    <color name="video_like_btn_bg">#FF2120</color>
+    <color name="video_progress_background">#33B2B2B2</color>
+    <color name="video_share_enable_location_text_color">#545454</color>
+    <color name="video_share_remove_text_color">#424242</color>
+    <color name="video_text_color">#353535</color>
+    <color name="voice_progress_p">#2CB2F5</color>
+    <color name="voice_progress_secondary">#817775</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_divider">#33ffffff</color>
+    <declare-styleable name="BannerView"><attr format="boolean" name="bvIsLoop"/><attr format="boolean" name="bvIsAuto"/><attr format="integer" name="bvDelay"/><attr format="integer" name="bvInterval"/><attr format="float" name="bvAspectRatio"/><attr format="color" name="bvBarColor"/><attr format="boolean" name="bvBarVisibleWhenLast"/><attr format="dimension" name="bvBarPaddingLeft"/><attr format="dimension" name="bvBarPaddingTop"/><attr format="dimension" name="bvBarPaddingRight"/><attr format="dimension" name="bvBarPaddingBottom"/><attr format="color" name="bvTitleColor"/><attr format="dimension" name="bvTitleSize"/><attr format="boolean" name="bvTitleVisible"/><attr format="integer" name="bvIndicatorVisible">
+            <enum name="auto" value="0"/>
+            <enum name="always" value="1"/>
+            <enum name="never" value="2"/>
+        </attr><attr name="bvIndicatorGravity">
+            <enum name="center" value="17"/>
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+        </attr><attr format="dimension" name="bvIndicatorWidth"/><attr format="dimension" name="bvIndicatorHeight"/><attr format="dimension" name="bvIndicatorGap"/><attr format="color" name="bvIndicatorColor"/><attr format="color" name="bvIndicatorColorSelected"/><attr format="reference" name="bvIndicatorDrawable"/><attr format="reference" name="bvIndicatorDrawableSelected"/></declare-styleable>
+    <declare-styleable name="CircleAnimationView"><attr format="reference" name="loadingSrc"/><attr format="float" name="uncheckedAlpha"/></declare-styleable>
+    <declare-styleable name="CircleImageView"><attr format="dimension" name="civ_border_width"/><attr format="color" name="civ_border_color"/><attr format="boolean" name="civ_border_overlay"/><attr format="color" name="civ_fill_color"/></declare-styleable>
+    <declare-styleable name="CustomFontTextView"><attr format="string" name="cftv_fontFamily"/></declare-styleable>
+    <declare-styleable name="CustomFrameView"><attr format="boolean" name="cfv_show_border"/><attr format="color" name="cfv_border_color"/><attr format="float" name="cfv_border_width"/><attr format="boolean" name="cfv_auto_size"/></declare-styleable>
+    <declare-styleable name="CustomInputText"><attr format="integer" name="cit_maxCount"/><attr format="color" name="cit_circleColor"/><attr format="color" name="cit_underlineColor"/><attr format="dimension" name="cit_radius"/><attr format="dimension" name="cit_divideLineWidth"/><attr format="color" name="cit_divideLineColor"/><attr format="dimension" name="cit_rectAngle"/><attr format="color" name="cit_focusedColor"/><attr format="boolean" name="cit_showPassword"/><attr format="integer" name="cit_cursorFlashTime"/><attr format="boolean" name="cit_isCursorEnable"/><attr format="color" name="cit_cursorColor"/><attr format="enum" name="cit_mode">
+            <enum name="underline" value="0"/>
+            <enum name="rect" value="1"/>
+        </attr></declare-styleable>
+    <declare-styleable name="EffectRadioButton"><attr format="float" name="rbUncheckedAlpha"/></declare-styleable>
+    <declare-styleable name="ExtCircle"><attr format="boolean" name="circleChecked"/><attr format="color|reference" name="circleBgColor"/><attr format="color|reference" name="circleBorderColor"/></declare-styleable>
+    <declare-styleable name="ExtCircleProgressBar"><attr format="reference" name="extprogressDrawable"/><attr format="reference" name="extindetermiateDrawable"/><attr format="boolean" name="extindetermiate"/></declare-styleable>
+    <declare-styleable name="ExtImage"><attr format="reference" name="extSrc"/><attr format="dimension" name="extBorderLineWidth"/></declare-styleable>
+    <declare-styleable name="FocusImageView"><attr format="integer" name="focus_focusing_id"/><attr format="integer" name="focus_success_id"/><attr format="integer" name="focus_fail_id"/></declare-styleable>
+    <declare-styleable name="ForegroundImageView"><attr name="android:foreground"/></declare-styleable>
+    <declare-styleable name="IjkListPreference"><attr name="entrySummaries"/></declare-styleable>
+    <declare-styleable name="MaskView"><attr format="boolean" name="showAnim"/><attr format="color" name="maskColor"/></declare-styleable>
+    <declare-styleable name="MaterialHeader"><attr format="color" name="mhPrimaryColor"/><attr format="color" name="mhShadowColor"/><attr format="dimension" name="mhShadowRadius"/><attr format="boolean" name="mhShowBezierWave"/></declare-styleable>
+    <declare-styleable name="MaterialMenuGroup"><attr name="android:menuCategory"/><attr name="android:orderInCategory"/></declare-styleable>
+    <declare-styleable name="MaterialMenuItem"><attr name="android:menuCategory"/><attr name="android:orderInCategory"/></declare-styleable>
+    <declare-styleable name="RangeSeekBarBaidu"><attr format="boolean" name="isSide"/></declare-styleable>
+    <declare-styleable name="RatioLayout"><attr format="float" name="ratio"/></declare-styleable>
+    <declare-styleable name="RealtimeBlurView"><attr format="dimension" name="realtimeBlurRadius"/><attr format="float" name="realtimeDownsampleFactor"/><attr format="color" name="realtimeOverlayColor"/></declare-styleable>
+    <declare-styleable name="SwitchButton"><attr format="reference" name="swThumbDrawable"/><attr format="color|reference" name="swThumbColor"/><attr format="dimension|reference" name="swThumbMargin"/><attr format="dimension|reference" name="swThumbMarginTop"/><attr format="dimension|reference" name="swThumbMarginBottom"/><attr format="dimension|reference" name="swThumbMarginLeft"/><attr format="dimension|reference" name="swThumbMarginRight"/><attr format="dimension|reference" name="swThumbWidth"/><attr format="dimension|reference" name="swThumbHeight"/><attr format="dimension|reference" name="swThumbRadius"/><attr format="dimension|reference" name="swBackRadius"/><attr format="reference" name="swBackDrawable"/><attr format="color|reference" name="swBackColor"/><attr format="boolean" name="swFadeBack"/><attr format="float" name="swBackMeasureRatio"/><attr format="integer" name="swAnimationDuration"/><attr format="color|reference" name="swTintColor"/><attr format="string" name="swTextOn"/><attr format="string" name="swTextOff"/><attr format="dimension" name="swTextMarginH"/><attr format="boolean" name="swAutoAdjustTextPosition"/></declare-styleable>
+    <declare-styleable name="VerSeekbar"><attr format="reference" name="thumb"/><attr format="reference" name="VerProgressDrawable"/></declare-styleable>
+    <declare-styleable name="VideoDetailOptionView"><attr format="enum" name="vdov_theme">
+            <enum name="black" value="0"/>
+            <enum name="white" value="1"/>
+        </attr></declare-styleable>
+    <declare-styleable name="WiperSwitchButton"><attr format="reference" name="kswThumbDrawable"/><attr format="color|reference" name="kswThumbColor"/><attr format="dimension|reference" name="kswThumbMargin"/><attr format="dimension|reference" name="kswThumbMarginTop"/><attr format="dimension|reference" name="kswThumbMarginBottom"/><attr format="dimension|reference" name="kswThumbMarginLeft"/><attr format="dimension|reference" name="kswThumbMarginRight"/><attr format="dimension|reference" name="kswThumbWidth"/><attr format="dimension|reference" name="kswThumbHeight"/><attr format="dimension|reference" name="kswThumbRadius"/><attr format="dimension|reference" name="kswBackRadius"/><attr format="reference" name="kswBackDrawable"/><attr format="color|reference" name="kswBackColor"/><attr format="boolean" name="kswFadeBack"/><attr format="float" name="kswBackMeasureRatio"/><attr format="integer" name="kswAnimationDuration"/><attr format="color|reference" name="kswTintColor"/><attr format="string" name="kswTextOn"/><attr format="string" name="kswTextOff"/><attr format="dimension" name="kswTextMarginH"/><attr format="boolean" name="kswAutoAdjustTextPosition"/></declare-styleable>
+    <declare-styleable name="extAutoTitle"><attr format="string" name="sText"/></declare-styleable>
+    <declare-styleable name="extColorPicker"><attr format="boolean" name="isdrawcircle"/></declare-styleable>
+    <declare-styleable name="extdragarray"><attr format="reference" name="sArrays"/></declare-styleable>
+    <declare-styleable name="squareview"><attr format="string" name="square_text"/><attr format="color" name="square_bg"/></declare-styleable>
+    <dimen name="common_item_height">48dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_100">100dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="dimen_30">30dp</dimen>
+    <dimen name="dimen_40">40dp</dimen>
+    <dimen name="dimen_60">60dp</dimen>
+    <dimen name="dimen_7">7dp</dimen>
+    <dimen name="dimen_80">80dp</dimen>
+    <dimen name="dimen_90">90dp</dimen>
+    <dimen name="diving_line_height">1px</dimen>
+    <dimen name="doodle_button_width">80dp</dimen>
+    <dimen name="edit_cursor_width">2dp</dimen>
+    <dimen name="filter_list_item_size">61.45dp</dimen>
+    <dimen name="filter_list_padding_size">4dp</dimen>
+    <dimen name="line_height">1px</dimen>
+    <dimen name="margin">20dp</dimen>
+    <dimen name="marginTop">15dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_xlarge">32dp</dimen>
+    <dimen name="margin_xsmall">4dp</dimen>
+    <dimen name="margin_xxlarge">48dp</dimen>
+    <dimen name="padding">5dp</dimen>
+    <dimen name="publish_padding">13dp</dimen>
+    <dimen name="radius_8">8dp</dimen>
+    <dimen name="radius_big">16dp</dimen>
+    <dimen name="radius_btn_first_type">22dip</dimen>
+    <dimen name="radius_btn_second_type">15dip</dimen>
+    <dimen name="radius_btn_second_type32">16dip</dimen>
+    <dimen name="radius_btn_third_type">5dip</dimen>
+    <dimen name="radius_dialog_type">6dip</dimen>
+    <dimen name="radius_small">4dp</dimen>
+    <dimen name="recorder_margin">3dp</dimen>
+    <dimen name="t100dp">100dp</dimen>
+    <dimen name="t101dp">101dp</dimen>
+    <dimen name="t102dp">102dp</dimen>
+    <dimen name="t103dp">103dp</dimen>
+    <dimen name="t104dp">104dp</dimen>
+    <dimen name="t105dp">105dp</dimen>
+    <dimen name="t106dp">106dp</dimen>
+    <dimen name="t107dp">107dp</dimen>
+    <dimen name="t108dp">108dp</dimen>
+    <dimen name="t109dp">109dp</dimen>
+    <dimen name="t10dp">10dp</dimen>
+    <dimen name="t10sp">10sp</dimen>
+    <dimen name="t110dp">110dp</dimen>
+    <dimen name="t111dp">111dp</dimen>
+    <dimen name="t112dp">112dp</dimen>
+    <dimen name="t113dp">113dp</dimen>
+    <dimen name="t114dp">114dp</dimen>
+    <dimen name="t115dp">115dp</dimen>
+    <dimen name="t116dp">116dp</dimen>
+    <dimen name="t117dp">117dp</dimen>
+    <dimen name="t118dp">118dp</dimen>
+    <dimen name="t119dp">119dp</dimen>
+    <dimen name="t11dp">11dp</dimen>
+    <dimen name="t11sp">11sp</dimen>
+    <dimen name="t120dp">120dp</dimen>
+    <dimen name="t121dp">121dp</dimen>
+    <dimen name="t122dp">122dp</dimen>
+    <dimen name="t123dp">123dp</dimen>
+    <dimen name="t124dp">124dp</dimen>
+    <dimen name="t125dp">125dp</dimen>
+    <dimen name="t126dp">126dp</dimen>
+    <dimen name="t127dp">127dp</dimen>
+    <dimen name="t128dp">128dp</dimen>
+    <dimen name="t129dp">129dp</dimen>
+    <dimen name="t12dp">12dp</dimen>
+    <dimen name="t12sp">12sp</dimen>
+    <dimen name="t130dp">130dp</dimen>
+    <dimen name="t131dp">131dp</dimen>
+    <dimen name="t132dp">132dp</dimen>
+    <dimen name="t133dp">133dp</dimen>
+    <dimen name="t134dp">134dp</dimen>
+    <dimen name="t135dp">135dp</dimen>
+    <dimen name="t136dp">136dp</dimen>
+    <dimen name="t137dp">137dp</dimen>
+    <dimen name="t138dp">138dp</dimen>
+    <dimen name="t139dp">139dp</dimen>
+    <dimen name="t13dp">13dp</dimen>
+    <dimen name="t13sp">13sp</dimen>
+    <dimen name="t140dp">140dp</dimen>
+    <dimen name="t141dp">141dp</dimen>
+    <dimen name="t142dp">142dp</dimen>
+    <dimen name="t143dp">143dp</dimen>
+    <dimen name="t144dp">144dp</dimen>
+    <dimen name="t145dp">145dp</dimen>
+    <dimen name="t146dp">146dp</dimen>
+    <dimen name="t147dp">147dp</dimen>
+    <dimen name="t148dp">148dp</dimen>
+    <dimen name="t149dp">149dp</dimen>
+    <dimen name="t14dp">14dp</dimen>
+    <dimen name="t14sp">14sp</dimen>
+    <dimen name="t150dp">150dp</dimen>
+    <dimen name="t151dp">151dp</dimen>
+    <dimen name="t152dp">152dp</dimen>
+    <dimen name="t153dp">153dp</dimen>
+    <dimen name="t154dp">154dp</dimen>
+    <dimen name="t155dp">155dp</dimen>
+    <dimen name="t156dp">156dp</dimen>
+    <dimen name="t157dp">157dp</dimen>
+    <dimen name="t158dp">158dp</dimen>
+    <dimen name="t159dp">159dp</dimen>
+    <dimen name="t15dp">15dp</dimen>
+    <dimen name="t15sp">15sp</dimen>
+    <dimen name="t160dp">160dp</dimen>
+    <dimen name="t161dp">161dp</dimen>
+    <dimen name="t162dp">162dp</dimen>
+    <dimen name="t163dp">163dp</dimen>
+    <dimen name="t164dp">164dp</dimen>
+    <dimen name="t165dp">165dp</dimen>
+    <dimen name="t166dp">166dp</dimen>
+    <dimen name="t167dp">167dp</dimen>
+    <dimen name="t168dp">168dp</dimen>
+    <dimen name="t169dp">169dp</dimen>
+    <dimen name="t16dp">16dp</dimen>
+    <dimen name="t16sp">16sp</dimen>
+    <dimen name="t170dp">170dp</dimen>
+    <dimen name="t171dp">171dp</dimen>
+    <dimen name="t172dp">172dp</dimen>
+    <dimen name="t173dp">173dp</dimen>
+    <dimen name="t174dp">174dp</dimen>
+    <dimen name="t175dp">175dp</dimen>
+    <dimen name="t176dp">176dp</dimen>
+    <dimen name="t177dp">177dp</dimen>
+    <dimen name="t178dp">178dp</dimen>
+    <dimen name="t179dp">179dp</dimen>
+    <dimen name="t17dp">17dp</dimen>
+    <dimen name="t17sp">17sp</dimen>
+    <dimen name="t180dp">180dp</dimen>
+    <dimen name="t181dp">181dp</dimen>
+    <dimen name="t182dp">182dp</dimen>
+    <dimen name="t183dp">183dp</dimen>
+    <dimen name="t184dp">184dp</dimen>
+    <dimen name="t185dp">185dp</dimen>
+    <dimen name="t186dp">186dp</dimen>
+    <dimen name="t187dp">187dp</dimen>
+    <dimen name="t188dp">188dp</dimen>
+    <dimen name="t189dp">189dp</dimen>
+    <dimen name="t18dp">18dp</dimen>
+    <dimen name="t18sp">18sp</dimen>
+    <dimen name="t190dp">190dp</dimen>
+    <dimen name="t191dp">191dp</dimen>
+    <dimen name="t192dp">192dp</dimen>
+    <dimen name="t193dp">193dp</dimen>
+    <dimen name="t194dp">194dp</dimen>
+    <dimen name="t195dp">195dp</dimen>
+    <dimen name="t196dp">196dp</dimen>
+    <dimen name="t197dp">197dp</dimen>
+    <dimen name="t198dp">198dp</dimen>
+    <dimen name="t199dp">199dp</dimen>
+    <dimen name="t19dp">19dp</dimen>
+    <dimen name="t19sp">19sp</dimen>
+    <dimen name="t1dp">1dp</dimen>
+    <dimen name="t1sp">1sp</dimen>
+    <dimen name="t200dp">200dp</dimen>
+    <dimen name="t201dp">201dp</dimen>
+    <dimen name="t202dp">202dp</dimen>
+    <dimen name="t203dp">203dp</dimen>
+    <dimen name="t204dp">204dp</dimen>
+    <dimen name="t205dp">205dp</dimen>
+    <dimen name="t206dp">206dp</dimen>
+    <dimen name="t207dp">207dp</dimen>
+    <dimen name="t208dp">208dp</dimen>
+    <dimen name="t209dp">209dp</dimen>
+    <dimen name="t20dp">20dp</dimen>
+    <dimen name="t20sp">20sp</dimen>
+    <dimen name="t210dp">210dp</dimen>
+    <dimen name="t211dp">211dp</dimen>
+    <dimen name="t212dp">212dp</dimen>
+    <dimen name="t213dp">213dp</dimen>
+    <dimen name="t214dp">214dp</dimen>
+    <dimen name="t215dp">215dp</dimen>
+    <dimen name="t216dp">216dp</dimen>
+    <dimen name="t217dp">217dp</dimen>
+    <dimen name="t218dp">218dp</dimen>
+    <dimen name="t219dp">219dp</dimen>
+    <dimen name="t21dp">21dp</dimen>
+    <dimen name="t21sp">21sp</dimen>
+    <dimen name="t220dp">220dp</dimen>
+    <dimen name="t221dp">221dp</dimen>
+    <dimen name="t222dp">222dp</dimen>
+    <dimen name="t223dp">223dp</dimen>
+    <dimen name="t224dp">224dp</dimen>
+    <dimen name="t225dp">225dp</dimen>
+    <dimen name="t226dp">226dp</dimen>
+    <dimen name="t227dp">227dp</dimen>
+    <dimen name="t228dp">228dp</dimen>
+    <dimen name="t229dp">229dp</dimen>
+    <dimen name="t22dp">22dp</dimen>
+    <dimen name="t22sp">22sp</dimen>
+    <dimen name="t230dp">230dp</dimen>
+    <dimen name="t231dp">231dp</dimen>
+    <dimen name="t232dp">232dp</dimen>
+    <dimen name="t233dp">233dp</dimen>
+    <dimen name="t234dp">234dp</dimen>
+    <dimen name="t235dp">235dp</dimen>
+    <dimen name="t236dp">236dp</dimen>
+    <dimen name="t237dp">237dp</dimen>
+    <dimen name="t238dp">238dp</dimen>
+    <dimen name="t239dp">239dp</dimen>
+    <dimen name="t23dp">23dp</dimen>
+    <dimen name="t23sp">23sp</dimen>
+    <dimen name="t240dp">240dp</dimen>
+    <dimen name="t241dp">241dp</dimen>
+    <dimen name="t242dp">242dp</dimen>
+    <dimen name="t243dp">243dp</dimen>
+    <dimen name="t244dp">244dp</dimen>
+    <dimen name="t245dp">245dp</dimen>
+    <dimen name="t246dp">246dp</dimen>
+    <dimen name="t247dp">247dp</dimen>
+    <dimen name="t248dp">248dp</dimen>
+    <dimen name="t249dp">249dp</dimen>
+    <dimen name="t24dp">24dp</dimen>
+    <dimen name="t24sp">24sp</dimen>
+    <dimen name="t250dp">250dp</dimen>
+    <dimen name="t251dp">251dp</dimen>
+    <dimen name="t252dp">252dp</dimen>
+    <dimen name="t253dp">253dp</dimen>
+    <dimen name="t254dp">254dp</dimen>
+    <dimen name="t255dp">255dp</dimen>
+    <dimen name="t256dp">256dp</dimen>
+    <dimen name="t257dp">257dp</dimen>
+    <dimen name="t258dp">258dp</dimen>
+    <dimen name="t259dp">259dp</dimen>
+    <dimen name="t25dp">25dp</dimen>
+    <dimen name="t25sp">25sp</dimen>
+    <dimen name="t260dp">260dp</dimen>
+    <dimen name="t261dp">261dp</dimen>
+    <dimen name="t262dp">262dp</dimen>
+    <dimen name="t263dp">263dp</dimen>
+    <dimen name="t264dp">264dp</dimen>
+    <dimen name="t265dp">265dp</dimen>
+    <dimen name="t266dp">266dp</dimen>
+    <dimen name="t267dp">267dp</dimen>
+    <dimen name="t268dp">268dp</dimen>
+    <dimen name="t269dp">269dp</dimen>
+    <dimen name="t26dp">26dp</dimen>
+    <dimen name="t26sp">26sp</dimen>
+    <dimen name="t270dp">270dp</dimen>
+    <dimen name="t271dp">271dp</dimen>
+    <dimen name="t272dp">272dp</dimen>
+    <dimen name="t273dp">273dp</dimen>
+    <dimen name="t274dp">274dp</dimen>
+    <dimen name="t275dp">275dp</dimen>
+    <dimen name="t276dp">276dp</dimen>
+    <dimen name="t277dp">277dp</dimen>
+    <dimen name="t278dp">278dp</dimen>
+    <dimen name="t279dp">279dp</dimen>
+    <dimen name="t27dp">27dp</dimen>
+    <dimen name="t27sp">27sp</dimen>
+    <dimen name="t280dp">280dp</dimen>
+    <dimen name="t281dp">281dp</dimen>
+    <dimen name="t282dp">282dp</dimen>
+    <dimen name="t283dp">283dp</dimen>
+    <dimen name="t284dp">284dp</dimen>
+    <dimen name="t285dp">285dp</dimen>
+    <dimen name="t286dp">286dp</dimen>
+    <dimen name="t287dp">287dp</dimen>
+    <dimen name="t288dp">288dp</dimen>
+    <dimen name="t289dp">289dp</dimen>
+    <dimen name="t28dp">28dp</dimen>
+    <dimen name="t28sp">28sp</dimen>
+    <dimen name="t290dp">290dp</dimen>
+    <dimen name="t291dp">291dp</dimen>
+    <dimen name="t292dp">292dp</dimen>
+    <dimen name="t293dp">293dp</dimen>
+    <dimen name="t294dp">294dp</dimen>
+    <dimen name="t295dp">295dp</dimen>
+    <dimen name="t296dp">296dp</dimen>
+    <dimen name="t297dp">297dp</dimen>
+    <dimen name="t298dp">298dp</dimen>
+    <dimen name="t299dp">299dp</dimen>
+    <dimen name="t29dp">29dp</dimen>
+    <dimen name="t29sp">29sp</dimen>
+    <dimen name="t2dp">2dp</dimen>
+    <dimen name="t2sp">2sp</dimen>
+    <dimen name="t300dp">300dp</dimen>
+    <dimen name="t302dp">302dp</dimen>
+    <dimen name="t308dp">308dp</dimen>
+    <dimen name="t30dp">30dp</dimen>
+    <dimen name="t30sp">30sp</dimen>
+    <dimen name="t315dp">315dp</dimen>
+    <dimen name="t31dp">31dp</dimen>
+    <dimen name="t31sp">31sp</dimen>
+    <dimen name="t320dp">320dp</dimen>
+    <dimen name="t32dp">32dp</dimen>
+    <dimen name="t32sp">32sp</dimen>
+    <dimen name="t33dp">33dp</dimen>
+    <dimen name="t33sp">33sp</dimen>
+    <dimen name="t34dp">34dp</dimen>
+    <dimen name="t34sp">34sp</dimen>
+    <dimen name="t35dp">35dp</dimen>
+    <dimen name="t35sp">35sp</dimen>
+    <dimen name="t36dp">36dp</dimen>
+    <dimen name="t36sp">36sp</dimen>
+    <dimen name="t370dp">370dp</dimen>
+    <dimen name="t37dp">37dp</dimen>
+    <dimen name="t37sp">37sp</dimen>
+    <dimen name="t38dp">38dp</dimen>
+    <dimen name="t38sp">38sp</dimen>
+    <dimen name="t39dp">39dp</dimen>
+    <dimen name="t39sp">39sp</dimen>
+    <dimen name="t3dp">3dp</dimen>
+    <dimen name="t3sp">3sp</dimen>
+    <dimen name="t4.8dp">4.8dp</dimen>
+    <dimen name="t400dp">400dp</dimen>
+    <dimen name="t40dp">40dp</dimen>
+    <dimen name="t40sp">40sp</dimen>
+    <dimen name="t41dp">41dp</dimen>
+    <dimen name="t41sp">41sp</dimen>
+    <dimen name="t42dp">42dp</dimen>
+    <dimen name="t42sp">42sp</dimen>
+    <dimen name="t43dp">43dp</dimen>
+    <dimen name="t43sp">43sp</dimen>
+    <dimen name="t44dp">44dp</dimen>
+    <dimen name="t44sp">44sp</dimen>
+    <dimen name="t45dp">45dp</dimen>
+    <dimen name="t45sp">45sp</dimen>
+    <dimen name="t46dp">46dp</dimen>
+    <dimen name="t46sp">46sp</dimen>
+    <dimen name="t47dp">47dp</dimen>
+    <dimen name="t47sp">47sp</dimen>
+    <dimen name="t48dp">48dp</dimen>
+    <dimen name="t48sp">48sp</dimen>
+    <dimen name="t49dp">49dp</dimen>
+    <dimen name="t49sp">49sp</dimen>
+    <dimen name="t4dp">4dp</dimen>
+    <dimen name="t4sp">4sp</dimen>
+    <dimen name="t500dp">500dp</dimen>
+    <dimen name="t50dp">50dp</dimen>
+    <dimen name="t50sp">50sp</dimen>
+    <dimen name="t51dp">51dp</dimen>
+    <dimen name="t52dp">52dp</dimen>
+    <dimen name="t53dp">53dp</dimen>
+    <dimen name="t54dp">54dp</dimen>
+    <dimen name="t55dp">55dp</dimen>
+    <dimen name="t56dp">56dp</dimen>
+    <dimen name="t57dp">57dp</dimen>
+    <dimen name="t58dp">58dp</dimen>
+    <dimen name="t59dp">59dp</dimen>
+    <dimen name="t5dp">5dp</dimen>
+    <dimen name="t5sp">5sp</dimen>
+    <dimen name="t60dp">60dp</dimen>
+    <dimen name="t61dp">61dp</dimen>
+    <dimen name="t62dp">62dp</dimen>
+    <dimen name="t63dp">63dp</dimen>
+    <dimen name="t64dp">64dp</dimen>
+    <dimen name="t65dp">65dp</dimen>
+    <dimen name="t66dp">66dp</dimen>
+    <dimen name="t67dp">67dp</dimen>
+    <dimen name="t68dp">68dp</dimen>
+    <dimen name="t69dp">69dp</dimen>
+    <dimen name="t6dp">6dp</dimen>
+    <dimen name="t6sp">6sp</dimen>
+    <dimen name="t70dp">70dp</dimen>
+    <dimen name="t71dp">71dp</dimen>
+    <dimen name="t720dp">720dp</dimen>
+    <dimen name="t72dp">72dp</dimen>
+    <dimen name="t73dp">73dp</dimen>
+    <dimen name="t74dp">74dp</dimen>
+    <dimen name="t75dp">75dp</dimen>
+    <dimen name="t76dp">76dp</dimen>
+    <dimen name="t77dp">77dp</dimen>
+    <dimen name="t78dp">78dp</dimen>
+    <dimen name="t79dp">79dp</dimen>
+    <dimen name="t7dp">7dp</dimen>
+    <dimen name="t7sp">7sp</dimen>
+    <dimen name="t80dp">80dp</dimen>
+    <dimen name="t81dp">81dp</dimen>
+    <dimen name="t82dp">82dp</dimen>
+    <dimen name="t83dp">83dp</dimen>
+    <dimen name="t84dp">84dp</dimen>
+    <dimen name="t85dp">85dp</dimen>
+    <dimen name="t86dp">86dp</dimen>
+    <dimen name="t87dp">87dp</dimen>
+    <dimen name="t88dp">88dp</dimen>
+    <dimen name="t89dp">89dp</dimen>
+    <dimen name="t8dp">8dp</dimen>
+    <dimen name="t8sp">8sp</dimen>
+    <dimen name="t90dp">90dp</dimen>
+    <dimen name="t91dp">91dp</dimen>
+    <dimen name="t92dp">92dp</dimen>
+    <dimen name="t93dp">93dp</dimen>
+    <dimen name="t94dp">94dp</dimen>
+    <dimen name="t95dp">95dp</dimen>
+    <dimen name="t96dp">96dp</dimen>
+    <dimen name="t97dp">97dp</dimen>
+    <dimen name="t98dp">98dp</dimen>
+    <dimen name="t99dp">99dp</dimen>
+    <dimen name="t9dp">9dp</dimen>
+    <dimen name="t9sp">9sp</dimen>
+    <dimen name="text_size_10">10dp</dimen>
+    <dimen name="text_size_11">11dp</dimen>
+    <dimen name="text_size_11.5">11.5dp</dimen>
+    <dimen name="text_size_12">12dp</dimen>
+    <dimen name="text_size_13">13.3dp</dimen>
+    <dimen name="text_size_14">14dp</dimen>
+    <dimen name="text_size_15">15dp</dimen>
+    <dimen name="text_size_16">16dp</dimen>
+    <dimen name="text_size_18">18.6dp</dimen>
+    <dimen name="text_size_19">19dp</dimen>
+    <dimen name="text_size_20">20dp</dimen>
+    <dimen name="text_size_21">21dp</dimen>
+    <dimen name="text_size_22">22dp</dimen>
+    <dimen name="text_size_23">23dp</dimen>
+    <dimen name="text_size_25">25dp</dimen>
+    <dimen name="text_size_30">30dp</dimen>
+    <dimen name="text_size_button">16sp</dimen>
+    <dimen name="text_size_introduction">10sp</dimen>
+    <dimen name="text_size_personage_title">15sp</dimen>
+    <dimen name="text_size_sub_title">12sp</dimen>
+    <dimen name="text_size_title">17sp</dimen>
+    <dimen name="text_size_topic_barrage">14sp</dimen>
+    <dimen name="thumbnail_height">39dp</dimen>
+    <dimen name="thumbnail_width">39dp</dimen>
+    <dimen name="toolbar_height">44dip</dimen>
+    <dimen name="trim_thumbnail_height">54dp</dimen>
+    <dimen name="trim_thumbnail_width">54dp</dimen>
+    <dimen name="video_option_like_width">158dp</dimen>
+    <dimen name="video_option_view_margin">20dp</dimen>
+    <dimen name="video_play_text_width">160dp</dimen>
+    <string name="N_A">N/A</string>
+    <string name="TrackType_audio">Audio</string>
+    <string name="TrackType_metadata">Meta data</string>
+    <string name="TrackType_subtitle">Subtitle</string>
+    <string name="TrackType_timedtext">Timed text</string>
+    <string name="TrackType_unknown">Unknown</string>
+    <string name="TrackType_video">Video</string>
+    <string name="VideoView_ar_16_9_fit_parent">16:9 / Fit parent</string>
+    <string name="VideoView_ar_4_3_fit_parent">4:3 / Fit parent</string>
+    <string name="VideoView_ar_aspect_fill_parent">Aspect / Fill parent</string>
+    <string name="VideoView_ar_aspect_fit_parent">Aspect / Fit parent</string>
+    <string name="VideoView_ar_aspect_wrap_content">Aspect / Wrap content</string>
+    <string name="VideoView_ar_match_parent">Free / Fill parent</string>
+    <string name="VideoView_error_button">OK</string>
+    <string name="VideoView_error_text_invalid_progressive_playback">Invalid progressive playback</string>
+    <string name="VideoView_error_text_unknown">Unknown</string>
+    <string name="VideoView_player_AndroidMediaPlayer">Player: AndroidMediaPlayer</string>
+    <string name="VideoView_player_IjkExoMediaPlayer">Player: IjkExoMediaPlayer</string>
+    <string name="VideoView_player_IjkMediaPlayer">Player: IjkMediaPlayer</string>
+    <string name="VideoView_player_none">Player: None</string>
+    <string name="VideoView_render_none">Render: None</string>
+    <string name="VideoView_render_surface_view">Render: SurfaceView</string>
+    <string name="VideoView_render_texture_view">Render: TextureView</string>
+    <string name="a_cache">a-cache</string>
+    <string name="app_name">GpuImgLibrary</string>
+    <string name="bit_rate">bit_rate</string>
+    <string name="close">Close</string>
+    <string name="exit">Exit</string>
+    <string name="filter_1">NOR</string>
+    <string name="filter_10">YE4</string>
+    <string name="filter_11">YE5</string>
+    <string name="filter_12">YE6</string>
+    <string name="filter_13">YE7</string>
+    <string name="filter_14">RE1</string>
+    <string name="filter_15">GR1</string>
+    <string name="filter_16">GR2</string>
+    <string name="filter_17">GR3</string>
+    <string name="filter_18">GR4</string>
+    <string name="filter_19">GR5</string>
+    <string name="filter_2">BL1</string>
+    <string name="filter_20">PU1</string>
+    <string name="filter_21">PU2</string>
+    <string name="filter_22">BW1</string>
+    <string name="filter_23">BW2</string>
+    <string name="filter_24">BW3</string>
+    <string name="filter_25">SP1</string>
+    <string name="filter_26">SP2</string>
+    <string name="filter_27">SP3</string>
+    <string name="filter_29">SP5</string>
+    <string name="filter_3">BL2</string>
+    <string name="filter_30">SP6</string>
+    <string name="filter_31">SP7</string>
+    <string name="filter_4">BL3</string>
+    <string name="filter_5">BL4</string>
+    <string name="filter_6">BL5</string>
+    <string name="filter_7">YE1</string>
+    <string name="filter_8">YE2</string>
+    <string name="filter_9">YE3</string>
+    <string name="fps">fps</string>
+    <string name="load_cost">load-cost</string>
+    <string name="media_information">Media Information</string>
+    <string name="mi__selected_audio_track">*</string>
+    <string name="mi__selected_subtitle_track">*</string>
+    <string name="mi__selected_video_track">*</string>
+    <string name="mi_bit_rate">Bit rate</string>
+    <string name="mi_channels">Channels</string>
+    <string name="mi_codec">Codec</string>
+    <string name="mi_frame_rate">Frame rate</string>
+    <string name="mi_language">Language</string>
+    <string name="mi_length">Length</string>
+    <string name="mi_media">Media</string>
+    <string name="mi_pixel_format">Pixel format</string>
+    <string name="mi_player">Player</string>
+    <string name="mi_profile_level">Profile level</string>
+    <string name="mi_resolution">Resolution</string>
+    <string name="mi_sample_rate">Sample rate</string>
+    <string name="mi_stream_fmt1">Stream #%d</string>
+    <string name="mi_type">Type</string>
+    <string name="pref_key_enable_background_play">pref.enable_background_play</string>
+    <string name="pref_key_enable_detached_surface_texture">pref.enable_detached_surface_texture</string>
+    <string name="pref_key_enable_no_view">pref.enable_no_view</string>
+    <string name="pref_key_enable_surface_view">pref.enable_surface_view</string>
+    <string name="pref_key_enable_texture_view">pref.enable_texture_view</string>
+    <string name="pref_key_last_directory"/>
+    <string name="pref_key_media_codec_handle_resolution_change">pref.media_codec_handle_resolution_change</string>
+    <string name="pref_key_pixel_format">pref.pixel_format</string>
+    <string name="pref_key_player">pref.player</string>
+    <string name="pref_key_using_android_player">pref.using_android_player</string>
+    <string name="pref_key_using_avcodec_media_codec">pref.using_avcodec_media_codec</string>
+    <string name="pref_key_using_media_codec">pref.using_media_codec</string>
+    <string name="pref_key_using_media_codec_auto_rotate">pref.using_media_codec_auto_rotate</string>
+    <string name="pref_key_using_mediadatasource">pref.using_mediadatasource</string>
+    <string name="pref_key_using_opensl_es">pref.using_opensl_es</string>
+    <string name="pref_summary_enable_background_play">need Android 4.0+</string>
+    <string name="pref_summary_enable_detached_surface_texture"/>
+    <string name="pref_summary_enable_no_view"/>
+    <string name="pref_summary_enable_surface_view"/>
+    <string name="pref_summary_enable_texture_view"/>
+    <string name="pref_summary_media_codec_handle_resolution_change"/>
+    <string name="pref_summary_using_android_player"/>
+    <string name="pref_summary_using_avcodec_media_codec"/>
+    <string name="pref_summary_using_media_codec"/>
+    <string name="pref_summary_using_media_codec_auto_rotate"/>
+    <string name="pref_summary_using_mediadatasource"/>
+    <string name="pref_summary_using_opensl_es"/>
+    <string name="pref_title_enable_background_play">Enable background play</string>
+    <string name="pref_title_enable_detached_surface_texture">Enable detached SurfaceTexture</string>
+    <string name="pref_title_enable_no_view">Enable NoView</string>
+    <string name="pref_title_enable_surface_view">Enable SurfaceView</string>
+    <string name="pref_title_enable_texture_view">Enable TextureView</string>
+    <string name="pref_title_general">General</string>
+    <string name="pref_title_ijkplayer_audio">Audio: ijkplayer</string>
+    <string name="pref_title_ijkplayer_video">Video: ijkplayer</string>
+    <string name="pref_title_media_codec_handle_resolution_change">MediaCodec handle resolution change</string>
+    <string name="pref_title_misc">Misc</string>
+    <string name="pref_title_pixel_format">Pixel Format</string>
+    <string name="pref_title_player">Choose Player</string>
+    <string name="pref_title_render_view">RenderView</string>
+    <string name="pref_title_using_android_player">Using system player</string>
+    <string name="pref_title_using_media_avcodec__codec">Using avcodec_MediaCodec</string>
+    <string name="pref_title_using_media_codec">Using MediaCodec</string>
+    <string name="pref_title_using_media_codec_auto_rotate">Using MediaCodec auto rotate</string>
+    <string name="pref_title_using_mediadatasource">Using MediaDataSource</string>
+    <string name="pref_title_using_opensl_es">Using OpenSL ES</string>
+    <string name="recent">Recent</string>
+    <string name="sample">Sample</string>
+    <string name="seek_cost">seek_cost</string>
+    <string name="seek_load_cost">seek_load_cost</string>
+    <string name="settings">Settings</string>
+    <string name="show_info">Info</string>
+    <string name="tcp_speed">tcp_speed</string>
+    <string name="toggle_player">Player</string>
+    <string name="toggle_ratio">Scale</string>
+    <string name="toggle_render">Render</string>
+    <string name="tracks">Tracks</string>
+    <string name="v_cache">v-cache</string>
+    <string name="vdec">vdec</string>
+    <style name="Animation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+    <style name="AnimationFromBottom">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_out</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_in</item>
+    </style>
+    <style name="AppActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
+        
+        <item name="android:textColorPrimary">@android:color/white</item>
+        
+        <item name="actionMenuTextColor">@android:color/white</item> 
+        
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppCompatToolBar" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="android:textColorPrimary">@color/bg_white</item>
+        <item name="android:textSize">@dimen/t16sp</item>   
+        <item name="android:textColor">@color/bg_white</item>
+        
+        
+        
+        
+    </style>
+    <style name="AppTheme" parent="AppTheme.base">
+        <item name="windowActionModeOverlay">@color/transparent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        
+        <item name="android:windowBackground">@color/app_background_color</item>
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
+    <style name="AppTheme.base" parent="Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppThemeNoTrans" parent="AppTheme.base">
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+    </style>
+    <style name="BaseDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        
+        <item name="android:backgroundDimEnabled">true</item>
+        
+        <item name="android:backgroundDimAmount">0.7</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustResize</item>
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="BaseDialogThemeNoBackground" parent="BaseDialogTheme">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:backgroundDimAmount">0</item>
+    </style>
+    <style name="DCAppTheme.CommentDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/app_40_black</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowSoftInputMode">adjustResize|stateAlwaysVisible</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:windowEnterAnimation">@anim/anim_bottom_alpha_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_bottom_alpha_out</item>
+    </style>
+    <style name="DCAppTheme.Translucent" parent="Theme.AppCompat.NoActionBar">
+        
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+    <style name="DCAppTheme.WXTheme" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+    <style name="EditText_a">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textColor">@color/hh_color_c</item>
+        <item name="android:textColorHint">@color/hh_color_b</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textCursorDrawable">@drawable/text_cursor_drawable</item>
+    </style>
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="Theme.dyuiapi" parent="Theme.dyuiapi.base"/>
+    <style name="Theme.dyuiapi.base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+        <item name="android:textColorSecondary">@color/colorPrimaryDark</item>
+        <item name="android:textColorTertiary">@color/colorAccent</item>
+    </style>
+    <style name="Theme.dyuiapi.disableSplitTouch" parent="@style/Theme.dyuiapi">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowEnableSplitTouch" ns1:ignore="NewApi">false</item>
+    </style>
+    <style name="Theme.dyuiapi.fullscreen" parent="@style/Theme.dyuiapi.disableSplitTouch">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="Theme.dyuiapi.translucent" parent="@style/Theme.dyuiapi.disableSplitTouch">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:colorBackground">@color/bg_white</item>
+        <item name="android:textColor">@color/bg_black</item>
+        <item name="android:gravity">center</item>
+        <item name="overlapAnchor">false</item>  
+    </style>
+    <style name="alert_dialog_bg_style">
+        <item name="android:background">@drawable/dyuiapi_dialog_bg</item>
+        <item name="android:minWidth">@dimen/t230dp</item>
+    </style>
+    <style name="alert_dialog_negtive_btn_text_style" parent="android:Widget.TextView">
+        <item name="android:textColor">@drawable/alert_button_text_color</item>
+        <item name="android:textSize" ns1:ignore="SpUsage">16dp</item>
+    </style>
+    <style name="alert_dialog_positive_btn_text_style" parent="android:Widget.TextView">
+        <item name="android:textColor">@drawable/alert_button_text_color</item>
+        <item name="android:textSize" ns1:ignore="SpUsage">16dp</item>
+    </style>
+    <style name="alert_listview_dialog_text_style" parent="android:Widget.TextView">
+        <item name="android:textColor">@drawable/alert_button_text_color</item>
+        <item name="android:textSize" ns1:ignore="SpUsage">@dimen/text_size_16</item>
+    </style>
+    <style name="alert_listview_text_style" parent="android:Widget.TextView">
+        <item name="android:textColor">@drawable/alert_button_text_color</item>
+        <item name="android:textSize" ns1:ignore="SpUsage">@dimen/text_size_16</item>
+    </style>
+    <style name="dialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@drawable/dialog_trans</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@style/dialogNoAnimation</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@drawable/dialog_trans</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="dialogNoAnimation" parent="android:Animation.Dialog">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+    <style name="dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        
+        
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowSoftInputMode">stateHidden|adjustResize</item>
+    </style>
+    <style name="effectAniButtonStyle">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:layout_marginLeft">7dp</item>
+        <item name="android:layout_marginRight">7dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <style name="effectButtonStyle">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/color_effect_item_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
+    <style name="effectLinearLayoutStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="effectTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textColor">@color/color_effect_item_text</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <style name="listview">
+        <item name="android:background">@null</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:listSelector">#00000000</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:groupIndicator">@null</item>
+        <item name="android:childDivider">@null</item>
+        <item name="android:divider">@color/transparent</item>
+        <item name="android:headerDividersEnabled">false</item>
+        <item name="android:smoothScrollbar">true</item>
+    </style>
+    <style name="listviewDialog" parent="dialog">
+        <item name="android:windowAnimationStyle">@style/listviewDialogAnimation</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+    <style name="listviewDialogAnimation" parent="android:Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+    <style name="listviewStyle_trans">
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:divider">@null</item>
+        <item name="android:listSelector">@color/transparent</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="menuSideButtonStyle">
+        <item name="android:textSize">12.5dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">@color/transparent_black</item>
+        <item name="android:shadowRadius">5</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:minWidth">40dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="menu_btn_style">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:layout_width">65dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowColor">@color/transparent_black</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="menu_btn_style2">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowColor">@color/transparent_black</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="myToolbarNavigationButtonStyle" parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
+        
+        
+        
+    </style>
+    <style name="publicHorizontalDivideLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/bg_diving_line</item>
+    </style>
+    <style name="publicVerticalDivideLine">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">@dimen/t1dp</item>
+        <item name="android:background">@color/bg_diving_line</item>
+    </style>
+    <style name="selectDialog" parent="dialog">
+        <item name="android:windowBackground">@drawable/dyuiapi_dialog_bg</item>
+        <item name="android:maxWidth">300dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="styleDialog">
+        <item name="android:background">@drawable/bg_dialog_d_shape</item>
+    </style>
+    <style name="style_im_detail_item_me_common" parent="@style/tv_a_28">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">left</item>
+        <item name="android:maxWidth">224dip</item>
+    </style>
+    <style name="style_im_detail_item_me_gift_content" parent="@style/tv_a_28">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:maxWidth">236dip</item>
+    </style>
+    <style name="style_im_detail_item_me_sound" parent="@style/tv_a_28">
+        <item name="android:gravity">left</item>
+        <item name="android:maxWidth">224dip</item>
+        <item name="android:layout_gravity">left|center_vertical</item>
+    </style>
+    <style name="style_im_detail_item_other_chat" parent="@style/tv_a_28">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:maxWidth">224dip</item>
+    </style>
+    <style name="style_im_detail_item_other_content" parent="@style/tv_c_28">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:maxWidth">224dip</item>
+    </style>
+    <style name="style_im_detail_item_other_gift_content" parent="@style/tv_c_28">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:maxWidth">236dip</item>
+    </style>
+    <style name="style_im_detail_item_other_sound" parent="@style/tv_d_28">
+        <item name="android:layout_gravity">left</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:maxWidth">224dip</item>
+    </style>
+    <style name="style_im_detail_item_other_sysnotify_content" parent="@style/tv_c_28">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:maxWidth">224dip</item>
+    </style>
+    <style name="style_im_detail_left">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+    <style name="style_im_detail_me_item">
+        <item name="android:paddingTop">@dimen/t6dp</item>
+        <item name="android:paddingBottom">@dimen/t6dp</item>
+        <item name="android:paddingRight">15dip</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="style_im_detail_me_no_holder_item">
+        <item name="android:paddingTop">@dimen/t6dp</item>
+        <item name="android:paddingBottom">@dimen/t6dp</item>
+        <item name="android:paddingRight">15dip</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="style_im_detail_me_sound_item">
+        <item name="android:paddingTop">@dimen/t6dp</item>
+        <item name="android:paddingBottom">@dimen/t6dp</item>
+        <item name="android:paddingRight">7dip</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="style_im_detail_me_sound_pic_video_item">
+        <item name="android:paddingRight">7dip</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="style_im_detail_other_item">
+        <item name="android:paddingTop">@dimen/t6dp</item>
+        <item name="android:paddingBottom">@dimen/t6dp</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:paddingRight">15dip</item>
+        <item name="android:layout_marginRight">5dip</item>
+    </style>
+    <style name="style_im_detail_other_no_hold_item">
+        <item name="android:paddingTop">@dimen/t6dp</item>
+        <item name="android:paddingBottom">@dimen/t6dp</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:paddingRight">15dip</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="style_im_detail_other_sound_item">
+        <item name="android:paddingTop">@dimen/t6dp</item>
+        <item name="android:paddingBottom">@dimen/t6dp</item>
+        <item name="android:paddingLeft">7dip</item>
+        <item name="android:paddingRight">15dip</item>
+    </style>
+    <style name="style_im_detail_right">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+    <style name="tabLayoutTextStyle">
+        <item name="android:textSize">@dimen/t12sp</item>
+    </style>
+    <style name="tabLayoutTextStyle2">
+        <item name="android:textSize">@dimen/t14sp</item>
+    </style>
+    <style name="tv_a_20">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/hh_color_a</item>
+    </style>
+    <style name="tv_a_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_a</item>
+    </style>
+    <style name="tv_a_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_a</item>
+    </style>
+    <style name="tv_a_28_a70">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_a70</item>
+    </style>
+    <style name="tv_a_30">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/hh_color_a</item>
+    </style>
+    <style name="tv_a_32">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/hh_color_a</item>
+    </style>
+    <style name="tv_a_34">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/hh_color_a</item>
+    </style>
+    <style name="tv_a_48">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/hh_color_a</item>
+    </style>
+    <style name="tv_a_72">
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/hh_color_a</item>
+    </style>
+    <style name="tv_a_74">
+        <item name="android:textSize">37sp</item>
+        <item name="android:textColor">@color/hh_color_a</item>
+    </style>
+    <style name="tv_a_96">
+        <item name="android:textSize">48sp</item>
+        <item name="android:textColor">@color/hh_color_a</item>
+    </style>
+    <style name="tv_aa_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_aa</item>
+    </style>
+    <style name="tv_aa_72">
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/hh_color_aa</item>
+    </style>
+    <style name="tv_b_16">
+        <item name="android:textSize">8sp</item>
+        <item name="android:textColor">@color/hh_color_b</item>
+    </style>
+    <style name="tv_b_20">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/hh_color_b</item>
+    </style>
+    <style name="tv_b_22">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/hh_color_b</item>
+    </style>
+    <style name="tv_b_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_b</item>
+    </style>
+    <style name="tv_b_26">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/hh_color_b</item>
+    </style>
+    <style name="tv_b_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_b</item>
+    </style>
+    <style name="tv_b_32">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/hh_color_b</item>
+    </style>
+    <style name="tv_b_34">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/hh_color_b</item>
+    </style>
+    <style name="tv_b_72">
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/hh_color_b</item>
+    </style>
+    <style name="tv_c_20">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/hh_color_c</item>
+    </style>
+    <style name="tv_c_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_c</item>
+    </style>
+    <style name="tv_c_26">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/hh_color_c</item>
+    </style>
+    <style name="tv_c_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_c</item>
+    </style>
+    <style name="tv_c_28_a70">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_c70</item>
+    </style>
+    <style name="tv_c_32">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/hh_color_c</item>
+    </style>
+    <style name="tv_c_32_a70">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/hh_color_c70</item>
+    </style>
+    <style name="tv_c_34">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/hh_color_c</item>
+    </style>
+    <style name="tv_c_72">
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/hh_color_c</item>
+    </style>
+    <style name="tv_cc1_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_cc1</item>
+    </style>
+    <style name="tv_cc_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_cc</item>
+    </style>
+    <style name="tv_cc_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_cc</item>
+    </style>
+    <style name="tv_cc_34">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/hh_color_cc</item>
+    </style>
+    <style name="tv_ccc_22">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/hh_color_ccc</item>
+    </style>
+    <style name="tv_ccc_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_ccc</item>
+    </style>
+    <style name="tv_ccc_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_ccc</item>
+    </style>
+    <style name="tv_d_20">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/hh_color_d</item>
+    </style>
+    <style name="tv_d_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_d</item>
+    </style>
+    <style name="tv_d_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_d</item>
+    </style>
+    <style name="tv_d_30">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/hh_color_d</item>
+    </style>
+    <style name="tv_d_32">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/hh_color_d</item>
+    </style>
+    <style name="tv_d_34">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/hh_color_d</item>
+    </style>
+    <style name="tv_d_36">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/hh_color_d</item>
+    </style>
+    <style name="tv_d_48">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/hh_color_d</item>
+    </style>
+    <style name="tv_d_72">
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/hh_color_d</item>
+    </style>
+    <style name="tv_dd_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_dd</item>
+    </style>
+    <style name="tv_dd_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_dd</item>
+    </style>
+    <style name="tv_dd_32">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/hh_color_dd</item>
+    </style>
+    <style name="tv_dd_34">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/hh_color_dd</item>
+    </style>
+    <style name="tv_dd_36">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/hh_color_dd</item>
+    </style>
+    <style name="tv_dd_44">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/hh_color_dd</item>
+    </style>
+    <style name="tv_dd_48">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/hh_color_dd</item>
+    </style>
+    <style name="tv_dd_72">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/hh_color_dd</item>
+    </style>
+    <style name="tv_e_20">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/hh_color_e</item>
+    </style>
+    <style name="tv_e_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_e</item>
+    </style>
+    <style name="tv_e_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_e</item>
+    </style>
+    <style name="tv_e_30">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/hh_color_e</item>
+    </style>
+    <style name="tv_e_32">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/hh_color_e</item>
+    </style>
+    <style name="tv_e_34">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/hh_color_e</item>
+    </style>
+    <style name="tv_e_36">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/hh_color_e</item>
+    </style>
+    <style name="tv_e_48">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/hh_color_e</item>
+    </style>
+    <style name="tv_f_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_f</item>
+    </style>
+    <style name="tv_f_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_f</item>
+    </style>
+    <style name="tv_g_20">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/hh_color_g</item>
+    </style>
+    <style name="tv_g_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_g</item>
+    </style>
+    <style name="tv_g_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_g</item>
+    </style>
+    <style name="tv_g_32">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/hh_color_g</item>
+    </style>
+    <style name="tv_g_34">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/hh_color_g</item>
+    </style>
+    <style name="tv_h_20">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/hh_color_h</item>
+    </style>
+    <style name="tv_h_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_h</item>
+    </style>
+    <style name="tv_h_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_h</item>
+    </style>
+    <style name="tv_h_32">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/hh_color_h</item>
+    </style>
+    <style name="tv_h_34">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/hh_color_h</item>
+    </style>
+    <style name="tv_i1_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_i1</item>
+    </style>
+    <style name="tv_i1_72">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/hh_color_i1</item>
+    </style>
+    <style name="tv_i_20">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/hh_color_i</item>
+    </style>
+    <style name="tv_i_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_i</item>
+    </style>
+    <style name="tv_i_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_i</item>
+    </style>
+    <style name="tv_i_32">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/hh_color_i</item>
+    </style>
+    <style name="tv_i_34">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/hh_color_i</item>
+    </style>
+    <style name="tv_i_36">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/hh_color_i</item>
+    </style>
+    <style name="tv_i_48">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/hh_color_i</item>
+    </style>
+    <style name="tv_i_72">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/hh_color_i</item>
+    </style>
+    <style name="tv_i_74">
+        <item name="android:textSize">37sp</item>
+        <item name="android:textColor">@color/hh_color_i</item>
+    </style>
+    <style name="videoSeekbarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:max">100</item>
+        <item name="android:maxHeight">2.0dip</item>
+        <item name="android:minHeight">2.0dip</item>
+        <item name="android:progressDrawable">@drawable/video_seekbar_progress</item>
+        <item name="android:thumb">@drawable/video_seekbar_thumb_red</item>
+    </style>
+    <style name="voiceFactorSeekbarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:max">100</item>
+        <item name="android:maxHeight">2.0dip</item>
+        <item name="android:minHeight">2.0dip</item>
+        <item name="android:progressDrawable">@drawable/voice_seekbar_progress</item>
+        <item name="android:thumb">@drawable/voice_seekbar_thumb</item>
+    </style>
+    <style name="voiceFactorVerticalSeekbarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:max">500</item>
+        <item name="android:maxHeight">2.0dip</item>
+        <item name="android:minHeight">2.0dip</item>
+        <item name="android:progressDrawable">@drawable/voice_seekbar_progress</item>
+        <item name="android:thumb">@drawable/voice_vertical_seekbar_thumb</item>
+    </style>
+</resources>

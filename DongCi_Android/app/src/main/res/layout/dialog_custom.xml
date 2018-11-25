@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_dialog"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/t22dp" />
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/t10dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="title"
+            android:textColor="@color/hh_color_d"
+            android:textSize="@dimen/t15sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/t22dp"
+            android:layout_marginLeft="@dimen/t24dp"
+            android:layout_marginRight="@dimen/t24dp"
+            android:layout_marginTop="@dimen/t5dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/hh_color_d"
+            android:textSize="@dimen/t15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/diving_line_height"
+            android:background="@color/bg_diving_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cancel_btn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/t44dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/hh_color_e"
+                android:textSize="@dimen/t14sp" />
+
+            <View
+                android:id="@+id/center_line_one"
+                android:layout_width="@dimen/diving_line_height"
+                android:layout_height="@dimen/t44dp"
+                android:background="@color/bg_diving_line"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/third_btn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/t44dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/hh_color_e"
+                android:textSize="@dimen/t14sp" />
+
+            <View
+                android:id="@+id/center_line"
+                android:layout_width="@dimen/diving_line_height"
+                android:layout_height="@dimen/t44dp"
+                android:background="@color/bg_diving_line" />
+
+            <TextView
+                android:id="@+id/confirm_btn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/t44dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/hh_color_e"
+                android:textSize="@dimen/t14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
+

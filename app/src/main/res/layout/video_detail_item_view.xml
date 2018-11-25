@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ViewStub
+        android:id="@+id/viewStubFullSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/video_detail_item_full_size_view" />
+
+    <ViewStub
+        android:id="@+id/viewStub75PercentSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/video_detail_item_75percent_size_view" />
+
+    <ViewStub
+        android:id="@+id/viewStubCustomSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/video_detail_item_custom_size_view" />
+
+</RelativeLayout>

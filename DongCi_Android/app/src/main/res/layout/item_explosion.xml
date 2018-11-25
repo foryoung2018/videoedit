@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wmlive.hhvideo.widget.RatioLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:ratio="0.75">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="234dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_splash"
+            style="@style/tv_a_24"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            fresco:placeholderImage="@drawable/bg_gray_shape"
+            fresco:placeholderImageScaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/bg_explosion_cover"
+            android:paddingBottom="@dimen/t8dp"
+            android:paddingLeft="@dimen/t10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:id="@+id/tv_love_count"
+                style="@style/tv_a_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@drawable/icon_like_small"
+                android:drawablePadding="@dimen/margin_xsmall"
+                android:text="2401"/>
+
+
+            <TextView
+                android:id="@+id/tv_play_count"
+                style="@style/tv_a_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_love_count"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_love_count"
+                android:drawableLeft="@drawable/icon_home_view"
+                android:drawablePadding="@dimen/margin_xsmall"
+                android:text="24015"/>
+
+
+            <TextView
+                android:id="@+id/tv_music_name"
+                style="@style/tv_a_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_love_count"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="咖啡，咖喱"
+                app:layout_constraintBottom_toTopOf="@+id/tv_love_count"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="@+id/tv_love_count"
+                app:layout_constraintRight_toRightOf="parent"/>
+        </RelativeLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+</com.wmlive.hhvideo.widget.RatioLayout>

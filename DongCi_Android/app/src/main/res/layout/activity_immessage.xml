@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--顶部bar -->
+        <RelativeLayout
+            android:id="@+id/rl_im_details_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t44dp"
+            android:layout_alignParentTop="true"
+            android:background="#00000000">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:paddingBottom="@dimen/t14dp"
+                android:paddingEnd="@dimen/t15dp"
+                android:paddingStart="@dimen/t15dp"
+                android:paddingTop="@dimen/t14dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_back" />
+
+            <!--昵称-->
+            <TextView
+                android:id="@+id/tvNickName"
+                style="@style/tv_c_34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:maxLines="1"
+                android:text="昵称"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivUserInfo"
+                android:layout_width="@dimen/t40dp"
+                android:layout_height="@dimen/t40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/t10dp"
+                android:src="@drawable/icon_chat_user" />
+
+        </RelativeLayout>
+        <!--im 详情-->
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/t15dp"
+            android:paddingRight="@dimen/t15dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvIMDetailView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <TextView
+            android:id="@+id/tv_im_text_warn"
+            style="@style/tv_a_24"
+            android:layout_width="match_parent"
+            android:layout_height="26dip"
+            android:background="@color/hhvideo_color_g"
+            android:gravity="center"
+            android:text="输入的文字过长"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/view_bottom_tool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/hh_color_a"
+            android:orientation="vertical">
+            <!--文字区域-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/t64dp">
+
+                <LinearLayout
+                    android:id="@+id/rl_im_text_terrace"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/t64dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/t14dp"
+                    android:paddingLeft="@dimen/t10dp"
+                    android:paddingTop="@dimen/t14dp">
+                    <!--录音图标-->
+                    <ImageView
+                        android:id="@+id/iv_im_text_record_flag"
+                        android:layout_width="@dimen/t36dp"
+                        android:layout_height="@dimen/t36dp"
+                        android:layout_gravity="left|bottom"
+                        android:layout_marginRight="@dimen/t8dp"
+                        android:background="@drawable/icon_chat_voice" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom">
+                        <!--输入框-->
+                        <EditText
+                            android:id="@+id/et_im_text_input"
+                            style="@style/tv_c_28"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="54dip"
+                            android:background="@drawable/bg_im_text_terrace"
+                            android:clickable="false"
+                            android:gravity="left|bottom"
+                            android:lineSpacingExtra="@dimen/t3dp"
+                            android:maxHeight="115dip"
+                            android:minHeight="@dimen/t36dp"
+                            android:paddingBottom="@dimen/t8dp"
+                            android:paddingTop="@dimen/t8dp" />
+                        <!--发送按钮-->
+                        <Button
+                            android:id="@+id/btn_im_text_send"
+                            android:layout_width="@dimen/t42dp"
+                            android:layout_height="@dimen/t32dp"
+                            android:layout_alignBottom="@id/et_im_text_input"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="1dip"
+                            android:layout_marginRight="@dimen/t5dp"
+                            android:background="@drawable/bg_im_send_text"
+                            android:text="发送"
+                            android:textColor="@color/tv_im_send_text_color"
+                            android:textSize="@dimen/t12sp"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_emoji"
+                            android:layout_width="@dimen/t20dp"
+                            android:layout_height="@dimen/t20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/t65dp"
+                            android:background="@drawable/emoji_choose_selector" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <!--语音输入平台-->
+                <RelativeLayout
+                    android:id="@+id/rl_im_record_terrace"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/t64dp"
+                    android:paddingBottom="@dimen/t14dp"
+                    android:paddingLeft="@dimen/t10dp"
+                    android:paddingRight="@dimen/t10dp"
+                    android:paddingTop="@dimen/t14dp"
+                    android:visibility="gone">
+                    <!--文字图标-->
+                    <ImageView
+                        android:id="@+id/iv_im_record_text_flag"
+                        android:layout_width="@dimen/t36dp"
+                        android:layout_height="@dimen/t36dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/icon_chat_message" />
+                    <!--扩展图标-->
+                    <ImageView
+                        android:id="@+id/iv_im_record_extend_flag"
+                        android:layout_width="@dimen/t36dp"
+                        android:layout_height="@dimen/t36dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/icon_chat_gift" />
+                    <!--录音内容-->
+                    <TextView
+                        android:id="@+id/tv_im_record_content"
+                        style="@style/tv_c_28"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/t36dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="@dimen/t8dp"
+                        android:layout_toLeftOf="@id/iv_im_record_extend_flag"
+                        android:layout_toRightOf="@id/iv_im_record_text_flag"
+                        android:background="@drawable/bg_im_text_terrace"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/t8dp"
+                        android:paddingTop="@dimen/t8dp"
+                        android:text="@string/im_details_record_down_speek"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+                <!--扩展图标-->
+                <ImageView
+                    android:id="@+id/iv_im_text_extend_flag"
+                    android:layout_width="@dimen/t36dp"
+                    android:layout_height="@dimen/t36dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/t14dp"
+                    android:layout_marginRight="@dimen/t10dp"
+                    android:background="@drawable/icon_chat_gift" />
+            </RelativeLayout>
+            <!--表情面板-->
+            <include layout="@layout/emoji_input_layout" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--微信录音提醒-->
+    <include
+        android:id="@+id/view_im_details_record"
+        layout="@layout/im_record_view_layout"
+        android:layout_width="140dip"
+        android:layout_height="140dip"
+        android:layout_centerInParent="true"
+        android:visibility="gone"></include>
+
+    <!--loading-->
+    <RelativeLayout
+        android:id="@+id/rl_loading_top"
+        android:layout_width="@dimen/t107dp"
+        android:layout_height="@dimen/t102dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_bg_live_userinfo"
+        android:visibility="gone">
+
+        <com.wmlive.hhvideo.heihei.message.widget.CircleRotateProgressBar
+            android:id="@+id/progress_loading"
+            android:layout_width="@dimen/t50dp"
+            android:layout_height="@dimen/t50dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

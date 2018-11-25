@@ -1,0 +1,131 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()//如果 jcenter 很慢，尝试添加 mavenCentral 并调整到首行
+        jcenter()
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
+        }
+        maven {
+            //微博sdk
+            url "https://dl.bintray.com/thelasterstar/maven/"
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.2'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        classpath 'com.bugtags.library:bugtags-gradle:latest.integration'
+
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.5.1'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2'
+        classpath 'me.tatarka:gradle-retrolambda:3.6.0'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()//如果 jcenter 很慢，尝试添加 mavenCentral 并调整到首行
+        jcenter()
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
+        }
+        maven {
+            //微博sdk
+            url "https://dl.bintray.com/thelasterstar/maven/"
+
+        }
+        maven {
+            //baseRecyclerViewAdapterHelper
+            url "https://jitpack.io"
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    minSdkVersion = 21
+    targetSdkVersion = 25
+    compileSdkVersion = 27
+    supportVersion = "27.0.1"
+    buildToolsVersion = "27.0.3"
+
+
+    deps = [
+            junit                        : 'junit:junit:4.12',
+            supportDesign                : "com.android.support:design:$rootProject.ext.supportVersion",
+            supportV4                    : "com.android.support:support-v4:$rootProject.ext.supportVersion",
+            cardviewV7                   : "com.android.support:cardview-v7:$rootProject.ext.supportVersion",
+            appcompatV7                  : "com.android.support:appcompat-v7:$rootProject.ext.supportVersion",
+            recyclerviewV7               : "com.android.support:recyclerview-v7:$rootProject.ext.supportVersion",
+            supportCardViewV7            : "com.android.support:cardview-v7:$rootProject.ext.supportVersion",
+            supportAnnotations           : "com.android.support:support-annotations:$rootProject.ext.supportVersion",
+            multidex                     : 'com.android.support:multidex:1.0.2',
+            constraintlayout             : 'com.android.support.constraint:constraint-layout:1.0.2',
+
+            butterknife                  : 'com.jakewharton:butterknife:8.5.1',
+            butterknifeapt               : 'com.jakewharton:butterknife-compiler:8.5.1',
+            fastjson                     : 'com.alibaba:fastjson:1.2.21',
+            rxjava                       : 'io.reactivex.rxjava2:rxjava:2.1.5',
+            rxandroid                    : 'io.reactivex.rxjava2:rxandroid:2.0.1',
+            retrofit2                    : 'com.squareup.retrofit2:retrofit:2.1.0',
+            rxpermissions2               : 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar',
+            retrofit2Rxjava2Adapter      : 'com.squareup.retrofit2:adapter-rxjava2:2.3.0',
+
+//            ijkplayerJava                : 'tv.danmaku.ijk.media:ijkplayer-java:0.8.0',
+//            ijkplayerArmv7a              : 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.8.0',
+//            ijkplayerArmv5               : 'tv.danmaku.ijk.media:ijkplayer-armv5:0.8.0',
+//            ijkplayerArm64               : 'tv.danmaku.ijk.media:ijkplayer-arm64:0.8.0',
+//            ijkplayerX86_64              : 'tv.danmaku.ijk.media:ijkplayer-x86_64:0.8.0',
+//            ijkplayerX86                 : 'tv.danmaku.ijk.media:ijkplayer-x86:0.8.0',
+//            ijkplayerExo                 : 'tv.danmaku.ijk.media:ijkplayer-exo:0.8.0',
+
+//            danmaku                  : 'com.github.ctiao:DanmakuFlameMaster:0.9.16',
+            danmakuBitmapArmv7           : 'com.github.ctiao:ndkbitmap-armv7a:0.8.3',
+            danmakuBitmapArmv5           : 'com.github.ctiao:ndkbitmap-armv5:0.8.3',
+            danmakuBitmapX86             : 'com.github.ctiao:ndkbitmap-x86:0.8.3',
+
+            greendao                     : 'org.greenrobot:greendao:3.2.2',
+            greendaoGenerator            : 'org.greenrobot:greendao-generator:3.2.2',
+            eventbus3                    : 'org.greenrobot:eventbus:3.0.0',
+
+//            tencentWechatSdk             : 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:1.4.0',
+            sinaWeiboSdk                 : 'com.sina.weibo.sdk:core:4.1.0:openDefaultRelease@aar',
+
+            aliyunOss                    : 'com.aliyun.dpa:oss-android-sdk:+',
+            aliyunPush                   : 'com.aliyun.ams:alicloud-android-push:3.1.1',
+            aliyunThirdPush              : 'com.aliyun.ams:alicloud-android-third-push:3.0.5@aar',
+            filedownloaderLiulishuo      : 'com.liulishuo.filedownloader:library:1.6.2',
+            firebase                     : 'com.google.firebase:firebase-messaging:9.6.1',
+
+            glide                        : 'com.github.bumptech.glide:glide:4.0.0-RC0',
+            universalImageLoader         : 'com.nostra13.universalimageloader:universal-image-loader:1.9.5',
+
+            frescoBase                   : 'com.facebook.fresco:fresco:1.4.0',
+            frescoAnimatedBaseSupport    : 'com.facebook.fresco:animated-base-support:1.3.0',
+            frescoAnimatedGif            : 'com.facebook.fresco:animated-gif:1.4.0',
+            frescoAnimatedWebp           : 'com.facebook.fresco:animated-webp:1.4.0',
+            frescoWebpSupport            : 'com.facebook.fresco:webpsupport:1.4.0',
+
+
+            magicwindow                  : 'cn.magicwindow:MagicWindowSDK:4.1',
+            bugtags                      : 'com.bugtags.library:bugtags-lib:2.3.1',
+            bugly                        : 'com.tencent.bugly:crashreport:latest.release',
+            buglyNative                  : 'com.tencent.bugly:nativecrashreport:latest.release',
+            tencentOpensdk               : 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+',
+//            umeng                        : 'com.umeng.sdk:common:latest.integration',
+//            umengAnalytics               : 'com.umeng.sdk:analytics:latest.integration',
+            leakcanaryDebug              : 'com.squareup.leakcanary:leakcanary-android:1.5.1',
+            leakcanaryRelease            : 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1',
+            shortcutBadger               : 'me.leolin:ShortcutBadger:1.1.21@aar',
+            smartRefresh                 : 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-5',
+            baseRecyclerViewAdapterHelper: 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30',
+            flexbox                      : 'com.google.android:flexbox:1.0.0'
+    ]
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wmlive.hhvideo.widget.CustomFontTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/t40dp"
+    android:gravity="center"
+    android:lines="1"
+    android:paddingBottom="@dimen/t6dp"
+    android:paddingEnd="@dimen/t30dp"
+    android:paddingStart="0dp"
+    android:paddingTop="@dimen/t6dp"
+    android:singleLine="true"
+    android:textSize="@dimen/t14sp"
+    app:cftv_fontFamily="font/notosans_bold.ttf"
+    tools:text="试试傻逼" />
+

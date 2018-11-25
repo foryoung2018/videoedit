@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlSelectStep"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    tools:visibility="visible">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_publish" />
+
+    <View
+        android:id="@+id/viewCenter"
+        android:layout_width="@dimen/t1dp"
+        android:layout_height="@dimen/t1dp"
+        android:layout_centerInParent="true"
+        tools:background="@color/hh_color_f" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/t100dp"
+        android:gravity="center_horizontal">
+
+        <RelativeLayout
+            android:id="@+id/llQuickShoot"
+            android:layout_width="@dimen/t155dp"
+            android:layout_height="@dimen/t185dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/quick_shoot_shape"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/t2dp"
+                android:layout_marginLeft="@dimen/t10dp"
+                android:layout_marginTop="@dimen/t8dp"
+                android:text="@string/quick_shot_tips"
+                android:textColor="@color/white"
+                android:textSize="@dimen/t22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv1"
+                android:layout_marginLeft="@dimen/t10dp"
+                android:text="@string/create_shot_tips"
+                android:textColor="@color/white"
+                android:textSize="@dimen/t11sp" />
+
+            <ImageView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/t12dp"
+                android:layout_marginTop="@dimen/t12dp"
+                android:background="@drawable/icon_publish_shot_new"
+                android:textColor="@color/quick_shoot_color"
+                 />
+
+            <ImageView
+                android:layout_width="@dimen/t119dp"
+                android:layout_height="@dimen/t130dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/icon_publish_shot" />
+
+        </RelativeLayout>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/llUploadRecord"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="@dimen/t285dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_marginLeft="@dimen/t15dp"-->
+            <!--android:layout_toRightOf="@+id/llQuickShoot"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical"-->
+            <!--tools:visibility="visible">-->
+
+        <!--</LinearLayout>-->
+            <RelativeLayout
+                android:id="@+id/llUpload"
+                android:layout_width="@dimen/t125dp"
+                android:layout_height="@dimen/t85dp"
+                android:layout_toRightOf="@+id/llQuickShoot"
+                android:layout_marginLeft="@dimen/t15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/t100dp"
+                android:background="@drawable/upload_video_shape"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/t2dp"
+                    android:layout_marginLeft="@dimen/t10dp"
+                    android:layout_marginTop="@dimen/t8dp"
+                    android:text="@string/upload_tips"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/t22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv4"
+                    android:layout_marginLeft="@dimen/t10dp"
+                    android:text="@string/local_album_tips"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/t11sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/t60dp"
+                    android:layout_height="@dimen/t65dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/icon_publish_upload" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/llRecord"
+                android:layout_width="@dimen/t125dp"
+                android:layout_height="@dimen/t85dp"
+                android:layout_marginLeft="@dimen/t15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/llQuickShoot"
+                android:background="@drawable/shoot_video_shape"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/t2dp"
+                    android:layout_marginLeft="@dimen/t10dp"
+                    android:layout_marginTop="@dimen/t8dp"
+                    android:text="@string/shot_video_tips"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/t22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv6"
+                    android:layout_marginLeft="@dimen/t10dp"
+                    android:text="@string/multi_squared_tips"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/t11sp" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/t60dp"
+                    android:layout_height="@dimen/t65dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/icon_publish_cam" />
+
+            </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="@dimen/t40dp"
+        android:layout_height="@dimen/t40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/t8dp"
+        android:layout_marginBottom="@dimen/t20dp"
+        android:padding="@dimen/t9dp"
+        android:src="@drawable/icon_profile_add" />
+</RelativeLayout>

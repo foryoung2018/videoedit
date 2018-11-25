@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/ivBackCover"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t280dp"
+        android:alpha="0.05"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:id="@+id/llInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/t44dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="@dimen/t128dp"
+            android:layout_height="@dimen/t128dp">
+
+            <ImageView
+                android:id="@+id/ivCoverBottom"
+                android:layout_width="@dimen/t120dp"
+                android:layout_height="@dimen/t120dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_music_cd_default"
+                />
+
+            <ImageView
+                android:id="@+id/ivCover"
+                android:layout_width="@dimen/t84dp"
+                android:layout_height="@dimen/t84dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:id="@+id/ivCoverTop"
+                android:layout_width="@dimen/t128dp"
+                android:layout_height="@dimen/t128dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_music_cd"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/tv_a_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingLeft="@dimen/t10dp"
+            android:paddingRight="@dimen/t10dp"
+            tools:text="加州招待所"/>
+
+
+        <TextView
+            android:id="@+id/tvAlbum"
+            style="@style/tv_b_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t5dp"
+            android:ellipsize="end"
+            android:lines="1"
+            tools:text="专辑"/>
+
+        <FrameLayout
+            android:id="@+id/flUse"
+            android:layout_width="@dimen/t135dp"
+            android:layout_height="@dimen/t40dp"
+            android:layout_marginBottom="@dimen/t15dp"
+            android:layout_marginTop="@dimen/t15dp"
+            android:background="@drawable/bg_btn_f_first_type_shape">
+
+            <TextView
+                android:id="@+id/tvUse"
+                style="@style/tv_a_24"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/t40dp"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/icon_music_record"
+                android:drawablePadding="@dimen/t4dp"
+                android:gravity="center"
+                android:text="@string/stringUseMusic"
+                />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

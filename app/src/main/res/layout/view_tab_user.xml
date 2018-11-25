@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:drawablePadding="@dimen/t4dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/t4dp"
+    android:paddingBottom="@dimen/t4dp"
+    android:paddingRight="@dimen/t15dp"
+    android:paddingLeft="@dimen/t15dp"
+    android:text="@string/stringTabUser"
+    android:textColor="@drawable/bg_search_tab_text_selector"
+    android:textStyle="bold" />
+    <!--    android:drawableLeft="@drawable/bg_tab_search_user_selector"-->

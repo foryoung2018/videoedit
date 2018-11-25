@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.wmlive.hhvideo.widget.AppToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/colorToolbarTitleBackground"
+        android:theme="@style/AppActionBar"
+        android:visibility="gone"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/ToolbarPopupTheme"
+        app:theme="@style/AppCompatToolBar"
+        tools:visibility="visible">
+        <!--contentInsetStartWithNavigation设置与navigation的左边距-->
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/t14dp"
+            android:paddingEnd="@dimen/t14dp"
+            android:paddingStart="@dimen/t14dp"
+            android:paddingTop="@dimen/t14dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_back"
+            tools:visibility="visible" />
+    </com.wmlive.hhvideo.widget.AppToolbar>
+
+    <FrameLayout
+        android:id="@+id/fl_page_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar" />
+
+</RelativeLayout>

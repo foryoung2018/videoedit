@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_two_back">
+
+    <LinearLayout
+        android:id="@+id/share_action_sheet_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/hh_color_a"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/btn_action_block"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t45dp"
+            android:background="@color/hh_color_a"
+            android:gravity="center"
+            android:text="@string/user_block"
+            android:textColor="@color/pop_sheet_text_color"
+            android:textSize="@dimen/t15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/hh_color_b_20"/>
+
+        <TextView
+            android:id="@+id/btn_action_sheet_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t45dp"
+            android:background="@color/hh_color_a"
+            android:gravity="center"
+            android:text="@string/user_report"
+            android:textColor="@color/pop_sheet_text_color"
+            android:textSize="@dimen/t15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t8dp"
+            android:background="@color/hh_color_b_20"/>
+
+        <TextView
+            android:id="@+id/btn_action_sheet_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t45dp"
+            android:background="@color/hh_color_a"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/pop_sheet_text_color"
+            android:textSize="@dimen/t15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

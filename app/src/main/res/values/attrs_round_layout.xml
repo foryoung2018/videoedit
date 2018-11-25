@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RoundedLayout">
+        <attr name="corner_radius_all" format="dimension" />
+        <attr name="corner_radius_topleft" format="dimension" />
+        <attr name="corner_radius_topright" format="dimension" />
+        <attr name="corner_radius_bottomright" format="dimension" />
+        <attr name="corner_radius_bottomleft" format="dimension" />
+        <attr name="layout_stroke_width" format="dimension" />
+        <attr name="layout_stroke_color" format="color" />
+
+        <!-- 尖角 方向  上下左右 -->
+        <attr name="horn_direction" format="string" />
+        <!-- 尖角 相对位置  上下方向填左右位置  左右方向填上下位置 不填位置默认在中间 -->
+        <attr name="horn_position_offsize_left" format="dimension" />
+        <attr name="horn_position_offsize_top" format="dimension" />
+        <attr name="horn_position_offsize_right" format="dimension" />
+        <attr name="horn_position_offsize_bottom" format="dimension" />
+        <!-- 尖角 三角形所在矩形的大小 -->
+        <attr name="horn_width" format="dimension" />
+        <attr name="horn_height" format="dimension" />
+    </declare-styleable>
+
+</resources>

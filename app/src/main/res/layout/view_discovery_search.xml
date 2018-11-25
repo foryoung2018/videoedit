@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:orientation="horizontal">
+
+    <com.wmlive.hhvideo.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:id="@+id/rlBell"
+        android:layout_width="@dimen/t45dp"
+        android:layout_height="@dimen/t38dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/t20dp"
+        android:layout_marginStart="@dimen/t4dp">
+
+        <ImageView
+            android:id="@+id/ivBell"
+            android:layout_width="@dimen/t30dp"
+            android:layout_height="@dimen/t30dp"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/t4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_discover_notice"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvCancel"
+            style="@style/tv_dd_32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="取消" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlRechargePanel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_margin="@dimen/t10dp"
+    android:background="@drawable/bg_btn_c_first_type_shape80"
+    android:padding="@dimen/t10dp">
+
+    <TextView
+        android:id="@+id/tvGiftName"
+        style="@style/tv_a_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        tools:text="萨克斯风 1钻石" />
+
+    <TextView
+        android:id="@+id/tvExperience"
+        style="@style/tv_g_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/t10dp"
+        android:layout_toEndOf="@+id/tvGiftName"
+        tools:text="+20经验" />
+
+    <ImageView
+        android:id="@+id/ivRechargeDiamond"
+        android:layout_width="@dimen/t20dp"
+        android:layout_height="@dimen/t20dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/tvGoldCount"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_acc_diamond" />
+
+    <TextView
+        android:id="@+id/tvGoldCount"
+        style="@style/tv_g_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/t10dp"
+        android:layout_marginStart="@dimen/t10dp"
+        android:layout_toStartOf="@+id/tvRechargeLabel"
+        tools:text="200" />
+
+    <TextView
+        android:id="@+id/tvRechargeLabel"
+        style="@style/tv_a_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/ivArrow"
+        android:text="充值" />
+
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="@dimen/t20dp"
+        android:layout_height="@dimen/t20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_me_enter"
+        android:tint="@color/hh_color_a" />
+
+</RelativeLayout>

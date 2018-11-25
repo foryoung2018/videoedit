@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:layout_width="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlIcon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/t8dp"
+            android:layout_marginTop="@dimen/t2dp"
+            android:textColor="@color/pop_text_gray"
+            android:textSize="@dimen/t16sp"
+            tools:text="" />
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="@dimen/t30dp"
+            android:layout_height="@dimen/t30dp"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/t4dp"
+            android:src="@drawable/icon_home_comment_nor"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/viewBottomLine"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/t2dp"
+        android:layout_marginEnd="@dimen/t12dp"
+        android:layout_marginStart="@dimen/t12dp"
+        android:background="@color/hh_color_f"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+</LinearLayout>

@@ -1,0 +1,138 @@
+{
+  "version": "1.0",
+  "timeRange": {
+    "beginTime": 0,
+    "duration": 4.0
+  },
+  "actors": [
+    {
+      "id": "0",
+      "type": "video",
+      "assetId": "0",
+      "renderIndex": 0,
+      "cropRect": {
+        "left": 0.0,
+        "top": 0.0,
+        "right": 1.0,
+        "bottom": 1.0
+      }
+    },
+    {
+      "id": "1",
+      "type": "video",
+      "assetId": "3",
+      "renderIndex": 1,
+      "cropRect": {
+        "left": 0.0,
+        "top": 0.125,
+        "right": 1.0,
+        "bottom": 0.875
+      },
+      "decoration": "dd2"
+    },
+    {
+      "id": "2",
+      "type": "video",
+      "assetId": "3",
+      "renderIndex": 1,
+      "cropRect": {
+        "left": 0.0,
+        "top": 0.125,
+        "right": 1.0,
+        "bottom": 0.875
+      },
+      "decoration": "dd2"
+    }
+  ],
+  "actions": [
+    {
+      "actionType": "translate",
+      "actorId": "1",
+      "timeRange": {
+        "beginTime": 0.0,
+        "duration": 0.0
+      },
+      "interpolator": {
+        "interpolatorType": "decelerate",
+        "factor": 2.0
+      },
+      "valueFrom": {
+        "x": 0.0,
+        "y": -255,
+        "z": 0.0
+      },
+      "valueTo": {
+        "x": 0.0,
+        "y": -255,
+        "z": 0.0
+      }
+    },
+    {
+      "actionType": "scale",
+      "actorId": "1",
+      "timeRange": {
+        "beginTime": 0.0,
+        "duration": 0.0
+      },
+      "interpolator": {
+        "interpolatorType": "decelerate",
+        "factor": 2.0
+      },
+      "valueFrom": {
+        "x": 0.66666667,
+        "y": 0.66666667,
+        "z": 0.66666667
+      },
+      "valueTo": {
+        "x": 0.66666667,
+        "y": 0.66666667,
+        "z": 0.66666667
+      }
+    },
+
+    {
+      "actionType": "translate",
+      "actorId": "2",
+      "timeRange": {
+        "beginTime": 0.0,
+        "duration": 0.0
+      },
+      "interpolator": {
+        "interpolatorType": "decelerate",
+        "factor": 2.0
+      },
+      "valueFrom": {
+        "x": 0.0,
+        "y": 255,
+        "z": 0.0
+      },
+      "valueTo": {
+        "x": 0.0,
+        "y": 255,
+        "z": 0.0
+      }
+    },
+    {
+      "actionType": "scale",
+      "actorId": "2",
+      "timeRange": {
+        "beginTime": 0.0,
+        "duration": 0.0
+      },
+      "interpolator": {
+        "interpolatorType": "decelerate",
+        "factor": 2.0
+      },
+      "valueFrom": {
+        "x": 0.66666667,
+        "y": 0.66666667,
+        "z": 0.66666667
+      },
+      "valueTo": {
+        "x": 0.66666667,
+        "y": 0.66666667,
+        "z": 0.66666667
+      }
+    }
+  ]
+}

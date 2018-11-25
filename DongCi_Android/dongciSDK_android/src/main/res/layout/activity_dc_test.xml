@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".api.apiTest.DcTestActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.dongci.sun.gpuimglibrary.camera.CameraView
+            android:id="@+id/cameraview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/ll_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_ll"
+            android:orientation="vertical"
+            >
+            <SeekBar
+                android:id="@+id/seekbar_r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                />
+            <SeekBar
+                android:id="@+id/seekbar_g"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                />
+            <SeekBar
+                android:id="@+id/seekbar_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="play"
+            android:text="点击播放"
+            android:visibility="gone" />
+          <com.dongci.sun.gpuimglibrary.activity.RecordFilterPanel
+              android:id="@+id/recordpannel"
+              android:layout_width="match_parent"
+              android:layout_height="100dp"
+              android:layout_marginBottom="80dp"
+              >
+
+          </com.dongci.sun.gpuimglibrary.activity.RecordFilterPanel>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_ll"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="switchfilter"
+                android:text="滤镜1" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="switchfilterAcv"
+                android:text="滤镜锐动" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/bottom_ll"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="recorder"
+                android:text="录制视频" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="beautiful"
+                android:text="美颜开启" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="switchcamera"
+                android:text="切换摄像头" />
+
+
+
+
+            <Button
+                android:id="@+id/composeButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="videoComposeBtnDidclick"
+                android:visibility="gone"
+                android:text="合并多段视频" />
+
+            <Button
+                android:id="@+id/clipVideo"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone"
+                android:onClick="clipVideoBtnDidclick"
+                android:text="裁剪视频" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

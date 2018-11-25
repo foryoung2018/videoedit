@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_black">
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/top_bar" />
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_bar"
+        android:background="@color/bg_black">
+
+        <RelativeLayout
+            android:id="@+id/rl_custoomframeview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <com.wmlive.hhvideo.heihei.record.widget.CustomFrameView
+                android:id="@+id/customFrameView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_video_default" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_move_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fl_container"
+        android:layout_marginTop="15dp"
+        android:background="@color/frame_select_back_color"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/ll_buton_frame"
+            layout="@layout/select_proporty_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvFrames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <include layout="@layout/top_delet_view" />
+</RelativeLayout>

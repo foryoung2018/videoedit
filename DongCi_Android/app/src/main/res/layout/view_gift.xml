@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlRootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvCallSomebody"
+            style="@style/tv_a_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/hh_color_e"
+            android:gravity="center"
+            android:padding="@dimen/t2dp"
+            tools:text="为xxxx打电话" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/rlHitResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible"
+                    tools:background="@color/hh_color_e"
+                    tools:visibility="visible">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/svHit"
+                        android:layout_width="@dimen/t70dp"
+                        android:layout_height="@dimen/t70dp"
+                        fresco:actualImageScaleType="centerCrop"
+                        fresco:placeholderImageScaleType="centerCrop"
+                        tools:background="@color/hh_color_i" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/t20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ivMusicIcon"
+                            android:layout_width="@dimen/t36dp"
+                            android:layout_height="@dimen/t36dp"
+                            android:layout_gravity="center_vertical"
+                            tools:src="@drawable/icon_gift_music"
+                            tools:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/tvClickCount"
+                            style="@style/tv_i1_72"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:shadowColor="@color/app_background_other_back"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="1"
+                            tools:text="X45" />
+
+                        <TextView
+                            android:id="@+id/tvDecibelCount"
+                            style="@style/tv_i1_28"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginStart="@dimen/t1dp"
+                            android:visibility="gone"
+                            tools:text="+3"
+                            tools:visibility="visible" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <com.wmlive.hhvideo.widget.flowrecycler.FlowRecyclerView
+                android:id="@+id/frList"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/t140dp"
+                tools:background="@color/hh_color_e"
+                tools:listitem="@layout/item_flow_gift" />
+
+            <RelativeLayout
+                android:id="@+id/rlRechargePanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/t7dp"
+                android:background="@drawable/bg_btn_c_first_type_shape80"
+                android:padding="@dimen/t10dp">
+
+                <TextView
+                    android:id="@+id/tvGiftName"
+                    style="@style/tv_a_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/t5dp"
+                    tools:text="萨克斯风 1钻石" />
+
+                <TextView
+                    android:id="@+id/tvExperience"
+                    style="@style/tv_g_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/t10dp"
+                    android:layout_toEndOf="@+id/tvGiftName"
+                    tools:text="+20经验" />
+
+                <ImageView
+                    android:id="@+id/ivRechargeDiamond"
+                    android:layout_width="@dimen/t20dp"
+                    android:layout_height="@dimen/t20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/tvGoldCount"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_acc_diamond" />
+
+                <TextView
+                    android:id="@+id/tvGoldCount"
+                    style="@style/tv_g_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/t10dp"
+                    android:layout_marginStart="@dimen/t5dp"
+                    android:layout_toStartOf="@+id/tvRechargeLabel"
+                    tools:text="200" />
+
+                <TextView
+                    android:id="@+id/tvRechargeLabel"
+                    style="@style/tv_a_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/ivArrow"
+                    android:text="充值" />
+
+                <ImageView
+                    android:id="@+id/ivArrow"
+                    android:layout_width="@dimen/t20dp"
+                    android:layout_height="@dimen/t20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/t4dp"
+                    android:src="@drawable/icon_me_enter"
+                    android:tint="@color/hh_color_a" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_hit_result" />
+
+</RelativeLayout>

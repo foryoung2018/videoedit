@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <com.wmlive.hhvideo.heihei.record.widget.CustomFrameView
+        android:id="@+id/customFrameView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--<com.rd.vecore.VirtualVideoView-->
+    <!--android:id="@+id/videoView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+    <ImageView
+        android:id="@+id/ivVideoImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/rlPlayerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+        <FrameLayout
+            android:id="@+id/videoplayercontainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            >
+            <TextureView
+                android:id="@+id/videoViewsdk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent">
+
+            <ImageView
+                android:id="@+id/ivPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_discover_top_video_one"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llSortBottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/customFrameView"
+        android:background="@color/transparent_black80"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/publish_drag_sort"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llVolumeBottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom_menu_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10px"
+                android:text="@string/voice_original"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12" />
+
+            <SeekBar
+                android:id="@+id/sbVoiceOriginal"
+                style="@style/voiceFactorSeekbarStyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/customFrameView"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10px"
+                android:text="@string/voice_music"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12" />
+
+            <SeekBar
+                android:id="@+id/sbVoiceMusic"
+                style="@style/voiceFactorSeekbarStyle" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="1dp"
+        android:layout_height="1dp"></FrameLayout>
+
+    <com.wmlive.hhvideo.heihei.record.widget.CustomDragRecyclerView
+        android:id="@+id/customDragRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:paddingTop="80px" />
+
+</RelativeLayout>

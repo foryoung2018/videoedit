@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_black">
+
+    <FrameLayout
+        android:id="@+id/fr_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rlPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+
+            <FrameLayout
+                android:id="@+id/sdkview_framelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true">
+
+                <TextureView
+                    android:id="@+id/videoViewsdk"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+
+
+            <com.wmlive.hhvideo.heihei.record.widget.CustomFrameView
+                android:id="@+id/customFrameView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+            <com.wmlive.hhvideo.heihei.record.widget.FullRecordView
+                android:id="@+id/flFullRecord"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <com.wmlive.hhvideo.heihei.record.widget.RecordOptionPanel
+        android:id="@+id/recordOptionPanel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_black" />
+
+    <com.wmlive.hhvideo.heihei.record.widget.ExtBtnRecord
+        android:id="@+id/btRecorder"
+        android:layout_width="@dimen/t76dp"
+        android:layout_height="@dimen/t76dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+        android:padding="@dimen/t6dp"
+        android:src="@drawable/btn_recorder_start" />
+
+    <com.wmlive.hhvideo.heihei.record.widget.CountdownView
+        android:id="@+id/countdownView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/recordOptionPanel"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/filter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recordOptionPanel"
+        android:background="@color/app_background_seven_back"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <com.wmlive.hhvideo.heihei.record.widget.LocateCenterHorizontalView
+            android:id="@+id/recordFilterSelector"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t40dp"
+            android:overScrollMode="never" />
+
+        <TextView
+            android:id="@+id/filterIndicator"
+            android:layout_width="3dp"
+            android:layout_height="3dp"
+            android:layout_below="@+id/recordFilterSelector"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/t5dp"
+            android:background="@drawable/filter_selector_indicator" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/count_down_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recordOptionPanel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/t30dp"
+        android:background="@drawable/bg_record_mv_tips_shape"
+        android:paddingLeft="@dimen/t20dp"
+        android:paddingRight="@dimen/t20dp"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/llSpeedPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recordOptionPanel"
+        android:layout_marginBottom="@dimen/t10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <com.wmlive.hhvideo.heihei.record.widget.ExtRadioGroup
+            android:id="@+id/extSpeedPanel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t30dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/cutdown"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:visibility="visible"></View>
+    <TextureView
+        android:id="@+id/test"
+        android:layout_width="1dp"
+        android:layout_height="1dp" />
+
+    <FrameLayout
+        android:id="@+id/dcloopbackTestView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/cutdown"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvVerify"
+            android:layout_width="@dimen/t160dp"
+            android:layout_height="@dimen/t60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_btn_gray_shape_corner_15"
+            android:gravity="center"
+            android:text="设备校准中..."
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+</RelativeLayout>
+
+

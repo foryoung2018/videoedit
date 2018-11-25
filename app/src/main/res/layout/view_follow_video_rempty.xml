@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/t110dp"
+        android:layout_height="@dimen/t110dp"
+        android:src="@drawable/icon_home_follow_empty_works" />
+
+    <TextView
+        style="@style/tv_cc_34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/t18dp"
+        android:gravity="center"
+        android:text="你关注的人\n还没有发布作品哦" />
+</LinearLayout>

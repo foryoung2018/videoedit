@@ -1,0 +1,180 @@
+{
+  "comment": "初始化接口",
+  "conf_data": {
+    "report_type": [
+      {
+        "desc": "违法行为",
+        "id": 1,
+        "resource": 0
+      },
+      {
+        "desc": "低俗内容",
+        "id": 2,
+        "resource": 0
+      },
+      {
+        "desc": "垃圾广告",
+        "id": 3,
+        "resource": 0
+      },
+      {
+        "desc": "有吸烟行为",
+        "id": 4,
+        "resource": 0
+      },
+      {
+        "desc": "有玩刀/枪行为",
+        "id": 5,
+        "resource": 0
+      },
+      {
+        "desc": "盗用他人视频",
+        "id": 6,
+        "resource": 0
+      },
+      {
+        "desc": "低俗内容",
+        "id": 7,
+        "resource": 1
+      },
+      {
+        "desc": "违法行为",
+        "id": 8,
+        "resource": 1
+      },
+      {
+        "desc": "垃圾广告",
+        "id": 9,
+        "resource": 1
+      },
+      {
+        "desc": "其他原因",
+        "id": 10,
+        "resource": 1
+      }
+    ]
+  },
+  "error_code": 0,
+  "error_msg": "success",
+  "message": {
+    "ImBanner": "https://api-02.wmlive.cn/api/message/banner",
+    "ImBuyGiftBatch": "https://api-02.wmlive.cn/api/message/buy-gift-batch",
+    "ImFollowerSearch": "https://api-02.wmlive.cn/api/message/follower_search",
+    "sendImMessage": "https://api-02.wmlive.cn/api/message/send",
+    "webSocketServer": "ws://socket.dongci.wmlive.cn/ws/channel"
+  },
+  "music": {
+    "favMusic": "https://api-02.wmlive.cn/api/music/fav-music",
+    "getCategory": "https://api-02.wmlive.cn/api/music/get-category",
+    "getMusicByCat": "https://api-02.wmlive.cn/api/music/get-cat-music",
+    "listOpusByMusic": "https://api-02.wmlive.cn/api/music/list-music-opus",
+    "myFavMusic": "https://api-02.wmlive.cn/api/music/my-fav-music"
+  },
+  "opus": {
+    "OpusLogs": "https://api-02.wmlive.cn/api/opus/logs",
+    "buyGift": "https://api-02.wmlive.cn/api/opus/buy-gift",
+    "buyGiftBatch": "https://api-02.wmlive.cn/api/opus/buy-gift-batch",
+    "commendOpus": "https://api-02.wmlive.cn/api/opus/commend-opus",
+    "deleteComment": "https://api-02.wmlive.cn/api/opus/delete-comment",
+    "deleteOpus": "https://api-02.wmlive.cn/api/opus/delete-opus",
+    "getOpus": "https://api-02.wmlive.cn/api/opus/get-opus",
+    "getOpusMaterial": "https://api-02.wmlive.cn/api/opus/get-material",
+    "giftNotify": "https://api-02.wmlive.cn/api/opus/gift-notify",
+    "hateOpus": "https://api-02.wmlive.cn/api/opus/hate-opus",
+    "likeComment": "https://api-02.wmlive.cn/api/opus/like-comment",
+    "likeOpus": "https://api-02.wmlive.cn/api/opus/like-opus",
+    "listOpusByFollow": "https://api-02.wmlive.cn/api/opus/list-opus-follow",
+    "listOpusByRecommend": "https://api-02.wmlive.cn/api/opus/list-opus-recommend",
+    "listOpusByRecommendV2": "https://api-02.wmlive.cn/api/opus/list-opus-recommend-v2",
+    "listOpusByTime": "https://api-02.wmlive.cn/api/opus/list-opus-latest",
+    "listOpusComment": "https://api-02.wmlive.cn/api/opus/list-opus-comment",
+    "listReportType": "https://api-02.wmlive.cn/api/opus/list-report-type",
+    "manageOpus": "https://api-02.wmlive.cn/api/opus/manage",
+    "modifyOpus": "https://api-02.wmlive.cn/api/opus/modify-opus",
+    "opusFrameLayout": "https://api-02.wmlive.cn/api/opus/frame-layout",
+    "opusPointList": "https://api-02.wmlive.cn/api/opus/point-list",
+    "opusTopList": "https://api-02.wmlive.cn/api/opus/top-list",
+    "opusUploadMaterial": "https://api-02.wmlive.cn/api/opus/upload-material",
+    "report": "https://api-02.wmlive.cn/api/opus/report",
+    "saveOpus": "https://api-02.wmlive.cn/api/opus/save-opus",
+    "uploadLocalOpus": "https://api-02.wmlive.cn/api/opus/upload-local-opus",
+    "viewOpus": "https://api-02.wmlive.cn/api/opus/view-opus"
+  },
+  "pay": {
+    "createOrder": "https://api-02.wmlive.cn/api/pay/create-order",
+    "iapOrderVerify": "https://api-02.wmlive.cn/api/pay/iap-order-verify",
+    "p2g": "https://api-02.wmlive.cn/api/pay/p2g",
+    "p2gpackageList": "https://api-02.wmlive.cn/api/pay/p2gpackage-list",
+    "paypackageList": "https://api-02.wmlive.cn/api/pay/paypackage-list"
+  },
+  "search": {
+    "search": "https://api-02.wmlive.cn/api/search"
+  },
+  "social": {
+    "getBanner": "https://api-02.wmlive.cn/api/social/get-banner",
+    "giftInfo": "https://api-02.wmlive.cn/api/social/gift-list",
+    "giftInfoForIm": "https://api-02.wmlive.cn/api/social/gift-list-for-im",
+    "giftInfoV2": "https://api-02.wmlive.cn/api/social/gift-list-v2",
+    "giftResources": "https://api-02.wmlive.cn/api/social/gift-resources",
+    "loadSplash": "https://api-02.wmlive.cn/api/social/load-splash"
+  },
+  "switch": {
+    "review": false,
+    "uploadLog": true
+  },
+  "sys": {
+    "aboutUs": "http://dongci.wmlive.cn/#/about",
+    "devicePushInfo": "https://api-02.wmlive.cn/api/sys/push-device",
+    "ossToken": "https://api-02.wmlive.cn/api/sys/oss-token",
+    "reCheckDeviceInfo": "https://api-02.wmlive.cn/api/sys/re-check-device",
+    "serviceTerms": "http://dongci.wmlive.cn/#/about/service_term",
+    "shareLog": "https://api-02.wmlive.cn/api/sys/share-log",
+    "updateCheck": "https://api-02.wmlive.cn/api/sys/update",
+    "uploadLog": "https://api-02.wmlive.cn/api/sys/upload-log",
+    "usinghelp": "http://dongci.wmlive.cn/#/about/usinghelp"
+  },
+  "tips": {
+    "pay": {
+      "payTips": "领取红包或优惠充值请关注官方微信公众号：",
+      "wechat": "dongci-app"
+    },
+    "searchTips": "搜索用户、话题"
+  },
+  "topic": {
+    "create": "https://api-02.wmlive.cn/api/topic/create",
+    "listOpusByTopic": "https://api-02.wmlive.cn/api/topic/list-topic-opus",
+    "listSystemNews": "https://api-02.wmlive.cn/api/topic/system-news",
+    "listTopic": "https://api-02.wmlive.cn/api/topic/list-topic",
+    "newTopicCheck": "https://api-02.wmlive.cn/api/topic/notify"
+  },
+  "user": {
+    "applyOfficialVerify": "https://api-02.wmlive.cn/api/user/apply-official-verify",
+    "batchFollowUser": "https://api-02.wmlive.cn/api/user/batch-follow",
+    "bingWweibo": "https://api-02.wmlive.cn/api/user/bing-weibo",
+    "blockUser": "https://api-02.wmlive.cn/api/user/block",
+    "coCreateOpus": "https://api-02.wmlive.cn/api/user/list-co-create",
+    "followUser": "https://api-02.wmlive.cn/api/user/follow",
+    "getSMSVerificationCode": "https://api-02.wmlive.cn/api/user/get-sms-verification-code",
+    "getUserInfo": "https://api-02.wmlive.cn/api/user/user-info",
+    "goldAccount": "https://api-02.wmlive.cn/api/user/gold-account",
+    "listFans": "https://api-02.wmlive.cn/api/user/list-fans",
+    "listFollower": "https://api-02.wmlive.cn/api/user/list-follower",
+    "listReportType": "https://api-02.wmlive.cn/api/user/list-report-type",
+    "listUserLike": "https://api-02.wmlive.cn/api/user/list-like",
+    "listUserOpus": "https://api-02.wmlive.cn/api/user/list-opus",
+    "recommendUsers": "https://api-02.wmlive.cn/api/user/recommend-users",
+    "removeBindWeibo": "https://api-02.wmlive.cn/api/user/remove-bing-weibo",
+    "report": "https://api-02.wmlive.cn/api/user/report",
+    "signIn": "https://api-02.wmlive.cn/api/user/sign-in",
+    "signInCLByPhone": "https://api-02.wmlive.cn/api/user/sign-in-cl-by-phone",
+    "signOut": "https://api-02.wmlive.cn/api/user/sign-out",
+    "unFollowUsr": "https://api-02.wmlive.cn/api/user/unfollow",
+    "updateUser": "https://api-02.wmlive.cn/api/user/update-user",
+    "userBlacklist": "https://api-02.wmlive.cn/api/user/blacklist",
+    "userHome": "https://api-02.wmlive.cn/api/user/home",
+    "userPointList": "https://api-02.wmlive.cn/api/user/point-list",
+    "verifyInvitationCode": "https://api-02.wmlive.cn/api/user/verify-invitation-code",
+    "weiboVerified": "http://dongci.wmlive.cn/app/auth/weibo"
+  },
+  "version": "1.0"
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="72dp"
+    android:layout_height="72dp">
+
+
+    <ImageView
+        android:id="@+id/iv_music_image"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/bg_search_music_default" />
+
+    <ImageView
+        android:id="@+id/iv_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:src="@drawable/music1"/>
+
+    <ImageView
+        android:id="@+id/iv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:src="@drawable/music2" />
+</RelativeLayout>

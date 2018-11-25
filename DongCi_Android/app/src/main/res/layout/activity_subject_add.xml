@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wmlive.hhvideo.heihei.subject.SubjectAddActivity">
+
+    <!--title-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/t15dp"
+        android:layout_marginRight="@dimen/t15dp"
+        android:background="@drawable/bg_subject_add_content_shape"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/t10dp"
+        android:paddingRight="@dimen/t10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginBottom="@dimen/t19dp"
+            android:layout_marginRight="@dimen/t7dp"
+            android:layout_marginTop="@dimen/t19dp"
+            android:src="@drawable/icon_find_topic"
+            android:tint="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/et_subject_add_content"
+            style="@style/tv_d_32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginBottom="@dimen/t21dp"
+            android:layout_marginTop="@dimen/t21dp"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:maxLines="1"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <!--描述-->
+
+    <!--title-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/t10dp"
+        android:layout_marginLeft="@dimen/t15dp"
+        android:layout_marginRight="@dimen/t15dp"
+        android:layout_marginTop="@dimen/t10dp"
+        android:background="@drawable/bg_subject_add_content_shape"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/t13dp"
+        android:paddingLeft="@dimen/t10dp"
+        android:paddingRight="@dimen/t10dp"
+        android:paddingTop="@dimen/t13dp">
+
+        <EditText
+            android:id="@+id/et_subject_add_description"
+            style="@style/tv_d_28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="left|top"
+            android:hint="@string/subject_description_hit_content"
+            android:minHeight="@dimen/t120dp"
+            android:textColorHint="@color/hh_color_c" />
+    </LinearLayout>
+    <!--字数限制-->
+    <TextView
+        android:id="@+id/tv_subject_limit_count"
+        style="@style/tv_aa_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/t25dp"
+        android:text="0/60" />
+
+    <!--submint-->
+    <TextView
+        android:id="@+id/btn_subject_add_submit"
+        style="@style/tv_a_32"
+        android:layout_width="@dimen/t120dp"
+        android:layout_height="@dimen/t44dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/t30dp"
+        android:background="@drawable/sms_code_selector"
+        android:gravity="center"
+        android:text="确定" />
+</LinearLayout>

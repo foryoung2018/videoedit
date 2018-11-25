@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/t32dp">
+
+    <TextView
+        android:id="@+id/tvContent"
+        style="@style/tv_a_28"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/t5dp"
+        android:gravity="center_vertical"
+        android:shadowColor="@color/app_background_other_back"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:visibility="gone"
+        tools:text="马可波罗" />
+
+    <LinearLayout
+        android:id="@+id/llGiftPanel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <com.wmlive.hhvideo.widget.CircleImageView
+            android:id="@+id/ivAvatar2"
+            android:layout_width="@dimen/t32dp"
+            android:layout_height="@dimen/t32dp"
+            android:layout_marginBottom="@dimen/t4dp"
+            android:layout_marginStart="@dimen/t5dp"
+            android:layout_marginTop="@dimen/t4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_default_male" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/t32dp"
+            android:layout_marginStart="@dimen/t6dp"
+            android:background="@drawable/bg_btn_c_first_type_shape50"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/t15dp"
+            android:paddingStart="@dimen/t15dp">
+
+            <TextView
+                android:id="@+id/tvName2"
+                style="@style/tv_g_28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="马可波罗" />
+
+            <TextView
+                android:id="@+id/tvGift2"
+                style="@style/tv_a_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/t3dp"
+                tools:text="送了炸弹" />
+
+            <TextView
+                android:id="@+id/tvHitCount2"
+                style="@style/tv_a_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/t3dp"
+                tools:text="(暴击9分贝)" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llGiftPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_c_first_type_shape50"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.wmlive.hhvideo.widget.CircleImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="@dimen/t24dp"
+                android:layout_height="@dimen/t24dp"
+                android:layout_marginBottom="@dimen/t4dp"
+                android:layout_marginStart="@dimen/t5dp"
+                android:layout_marginTop="@dimen/t4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_default_male" />
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/tv_g_28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/t4dp"
+                android:text="马可波罗" />
+
+            <TextView
+                android:id="@+id/tvGift"
+                style="@style/tv_a_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/t3dp"
+                android:text="送了炸弹" />
+
+            <ImageView
+                android:id="@+id/ivGift"
+                android:layout_width="@dimen/t18dp"
+                android:layout_height="@dimen/t18dp"
+                android:layout_marginEnd="@dimen/t8dp"
+                android:layout_marginStart="@dimen/t3dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_profile_gift_48_48" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvGiftCount"
+            style="@style/tv_i_36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/t5dp"
+            android:shadowColor="@color/app_background_other_back"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:text="X88" />
+    </LinearLayout>
+</FrameLayout>

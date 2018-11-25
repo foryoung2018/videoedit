@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/check_info_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/t20dp"
+        android:lineSpacingMultiplier="1.2"
+        android:maxLines="7"
+        android:paddingLeft="@dimen/t30dp"
+        android:paddingRight="@dimen/t30dp"
+        android:text="@string/setting_network_check_default_tips"
+        android:textColor="@color/video_text_color"
+        android:textSize="@dimen/t14dp" />
+
+    <TextView
+        android:id="@+id/check_net_btn"
+        android:layout_width="@dimen/t120dp"
+        android:layout_height="@dimen/t40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/t25dp"
+        android:background="@drawable/start_check_net_bg"
+        android:gravity="center"
+        android:text="开始诊断"
+        android:textColor="@color/white"
+        android:textSize="@dimen/t14dp" />
+
+    <ImageView
+        android:id="@+id/dialog_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icon_setting_net_loading"
+        android:visibility="invisible" />
+    <ImageView
+        android:id="@+id/result_iv"
+        android:layout_above="@+id/tips_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icon_setting_net_success"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tips_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/t15dp" />
+
+    <LinearLayout
+        android:id="@+id/rLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/t25dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/show_detail_tv"
+            android:layout_width="@dimen/t120dp"
+            android:layout_height="@dimen/t40dp"
+            android:layout_marginRight="@dimen/t15dp"
+            android:background="@drawable/activity_network_shape"
+            android:gravity="center"
+            android:text="显示详情"
+            android:textSize="@dimen/t14dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/re_check_tv"
+            android:layout_width="@dimen/t120dp"
+            android:layout_height="@dimen/t40dp"
+            android:layout_marginLeft="@dimen/t15dp"
+            android:background="@drawable/activity_network_shape"
+            android:gravity="center"
+            android:text="重新诊断"
+            android:textSize="@dimen/t14dp"
+            android:visibility="invisible" />
+    </LinearLayout>
+</RelativeLayout>

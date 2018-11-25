@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_color"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/bg_diving_line" />
+
+    <RelativeLayout
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t52dp">
+
+        <ImageView
+            android:id="@+id/img_location"
+            android:layout_width="@dimen/t18dp"
+            android:layout_height="@dimen/t18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/t10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_profile_place_dis" />
+
+        <TextView
+            android:id="@+id/text_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/t10dp"
+            android:layout_toRightOf="@id/img_location"
+            android:text="@string/user_location_fail"
+            android:textColor="@color/hh_color_c"
+            android:textSize="@dimen/t15dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/t10dp"
+            android:background="@color/bg_diving_line" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_normal">
+
+        <TextView
+            android:id="@+id/tv_location_permission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/t10dp"
+            android:layout_toRightOf="@id/img_location"
+            android:text="@string/user_location_permission_faid"
+            android:textColor="@color/hh_color_e"
+            android:textSize="@dimen/t15dp" />
+
+        <TextView
+            android:id="@+id/tv_location_permission_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/t30dp"
+            android:layout_toRightOf="@id/img_location"
+            android:text="@string/user_location_permission_tip"
+            android:textColor="@color/hh_color_a"
+            android:textSize="@dimen/t15dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

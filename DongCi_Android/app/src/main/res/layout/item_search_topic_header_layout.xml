@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--默认提示title header-->
+    <TextView
+        android:id="@+id/tv_subject_search_title"
+        style="@style/tv_d_32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="@dimen/t15dp"
+        android:paddingTop="@dimen/t25dp"
+        android:text="热门话题推荐"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <!--无关键字搜索header-->
+    <RelativeLayout
+        android:id="@+id/rl_subject_search_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_background_color"
+        android:paddingBottom="@dimen/t20dp"
+        android:paddingRight="@dimen/t15dp"
+        android:paddingTop="@dimen/t20dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+        <!--内容-->
+        <TextView
+            android:id="@+id/tv_item_subject_name"
+            style="@style/tv_d_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:drawableLeft="@drawable/icon_discover_topic"
+            android:drawablePadding="@dimen/t5dp"
+            android:gravity="left|center_vertical"
+            android:text="尴尬" />
+        <!--添加-->
+        <TextView
+            android:id="@+id/tv_item_subject_add"
+            style="@style/tv_b_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignTop="@id/tv_item_subject_name"
+            android:gravity="left|center_vertical"
+            android:text="@string/subject_add" />
+
+        <TextView
+            android:id="@+id/tv_item_subject_des"
+            style="@style/tv_b_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_subject_name"
+            android:layout_marginTop="@dimen/t15dp"
+            android:gravity="left|center_vertical"
+            android:lineSpacingExtra="@dimen/t8dp"
+            android:text="话题描述内容" />
+    </RelativeLayout>
+
+</LinearLayout>

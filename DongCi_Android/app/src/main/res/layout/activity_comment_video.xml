@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--这个SurfaceView用来解决IjkVideoView黑屏闪烁问题，一定要在Activity的布局中-->
+    <SurfaceView
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <com.wmlive.hhvideo.widget.CustomScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llOptionView"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true">
+
+        <include layout="@layout/item_video_comment_list" />
+
+    </com.wmlive.hhvideo.widget.CustomScrollView>
+
+    <com.wmlive.hhvideo.heihei.mainhome.widget.VideoOptionView
+        android:id="@+id/llOptionView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <com.wmlive.hhvideo.widget.VideoCommentTabView
+        android:id="@+id/llTabView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</RelativeLayout>
+

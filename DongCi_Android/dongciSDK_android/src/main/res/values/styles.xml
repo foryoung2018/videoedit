@@ -1,0 +1,1024 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--基本的主题-->
+    <style name="AppTheme.base" parent="Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <!--状态栏颜色-->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <!--toolbar背景色-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--各控件被勾选火选定的颜色-->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 默认主题 -->
+    <style name="AppTheme" parent="AppTheme.base">
+        <item name="windowActionModeOverlay">@color/transparent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <!--Activity默认的背景色-->
+        <item name="android:windowBackground">@color/app_background_color</item>
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
+
+    <!--透明背景主题-->
+    <style name="DCAppTheme.Translucent" parent="Theme.AppCompat.NoActionBar">
+        <!--Activity默认的背景色-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <!--微信登录和支付的主题-->
+    <style name="DCAppTheme.WXTheme" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <!--评论框的主题-->
+    <style name="DCAppTheme.CommentDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/app_40_black</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowSoftInputMode">adjustResize|stateAlwaysVisible</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:windowEnterAnimation">@anim/anim_bottom_alpha_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_bottom_alpha_out</item>
+    </style>
+
+    <style name="AppThemeNoTrans" parent="AppTheme.base">
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+    </style>
+
+    <style name="Animation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+
+    <style name="AppActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <!-- android:textColorPrimary is the color of the title text in the Toolbar  -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!-- actionMenuTextColor is the color of the text of action (menu) items  -->
+        <item name="actionMenuTextColor">@android:color/white</item> <!--控制左侧menu的颜色-->
+        <!-- Tints the input fields like checkboxes and text fields -->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppCompatToolBar" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="android:textColorPrimary">@color/bg_white</item>
+        <item name="android:textSize">@dimen/t16sp</item>   <!--控制左侧menu的字体大小-->
+        <item name="android:textColor">@color/bg_white</item>
+        <!--<item name="contentInsetStartWithNavigation">0dp</item>-->
+        <!--<item name="contentInsetStart">0dp</item>-->
+        <!--<item name="android:customNavigationLayout">@layout/view_toolbar_navigation</item>-->
+        <!--<item name="toolbarNavigationButtonStyle">@style/myToolbarNavigationButtonStyle</item>-->
+    </style>
+
+    <style name="myToolbarNavigationButtonStyle" parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
+        <!--<item name="android:minWidth">0dp</item>-->
+        <!--<item name="android:padding">@dimen/t4dp</item>-->
+        <!--<item name="android:scaleType">centerInside</item>-->
+    </style>
+
+    <!--toolbar的弹出菜单样式-->
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:colorBackground">@color/bg_white</item>
+        <item name="android:textColor">@color/bg_black</item>
+        <item name="android:gravity">center</item><!--文字居中-->
+        <item name="overlapAnchor">false</item>  <!--把该属性改为false即可使menu位置位于toolbar之下-->
+    </style>
+
+    <!--字体样式-->
+    <style name="tv_a_20">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/hh_color_a</item>
+    </style>
+
+    <style name="tv_a_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_a</item>
+    </style>
+
+    <style name="tv_aa_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_aa</item>
+    </style>
+
+    <style name="tv_a_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_a</item>
+    </style>
+
+    <style name="tv_a_28_a70">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_a70</item>
+    </style>
+
+    <style name="tv_c_28_a70">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_c70</item>
+    </style>
+
+    <style name="tv_c_32_a70">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/hh_color_c70</item>
+    </style>
+
+    <style name="tv_a_30">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/hh_color_a</item>
+    </style>
+
+    <style name="tv_a_32">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/hh_color_a</item>
+    </style>
+
+    <style name="tv_a_34">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/hh_color_a</item>
+    </style>
+
+    <style name="tv_a_48">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/hh_color_a</item>
+    </style>
+
+    <style name="tv_a_72">
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/hh_color_a</item>
+    </style>
+
+    <style name="tv_a_96">
+        <item name="android:textSize">48sp</item>
+        <item name="android:textColor">@color/hh_color_a</item>
+    </style>
+
+    <style name="tv_aa_72">
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/hh_color_aa</item>
+    </style>
+
+
+    <style name="tv_a_74">
+        <item name="android:textSize">37sp</item>
+        <item name="android:textColor">@color/hh_color_a</item>
+    </style>
+
+    <style name="tv_b_16">
+        <item name="android:textSize">8sp</item>
+        <item name="android:textColor">@color/hh_color_b</item>
+    </style>
+
+    <style name="tv_b_20">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/hh_color_b</item>
+    </style>
+
+
+    <style name="tv_b_22">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/hh_color_b</item>
+    </style>
+
+    <style name="tv_b_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_b</item>
+    </style>
+
+    <style name="tv_ccc_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_ccc</item>
+    </style>
+
+
+    <style name="tv_b_26">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/hh_color_b</item>
+    </style>
+
+    <style name="tv_b_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_b</item>
+    </style>
+
+    <style name="tv_b_32">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/hh_color_b</item>
+    </style>
+
+    <style name="tv_b_34">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/hh_color_b</item>
+    </style>
+
+
+    <style name="tv_b_72">
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/hh_color_b</item>
+    </style>
+
+    <style name="tv_c_20">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/hh_color_c</item>
+    </style>
+
+    <style name="tv_ccc_22">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/hh_color_ccc</item>
+    </style>
+
+    <style name="tv_c_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_c</item>
+    </style>
+
+    <style name="tv_dd_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_dd</item>
+    </style>
+
+
+    <style name="tv_dd_36">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/hh_color_dd</item>
+    </style>
+
+    <style name="tv_dd_44">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/hh_color_dd</item>
+    </style>
+
+    <style name="tv_c_26">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/hh_color_c</item>
+    </style>
+
+    <style name="tv_c_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_c</item>
+    </style>
+
+    <style name="tv_cc_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_cc</item>
+    </style>
+
+    <style name="tv_ccc_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_ccc</item>
+    </style>
+
+    <style name="tv_cc_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_cc</item>
+    </style>
+
+    <style name="tv_cc_34">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/hh_color_cc</item>
+    </style>
+
+    <style name="tv_cc1_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_cc1</item>
+    </style>
+
+    <style name="tv_c_32">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/hh_color_c</item>
+    </style>
+
+    <style name="tv_c_72">
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/hh_color_c</item>
+    </style>
+
+    <style name="tv_dd_34">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/hh_color_dd</item>
+    </style>
+
+    <style name="tv_dd_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_dd</item>
+    </style>
+
+    <style name="tv_dd_72">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/hh_color_dd</item>
+    </style>
+
+    <style name="tv_c_34">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/hh_color_c</item>
+    </style>
+
+
+    <style name="tv_d_20">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/hh_color_d</item>
+    </style>
+
+    <style name="tv_d_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_d</item>
+    </style>
+
+    <style name="tv_d_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_d</item>
+    </style>
+
+    <style name="tv_d_30">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/hh_color_d</item>
+    </style>
+
+    <style name="tv_d_32">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/hh_color_d</item>
+    </style>
+
+    <style name="tv_dd_32">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/hh_color_dd</item>
+    </style>
+
+    <style name="tv_d_34">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/hh_color_d</item>
+    </style>
+
+    <style name="tv_d_36">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/hh_color_d</item>
+    </style>
+
+    <style name="tv_d_48">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/hh_color_d</item>
+    </style>
+
+    <style name="tv_dd_48">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/hh_color_dd</item>
+    </style>
+
+    <style name="tv_d_72">
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/hh_color_d</item>
+    </style>
+
+    <style name="tv_e_20">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/hh_color_e</item>
+    </style>
+
+    <style name="tv_e_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_e</item>
+    </style>
+
+    <style name="tv_e_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_e</item>
+    </style>
+
+    <style name="tv_e_30">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/hh_color_e</item>
+    </style>
+
+    <style name="tv_e_32">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/hh_color_e</item>
+    </style>
+
+    <style name="tv_e_34">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/hh_color_e</item>
+    </style>
+
+    <style name="tv_e_36">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/hh_color_e</item>
+    </style>
+
+    <style name="tv_e_48">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/hh_color_e</item>
+    </style>
+
+    <style name="tv_f_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_f</item>
+    </style>
+
+    <style name="tv_f_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_f</item>
+    </style>
+
+    <style name="tv_g_20">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/hh_color_g</item>
+    </style>
+
+    <style name="tv_g_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_g</item>
+    </style>
+
+    <style name="tv_g_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_g</item>
+    </style>
+
+    <style name="tv_g_32">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/hh_color_g</item>
+    </style>
+
+    <style name="tv_g_34">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/hh_color_g</item>
+    </style>
+
+    <style name="tv_h_20">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/hh_color_h</item>
+    </style>
+    h
+
+    <style name="tv_h_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_h</item>
+    </style>
+
+    <style name="tv_h_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_h</item>
+    </style>
+
+    <style name="tv_h_32">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/hh_color_h</item>
+    </style>
+
+    <style name="tv_h_34">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/hh_color_h</item>
+    </style>
+
+    <style name="tv_i_20">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/hh_color_i</item>
+    </style>
+
+    <style name="tv_i_24">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/hh_color_i</item>
+    </style>
+
+    <style name="tv_i_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_i</item>
+    </style>
+
+    <style name="tv_i1_28">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/hh_color_i1</item>
+    </style>
+
+    <style name="tv_i_32">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/hh_color_i</item>
+    </style>
+
+    <style name="tv_i_48">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/hh_color_i</item>
+    </style>
+
+    <style name="tv_i_72">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/hh_color_i</item>
+    </style>
+
+    <style name="tv_i1_72">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/hh_color_i1</item>
+    </style>
+
+    <style name="tv_i_74">
+        <item name="android:textSize">37sp</item>
+        <item name="android:textColor">@color/hh_color_i</item>
+    </style>
+
+    <style name="tv_i_34">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/hh_color_i</item>
+    </style>
+
+    <style name="tv_i_36">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/hh_color_i</item>
+    </style>
+
+
+    <!--对话框样式-->
+    <style name="BaseDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 遮罩层黑度 背景70 不透明-->
+        <item name="android:backgroundDimAmount">0.7</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <!--<item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>-->
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustResize</item>
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--对话框样式 背景色透明-->
+    <style name="BaseDialogThemeNoBackground" parent="BaseDialogTheme">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:backgroundDimAmount">0</item>
+    </style>
+    <!-- 登录dialog-->
+    <!--<style name="LoginDialogTheme" parent="BaseDialogTheme">-->
+    <!--<item name="android:background">@color/transparent</item>-->
+    <!--<item name="android:windowBackground">@color/transparent</item>-->
+    <!--</style>-->
+
+    <!--对话框样式--><!--背景颜色-->
+    <style name="styleDialog">
+        <item name="android:background">@drawable/bg_dialog_d_shape</item>
+    </style>
+
+    <style name="EditText_a">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textColor">@color/hh_color_c</item>
+        <item name="android:textColorHint">@color/hh_color_b</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textCursorDrawable">@drawable/text_cursor_drawable</item>
+    </style>
+
+    <!-- listview -->
+    <style name="listview">
+        <item name="android:background">@null</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:listSelector">#00000000</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:groupIndicator">@null</item>
+        <item name="android:childDivider">@null</item>
+        <item name="android:divider">@color/transparent</item>
+        <item name="android:headerDividersEnabled">false</item>
+        <item name="android:smoothScrollbar">true</item>
+    </style>
+
+    <!--底部弹出的动画-->
+    <style name="AnimationFromBottom">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_out</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_in</item>
+    </style>
+
+    <!--tabLayout的字体大小-->
+    <style name="tabLayoutTextStyle">
+        <item name="android:textSize">@dimen/t12sp</item>
+    </style>
+
+    <style name="tabLayoutTextStyle2">
+        <item name="android:textSize">@dimen/t14sp</item>
+    </style>
+
+    <!--水平分割线-->
+    <style name="publicHorizontalDivideLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/bg_diving_line</item>
+    </style>
+
+    <!--垂直分割线-->
+    <style name="publicVerticalDivideLine">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">@dimen/t1dp</item>
+        <item name="android:background">@color/bg_diving_line</item>
+    </style>
+
+    <!--<style name="BaseDialog" parent="@android:style/Theme.Dialog">-->
+    <!--<item name="android:windowFrame">@null</item>-->
+    <!--<item name="android:windowIsFloating">true</item>-->
+    <!--<item name="android:windowIsTranslucent">true</item>-->
+    <!--<item name="android:windowNoTitle">true</item>-->
+    <!--<item name="android:background">@color/transparent</item>-->
+    <!--<item name="android:windowBackground">@color/transparent</item>-->
+    <!--<item name="android:backgroundDimEnabled">true</item>-->
+    <!--<item name="android:windowAnimationStyle">@null</item>-->
+    <!--<item name="android:windowSoftInputMode">stateUnspecified|adjustResize</item>-->
+    <!--</style>-->
+
+    <!--<style name="Base.Widget.Design.TabLayout" parent="android:Widget">-->
+    <!--<item name="tabBackground">@drawable/tab_background</item>-->
+    <!--</style>-->
+
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="Theme.dyuiapi.base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+        <item name="android:textColorSecondary">@color/colorPrimaryDark</item>
+        <item name="android:textColorTertiary">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.dyuiapi" parent="Theme.dyuiapi.base"></style>
+
+    <style name="Theme.dyuiapi.disableSplitTouch" parent="@style/Theme.dyuiapi">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowEnableSplitTouch" tools:ignore="NewApi">false</item>
+    </style>
+
+    <style name="Theme.dyuiapi.fullscreen" parent="@style/Theme.dyuiapi.disableSplitTouch">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Theme.dyuiapi.translucent" parent="@style/Theme.dyuiapi.disableSplitTouch">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <style name="listviewDialogAnimation" parent="android:Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+
+    <style name="dialogNoAnimation" parent="android:Animation.Dialog">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+
+    <style name="dialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@drawable/dialog_trans</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@style/dialogNoAnimation</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@drawable/dialog_trans</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="alert_listview_text_style" parent="android:Widget.TextView">
+        <item name="android:textColor">@drawable/alert_button_text_color</item>
+        <item name="android:textSize" tools:ignore="SpUsage">@dimen/text_size_16</item>
+    </style>
+
+    <style name="alert_listview_dialog_text_style" parent="android:Widget.TextView">
+        <item name="android:textColor">@drawable/alert_button_text_color</item>
+        <item name="android:textSize" tools:ignore="SpUsage">@dimen/text_size_16</item>
+    </style>
+
+    <style name="listviewDialog" parent="dialog">
+        <item name="android:windowAnimationStyle">@style/listviewDialogAnimation</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <style name="selectDialog" parent="dialog">
+        <item name="android:windowBackground">@drawable/dyuiapi_dialog_bg</item>
+        <item name="android:maxWidth">300dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="alert_dialog_negtive_btn_text_style" parent="android:Widget.TextView">
+        <item name="android:textColor">@drawable/alert_button_text_color</item>
+        <item name="android:textSize" tools:ignore="SpUsage">16dp</item>
+    </style>
+
+    <style name="alert_dialog_positive_btn_text_style" parent="android:Widget.TextView">
+        <item name="android:textColor">@drawable/alert_button_text_color</item>
+        <item name="android:textSize" tools:ignore="SpUsage">16dp</item>
+    </style>
+
+
+    <style name="alert_dialog_bg_style">
+        <item name="android:background">@drawable/dyuiapi_dialog_bg</item>
+        <item name="android:minWidth">@dimen/t230dp</item>
+    </style>
+
+
+    <style name="listviewStyle_trans">
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:divider">@null</item>
+        <item name="android:listSelector">@color/transparent</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="effectButtonStyle">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/color_effect_item_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="effectAniButtonStyle">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:layout_marginLeft">7dp</item>
+        <item name="android:layout_marginRight">7dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="effectLinearLayoutStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="effectTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textColor">@color/color_effect_item_text</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="menuSideButtonStyle">
+        <item name="android:textSize">12.5dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">@color/transparent_black</item>
+        <item name="android:shadowRadius">5</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:minWidth">40dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="voiceFactorSeekbarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:max">100</item>
+        <item name="android:maxHeight">2.0dip</item>
+        <item name="android:minHeight">2.0dip</item>
+        <item name="android:progressDrawable">@drawable/voice_seekbar_progress</item>
+        <item name="android:thumb">@drawable/voice_seekbar_thumb</item>
+    </style>
+
+    <style name="voiceFactorVerticalSeekbarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:max">500</item>
+        <item name="android:maxHeight">2.0dip</item>
+        <item name="android:minHeight">2.0dip</item>
+        <item name="android:progressDrawable">@drawable/voice_seekbar_progress</item>
+        <item name="android:thumb">@drawable/voice_vertical_seekbar_thumb</item>
+    </style>
+
+    <style name="videoSeekbarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:max">100</item>
+        <item name="android:maxHeight">2.0dip</item>
+        <item name="android:minHeight">2.0dip</item>
+        <item name="android:progressDrawable">@drawable/video_seekbar_progress</item>
+        <item name="android:thumb">@drawable/video_seekbar_thumb_red</item>
+    </style>
+
+    <style name="menu_btn_style">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:layout_width">65dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowColor">@color/transparent_black</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="menu_btn_style2">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowColor">@color/transparent_black</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    !--IM details item 样式-->
+
+    <style name="style_im_detail_right">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <!--第二层-->
+    <style name="style_im_detail_me_item">
+        <item name="android:paddingTop">@dimen/t6dp</item>
+        <item name="android:paddingBottom">@dimen/t6dp</item>
+        <item name="android:paddingRight">15dip</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <!--第二层-->
+    <style name="style_im_detail_me_sound_item">
+        <item name="android:paddingTop">@dimen/t6dp</item>
+        <item name="android:paddingBottom">@dimen/t6dp</item>
+        <item name="android:paddingRight">7dip</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <!--第二层-->
+    <style name="style_im_detail_me_sound_pic_video_item">
+        <item name="android:paddingRight">7dip</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <!--不支持样式-->
+    <style name="style_im_detail_me_no_holder_item">
+        <item name="android:paddingTop">@dimen/t6dp</item>
+        <item name="android:paddingBottom">@dimen/t6dp</item>
+        <item name="android:paddingRight">15dip</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <!--ｍｅ 普通消息-->
+    <style name="style_im_detail_item_me_common" parent="@style/tv_a_28">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">left</item>
+        <item name="android:maxWidth">224dip</item>
+    </style>
+
+    <!--ｍｅ 声音消息-->
+    <style name="style_im_detail_item_me_sound" parent="@style/tv_a_28">
+        <item name="android:gravity">left</item>
+        <item name="android:maxWidth">224dip</item>
+        <item name="android:layout_gravity">left|center_vertical</item>
+    </style>
+
+
+    <!--IM other 样式-->
+    <style name="style_im_detail_left">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <!--第二层-->
+    <style name="style_im_detail_other_item">
+        <item name="android:paddingTop">@dimen/t6dp</item>
+        <item name="android:paddingBottom">@dimen/t6dp</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:paddingRight">15dip</item>
+        <item name="android:layout_marginRight">5dip</item>
+    </style>
+
+    <!--不支持-->
+    <style name="style_im_detail_other_no_hold_item">
+        <item name="android:paddingTop">@dimen/t6dp</item>
+        <item name="android:paddingBottom">@dimen/t6dp</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:paddingRight">15dip</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <!--声音的第二层-->
+    <style name="style_im_detail_other_sound_item">
+        <item name="android:paddingTop">@dimen/t6dp</item>
+        <item name="android:paddingBottom">@dimen/t6dp</item>
+        <item name="android:paddingLeft">7dip</item>
+        <item name="android:paddingRight">15dip</item>
+    </style>
+
+    <!--other 语音信息-->
+    <style name="style_im_detail_item_other_sound" parent="@style/tv_d_28">
+        <item name="android:layout_gravity">left</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:maxWidth">224dip</item>
+    </style>
+
+    <!--other 约聊信息-->
+    <style name="style_im_detail_item_other_chat" parent="@style/tv_a_28">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:maxWidth">224dip</item>
+    </style>
+
+    <!--other 文字内容-->
+    <style name="style_im_detail_item_other_content" parent="@style/tv_c_28">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:maxWidth">224dip</item>
+    </style>
+
+    <!--other 礼物文字-->
+    <style name="style_im_detail_item_other_gift_content" parent="@style/tv_c_28">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:maxWidth">236dip</item>
+    </style>
+
+    <!--me 礼物文字-->
+    <style name="style_im_detail_item_me_gift_content" parent="@style/tv_a_28">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:maxWidth">236dip</item>
+    </style>
+
+    <!--other 系统通知-->
+    <style name="style_im_detail_item_other_sysnotify_content" parent="@style/tv_c_28">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:maxWidth">224dip</item>
+    </style>
+
+    <!--相机对焦-->
+    <declare-styleable name="FocusImageView">
+        <attr name="focus_focusing_id" format="integer" />
+        <attr name="focus_success_id" format="integer" />
+        <attr name="focus_fail_id" format="integer" />
+    </declare-styleable>
+
+    <style name="dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- windowIsFloating属性很重要，true：弹窗（root参数被过滤） false：普通activity -->
+        <!--<item name="android:windowIsFloating">false</item>-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowSoftInputMode">stateHidden|adjustResize</item>
+    </style>
+
+</resources>

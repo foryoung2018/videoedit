@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="@dimen/t15dp"
+        android:text="@string/dongtai"
+        android:textColor="@color/bg_black"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <com.wmlive.hhvideo.heihei.mainhome.widget.MessageTabPanel
+        android:id="@+id/messageTabPanel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t44dp"
+        android:layout_marginTop="@dimen/t10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/bg_diving_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_publish"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="@dimen/t11dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.wmlive.hhvideo.widget.XCRoundRectImageView
+            android:id="@+id/iv_photo_pub"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_video_default" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_publish_note"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/publishing"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/t14dp"
+                    android:textStyle="bold" />
+
+                <com.wmlive.hhvideo.widget.CustomFontTextView
+                    android:id="@+id/tv_progress"
+                    style="@style/tv_d_36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="0%"
+                    android:textColor="@color/bg_black"
+                    app:cftv_fontFamily="font/dincond_bold.otf" />
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/pb_publishing"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:progress="0" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_attention"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fr_replace"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.wmlive.hhvideo.heihei.mainhome.widget.swipe.MessageRecyclerView
+            android:id="@+id/rvChat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.wmlive.hhvideo.heihei.mainhome.widget.swipe.MessageRecyclerView
+            android:id="@+id/rvProduct"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <com.wmlive.hhvideo.heihei.mainhome.widget.swipe.MessageRecyclerView
+            android:id="@+id/rvFans"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <com.wmlive.hhvideo.heihei.mainhome.widget.swipe.MessageRecyclerView
+            android:id="@+id/rvLike"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <include layout="@layout/include_message_empty" />
+
+    </FrameLayout>
+</LinearLayout>

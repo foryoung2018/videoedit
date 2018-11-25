@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/style_im_detail_left"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginRight="10dip">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/im_detail_other_video_flag"
+            android:layout_width="@dimen/t300dp"
+            android:layout_height="@dimen/t100dp" />
+
+        <ImageView
+            android:id="@+id/btn_play"
+            android:layout_width="@dimen/t36dp"
+            android:layout_height="@dimen/t36dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_play_length"
+            style="@style/tv_a_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="@dimen/t6dp"
+            android:layout_marginRight="@dimen/t6dp" />
+    </FrameLayout>
+
+
+    <View
+        android:id="@+id/view_im_details_red_bg"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:background="@drawable/bg_im_unread_circle_red"
+        android:visibility="invisible"></View>
+</LinearLayout>

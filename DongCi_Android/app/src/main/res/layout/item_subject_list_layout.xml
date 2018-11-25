@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/t20dp"
+    android:paddingRight="@dimen/t15dp"
+    android:paddingTop="@dimen/t15dp">
+    <!--内容-->
+    <TextView
+        android:id="@+id/tv_item_subject_list_name"
+        style="@style/tv_d_28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/tv_item_subject_list_count"
+        android:drawableLeft="@drawable/icon_discover_topic"
+        android:drawablePadding="@dimen/t5dp"
+        android:gravity="left|center_vertical"
+        android:paddingEnd="@dimen/t10dp"
+        tools:text="尴尬" />
+    <!--数量-->
+    <TextView
+        android:id="@+id/tv_item_subject_list_count"
+        style="@style/tv_ccc_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@id/tv_item_subject_list_name"
+        android:gravity="left|center_vertical"
+        tools:text="12514人参与" />
+
+    <TextView
+        android:id="@+id/tv_item_subject_list_des"
+        style="@style/tv_ccc_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_subject_list_name"
+        android:layout_marginTop="@dimen/t15dp"
+        android:gravity="left|center_vertical"
+        android:lineSpacingExtra="@dimen/t8dp"
+        tools:text="话题描述内容" />
+</RelativeLayout>

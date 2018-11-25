@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlDecibelCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/t12dp"
+        android:layout_marginTop="@dimen/t12dp"
+        android:background="@drawable/bg_btn_c_follow_shape"
+        android:paddingEnd="@dimen/t16dp"
+        android:paddingStart="@dimen/t16dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvDecibelCount"
+            style="@style/tv_cc_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/t10dp"
+            tools:text="累计获得" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/t32dp"
+            android:layout_height="@dimen/t32dp"
+            android:layout_marginBottom="@dimen/t15dp"
+            android:layout_marginLeft="@dimen/t10dp"
+            android:layout_marginRight="@dimen/t10dp"
+            android:layout_marginTop="@dimen/t15dp">
+
+            <ImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="@dimen/t32dp"
+                android:layout_height="@dimen/t32dp"
+                android:src="@drawable/ic_default_male" />
+
+            <ImageView
+                android:id="@+id/ivVerifyIcon"
+                android:layout_width="@dimen/t16dp"
+                android:layout_height="@dimen/t16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                tools:src="@color/hh_color_i"
+                tools:visibility="visible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNickname"
+                style="@style/tv_cc_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="馒头君" />
+
+            <com.wmlive.hhvideo.widget.CustomFontTextView
+                android:id="@+id/tvDesc"
+                style="@style/tv_dd_28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cftv_fontFamily="font/notosans_regular.ttf"
+                tools:text="馒头君" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivRank"
+            android:layout_width="@dimen/t24dp"
+            android:layout_height="@dimen/t24dp"
+            android:layout_marginLeft="@dimen/t10dp"
+            android:layout_marginRight="@dimen/t8dp" />
+    </LinearLayout>
+
+</LinearLayout>

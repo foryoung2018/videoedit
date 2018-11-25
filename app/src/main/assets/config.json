@@ -1,0 +1,109 @@
+{
+  "version": "1.0.0",
+  "video_script": [
+    {
+      "id": 1,
+      "name": "vs_static_with_decoration_0001.json"
+    },
+    {
+      "id": 2,
+      "name": "vs_static_with_decoration_0002.json"
+    },
+    {
+      "id": 3,
+      "name": "vs_static_with_decoration_0003.json"
+    },
+    {
+      "id": 4,
+      "name": "vs_static_with_decoration_0004.json"
+    },
+    {
+      "id": 5,
+      "name": "vs_static_with_decoration_0005.json"
+    },
+    {
+      "id": 6,
+      "name": "vs_static_with_decoration_0006.json"
+    },
+    {
+      "id": 7,
+      "name": "vs0005.json"
+    },
+    {
+      "id": 8,
+      "name": "vs0034.json"
+    },
+    {
+      "id": 9,
+      "name": "vs0010.json"
+    },
+    {
+      "id": 10,
+      "name": "vs0020.json"
+    },
+    {
+      "id": 11,
+      "name": "vs0022.json"
+    },
+    {
+      "id": 12,
+      "name": "vs0017.json"
+    },
+    {
+      "id": 13,
+      "name": "vs0029.json"
+    },
+    {
+      "id": 14,
+      "name": "vs0021.json"
+    },
+    {
+      "id": 15,
+      "name": "vs0026.json"
+    },
+    {
+      "id": 16,
+      "name": "vs_static_fullscreen_0001.json"
+    },
+    {
+      "id": 17,
+      "name": "vs_static_fullscreen_0001.json"
+    },
+    {
+      "id": 18,
+      "name": "vs0027.json"
+    }
+  ],
+  "recordDuration": "1.5",
+  "thumbnail_generate_time": "16.75",
+  "background_music": "misscatBGM.aac",
+  "midiurl": "misscat.mid",
+
+  "audio_script": "audioconfig.json",
+  "items": [
+    {
+      "tips": "可爱地「喵～」一下",
+      "image": "1.jpg"
+    },
+    {
+      "tips": "发出「咕噜咕噜～」的声音",
+      "image": "2.jpg"
+    },
+    {
+      "tips": "说「我真可爱～」",
+      "image": "3.jpg"
+    },
+    {
+      "tips": "发出「嘟～～～」的声音",
+      "image": "4.jpg"
+    },
+    {
+      "tips": "发出「bong～～～～」的声音",
+      "image": "5.jpg"
+    },
+    {
+      "tips": "再来一个「啪～」的声音",
+      "image": "6.jpg"
+    }
+  ]
+}

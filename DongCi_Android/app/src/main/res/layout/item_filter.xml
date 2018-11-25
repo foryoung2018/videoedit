@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:extCircle="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/t20dp"
+    android:paddingBottom="@dimen/t5dp"
+    android:paddingTop="@dimen/t5dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/tv_a_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:shadowColor="@color/transparent_black"
+        android:textColor="@color/hh_color_cc1"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        tools:text="特效"/>
+</LinearLayout>

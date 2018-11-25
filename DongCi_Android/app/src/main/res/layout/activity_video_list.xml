@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--这个SurfaceView用来解决IjkVideoView黑屏闪烁问题，一定要在Activity的布局中-->
+    <SurfaceView
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/bg_diving_line"/>
+
+    <FrameLayout
+        android:id="@+id/flContentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/t90dp"-->
+        <!--android:background="@drawable/bg_main_title">-->
+
+    <!--</RelativeLayout>-->
+</FrameLayout>

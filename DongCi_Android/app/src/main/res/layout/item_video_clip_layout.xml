@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/bg_black"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_trim_duration"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_marginLeft="@dimen/t14dp"
+        android:layout_marginRight="@dimen/t14dp">
+
+        <TextView
+            android:id="@+id/tv_trim_start"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_10" />
+
+        <TextView
+            android:id="@+id/tv_trim_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_10" />
+    </RelativeLayout>
+
+    <com.wmlive.hhvideo.heihei.record.widget.CustomClipView
+        android:id="@+id/customClipView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trim_thumbnail_height"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/rl_trim_duration"
+        android:layout_marginLeft="@dimen/t14dp"
+        android:layout_marginRight="@dimen/t14dp"
+        android:layout_marginBottom="@dimen/dimen_10">
+
+    </com.wmlive.hhvideo.heihei.record.widget.CustomClipView>
+
+</RelativeLayout>

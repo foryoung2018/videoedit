@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/t6dp"
+    tools:background="@color/bg_diving_line">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llProduct"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t35dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivProduct"
+                android:layout_width="@dimen/t18dp"
+                android:layout_height="@dimen/t18dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_home_view"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvProductCountLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="作品"
+                android:textColor="@color/hh_color_c"
+                android:textSize="@dimen/t12sp"
+                android:textStyle="bold" />
+
+            <com.wmlive.hhvideo.widget.CustomFontTextView
+                android:id="@+id/tvProductCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/t6dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/hh_color_c"
+                android:textSize="@dimen/t14sp"
+                app:cftv_fontFamily="font/dincond_bold.otf"
+                tools:text="0" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewProductLine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t2dp"
+            android:layout_marginTop="@dimen/t4dp"
+            android:background="@color/hh_color_f"
+            android:visibility="invisible"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llTogether"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t35dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivTogether"
+                android:layout_width="@dimen/t18dp"
+                android:layout_height="@dimen/t18dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_home_view"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvTogetherCountLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="共同创作"
+                android:textColor="@color/hh_color_c"
+                android:textSize="@dimen/t12sp"
+                android:textStyle="bold" />
+
+            <com.wmlive.hhvideo.widget.CustomFontTextView
+                android:id="@+id/tvTogetherCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/t6dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/hh_color_c"
+                android:textSize="@dimen/t14sp"
+                app:cftv_fontFamily="font/dincond_bold.otf"
+                tools:text="0" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewTogetherLine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t2dp"
+            android:layout_marginTop="@dimen/t4dp"
+            android:background="@color/hh_color_f"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llLike"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t35dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivLike"
+                android:layout_width="@dimen/t18dp"
+                android:layout_height="@dimen/t18dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_home_view"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tvLikeCountLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="喜欢"
+                android:textColor="@color/hh_color_c"
+                android:textSize="@dimen/t12sp"
+                android:textStyle="bold" />
+
+            <com.wmlive.hhvideo.widget.CustomFontTextView
+                android:id="@+id/tvLikeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/t6dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/hh_color_c"
+                android:textSize="@dimen/t14sp"
+                app:cftv_fontFamily="font/dincond_bold.otf"
+                tools:text="0" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewLikeLine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t2dp"
+            android:layout_marginTop="@dimen/t4dp"
+            android:background="@color/hh_color_f"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+
+</LinearLayout>

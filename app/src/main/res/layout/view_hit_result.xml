@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wmlive.hhvideo.heihei.mainhome.widget.FreeGiftResultView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llFreeResult"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_blank_60"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_prize" />
+
+    <LinearLayout
+        android:id="@+id/llOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/t20dp"
+        android:paddingStart="@dimen/t20dp">
+
+        <TextView
+            android:id="@+id/tvClickCount"
+            style="@style/tv_d_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t20dp"
+            tools:text="本次总共戳了%d次" />
+
+        <TextView
+            android:id="@+id/tvDesc"
+            style="@style/tv_b_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t6dp"
+            tools:text="本次总共戳了%d次" />
+
+        <TextView
+            style="@style/tv_d_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t18dp"
+            android:text="暴击获得" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/t15dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/t30dp"
+                    android:layout_height="@dimen/t30dp"
+                    android:src="@drawable/icon_giftpop_diamond" />
+
+                <TextView
+                    android:id="@+id/tvDiamondCount"
+                    style="@style/tv_e_28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t4dp"
+                    android:textStyle="bold"
+                    tools:text="X2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="@dimen/t30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/bg_diving_line" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/t30dp"
+                    android:layout_height="@dimen/t30dp"
+                    android:src="@drawable/icon_giftpop_db" />
+
+                <TextView
+                    android:id="@+id/tvDecibelCount1"
+                    style="@style/tv_e_28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t4dp"
+                    android:textStyle="bold"
+                    tools:text="X2" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvOk"
+        style="@style/tv_a_32"
+        android:layout_width="@dimen/t150dp"
+        android:layout_height="@dimen/t40dp"
+        android:layout_below="@+id/llOption"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/t80dp"
+        android:background="@drawable/login_bt_selector"
+        android:gravity="center"
+        android:text="确定" />
+</com.wmlive.hhvideo.heihei.mainhome.widget.FreeGiftResultView>

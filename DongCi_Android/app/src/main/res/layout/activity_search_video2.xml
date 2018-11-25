@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_black">
+
+   <RelativeLayout
+       android:id="@+id/top_layout"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/t44dp">
+       <android.support.design.widget.TabLayout
+           android:id="@+id/tab_layout"
+           app:tabIndicatorColor="@color/ext_progressbar"
+           app:tabIndicatorHeight="@dimen/t2dp"
+           app:tabSelectedTextColor="@color/white"
+           app:tabTextColor="@color/pop_text_gray"
+           app:tabContentStart="@dimen/t20dp"
+           app:tabPadding="@dimen/t10dp"
+           app:tabTextAppearance="@style/TabLayoutTextStyle"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+       </android.support.design.widget.TabLayout>
+       <LinearLayout
+           android:id="@+id/file_select_ll"
+           android:orientation="horizontal"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" >
+           <ImageView
+               android:id="@+id/file_icon"
+               android:layout_gravity="center_vertical"
+               android:src="@drawable/icon_photo_folder"
+               android:layout_width="@dimen/t18dp"
+               android:layout_height="@dimen/t18dp" />
+           <TextView
+               android:id="@+id/file_select_tv"
+               android:text="文件夹"
+               android:layout_marginRight="@dimen/t15dp"
+               android:layout_marginLeft="@dimen/t5dp"
+               android:textSize="@dimen/t15sp"
+               android:layout_gravity="center_vertical"
+               android:textColor="@color/pop_text_gray"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+       </LinearLayout>
+   </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_below="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>
+
+

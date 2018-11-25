@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/t6dp"
+    android:paddingEnd="@dimen/t6dp"
+    android:paddingTop="@dimen/t6dp">
+
+    <com.wmlive.hhvideo.widget.SearchView1
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:id="@+id/rlBell"
+        android:layout_width="@dimen/t38dp"
+        android:layout_height="@dimen/t38dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/t4dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivBell"
+            android:layout_width="@dimen/t30dp"
+            android:layout_height="@dimen/t30dp"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/t4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_discover_notice"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </RelativeLayout>
+
+
+</LinearLayout>

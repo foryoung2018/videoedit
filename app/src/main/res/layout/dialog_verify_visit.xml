@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="@dimen/t270dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_dialog">
+
+        <ImageView
+            android:id="@+id/iv_dismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="7dp"
+            android:padding="@dimen/t5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_loginpopup_close" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/tv_d_32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/t25dp"
+            android:text="@string/verify_dialog_title" />
+
+        <com.wmlive.hhvideo.widget.CustomInputText
+            android:id="@+id/customInputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/tvActivate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/customInputText"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="28dp"
+            android:paddingRight="28dp"
+            android:layout_marginBottom="@dimen/t20dp"
+            android:layout_marginTop="@dimen/t20dp"
+            android:textSize="14sp"
+            android:textColor="@color/hh_color_b"
+            android:background="@drawable/bg_btn_gray_shape"
+            android:text="@string/verify_dialog_activate" />
+    </RelativeLayout>
+
+</FrameLayout>

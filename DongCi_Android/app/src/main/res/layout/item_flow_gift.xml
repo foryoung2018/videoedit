@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/t144dp"
+    android:layout_height="@dimen/t144dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/ivGift"
+        android:layout_width="@dimen/t144dp"
+        android:layout_height="@dimen/t144dp"
+        android:layout_centerInParent="true"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:placeholderImageScaleType="centerCrop"
+        tools:background="@color/hh_color_i" />
+
+    <com.wmlive.hhvideo.heihei.mainhome.widget.CountdownView
+        android:id="@+id/tvCountdown"
+        android:layout_width="@dimen/t30dp"
+        android:layout_height="@dimen/t30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textColor="@color/hh_color_a"
+        android:textSize="@dimen/t12sp"
+        android:visibility="gone"
+        tools:text="20s"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/hh_color_a"
+        android:textSize="14sp"
+        android:visibility="gone"
+        tools:text="20"
+        tools:visibility="visible" />
+</RelativeLayout>
+
+
+

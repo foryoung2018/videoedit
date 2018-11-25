@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 设置圆角边框 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="6dp"
+    android:shape="rectangle">
+
+    <solid android:color="@color/pop_text_gray_30" />
+
+    <corners
+        android:bottomLeftRadius="30dp"
+        android:bottomRightRadius="30dp"
+        android:topLeftRadius="30dp"
+        android:topRightRadius="30dp" />
+
+</shape>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_black"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:ignore="UseCompoundDrawables">
+
+    <LinearLayout
+        style="@style/alert_dialog_bg_style_1"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:minHeight="50dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_15"
+            android:visibility="visible"
+            tools:ignore="SelectableText"
+            tools:text="rrr" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@color/transparent_white20" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/lvItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="false"
+                android:fadeScrollbars="true"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0dp"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:listSelector="@color/transparent"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/llButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <com.wmlive.hhvideo.heihei.record.uird.ExtButton
+                    android:id="@+id/btnPositive"
+                    style="@style/alert_dialog_positive_btn_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:minWidth="100dp"
+                    android:paddingLeft="4dp" />
+
+                <ImageView
+                    android:id="@+id/ivInterval"
+                    android:layout_width="0.2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent_white20" />
+
+                <com.wmlive.hhvideo.heihei.record.uird.ExtButton
+                    android:id="@+id/btnNegative"
+                    style="@style/alert_dialog_positive_btn_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:minWidth="100dp" />
+
+                <ImageView
+                    android:id="@+id/ivExtra"
+                    android:layout_width="0.2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent_white20"
+                    android:visibility="gone" />
+
+                <com.wmlive.hhvideo.heihei.record.uird.ExtButton
+                    android:id="@+id/btnExtra"
+                    style="@style/alert_dialog_positive_btn_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:minWidth="100dp"
+                    android:paddingRight="4dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+</RelativeLayout>

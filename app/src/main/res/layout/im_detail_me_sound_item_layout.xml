@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/style_im_detail_right"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/ll_im_detail_me_sound_content"
+        style="@style/style_im_detail_me_sound_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hh_chat_sound_me"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_im_detail_me_sound_time"
+            style="@style/style_im_detail_item_me_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:id="@+id/im_im_detail_me_sound_flag"
+            android:layout_width="16dip"
+            android:layout_height="16dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/hh_chat_me_wave0" />
+        <!--录音动画水纹效果-->
+        <ImageView
+            android:id="@+id/iv_im_detail_me_voice_anim"
+            android:layout_width="16dip"
+            android:layout_height="16dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/im_me_record_voice_anim"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/im__detail_item_status_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/ll_im_detail_me_sound_content" />
+</RelativeLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.wmlive.hhvideo.widget.banner.BannerView
+        android:id="@+id/bannerView"
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:layout_marginBottom="@dimen/t25dp"
+        android:layout_marginTop="@dimen/t25dp"
+        app:bvAspectRatio="0.5"
+        app:bvIndicatorColor="@color/app_background_50_white"
+        app:bvIndicatorColorSelected="@color/hh_color_a"
+        app:bvIndicatorGravity="center"
+        app:bvIsLoop="true"
+        app:bvTitleVisible="false" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="@dimen/t6dp"
+        android:layout_marginBottom="@dimen/t10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="345dp"
+            android:layout_height="50dp"
+            android:id="@+id/llGoTopic"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/discover_activity"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="0dp"
+                android:id="@+id/llTopPanel1"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <View
+                android:layout_width="0dp"
+                android:id="@+id/llAroundPanel1"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="350dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:id="@+id/llGoTopic0"-->
+            <!--android:gravity="center"-->
+            <!--android:visibility="gone"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<View-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="@dimen/t1dp"-->
+                <!--android:layout_weight="1" />-->
+            <!--<LinearLayout-->
+                <!--android:id="@+id/llTopPanel"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="@dimen/t30dp"-->
+                    <!--android:layout_height="@dimen/t30dp"-->
+                    <!--android:layout_marginEnd="@dimen/t10dp"-->
+                    <!--android:src="@drawable/icon_discover_top" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<com.wmlive.hhvideo.widget.CustomFontTextView-->
+                        <!--style="@style/tv_dd_32"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:includeFontPadding="false"-->
+                        <!--android:text="TOP榜"-->
+                        <!--android:textStyle="bold"-->
+                        <!--app:cftv_fontFamily="font/notosans_bold.ttf" />-->
+
+                    <!--<com.wmlive.hhvideo.widget.CustomFontTextView-->
+                        <!--style="@style/tv_ccc_22"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:includeFontPadding="false"-->
+                        <!--android:text="动次TOP榜"-->
+                        <!--app:cftv_fontFamily="font/notosans_bold.ttf" />-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="@dimen/t1dp"-->
+                <!--android:layout_weight="1" />-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/llAroundPanel"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="@dimen/t30dp"-->
+                    <!--android:layout_height="@dimen/t30dp"-->
+                    <!--android:layout_marginEnd="@dimen/t10dp"-->
+                    <!--android:src="@drawable/icon_discover_peripheral" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<com.wmlive.hhvideo.widget.CustomFontTextView-->
+                            <!--style="@style/tv_dd_32"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:includeFontPadding="false"-->
+                            <!--android:text="活动 "-->
+                            <!--android:textStyle="bold"-->
+                            <!--app:cftv_fontFamily="font/notosans_bold.ttf" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="3dp"-->
+                            <!--android:layout_height="3dp"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:background="@drawable/shape_black_circle" />-->
+
+                        <!--<com.wmlive.hhvideo.widget.CustomFontTextView-->
+                            <!--style="@style/tv_dd_32"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:includeFontPadding="false"-->
+                            <!--android:text=" 周边"-->
+                            <!--android:textStyle="bold"-->
+                            <!--app:cftv_fontFamily="font/notosans_bold.ttf" />-->
+                    <!--</LinearLayout>-->
+
+                    <!--<com.wmlive.hhvideo.widget.CustomFontTextView-->
+                        <!--style="@style/tv_ccc_22"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:includeFontPadding="false"-->
+                        <!--android:text="动次周边放送"-->
+                        <!--app:cftv_fontFamily="font/notosans_bold.ttf" />-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="@dimen/t1dp"-->
+                <!--android:layout_weight="1" />-->
+
+        <!--</LinearLayout>-->
+    </android.support.v7.widget.CardView>
+
+    <!--<com.wmlive.hhvideo.widget.AutoLineFeedView-->
+    <!--android:id="@+id/alTopics"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="@dimen/t20dp"-->
+    <!--android:layout_marginEnd="@dimen/t10dp"-->
+    <!--android:layout_marginStart="@dimen/t10dp"-->
+    <!--android:layout_marginTop="@dimen/t10dp" />-->
+</LinearLayout>
+

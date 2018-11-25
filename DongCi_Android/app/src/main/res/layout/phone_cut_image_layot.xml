@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_color">
+
+    <!--&lt;!&ndash;title&ndash;&gt;-->
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/top"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/toolbar_height"-->
+    <!--android:layout_marginRight="@dimen/margin_normal">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_back"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:background="?android:selectableItemBackgroundBorderless"-->
+    <!--android:paddingBottom="@dimen/t14dp"-->
+    <!--android:paddingEnd="@dimen/t15dp"-->
+    <!--android:paddingStart="@dimen/t15dp"-->
+    <!--android:paddingTop="@dimen/t14dp"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:src="@drawable/icon_back"-->
+    <!--tools:visibility="visible" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:text="@string/cut_title"-->
+    <!--android:textColor="@color/hh_color_a"-->
+    <!--android:textSize="@dimen/t16sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_save"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="@string/user_edit_save"-->
+    <!--android:textColor="@color/hh_color_g"-->
+    <!--android:textSize="@dimen/t14sp" />-->
+    <!--</RelativeLayout>-->
+
+    <!--裁剪区域-->
+    <com.wmlive.hhvideo.heihei.personal.widget.ClipImageLayout
+        android:id="@+id/clipImageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--底部的提醒文字-->
+    <TextView
+        android:id="@+id/tv_bottom"
+        style="@style/tv_a_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/t15dp"
+        android:text="禁止上传违规图片" />
+</RelativeLayout>

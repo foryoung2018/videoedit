@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/t32dp">
+
+    <ImageView
+        android:id="@+id/ivVideoPlay"
+        android:layout_width="@dimen/t32dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/t8dp"
+        android:layout_marginRight="@dimen/t8dp"
+        android:paddingBottom="@dimen/t8dp"
+        android:paddingLeft="@dimen/t8dp"
+        android:paddingRight="@dimen/t8dp"
+        android:paddingTop="@dimen/t8dp"
+        android:src="@drawable/icon_video_pause" />
+
+    <com.wmlive.hhvideo.widget.CustomFontTextView
+        android:id="@+id/tvCurrentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="00:00"
+        android:textColor="@color/video_text_color"
+        android:textSize="@dimen/t14sp"
+        app:cftv_fontFamily="font/dincond_bold.otf" />
+
+    <SeekBar
+        android:id="@+id/sbPosition"
+        style="@style/videoSeekbarStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1" />
+
+    <com.wmlive.hhvideo.widget.CustomFontTextView
+        android:id="@+id/tvEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/t15dp"
+        android:text="01:20"
+        android:textColor="@color/video_text_color"
+        android:textSize="@dimen/t14sp"
+        app:cftv_fontFamily="font/dincond_bold.otf" />
+
+    <ImageView
+        android:id="@+id/ivFullScreen"
+        android:layout_width="@dimen/t32dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/t8dp"
+        android:paddingBottom="@dimen/t8dp"
+        android:paddingRight="@dimen/t8dp"
+        android:paddingTop="@dimen/t8dp"
+        android:src="@drawable/icon_video_full"
+        android:visibility="gone"
+        tools:visibility="visible" />
+</LinearLayout>

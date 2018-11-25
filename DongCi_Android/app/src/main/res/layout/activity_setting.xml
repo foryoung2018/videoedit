@@ -1,0 +1,221 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlBlackList"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t60dp"
+        android:paddingLeft="@dimen/t15dp">
+
+        <TextView
+            style="@style/tv_d_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/stringBlankList"
+            android:textSize="@dimen/t15sp" />
+
+        <ImageView
+            android:layout_width="@dimen/t12dp"
+            android:layout_height="@dimen/t12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/t15dp"
+            android:src="@drawable/icon_back_small" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/diving_line_height"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:background="@color/bg_diving_line" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_clear_memory"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t60dp"
+        android:layout_below="@+id/rlBlackList"
+        android:paddingLeft="@dimen/t15dp">
+
+        <TextView
+            style="@style/tv_d_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/setting_clear_memory"
+            android:textSize="@dimen/t15sp" />
+
+        <ImageView
+            android:id="@+id/iv_memory_right"
+            android:layout_width="@dimen/t12dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/t15dp"
+            android:src="@drawable/icon_back_small" />
+
+        <TextView
+            android:id="@+id/tv_memory_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/iv_memory_right"
+            android:text="0MB"
+            android:textColor="@color/pop_text_gray"
+            android:textSize="@dimen/t12sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/diving_line_height"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:background="@color/bg_diving_line" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_common"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t60dp"
+        android:layout_below="@+id/btn_clear_memory"
+        android:paddingLeft="@dimen/t15dp"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/tv_d_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/setting_common"
+            android:textSize="@dimen/t15sp" />
+
+        <ImageView
+            android:layout_width="@dimen/t12dp"
+            android:layout_height="@dimen/t12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/t15dp"
+            android:src="@drawable/icon_back_small" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/diving_line_height"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:background="@color/bg_diving_line" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t60dp"
+        android:layout_below="@+id/btn_common"
+        android:paddingLeft="@dimen/t15dp">
+
+        <TextView
+            style="@style/tv_d_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/setting_about"
+            android:textSize="@dimen/t15sp" />
+
+        <ImageView
+            android:layout_width="@dimen/t12dp"
+            android:layout_height="@dimen/t12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/t15dp"
+            android:src="@drawable/icon_back_small" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/diving_line_height"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:background="@color/bg_diving_line" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlUseHelp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t60dp"
+        android:layout_below="@+id/btn_about"
+        android:paddingLeft="@dimen/t15dp">
+
+        <TextView
+            style="@style/tv_d_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/use_help"
+            android:textSize="@dimen/t15sp" />
+
+        <ImageView
+            android:layout_width="@dimen/t12dp"
+            android:layout_height="@dimen/t12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/t15dp"
+            android:src="@drawable/icon_back_small" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/diving_line_height"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:background="@color/bg_diving_line" />-->
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlNetCheck"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t60dp"
+        android:layout_below="@+id/rlUseHelp"
+        android:paddingLeft="@dimen/t15dp">
+
+        <TextView
+            style="@style/tv_d_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/setting_network_check"
+            android:textSize="@dimen/t15sp" />
+
+        <ImageView
+            android:layout_width="@dimen/t12dp"
+            android:layout_height="@dimen/t12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/t15dp"
+            android:src="@drawable/icon_back_small" />
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/diving_line_height"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/bg_diving_line" />-->
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_sys_version"
+        style="@style/tv_d_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/t20dp"
+        tools:text="1.0" />
+
+    <Button
+        android:id="@+id/btn_unlogin"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="@dimen/t120dp"
+        android:layout_height="@dimen/t40dp"
+        android:layout_above="@id/tv_sys_version"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/t20dp"
+        android:background="@drawable/btn_login_selector"
+        android:text="@string/user_exit_login"
+        android:textColor="@color/hh_color_a"
+        android:textSize="@dimen/t15sp" />
+</RelativeLayout>

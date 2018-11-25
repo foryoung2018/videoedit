@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_two_back">
+
+    <LinearLayout
+        android:id="@+id/share_action_sheet_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/hh_color_b_80"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lv_report_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"></ListView>
+
+        <TextView
+            android:id="@+id/btn_action_sheet_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/t45dp"
+            android:layout_marginTop="@dimen/t8dp"
+            android:background="@color/hh_color_a"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/pop_sheet_text_color"
+            android:textSize="@dimen/t14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

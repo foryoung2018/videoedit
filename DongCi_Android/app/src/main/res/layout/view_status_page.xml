@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_page_pic"
+        android:layout_width="@dimen/t160dp"
+        android:layout_height="@dimen/t100dp"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        android:layout_width="@dimen/t40dp"
+        android:layout_height="@dimen/t40dp"
+        android:layout_marginTop="@dimen/t10dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_page_info"
+        style="@style/tv_c_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/stringLoadingData"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/bt_page_operate"
+        style="@style/tv_c_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/hh_color_c"
+        android:paddingLeft="@dimen/t10dp"
+        android:paddingRight="@dimen/t10dp"
+        android:text="@string/stringReload"
+        android:visibility="gone"/>
+</LinearLayout>

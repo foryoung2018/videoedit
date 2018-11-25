@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="oval">
+    <!-- Corner的属性是设置圆角的半径的-->
+    <corners android:radius="25dp"/>
+
+    <solid android:color="#FFFFFF"/>
+    <stroke
+        android:color="#777777"></stroke>
+    <size
+        android:width="50dp"
+        android:height="50dp"/>
+</shape>

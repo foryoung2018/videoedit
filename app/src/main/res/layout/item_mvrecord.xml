@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/t51dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_width="@dimen/t51dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/t51dp">
+        <ImageView
+            android:id="@+id/item_mvrecord_bg"
+            android:layout_width="@dimen/t51dp"
+            android:layout_height="@dimen/t51dp"
+            android:scaleType="center"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_gray_bg_corner"
+            android:src="@drawable/icon_video_shot"
+            />
+
+        <com.wmlive.hhvideo.widget.CustomFontTextView
+            style="@style/tv_dd_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:layout_centerInParent="true"
+            android:id="@+id/fontView"
+            android:text=""
+            android:textStyle="bold"
+            app:cftv_fontFamily="font/notosans_bold.ttf" />
+
+        <ImageView
+            android:id="@+id/item_mvrecord_refreshplay"
+            android:layout_width="@dimen/t17dp"
+            android:layout_height="@dimen/t17dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:src="@drawable/icon_video_refresh"
+            />
+        <ProgressBar
+            android:id="@+id/item_mvrecord_pb"
+            android:layout_width="@dimen/t17dp"
+            android:layout_height="@dimen/t17dp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/dialog_loading_anim_progress"
+            />
+        <ImageView
+            android:id="@+id/gray_bg"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:background="@color/transparent_55"
+            />
+        <ImageView
+            android:id="@+id/item_paly_iv"
+            android:layout_width="@dimen/t17dp"
+            android:layout_height="@dimen/t17dp"
+            android:visibility="visible"
+            android:src="@drawable/icon_video_play_white"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_mvrecord_root"
+        android:layout_width="@dimen/t52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/t52dp">
+    </RelativeLayout>
+
+
+</RelativeLayout>

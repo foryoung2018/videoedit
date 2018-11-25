@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llCommentPanel"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/t370dp"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    android:background="@color/app_background_transparent85"
+  >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t41dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvCount"
+            style="@style/tv_a_28"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/t15dp"
+            android:layout_weight="1"
+            android:text="@string/stringCommentCount"
+            />
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/t40dp"
+            android:layout_height="@dimen/t40dp"
+            android:padding="@dimen/t11dp"
+            android:src="@drawable/icon_loginpopup_close"/>
+    </LinearLayout>
+
+    <com.wmlive.hhvideo.widget.refreshrecycler.RefreshRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/t59dp"
+        android:paddingBottom="@dimen/t7dp"
+        android:paddingEnd="@dimen/t10dp"
+        android:paddingStart="@dimen/t10dp"
+        android:paddingTop="@dimen/t7dp">
+
+        <TextView
+            android:id="@+id/tvComment"
+            style="@style/tv_b_28"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_btn_c_first_type_shape"
+            android:gravity="center_vertical"
+            android:hint="@string/stringLikeJustSay"
+            android:paddingEnd="@dimen/t15dp"
+            android:paddingStart="@dimen/t15dp"
+            android:textCursorDrawable="@drawable/edit_cursor_color"/>
+    </FrameLayout>
+
+</LinearLayout>

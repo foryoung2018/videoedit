@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="84dp"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/bg_home_guide">
+
+    <RelativeLayout
+        android:id="@+id/add_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/t5dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/top_tip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/t5dp"
+            android:text="点击「+」开拍"
+            android:textColor="@color/black"
+            android:textSize="@dimen/t14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bottom_tip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_tip_tv"
+            android:textColor="@color/black"
+            android:text="你的第一个创意MV"
+            android:textSize="@dimen/t12sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/colse_iv"
+        android:padding="@dimen/t10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/icon_home_tips_close" />
+</RelativeLayout>

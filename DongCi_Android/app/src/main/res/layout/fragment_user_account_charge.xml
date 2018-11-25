@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.wmlive.hhvideo.widget.refreshrecycler.RefreshRecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/ll_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="@dimen/t68dp"
+            android:layout_height="@dimen/t68dp"
+            android:layout_marginBottom="@dimen/t12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_empty"/>
+
+        <TextView
+            android:id="@+id/tvMessage"
+            style="@style/tv_c_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</RelativeLayout>

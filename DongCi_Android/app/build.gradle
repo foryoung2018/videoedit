@@ -1,0 +1,465 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'com.bugtags.library.plugin'
+
+static def buildTime() {
+
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("Asia/Shanghai"))
+}
+
+afterEvaluate {
+    tasks.matching {
+        it.name.startsWith('dex')
+    }.each { dx ->
+        if (dx.additionalParameters == null) {
+            dx.additionalParameters = []
+        }
+        dx.additionalParameters += '--set-max-idx-number=48000'
+        dx.additionalParameters += "--main-dex-list=$projectDir/multidex.keep".toString()
+    }
+}
+
+android {
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileOptions.encoding = "UTF-8"
+
+    initFlavors()
+
+    def getVersionCode = { ->
+        try {
+            def stdout = new ByteArrayOutputStream()
+            exec {
+                commandLine 'git', 'rev-list', '--all', '--count'
+                standardOutput = stdout
+            }
+            println "----------------------ver" + Integer.parseInt(stdout.toString().trim()) + 16000
+
+            return Integer.parseInt(stdout.toString().trim()) + 16000
+        }
+        catch (ignored) {
+            return 20000
+        }
+    }
+
+    defaultConfig {
+        applicationId 'cn.wmlive.hhvideo'
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode getVersionCode()
+
+        versionName "4.0.0"
+
+        multiDexEnabled true
+        flavorDimensions "channel"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            // 设置支持的 SO 库构架，一般而言，取你所有的库支持的构架的`交集`。
+            abiFilters 'armeabi', 'armeabi-v7a'//, 'arm64-v8a', 'mips', 'mips64', 'x86_64', 'x86'
+        }
+    }
+
+    dexOptions {
+        preDexLibraries = false
+        javaMaxHeapSize "4g"
+//        additionalParameters = ['--multi-dex', '--main-dex-list=' + project.rootDir.absolutePath + '/app/multidex.keep', '--minimal-main-dex',
+//                                '--set-max-idx-number=1000']
+    }
+
+    signingConfigs {
+        release {
+            //默认配置
+            keyAlias 'perfect'
+            keyPassword 'wmlives.cn'
+            storeFile file('./perfect.keystore')
+            storePassword 'wmlives.cn'
+            v2SigningEnabled false
+        }
+        debug {
+            keyAlias 'perfect'
+            keyPassword 'wmlives.cn'
+            storeFile file('./perfect.keystore')
+            storePassword 'wmlives.cn'
+            v2SigningEnabled false
+        }
+    }
+
+    //Bugtags 插件配置
+    bugtags {
+        //自动上传符号表功能配置，如果需要根据 build varint 配置，请参考帮助中心->符号表->Android 符号表->配置自动上传符号表
+        appKey "c18456ca0308f5040dfbd13912e97aa6"  //这里是你的 appKey
+        appSecret "b63e5f28d729a8b08f69008ea5938029"    //这里是你的 appSecret，管理员在设置页可以查看
+        mappingUploadEnabled true
+
+        //网络跟踪功能配置(企业版)
+        trackingNetworkEnabled true
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            shrinkResources false
+            zipAlignEnabled false
+            buildConfigField("boolean", "DEBUG_SWITCH", "true")
+            //线上
+//            buildConfigField("String", "API_HOST", "\"https://api-02.wmlive.cn/\"")
+            //这个地方的url设置不对Retrofit起作用
+//            buildConfigField("String", "API_HOST", "\"http://api.dongci-test.wmlives.com/\"")
+            //这个地方的url设置不对Retrofit起作用
+            buildConfigField("String", "APP_VERSION", "\"" + defaultConfig.versionName + "\"")
+        }
+
+        release {
+            debuggable false
+            minifyEnabled false  //release打包时不混淆要置为false
+            shrinkResources false
+            zipAlignEnabled true
+            signingConfig signingConfigs.release
+            buildConfigField("boolean", "DEBUG_SWITCH", "false")
+            //线上地址
+//            buildConfigField("String", "API_HOST", "\"https://api-02.wmlive.cn/\"")
+            //这个地方的url设置不对Retrofit起作用
+//            buildConfigField("String", "API_HOST", "\"http://api.dongci-test.wmlives.com/\"")
+            //这个地方的url设置不对Retrofit起作用
+            buildConfigField("String", "APP_VERSION", "\"" + defaultConfig.versionName + "\"")
+//            versionNameSuffix "-release"
+//            manifestPlaceholders = [UmengAppkey: "59547554e88bad30c2001b0a"]
+            //AndroidManifest.xml文件中的替换字符串，可放多个值
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //release打包时不混淆要注释
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                def fileName = "dc_${variant.versionName}_${variant.versionCode}_${buildTime()}_${variant.productFlavors[0].name}_${variant.buildType.name}.apk"
+                if ("release".equals(variant.buildType.name)) {
+                    outputFileName = "../../release/" + fileName
+                } else {
+                    outputFileName = "../../debug/" + fileName
+                }
+                println "----------------------apk文件路径:" + outputFileName
+            }
+        }
+    }
+
+    productFlavors {
+        if (gradle.flavorsList.size > 0) {
+            def baseChannel = gradle.flavorsList.get(0)
+            "${baseChannel}" {
+                applicationId "cn.wmlive.hhvideo"
+                dimension "channel"
+                resValue "string", "app_name", "动次"
+                println "渠道名 ： <$baseChannel>"
+            }
+        }
+
+        oppo {
+            applicationId "cn.wmlive.hhvideo"
+            dimension "channel"
+            resValue "string", "app_name", "动次音乐短视频"
+            println "渠道名 ： <oppo>"
+        }
+
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {  //打包时排除的文件
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+    }
+
+    lintOptions {  //lint检查
+        quiet true  // set to true to turn off analysis progress reporting by lint
+        abortOnError false   // if true, stop the gradle build if errors are found
+        ignoreWarnings true   // if true, only report errors
+        disable 'InconsistentArrays'
+        disable 'GradleOverrides'
+        disable 'MissingTranslation'
+        disable 'UnusedResources'
+        disable 'GoogleAppIndexingWarning'
+        disable 'OldTargetApi'
+        disable 'InvalidPackage'            //Some libraries have issues with this.
+        //Lint gives this warning but SDK 20 would be Android CacheLog Beta.
+        disable 'IconDensities'             //For testing purpose. This is safe to remove.
+        disable 'IconMissingDensityFolder'  //For testing purpose. This is safe to remove.
+    }
+
+    sourceSets {
+        main {
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    //greendao 配置，版本升级时必须去GreenDaoHelper类中去修改升级设置
+    greendao {
+        //数据库版本
+        schemaVersion 8
+        //生成数据库文件的位置(DAOMaster DAOSession)
+        daoPackage "com.wmlive.hhvideo.heihei.db"
+        targetGenDir 'src/main/java/greendao'
+    }
+}
+
+private void initFlavors() {
+    // 需要打包其他渠道时，在configChannels.txt文件中配置
+    println '------init flavors ---------------'
+    gradle.ext.allFlavorsList = [
+            "develop", "_360", "baidu", "huawei",
+            "chuizi", "flyme", "guanwang", "lenovo",
+            "leshi", "ppzs", "qita", "vivo",
+            "wandoujia", "xiaomi", "yyb", "qcheng",
+            "beiyong01", "beiyong02", "beiyong03",
+            "beiyong04", "beiyong05", "beiyong06",
+            "beiyong07", "beiyong08", "beiyong09",
+            "beiyong10", "googleplay",
+            "bilibili01", "bilibili02", "bilibili03", "bilibili04", "bilibili05",
+            "bilibili06", "bilibili07", "bilibili08", "bilibili09", "bilibili010"
+    ]
+    gradle.ext.flavorsList = []
+
+    boolean hasConfigChannel = false // 是否配置渠道
+    def channelFile = file('./configChannels.txt')
+    if (channelFile.exists()) {
+        channelFile.eachLine { line ->
+            if (line.size() == 0) return
+            def chStr = line.trim()
+            if (chStr.indexOf("#") >= 0) {
+                chStr = chStr.replace(chStr.substring(chStr.indexOf("#")), '').trim()
+            }
+            if (chStr.indexOf("//") >= 0) {
+                chStr = chStr.replace(chStr.substring(chStr.indexOf("//")), '').trim()
+            }
+            if (chStr != "" && gradle.allFlavorsList.contains(chStr) && !chStr.startsWith('#') && !chStr.startsWith('//')) {
+                // 配置了渠道(不是空行与注释行)
+                hasConfigChannel = true
+                println "加载配置渠道 <$chStr>"
+                gradle.flavorsList.add(chStr)
+            }
+        }
+    }
+    if (!hasConfigChannel) {
+        gradle.flavorsList.addAll(gradle.allFlavorsList)
+    }
+
+}
+
+/*
+debug时注释掉，release打包时打开这里的注释
+*/
+//tasks.all {
+//    it.doLast {
+//        if (it.getName().startsWith("assemble") && !it.getName().contains("Test")) {
+//            if (it.getName().contains("Release")) {
+//                if (!"assembleRelease".equals(it.getName())) {
+//                    def startTime = System.currentTimeMillis()
+//                    println "-----------------------添加渠道开始-----------------------it.getName()=" + it.getName()
+//                    def channel = it.getName().replace("assemble", "").replace("Release", "").toLowerCase()
+//
+//                    // 批量渠道打包,拷贝apk，并在apk中/META-INF 文件夹增加渠道号
+//                    def outputPath = "./build/outputs/apk/release/"
+//                    def channelApkPath = "${outputPath}dc_${android.defaultConfig.versionName}_${android.defaultConfig.versionCode}_${buildTime()}_${channel}_release.apk"
+//                    File apkBaseFile = file(outputPath + "DongciNormalBase_release.apk")
+//                    if (!apkBaseFile.exists() && gradle.flavorsList.contains(channel)) {
+//                        // 没有基包，复制一份
+//                        def apkFile = file(channelApkPath)
+//                        apkBaseFile = copyFile(apkFile, apkBaseFile)
+//                    }
+//
+//                    ////写入channel
+//                    writeChannelToApk(file(channelApkPath), channel)
+//
+//                    println "-----------------------添加渠道结束，时长(s)" + (System.currentTimeMillis() - startTime) / 1000 + "-----------------------"
+//                } else {
+//                    def path = file("./build/outputs/apk/")
+//                    path.eachFile { one ->
+//                        if (one.name.contains("unaligned")) {
+//                            one.delete()
+//                        }
+//                    }
+//                    def startTime = System.currentTimeMillis()
+//                    println "-----------------------批量包添加渠道开始-----------------------"
+//                    // 批量渠道打包,拷贝apk，并在apk中/META-INF 文件夹增加渠道号
+//                    def outputPath = "./build/outputs/apk/release/"
+//                    def apkBaseFile = file(outputPath + "DongciNormalBase_release.apk")
+//                    gradle.flavorsList.each { channel ->
+//                        def channelApkPath = "${outputPath}dc_${android.defaultConfig.versionName}_${android.defaultConfig.versionCode}_${buildTime()}_${channel}_release.apk"
+//                        ////拷贝文件
+//                        def channelApk = copyFile(apkBaseFile, file(channelApkPath))
+//                        ////写入channel
+//                        writeChannelToApk(channelApk, channel)
+//                    }
+//                    if (apkBaseFile.exists()) {
+//                        apkBaseFile.delete()
+//                    }
+//
+//                    println "-----------------------批量包添加渠道结束，时长(s)" + (System.currentTimeMillis() - startTime) / 1000 + "-----------------------"
+//                }
+//            } else if (it.getName().contains("Debug")) {
+//                if (!"assembleDebug".equals(it.getName())) {
+//                    def startTime = System.currentTimeMillis()
+//                    println "-----------------------添加渠道开始-----------------------"
+//                    def channel = it.getName().replace("assemble", "").replace("Debug", "").toLowerCase()
+//                    def outputPath = "./build/outputs/apk/debug/"
+//
+//                    // 批量渠道打包,拷贝apk，并在apk中/META-INF 文件夹增加渠道号
+//                    def channelApkPath = "${outputPath}dc_${android.defaultConfig.versionName}_${android.defaultConfig.versionCode}_${buildTime()}_${channel}_debug.apk"
+//                    File apkBaseFile = file(outputPath + "DongciNormalBase_debug.apk")
+//                    if (!apkBaseFile.exists() && gradle.flavorsList.contains(channel)) {
+//                        // 没有基包，复制一份
+//                        def apkFile = file(channelApkPath)
+//                        apkBaseFile = copyFile(apkFile, apkBaseFile)
+//                    }
+//
+//                    ////写入channel
+//                    writeChannelToApk(file(channelApkPath), channel)
+//                    println "-----------------------添加渠道结束，时长" + (System.currentTimeMillis() - startTime) / 1000 + "s-----------------------"
+//                } else {
+//                    def path = file("./build/outputs/apk/")
+//                    path.eachFile { one ->
+//                        if (one.name.contains("unaligned")) {
+//                            one.delete()
+//                        }
+//                    }
+//                    def startTime = System.currentTimeMillis()
+//                    println "-----------------------批量包添加渠道开始-----------------------"
+//                    // 批量渠道打包,拷贝apk，并在apk中/META-INF 文件夹增加渠道号
+//                    def outputPath = "./build/outputs/apk/debug/"
+//                    def apkBaseFile = file(outputPath + "DongciNormalBase_debug.apk")
+//                    gradle.flavorsList.each { channel ->
+//                        def channelApkPath = "${outputPath}dc_${android.defaultConfig.versionName}_${android.defaultConfig.versionCode}_${buildTime()}_${channel}_debug.apk"
+//                        ////拷贝文件
+//                        def channelApk = copyFile(apkBaseFile, file(channelApkPath))
+//                        ////写入lc
+//                        writeChannelToApk(channelApk, channel)
+//                    }
+//                    if (apkBaseFile.exists()) {
+//                        apkBaseFile.delete()
+//                    }
+//
+//                    println "-----------------------批量包添加渠道结束，时长" + (System.currentTimeMillis() - startTime) / 1000 + "s-----------------------"
+//                }
+//            }
+//        }
+//    }
+//
+//}
+
+/**
+ * 往apk包中写入渠道号
+ * @param apkFile
+ * @param channelCode
+ * @return
+ */
+def writeChannelToApk(apkFile, channelCode) {
+    println "------------写入渠道 ${channelCode} 文件 ------------------" + apkFile.getAbsolutePath()
+
+    def command = "python ./addChannelToApk.py  " + apkFile.getAbsolutePath() + "  ${channelCode}"
+    def process = Runtime.getRuntime().exec(command);
+    process.waitFor();
+
+    println apkFile.getAbsolutePath()
+    println "------------写入渠道 ${channelCode} 文件成功 -----------command-------"
+}
+
+def copyFile(File src, File dest) {
+    def input = src.newDataInputStream()
+    def output = dest.newDataOutputStream()
+
+    output << input
+    input.close()
+    output.close()
+    return dest
+}
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs' //this way we can find the .aar file in libs folder
+        dirs project(':dongciSDK_android').file('libs')
+    }
+    google()
+    jcenter()
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api(name: 'aiupdatesdk-release', ext: 'aar')
+    implementation 'com.android.support:support-v4:27.0.0'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
+    testImplementation deps.junit
+    api deps.supportDesign
+    api deps.multidex
+    api deps.supportV4
+    api deps.cardviewV7
+    api deps.appcompatV7
+    api deps.recyclerviewV7
+    api deps.supportAnnotations
+    api deps.constraintlayout
+    api deps.butterknife
+    annotationProcessor deps.butterknifeapt
+    api deps.rxjava
+    api deps.rxpermissions2
+    api deps.greendao
+    api deps.greendaoGenerator
+    api deps.filedownloaderLiulishuo
+    api deps.aliyunOss
+    api deps.aliyunPush
+    api deps.aliyunThirdPush
+    api deps.bugly
+    api deps.buglyNative
+    api deps.bugtags
+    api deps.tencentOpensdk
+    debugApi deps.leakcanaryDebug
+    releaseApi deps.leakcanaryRelease
+    api deps.glide
+    api deps.universalImageLoader
+    api deps.frescoBase
+    api deps.frescoAnimatedBaseSupport
+    api deps.frescoAnimatedGif
+    api deps.frescoAnimatedWebp
+    api deps.frescoWebpSupport
+    api deps.firebase
+    api deps.magicwindow
+    api deps.sinaWeiboSdk
+    api deps.shortcutBadger
+    api deps.flexbox
+    api project(':networklib')
+    api project(':DanmakuFlameMaster')
+    api project(':recyclerview-swipe')
+    api project(':lDNetDiagnoService_Android')
+    api files('libs/mta-sdk-1.6.2.jar')
+    api files('libs/open_sdk_r5509_lite.jar')
+    api project(':dongciSDK_android')
+    api files('libs/ijkplayer-java-release.aar')
+    implementation 'com.squareup:otto:1.3.8'
+    implementation project(path: ':crclibrary')
+    implementation project(path: ':videocachelibrary')
+    implementation project(path: ':loopback')
+    implementation project(path: ':curllibrary')
+
+    /**
+     * get video frame
+     */
+    implementation 'org.jcodec:jcodec:0.2.2'
+    implementation 'org.jcodec:jcodec-android:0.2.2'
+
+}

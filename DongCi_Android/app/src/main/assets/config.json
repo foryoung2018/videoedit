@@ -1,0 +1,61 @@
+{
+  "version": "1.0.0",
+  "video_script": [
+    {
+      "id": 1,
+      "name": "vs_static_with_decoration_0001.json"
+    },
+    {
+      "id": 2,
+      "name": "vs_static_with_decoration_0002.json"
+    },
+    {
+      "id": 3,
+      "name": "vs_static_with_decoration_0003.json"
+    },
+    {
+      "id": 4,
+      "name": "vs_static_with_decoration_0004.json"
+    },
+    {
+      "id": 5,
+      "name": "vs_static_with_decoration_0005.json"
+    },
+    {
+      "id": 6,
+      "name": "vs_static_with_decoration_0006.json"
+    }
+  ],
+  "recordDuration": "1.5",
+  "thumbnail_generate_time": "1.7",
+  "midiurl": "beatit.mid",
+  "background_image": "background_image.jpeg",
+  "background_music": "beatit-bgm.wav",
+  "audio_script": "audioconfig.json",
+  "items": [
+    {
+      "tips": "先来一个长音「呜～」",
+      "image": "1.jpeg"
+    },
+    {
+      "tips": "再来一个「bong～」",
+      "image": "2.jpeg"
+    },
+    {
+      "tips": "一个轻声「ci」",
+      "image": "3.jpeg"
+    },
+    {
+      "tips": "喊出「just～」",
+      "image": "4.jpeg"
+    },
+    {
+      "tips": "喊出「beat～」",
+      "image": "5.jpeg"
+    },
+    {
+      "tips": "喊出「it～」",
+      "image": "6.jpeg"
+    }
+  ]
+}

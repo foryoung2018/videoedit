@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wmlive.hhvideo.heihei.personal.widget.wheel.BirthdayCell xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="0dp">
+
+        <com.wmlive.hhvideo.heihei.personal.widget.MyImageView
+            android:id="@+id/img_text_item_icon"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="9dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_item_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:textColor="@drawable/birthday_text_color_selector"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/text_item_right"
+            android:layout_width="0.5dip"
+            android:layout_height="match_parent"
+            android:background="#ff2e3135"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/text_item_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#ff2e3135"
+        android:visibility="visible" />
+
+</com.wmlive.hhvideo.heihei.personal.widget.wheel.BirthdayCell>
